@@ -1386,9 +1386,10 @@ background-color: #d9d9d9;
       }
 
       .bannertext h2 {
-          color: #fff;
+          color: #0e619d;
           text-transform: uppercase;
           font-family: impact, sans-serif;
+          margin-top: -100px;
       }
 
       .bannertext p {
@@ -1405,7 +1406,6 @@ background-color: #d9d9d9;
 
           .bannertext h2 {
               font-size: 22px;
-              margin-top: -50px;
           }
 
           .bannertext {
@@ -1420,7 +1420,7 @@ background-color: #d9d9d9;
 
           }
           .page-bg{
-            height: 20vh;  
+            height: 15vh;  
           }
 
       }
@@ -1477,7 +1477,6 @@ background-color: #d9d9d9;
       @media (min-width: 994px) {
           .bannertext h2 {
               font-size: 70px;
-              margin-top: -50px;
               
           }
 
@@ -1493,7 +1492,7 @@ background-color: #d9d9d9;
 
           }
           .page-bg{
-            height: 20vh;  
+            height: 45vh;  
           }
 
       }
@@ -1515,7 +1514,7 @@ background-color: #d9d9d9;
               top: 40%;
           }
           .page-bg{
-            height: 40vh;
+            height: 45vh;
     
           }
 
@@ -1539,7 +1538,7 @@ background-color: #d9d9d9;
               top: 40%;
           }
           .page-bg{
-            height: 40vh;
+            height: 50vh;
     
           }
 

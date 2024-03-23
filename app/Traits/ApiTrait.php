@@ -80,10 +80,52 @@ trait ApiTrait
             return Cache::get('boardOfManagement');
         }
 
-        $result = json_decode(@file_get_contents('' . env('API_URL') . '//public-diu-website/diu-governing-bodies', false, self::ssl()));
+        $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/diu-governing-bodies', false, self::ssl()));
 
         if (!empty($result)) {
             Cache::put('boardOfManagement', $result, 1440); //1440 minute = 1 day
+            return $result;
+        }
+        return response()->json(NULL, 404);
+    }
+    public function programsFeeData()
+    {
+        if (Cache::has('courseFee')) {
+            return Cache::get('courseFee');
+        }
+
+        $result = json_decode(@file_get_contents('' . env('API_URL') . '/get_all_course_fee', false, self::ssl()));
+
+        if (!empty($result)) {
+            Cache::put('courseFee', $result, 1440); 
+            return $result;
+        }
+        return response()->json(NULL, 404);
+    }
+    public function keyResourcePersons()
+    {
+        if (Cache::has('keyResourcePersons')) {
+            return Cache::get('keyResourcePersons');
+        }
+
+        $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/key-resource-persons', false, self::ssl()));
+
+        if (!empty($result)) {
+            Cache::put('keyResourcePersons', $result, 1440); 
+            return $result;
+        }
+        return response()->json(NULL, 404);
+    }
+    public function publication()
+    {
+        if (Cache::has('publication')) {
+            return Cache::get('publication');
+        }
+
+        $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/publication', false, self::ssl()));
+
+        if (!empty($result)) {
+            Cache::put('publication', $result, 1440); 
             return $result;
         }
         return response()->json(NULL, 404);

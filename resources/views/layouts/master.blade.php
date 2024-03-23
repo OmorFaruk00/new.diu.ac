@@ -66,15 +66,14 @@
     <link href="{{ asset('assets/css/owl.theme.default.min.css') }}" rel="stylesheet">
     <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 
+    {{-- <link rel="stylesheet" href="{{ asset('assets/vue/bootstrap-select/dist/css/bootstrap-select.min.css') }}"> --}}
+
     <!-- Template Main CSS File -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+
    
-
-
-
-    <style>
-        
-    </style>
+   
+    @stack('style')
 
 </head>
 
@@ -117,6 +116,8 @@
         s.src = "https://widgets.nopaperforms.com/emwgts.js";
         document.body.appendChild(s);
     </script>
+    
+    @stack('script')
 
 </body>
 

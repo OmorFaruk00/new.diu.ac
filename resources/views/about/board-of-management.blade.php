@@ -96,6 +96,7 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
+                    @if($boardOfManagement)               
                     @foreach ($boardOfManagement->vitalPersonType as $index => $rows)
                         <div class="accordion-item">
                             <div class="accordion-header" id="flush-heading{{ $index }}">
@@ -128,6 +129,7 @@
                             </div>
                         </div>
                     @endforeach
+                    @endif
                 </div>
             </div>
     </main>

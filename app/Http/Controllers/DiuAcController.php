@@ -30,10 +30,31 @@ class DiuAcController extends Controller
     public function studentFacilities(){
         return view('about.student-facilities');
     }
-    // public function whyDiu(){
-    //     return view('about.why-diu');
-    // }
-    // public function whyDiu(){
-    //     return view('about.why-diu');
-    // }
+    public function admissionProcess(){
+        return view('admission.process');
+    }
+    public function programFeeStructure(){
+        $programsFee =  $this->programsFeeData();
+        return view('admission.fee-structure',compact('programsFee'));
+    }
+    public function internationalAdmission(){
+        return view('admission.international-admission');
+    }
+    public function scholarships(){
+        return view('admission.scholarship');
+    }
+    public function admissionHelpDesk(){
+        return view('admission.admission-help-desk');
+    }
+    public function faculty(){
+          $keyResourcePersons = $this->keyResourcePersons();
+        return view('academics.faculty',compact('keyResourcePersons'));
+    }
+    public function workshopSeminars(){
+        return view('academics.workshop-seminar');
+    }
+    public function publications(){
+        $publications = $this->publication();
+        return view('academics.publications',compact('publications'));
+    }
 }

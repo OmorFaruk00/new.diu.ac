@@ -19,7 +19,7 @@
 
 
     <section class="inner-page internship">
-        <img src="assets/images/vision.jpg" alt="vision mission" class="img-fluid w-100 page-bg">
+        <img src="assets/images/vision-mission.png" alt="vision mission" class="img-fluid w-100 page-bg">
         <div class="bannertext">
         <h2>Vision and Mission</h2>
         </div>

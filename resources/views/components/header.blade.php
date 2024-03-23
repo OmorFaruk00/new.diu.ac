@@ -24,9 +24,9 @@
                 </li>
                 <li class="dropdown"><a href="#"><span>ACADEMICS</span> <img src="{{ asset('/assets/img/down-arow.png') }}" alt="" style="margin-bottom: 2px;height:20px"></a>
                     <ul>
-                        <li><a href="faculty">Faculty</a></li>
-                        <li><a href="workshop-seminars">Workshop & Seminars</a></li>
-                        <li><a href="research-publications">Research Publications</a></li>
+                        <li><a href="{{route('faculty')}}">Faculty</a></li>
+                        <li><a href="{{route('workshop-seminars')}}">Workshop & Seminars</a></li>
+                        <li><a href="{{route('publications')}}">Publications</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a href="program"><span>PROGRAMS</span> <img src="{{ asset('/assets/img/down-arow.png') }}" alt="" style="margin-bottom: 2px;height:20px"></a>
@@ -41,14 +41,12 @@
                 </li>
                 <li class="dropdown"><a href="#"><span>ADMISSIONS</span><img src="{{ asset('/assets/img/down-arow.png') }}" alt="" style="margin-bottom: 2px;height:20px"></a>
                     <ul>
-                        <li><a href="admission-process">Admission Process</a></li>
-                        <li><a href="important-dates">Important Dates</a></li>
-                        <!-- <li><a href="#">Brochure</a></li> -->
-                        <li><a href="program-fee-structure">Fee Structure</a></li>
-                        <li><a href="international-admission">International Admissions</a></li>
-                        <li><a href="scholarships">Scholarships</a></li>
-                        <li><a href="admission-help-desk">Admission Help Desk</a></li>
-                        <li><a href="faq">FAQ</a></li>
+                        <li><a href="{{route('admission-process')}}">Admission Process</a></li>
+                        <li><a href="{{route('program-fee-structure')}}">Fee Structure</a></li>
+                        <li><a href="https://international.diu.ac" target="_blank">International Admissions</a></li>
+                        <li><a href="{{route('scholarships')}}">Scholarships</a></li>
+                        <li><a href="{{route('admission-help-desk')}}">Admission Help Desk</a></li>
+                        {{-- <li><a href="faq">FAQ</a></li> --}}
 
                     </ul>
                 </li>
@@ -62,9 +60,9 @@
                         <li><a href="newsletter">Monthly NewsLetter</a></li>
                         <li><a href="https://gbs.klh.edu.in/assets/pdfs/Code-of-Conduct.pdf" target="_blank">Code
                                 of Conduct</a></li>
-                        <li><a href="library">Library</a></li>
-                        <li><a href="hobby-club">Hobby clubs</a></li>
-                        <li><a href="entrepreneurship-cell">Entrepreneurship Cell</a></li>
+                        <li><a href="http://koha.diu.ac.bd" target="_blank">Library</a></li>
+                        <li><a href="hobby-club">Clubs</a></li>
+                        <li><a href="https://jobs.diu.ac/" target="_blank">Career</a></li>
                         <li><a href="sports">Sports</a></li>
                         <li><a href="arka">Arka Fest</a></li>
 
