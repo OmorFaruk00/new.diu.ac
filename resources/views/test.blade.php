@@ -1,47 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Bootstrap-select CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta2/dist/css/bootstrap-select.min.css" rel="stylesheet" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-9e1ZvQdB5ZVzNsQPHOKcRmHbdz5c1gL7aCnMNHnfTwNN0DE8ZwgnXymfpwE1emItn9eJ+tWW8xYPpd2BjZJ3NA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Your custom CSS -->
+    <style>
+        .testimonial .testimonial-content:before {
+            content: "\f10d"; /* Font Awesome icon code */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            top: -30px;
+            left: -15px;
+            font-size: 60px;
+            color: #5c9920;
+            z-index: -1;
+        }
+    </style>
 </head>
-
 <body>
-    <header>
-        <!-- place navbar here -->
-    </header>
-    <select class="selectpicker" data-live-search="true">
-        <option>Option 1</option>
-        <option>Option 2</option>
-        <option>Option 3</option>
-        <option>test</option>
-        <!-- Add more options here -->
-    </select>
-
-    <main></main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Bootstrap-select JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta2/dist/js/bootstrap-select.min.js"></script>
-
-    <!-- Initialize Bootstrap-select -->
-    <script>
-        $(document).ready(function () {
-            $('.selectpicker').selectpicker();
-        });
-    </script>
+    <div class="testimonial" >
+        <div class="testimonial-content">Content</div>
+    </div>
 </body>
 </html>

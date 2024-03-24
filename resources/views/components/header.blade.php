@@ -1,7 +1,7 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-        <a href="{{route('home')}}" class="logo"><img src="assets/img/logo.png" alt="DIU Logo"
+        <a href="{{route('home')}}" class="logo"><img src="{{asset('assets/images/logo.png')}}" alt="DIU Logo"
                 class="img-fluid"></a>
         <!-- Uncomment below if you prefer to use text as a logo -->
         <!-- <h1 class="logo"><a href="index.html">Butterfly</a></h1> -->
@@ -30,19 +30,24 @@
                     </ul>
                 </li>
                 <li class="dropdown"><a href="program"><span>PROGRAMS</span> <img src="{{ asset('/assets/img/down-arow.png') }}" alt="" style="margin-bottom: 2px;height:20px"></a>
-                    <ul>
+                   
+                        <x-department.submenu /> 
+
+                   
+                    
+                    {{-- <ul>
                         <li><a href="programs/bba">BBA</a></li>
                         <li><a href="programs/bba-it">BBA - IT</a></li>
                         <li><a href="programs/bba-acca">BBA - ACCA</a></li>
                         <li><a href="programs/mba-dual-specialization">MBA Multi Specialization
                                 <!--(DS, Fintech, Entrepreneurship and venture development)--></a></li>
                         <li><a href="programs/bsc-animation-gaming">B. Sc Animation & Gaming</a></li>
-                    </ul>
+                    </ul> --}}
                 </li>
                 <li class="dropdown"><a href="#"><span>ADMISSIONS</span><img src="{{ asset('/assets/img/down-arow.png') }}" alt="" style="margin-bottom: 2px;height:20px"></a>
                     <ul>
                         <li><a href="{{route('admission-process')}}">Admission Process</a></li>
-                        <li><a href="{{route('program-fee-structure')}}">Fee Structure</a></li>
+                         <li><a href="{{route('program-fee-structure')}}">Fee Structure</a></li>
                         <li><a href="https://international.diu.ac" target="_blank">International Admissions</a></li>
                         <li><a href="{{route('scholarships')}}">Scholarships</a></li>
                         <li><a href="{{route('admission-help-desk')}}">Admission Help Desk</a></li>
@@ -131,4 +136,5 @@
             'buttonTextColor': '#FFF',
         });
     </script>
+
 </header>

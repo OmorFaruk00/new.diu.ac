@@ -130,4 +130,31 @@ trait ApiTrait
         }
         return response()->json(NULL, 404);
     }
+    public function departmentBasicInfo($slug)
+    {
+        if (Cache::has('basic_'.$slug)) {
+            return Cache::get('basic_'.$slug);
+        }
+
+        $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/department-basic-info/'.$slug, false, self::ssl()));
+        if (!empty($result)) {
+            Cache::put('basic_'.$slug, $result, 1440); 
+            return $result;
+        }
+        return response()->json(NULL, 404);
+    }
+
+    public function departmentObjective($slug)
+    {
+        if (Cache::has('objective_'.$slug)) {
+            return Cache::get('objective_'.$slug);
+        }
+
+        $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/department-objectives/'.$slug, false, self::ssl()));
+        if (!empty($result)) {
+            Cache::put('objective_'.$slug, $result, 1440); 
+            return $result;
+        }
+        return response()->json(NULL, 404);
+    }
 }

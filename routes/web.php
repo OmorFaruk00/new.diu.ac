@@ -29,3 +29,4 @@ Route::view('/test','test');
  Route::get('/faculty',[DiuAcController::class,'faculty'])->name('faculty');
  Route::get('/workshop-seminars',[DiuAcController::class,'workshopSeminars'])->name('workshop-seminars');
  Route::get('/publications',[DiuAcController::class,'publications'])->name('publications');
+ Route::get('/programs/{slug}',[DiuAcController::class,'programs'])->name('programs');

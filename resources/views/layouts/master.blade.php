@@ -66,6 +66,9 @@
     <link href="{{ asset('assets/css/owl.theme.default.min.css') }}" rel="stylesheet">
     <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 
+    <script src="{{ asset('assets/vue/vue.min.js') }}"></script>
+    <script src="{{ asset('assets/vue/axios.min.js') }}"></script>
+
     {{-- <link rel="stylesheet" href="{{ asset('assets/vue/bootstrap-select/dist/css/bootstrap-select.min.css') }}"> --}}
 
     <!-- Template Main CSS File -->
@@ -89,8 +92,9 @@
     <!-- ======= Header ======= -->
    <x-header />
     <!-- End Header -->
-    <main>
-        @yield('content')
+    <main >
+            @yield('content')
+
     </main>
 
 

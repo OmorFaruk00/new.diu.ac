@@ -190,8 +190,8 @@
 @endsection
 @push('script')
 
-    <script src="{{ asset('assets/vue/vue.min.js') }}"></script>
-    <script src="{{ asset('assets/vue/axios.min.js') }}"></script>
+    {{-- <script src="{{ asset('assets/vue/vue.min.js') }}"></script>
+    <script src="{{ asset('assets/vue/axios.min.js') }}"></script> --}}
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -270,20 +270,7 @@
                             console.log(error.response)
 
                             this.errors = error.response.data;
-
-                            /*if (error.response.status == 422) {
-                                toastr.error("Validation error");
-                                return false;
-                            } else if (error.response.status == 400) {
-                                toastr.error(error.response.data.message);
-                                return false;
-                            } else if (error.response.status == 401) {
-                                toastr.error(error.response.data.message);
-                                return false;
-                            } else {
-                                toastr.error("There was something wrong");
-                                return false;
-                            }*/
+                    
 
                         }).finally((res) => {
                             this.loading = false;
@@ -306,19 +293,14 @@
 
                 },
 
-                updated() {
-                    $('.bSelect').selectpicker('refresh');
-                },
+             
 
                 created() {
                     this.fetchProgramInfo();
                 }
             });
 
-            $('.bSelect').selectpicker({
-                liveSearch: true,
-                size: 5
-            });
+          
 
         });
     </script>

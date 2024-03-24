@@ -57,4 +57,10 @@ class DiuAcController extends Controller
         $publications = $this->publication();
         return view('academics.publications',compact('publications'));
     }
+    public function programs($slug){
+        $data['basic'] = $this->departmentBasicInfo($slug);
+        $data['objective'] = $this->departmentObjective($slug);
+        $data['slug'] =$slug ?? null;
+        return view('programs.details',$data );
+    }
 }
