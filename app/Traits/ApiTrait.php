@@ -157,4 +157,56 @@ trait ApiTrait
         }
         return response()->json(NULL, 404);
     }
+    public function departmentFacility($slug)
+    {
+        if (Cache::has('facility_'.$slug)) {
+            return Cache::get('facility_'.$slug);
+        }
+
+        $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/department-facilities/'.$slug, false, self::ssl()));
+        if (!empty($result)) {
+            Cache::put('facility_'.$slug, $result, 1440); 
+            return $result;
+        }
+        return response()->json(NULL, 404);
+    }
+    public function departmentGallery($slug)
+    {
+        if (Cache::has('gallery_'.$slug)) {
+            return Cache::get('gallery_'.$slug);
+        }
+
+        $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/department-gallery/'.$slug, false, self::ssl()));
+        if (!empty($result)) {
+            Cache::put('gallery_'.$slug, $result, 1440); 
+            return $result;
+        }
+        return response()->json(NULL, 404);
+    }
+    public function departmentSyllabus($slug)
+    {
+        if (Cache::has('syllabus_'.$slug)) {
+            return Cache::get('syllabus_'.$slug);
+        }
+
+        $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/department-syllabus/'.$slug, false, self::ssl()));
+        if (!empty($result)) {
+            Cache::put('syllabus_'.$slug, $result, 1440); 
+            return $result;
+        }
+        return response()->json(NULL, 404);
+    }
+    public function departmentFacultyMember($slug)
+    {
+        if (Cache::has('facultyMember_'.$slug)) {
+            return Cache::get('facultyMember_'.$slug);
+        }
+
+        $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/department-faculty-member/'.$slug, false, self::ssl()));
+        if (!empty($result)) {
+            Cache::put('facultyMember_'.$slug, $result, 1440); 
+            return $result;
+        }
+        return response()->json(NULL, 404);
+    }
 }

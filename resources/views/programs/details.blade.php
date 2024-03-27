@@ -28,5 +28,26 @@
             <x-department.objective :objective="$objective" />
         @endif
 
+        <!--  Department Facility-->
+        @if ($facility)
+            <x-department.facility :facility="$facility" />
+        @endif
+
+        <!--  Department gallery-->
+        @if ($gallery)
+            <x-department.gallery :gallery="$gallery" />
+        @endif
+
+        <!--  Department syllabus-->
+        @if ($syllabus)
+            <x-department.syllabus :syllabus="$syllabus" />
+        @endif
+
+        <!--  Department faculty member-->
+        @if ($facultyMember)
+            <x-department.faculty-member :members="$facultyMember" />
+        @endif
+
+
     </main>
 @endsection

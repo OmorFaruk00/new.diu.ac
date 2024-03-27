@@ -60,7 +60,12 @@ class DiuAcController extends Controller
     public function programs($slug){
         $data['basic'] = $this->departmentBasicInfo($slug);
         $data['objective'] = $this->departmentObjective($slug);
+        $data['facility'] = $this->departmentFacility($slug);
+        $data['gallery'] = $this->departmentGallery($slug);
+        $data['syllabus'] = $this->departmentSyllabus($slug);
+        $data['facultyMember'] = $this->departmentFacultyMember($slug);
         $data['slug'] =$slug ?? null;
+        // return $data;
         return view('programs.details',$data );
     }
 }
