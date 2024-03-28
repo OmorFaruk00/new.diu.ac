@@ -31,18 +31,9 @@
                 </li>
                 <li class="dropdown"><a href="program"><span>PROGRAMS</span> <img src="{{ asset('/assets/img/down-arow.png') }}" alt="" style="margin-bottom: 2px;height:20px"></a>
                    
-                        <x-department.submenu /> 
-
-                   
+                        <x-department.submenu />                    
                     
-                    {{-- <ul>
-                        <li><a href="programs/bba">BBA</a></li>
-                        <li><a href="programs/bba-it">BBA - IT</a></li>
-                        <li><a href="programs/bba-acca">BBA - ACCA</a></li>
-                        <li><a href="programs/mba-dual-specialization">MBA Multi Specialization
-                                <!--(DS, Fintech, Entrepreneurship and venture development)--></a></li>
-                        <li><a href="programs/bsc-animation-gaming">B. Sc Animation & Gaming</a></li>
-                    </ul> --}}
+                  
                 </li>
                 <li class="dropdown"><a href="#"><span>ADMISSIONS</span><img src="{{ asset('/assets/img/down-arow.png') }}" alt="" style="margin-bottom: 2px;height:20px"></a>
                     <ul>
@@ -57,19 +48,19 @@
                 </li>
                 <li class="dropdown"><a href="#"><span>LIFE @ GBS</span> <img src="{{ asset('/assets/img/down-arow.png') }}" alt="" style="margin-bottom: 2px;height:20px"></a>
                     <ul>
-                        <li><a href="campus-life">Campus Life</a></li>
-                        <li><a href="student-faculty-achievements">Student & Faculty Achievements</a></li>
-                        <li><a href="student-stories">Student & Alumni Stories</a></li>
-                        <li><a href="centre-of-excellence">Centre of Excellence</a></li>
-                        <li><a href="business-analytical-lab">Business Analytical Lab</a></li>
-                        <li><a href="newsletter">Monthly NewsLetter</a></li>
-                        <li><a href="https://gbs.klh.edu.in/assets/pdfs/Code-of-Conduct.pdf" target="_blank">Code
+                        <li><a href="{{route('campus-life')}}">Campus Life</a></li>
+                        <li><a href="{{route('student-faculty-achievements')}}">Student & Faculty Achievements</a></li>
+                        <li><a href="{{route('student-stories')}}">Student & Alumni Stories</a></li>
+                        <li><a href="{{route('centre-of-excellence')}}">Centre of Excellence</a></li>
+                        <li><a href="{{route('business-analytical-lab')}}">Business Analytical Lab</a></li>
+                        <li><a href="{{route('newsletter')}}">Monthly NewsLetter</a></li>
+                        <li><a href="{{asset('assets/pdfs/Code-of-Conduct.pdf')}}" target="_blank">Code
                                 of Conduct</a></li>
                         <li><a href="http://koha.diu.ac.bd" target="_blank">Library</a></li>
-                        <li><a href="hobby-club">Clubs</a></li>
+                        <li><a href="{{route('hobby-club')}}">Clubs</a></li>
                         <li><a href="https://jobs.diu.ac/" target="_blank">Career</a></li>
-                        <li><a href="sports">Sports</a></li>
-                        <li><a href="arka">Arka Fest</a></li>
+                        <li><a href="{{route('sports')}}">Sports</a></li>
+                        <li><a href="{{route('arka')}}">Arka Fest</a></li>
 
                     </ul>
                 </li>

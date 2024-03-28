@@ -14,6 +14,18 @@ class DiuAcController extends Controller
         $partners =  $this->partnersData();
         return view('home.index', compact('sliders','programs','partners'));
     }
+    public function semesterAbroadProgram(){
+        return view('home.semester-abroad-program');
+    }
+    public function internshipAbroadProgram(){
+        return view('home.internship-abroad-program');
+    }
+    public function studyTour(){
+        return view('home.study-tour');
+    }
+    public function facultyExchangeProgram(){
+        return view('home.faculty-exchange-program');
+    }
     public function aboutUs(){
         return view('about.index');
     }
@@ -68,4 +80,72 @@ class DiuAcController extends Controller
         // return $data;
         return view('programs.details',$data );
     }
+
+
+    public function campusLife(){
+        return view('life.campus-life');
+    }
+    public function studentFacultyAchievements(){
+        return view('life.student-faculty-achievements');
+    }
+    public function studentStories(){
+        return view('life.student-stories');
+    }
+    public function centreOfExcellence(){
+        return view('life.centre-of-excellence');
+    }
+    public function businessAnalyticalLab(){
+        return view('life.business-analytical-lab');
+    }
+    public function newsletter(){
+        return view('life.newsletter');
+    }
+    public function hobbyClub(){
+        return view('life.hobby-club');
+    }
+    public function entrepreneurshipCell(){
+        return view('life.entrepreneurship-cell');
+    }
+    public function sports(){
+        return view('life.sports');
+    }
+    public function arka(){
+        return view('life.arka');
+    }
+
+    public function placementProcess(){
+        return view('placement.placement-process');
+    }
+    public function recruiters(){
+        return view('placement.recruiters');
+    }
+    public function prePlacementTraining(){
+        return view('placement.pre-placement-training');
+    }
+    public function studentPlacements(){
+        return view('placement.student-placements');
+    }
+    public function internship(){
+        return view('placement.internship');
+    }
+
+    public function mou(){
+        return view('global.mou');
+    }
+    public function internationalConference(){
+        return view('global.international-conference');
+    }
+    // public function mou(){
+    //     return view('global.mou');
+    // }
+    // public function mou(){
+    //     return view('global.mou');
+    // }
+    // public function mou(){
+    //     return view('global.mou');
+    // }
+    // public function mou(){
+    //     return view('global.mou');
+    // }
+   
 }

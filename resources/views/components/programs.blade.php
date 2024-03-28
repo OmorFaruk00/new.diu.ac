@@ -11,7 +11,7 @@
         
         <div class="col-md-4">
 
-          <a href="programs/bba">
+          <a href="programs/{{$item->slug}}" target="_blank" >
             <div class="box">
               {{$item->title}}
             </div>

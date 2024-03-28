@@ -209,19 +209,19 @@
               in various countries and provide you with opportunities like</p>
           </div>
           <div class="colored-text colored-text-01">
-            <a href="/semester-abroad-program" style="color: #fff !important;">
+            <a href="{{route('semester-abroad-program')}}" target="_blank" style="color: #fff !important;">
             Semester Abroad Program (SAP)</a>
           </div>
           <div class="colored-text colored-text-02">
-            <a href="/internship-abroad-program" style="color: #fff !important;">
+            <a href="{{route('internship-abroad-program')}}" target="_blank" style="color: #fff !important;">
             Internship Abroad Program (IAP)</a>
           </div>
           <div class="colored-text colored-text-03">
-            <a href="/study-tour" style="color: #fff !important;">
+            <a href="{{route('study-tour')}}" target="_blank" style="color: #fff !important;">
             Study Tour (ST)</a>
           </div>
           <div class="colored-text colored-text-04">
-            <a href="/faculty-exchange-program" style="color: #fff !important;">
+            <a href="{{route('faculty-exchange-program')}}" target="_blank" style="color: #fff !important;">
             Faculty Exchange Program (FEP)</a>
           </div>
           <div class="partner-univ">

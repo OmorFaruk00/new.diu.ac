@@ -6,29 +6,30 @@
 
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>CONTACT US</h4>
-                    <p>KLH Global Business School
-                        <br>Plot No: 52 & 53, Jubilee Gardens Road No. 2
-                        <br>Near Harsha Toyota Show Room, Kothaguda, Kondapur,
-                        <br>Hyderabad Telangana - 500084<br>
-                        <strong>Phone:</strong>+91–040-3512 6800<br>
-                        <strong>Email:</strong> klhgbs@klh.edu.in<br>
+                    <a href="{{route('home')}}" class="logo"><img src="{{asset('assets/images/diu_white.png')}}" class="mb-3" alt="DIU Logo"
+                        class="img-fluid"></a>
+                    <p>Dhaka International University, rated among the top private universities of Bangladesh,<br><br>
+
+                        is an institution that promotes eastern culture and values, and meaningfully blends eastern and western thoughts and innovation.
+                        <br><br>
+                        <strong>Phone:</strong>                      
+                        +88 09677777348<br>
+                        <strong>Email:</strong>                        
+                        admission@diu.net.bd<br>
                     </p>
                 </div>
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>USEFUL LINKS</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="admission-process">Admission Process</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="faculty">GBS Faculty</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="blog">GBS Blog</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="important-dates">Important Dates</a></li>
-                        <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Download Brochure</a></li> -->
-                        <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Placement</a></li> -->
-                        <li><i class="bx bx-chevron-right"></i> <a href="semester-abroad-program">Semester Abroad Programs</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="faculty-exchange-program">Faculty Exchange</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="privacy-policy">Privacy Policy</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="http://www.ugc-universities.gov.bd/university-detail/73" target="_blank">UGC Website</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="https://jobs.diu.ac/" target="_blank">Career</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="https://students.diu.ac/" target="_blank">Students Portal</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="https://admission.diu.ac/" target="_blank">Admission Website</a></li>                     
+                        <li><i class="bx bx-chevron-right"></i> <a href="https://international.diu.ac/" target="_blank">International Website</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="https://blog.diu.ac/">Blog</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="https://ibank.eximbankbd.com/eximIBank/eximIBank/login/loginForm?error=1" target="_blank">Online Payment</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="women-protection-cell">Women Protection Cell</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="women-forum">Women's Forum</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="careers">Careers</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="https://hotjobs.com.bd/" >Find Jobs</a></li>
                     </ul>
                 </div>
 
@@ -36,7 +37,6 @@
                     <h4>ASPIRING STUDENTS</h4>
                     <ul>
                         <li><i class="bx bx-chevron-right"></i> <a href="index#hero">Apply Now</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="program">Programs Made For You</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="student-faculty-achievements">Student & Faculty Achievements</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="student-placements">Student Placements</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="student-facilities">Student Facilities</a></li>
@@ -52,11 +52,11 @@
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>FOLLOW US</h4>
                     <div class="social-links mt-3">
-                        <a href="https://twitter.com/klhgbs" class="twitter"><i class="bx bxl-twitter"></i></a>
-                        <a href="https://www.facebook.com/KLHGlobalBusinessSchool" class="facebook"><i class="bx bxl-facebook"></i></a>
-                        <a href="https://www.instagram.com/klhgbs/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                        <a href="https://www.linkedin.com/company/klh-global-business-school/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                        <a href="https://www.youtube.com/@klhglobalbusinessschool" class="youtube"><i class="bx bxl-youtube"></i></a>
+                        <a href="https://twitter.com/diubd" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="https://www.facebook.com/diu.net.bd" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="https://www.instagram.com/diu.net.bd/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://www.linkedin.com/school/dhaka-international-university" target="_blank"class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        <a href="https://www.youtube.com/diudhaka" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
 
                     </div>
                 </div>

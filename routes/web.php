@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/test','test');
  Route::get('/',[DiuAcController::class,'index'])->name('home');
+ Route::get('/semester-abroad-program',[DiuAcController::class,'semesterAbroadProgram'])->name('semester-abroad-program');
+ Route::get('/internship-abroad-program',[DiuAcController::class,'internshipAbroadProgram'])->name('internship-abroad-program');
+ Route::get('/study-tour',[DiuAcController::class,'studyTour'])->name('study-tour');
+ Route::get('/faculty-exchange-program',[DiuAcController::class,'facultyExchangeProgram'])->name('faculty-exchange-program');
  Route::get('/about-us',[DiuAcController::class,'aboutUs'])->name('about-us');
  Route::get('/why-diu',[DiuAcController::class,'whyDiu'])->name('why-diu');
  Route::get('/vision-mission',[DiuAcController::class,'visionMission'])->name('vision-mission');
@@ -30,3 +34,22 @@ Route::view('/test','test');
  Route::get('/workshop-seminars',[DiuAcController::class,'workshopSeminars'])->name('workshop-seminars');
  Route::get('/publications',[DiuAcController::class,'publications'])->name('publications');
  Route::get('/programs/{slug}',[DiuAcController::class,'programs'])->name('programs');
+ Route::get('/campus-life',[DiuAcController::class,'campusLife'])->name('campus-life');
+ Route::get('/student-faculty-achievements',[DiuAcController::class,'studentFacultyAchievements'])->name('student-faculty-achievements');
+ Route::get('/student-stories',[DiuAcController::class,'studentStories'])->name('student-stories');
+ Route::get('/centre-of-excellence',[DiuAcController::class,'centreOfExcellence'])->name('centre-of-excellence');
+ Route::get('/business-analytical-lab',[DiuAcController::class,'businessAnalyticalLab'])->name('business-analytical-lab');
+ Route::get('/newsletter',[DiuAcController::class,'newsletter'])->name('newsletter');
+ Route::get('/hobby-club',[DiuAcController::class,'hobbyClub'])->name('hobby-club');
+ Route::get('/entrepreneurship-cell',[DiuAcController::class,'entrepreneurshipCell'])->name('entrepreneurship-cell');
+ Route::get('/sports',[DiuAcController::class,'sports'])->name('sports');
+ Route::get('/arka',[DiuAcController::class,'arka'])->name('arka');
+
+ Route::get('/placement-process',[DiuAcController::class,'placementProcess'])->name('placement-process');
+ Route::get('/recruiters',[DiuAcController::class,'recruiters'])->name('recruiters');
+ Route::get('/pre-placement-training',[DiuAcController::class,'prePlacementTraining'])->name('pre-placement-training');
+ Route::get('/student-placements',[DiuAcController::class,'studentPlacements'])->name('student-placements');
+ Route::get('/internship',[DiuAcController::class,'internship'])->name('internship');
+
+ Route::get('/mou',[DiuAcController::class,'mou'])->name('mou');
+ Route::get('/international-conference',[DiuAcController::class,'internationalConference'])->name('international-conference');

@@ -6,7 +6,7 @@
         <div class="d-flex justify-content-between align-items-center">
             <h1 style="text-transform:uppercase;">Why Choose GBS</h1>
             <ol>
-                <li><a href="https://gbs.klh.edu.in/">Home</a></li>
+                <li><a href="{{route('home')}}">Home</a></li>
                 <li>Why Choose GBS</li>
             </ol>
         </div>

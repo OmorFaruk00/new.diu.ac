@@ -33,7 +33,7 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-        <a href="https://gbs.klh.edu.in/" class="logo"><img src="assets/img/logo.png" alt="KLH GBS Logo" class="img-fluid"></a>
+        <a href="{{route('home')}}" class="logo"><img src="assets/img/logo.png" alt="KLH GBS Logo" class="img-fluid"></a>
         <!-- Uncomment below if you prefer to use text as a logo -->
         <!-- <h1 class="logo"><a href="index.html">Butterfly</a></h1> -->
 
@@ -93,7 +93,7 @@
                         <li><a href="centre-of-excellence">Centre of Excellence</a></li>
                         <li><a href="business-analytical-lab">Business Analytical Lab</a></li>
                         <li><a href="newsletter">Monthly NewsLetter</a></li>
-                        <li><a href="https://gbs.klh.edu.in/assets/pdfs/Code-of-Conduct.pdf" target="_blank">Code of Conduct</a></li>
+                        <li><a href="{{route('home')}}assets/pdfs/Code-of-Conduct.pdf" target="_blank">Code of Conduct</a></li>
                         <li><a href="library">Library</a></li>
                         <li><a href="hobby-club">Hobby clubs</a></li>
                         <li><a href="entrepreneurship-cell">Entrepreneurship Cell</a></li>
@@ -161,7 +161,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h1>404</h1>
           <ol>
-            <li><a href="https://gbs.klh.edu.in/">Home</a></li>
+            <li><a href="{{route('home')}}">Home</a></li>
             <li>404</li>
           </ol>
         </div>
