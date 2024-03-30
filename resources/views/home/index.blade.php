@@ -16,8 +16,13 @@
           <div class="formdiv">
             <div id="form-container">
               <h3 class="underline2 text-center">Admissions Open 2024-25</h3>
-              <!-- <p class="text-center mb-1"><b></b></p> -->
-              <div class="npf_wgts" data-height="470px" data-w="30a8c66c6ffa07398a043dd983fbf980"></div>
+              {{-- @if($programs)                 --}}
+              <x-admission :programs="$programs" />
+              {{-- <x-admission :programs="$programs" /> --}}
+              {{-- @endif --}}
+              {{-- <div class="npf_wgts" data-height="470px" data-w="30a8c66c6ffa07398a043dd983fbf980">
+                
+              </div> --}}
             </div>
           </div>
         </div>
@@ -61,7 +66,7 @@
 
         <div id="form-container">
           <h3 class="underline2 text-center">Admissions Open - 2024</h3>
-          <div class="npf_wgts" data-height="470px" data-w="30a8c66c6ffa07398a043dd983fbf980"></div>
+          <x-admission />
         </div>
 
       </div>
@@ -183,7 +188,7 @@
   </section>
   <!-- Start Programs -->
   @if($programs)    
-  <x-programs :programs="$programs" ></x-programs>
+  <x-programs :programs="$programs" />
   @endif
   <!-- End Programs -->
   <section class="applynow">

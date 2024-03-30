@@ -52,6 +52,7 @@ class DiuAcController extends Controller
     public function internationalAdmission(){
         return view('admission.international-admission');
     }
+    
     public function scholarships(){
         return view('admission.scholarship');
     }
@@ -65,6 +66,10 @@ class DiuAcController extends Controller
     public function workshopSeminars(){
         return view('academics.workshop-seminar');
     }
+    public function convocation(){
+         $convocations = $this->convocationData();
+        return view('academics.convocation',compact('convocations'));
+    }
     public function publications(){
         $publications = $this->publication();
         return view('academics.publications',compact('publications'));
@@ -77,7 +82,6 @@ class DiuAcController extends Controller
         $data['syllabus'] = $this->departmentSyllabus($slug);
         $data['facultyMember'] = $this->departmentFacultyMember($slug);
         $data['slug'] =$slug ?? null;
-        // return $data;
         return view('programs.details',$data );
     }
 
@@ -88,9 +92,16 @@ class DiuAcController extends Controller
     public function studentFacultyAchievements(){
         return view('life.student-faculty-achievements');
     }
-    public function studentStories(){
-        return view('life.student-stories');
+    public function alumni(){
+        return view('life.alumni');
     }
+    public function institute(){
+        return view('life.institute');
+    }
+    public function cell(){
+        return view('life.cell');
+    }
+
     public function centreOfExcellence(){
         return view('life.centre-of-excellence');
     }

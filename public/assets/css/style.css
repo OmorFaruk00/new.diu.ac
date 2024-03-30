@@ -55,6 +55,25 @@ h6 {
 }
 
 /* Header */
+.heading{
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block; 
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+
+.heading:after {
+  content: "";
+  position: absolute;
+  left: 50%; 
+  bottom: -10px;
+  height: 3px;
+  width: 70px;
+  background: #1474B5;
+  transform: translateX(-50%); 
+}
 #header {
   background: #fff;
   transition: all 0.5s;
@@ -1544,5 +1563,7 @@ background-color: #d9d9d9;
 
 
       }
+
+      
         
   

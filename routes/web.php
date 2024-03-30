@@ -30,17 +30,23 @@ Route::view('/test','test');
  Route::get('/international-admission',[DiuAcController::class,'internationalAdmission'])->name('international-admission');
  Route::get('/scholarships',[DiuAcController::class,'scholarships'])->name('scholarships');
  Route::get('/admission-help-desk',[DiuAcController::class,'admissionHelpDesk'])->name('admission-help-desk');
+
  Route::get('/faculty',[DiuAcController::class,'faculty'])->name('faculty');
  Route::get('/workshop-seminars',[DiuAcController::class,'workshopSeminars'])->name('workshop-seminars');
+ Route::get('/convocation',[DiuAcController::class,'convocation'])->name('convocation');
  Route::get('/publications',[DiuAcController::class,'publications'])->name('publications');
+
+
  Route::get('/programs/{slug}',[DiuAcController::class,'programs'])->name('programs');
  Route::get('/campus-life',[DiuAcController::class,'campusLife'])->name('campus-life');
  Route::get('/student-faculty-achievements',[DiuAcController::class,'studentFacultyAchievements'])->name('student-faculty-achievements');
- Route::get('/student-stories',[DiuAcController::class,'studentStories'])->name('student-stories');
+ Route::get('/alumni',[DiuAcController::class,'alumni'])->name('alumni');
+ Route::get('/institute',[DiuAcController::class,'institute'])->name('institute');
+ Route::get('/cell',[DiuAcController::class,'cell'])->name('cell');
  Route::get('/centre-of-excellence',[DiuAcController::class,'centreOfExcellence'])->name('centre-of-excellence');
  Route::get('/business-analytical-lab',[DiuAcController::class,'businessAnalyticalLab'])->name('business-analytical-lab');
  Route::get('/newsletter',[DiuAcController::class,'newsletter'])->name('newsletter');
- Route::get('/hobby-club',[DiuAcController::class,'hobbyClub'])->name('hobby-club');
+ Route::get('/club',[DiuAcController::class,'hobbyClub'])->name('club');
  Route::get('/entrepreneurship-cell',[DiuAcController::class,'entrepreneurshipCell'])->name('entrepreneurship-cell');
  Route::get('/sports',[DiuAcController::class,'sports'])->name('sports');
  Route::get('/arka',[DiuAcController::class,'arka'])->name('arka');

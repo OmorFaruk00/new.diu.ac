@@ -52,6 +52,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,,600,700,700i|Lato:300,300i,400,400i,700,700i"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- Vendor CSS Files -->
     <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -113,13 +114,13 @@
 
     <!-- Template Main JS File -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         var s = document.createElement("script");
         s.type = "text/javascript";
         s.async = true;
         s.src = "https://widgets.nopaperforms.com/emwgts.js";
         document.body.appendChild(s);
-    </script>
+    </script> --}}
     
     @stack('script')
 
