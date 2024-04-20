@@ -60,6 +60,7 @@
     <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
 
     <script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
 
@@ -68,7 +69,9 @@
     <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 
     <script src="{{ asset('assets/vue/vue.min.js') }}"></script>
-    <script src="{{ asset('assets/vue/axios.min.js') }}"></script>
+    {{-- <script src="{{ asset('assets/vue/axios.min.js') }}"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
 
     {{-- <link rel="stylesheet" href="{{ asset('assets/vue/bootstrap-select/dist/css/bootstrap-select.min.css') }}"> --}}
 

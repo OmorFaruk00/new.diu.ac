@@ -146,7 +146,7 @@
                     <div class="timeline">
                         <a href="#" class="timeline-content">
                             <span class="timeline-count"><img src="{{asset('assets/images/intro.png')}}" alt="" style="height: 70px"></span>
-                            <h3 class="title">INTRODUCTION</h3>
+                            <h3 class="title mb-3">INTRODUCTION</h3>
                             <div class="description">
                                 {!! json_decode(json_encode($basic->data->introduction)) !!}
                             </div>
@@ -154,10 +154,10 @@
                            
                         </a>
                     </div>
-                    <div class="timeline">
+                    <div class="timeline my-4">
                         <a href="#" class="timeline-content">
                             <span class="timeline-count"><img src="{{asset('assets/images/mission.png')}}" alt="" style="height:90px;padding-bottom:10px"></span>
-                            <h3 class="title">MISSION</h3>
+                            <h3 class="title mb-3">MISSION</h3>
                             <div class="description">
                                 {!! json_decode(json_encode($basic->data->mission)) !!}
                             </div>
@@ -167,7 +167,7 @@
                     <div class="timeline">
                         <a href="#" class="timeline-content">
                             <span class="timeline-count"><img src="{{asset('assets/images/vision.png')}}" alt="" style="height:100px;padding-bottom:10px"></span>
-                            <h3 class="title">VISION
+                            <h3 class="title mb-3">VISION
                             </h3>
                             <div class="description">                                  
                                 {!! json_decode(json_encode($basic->data->vission)) !!}

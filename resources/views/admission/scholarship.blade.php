@@ -136,7 +136,7 @@
 
                                                 <p>Semester Fee- BDT. <span
                                                         v-html="semesterFeeGeneral(calculateData?.totalCostAfterScholarship,calculateData?.program?.admission_fee,calculateData?.program?.total_semester)"></span>/-
-                                                </p> <br><option selected>Open this select menu</option>
+                                                </p> <br>
                                                 <p>Total Semester : <span
                                                         v-html="calculateData?.program?.total_semester"></span></p> <br>
 
@@ -228,12 +228,7 @@
                             this.programs = response.data;
 
                         }).catch((error) => {
-
                             console.log(error.response)
-
-                            // alert('Program Not found');
-
-                            // toastr.error("Program Not found");
 
                         });
                     },

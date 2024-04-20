@@ -14,34 +14,66 @@
             </div>
         </section>
         <!-- End Breadcrumbs -->
-        
-        <div class="container-xxl py-5">
+
+        <div class="container-xxl py-5" id="faculty">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h2 class="heading">Our Expert Faculty</h2>
                 </div>
-                <div class="row g-4 justify-content-center align-self-center">
-                    @if ($keyResourcePersons)
-                        @foreach ($keyResourcePersons->vital_persons as $persion)
-                            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="team-item bg-light">
-                                    <div class="overflow-hidden" style="height: 280px">
-                                        <img class="img-fluid" src="{{ $persion->image_url }}" alt="image"
-                                            style="height: 280px;width:100%" />
-                                    </div>
-                                    <div class="text-center p-4" style="height: 130px">
-                                        <h5 class="mb-0">{{ $persion->name }}</h5>
-                                        <small>{{ $persion->title }}</small><br />
-                                    </div>
-                                </div>
+                <div v-if="faculty" class="row g-4 justify-content-center align-self-center">
+                    <div v-for="item in faculty" :key="item.id" class="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s">
+                        <div class="team-item bg-light">
+                            <div class="overflow-hidden" style="height: 280px">
+                                <img class="img-fluid" :src="item.image_url" alt="image"
+                                    style="height: 280px;width:100%" />
                             </div>
-                        @endforeach
-                    @endif
-
-
+                            <div class="text-center p-4" style="height: 130px">
+                                <h5 class="mb-0" v-text="item.name"></h5>
+                                <small v-text="item.title"></small><br />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Team End -->
     </main>
 @endsection
+@push('script')
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var vue = new Vue({
+                el: '#faculty',
+                data: {
+                    config: {
+                        base_path: "{{ env('API_URL') }}",
+                    },
+
+                    faculty: [],
+                },
+
+                methods: {
+                    getData() {
+                        var vm = this;
+
+                        axios.get(`${vm.config.base_path}/public-diu-website/key-resource-persons`)
+                            .then((
+                                response) => {
+                                this.faculty = response.data.vital_persons
+                            }).catch((error) => {
+                                console.log(error.response);
+                            });
+                    }
+
+                },
+
+                created() {
+                    this.getData();
+                }
+            });
+
+
+
+        });
+    </script>
+@endpush

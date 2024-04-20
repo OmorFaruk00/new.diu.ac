@@ -29,12 +29,14 @@
                             style="margin-bottom: 2px;height:20px"></a>
                     <ul>
                         <li><a href="{{ route('faculty') }}">Faculty</a></li>
+                        <li><a href="{{ route('notice-board') }}">Notice Board</a></li>
                         <li><a href="{{ route('workshop-seminars') }}">Workshop & Seminars</a></li>
                         <li><a href="{{ route('convocation') }}">Convocation</a></li>
                         <li><a href="{{ route('publications') }}">Publications</a></li>
+                        <li><a href="{{ route('certificate-verification') }}">Certificate Verifications</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="program"><span>PROGRAMS</span> <img
+                <li class="dropdown"><a href="#"><span>PROGRAMS</span> <img
                             src="{{ asset('/assets/img/down-arow.png') }}" alt=""
                             style="margin-bottom: 2px;height:20px"></a>
 
@@ -101,6 +103,7 @@
                         <li><a href="study-tour">Study Tour</a></li>
                     </ul>
                 </li>
+                <li class="dropdown"><a href="{{ route('contact') }}"><span>CONTACT</span></a>
                 <!-- <li><a class="getstarted scrollto" href="index#hero">Apply Now</a></li> -->
                 <li>&nbsp</li>
                 <li>&nbsp</li>

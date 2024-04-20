@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Pagination\LengthAwarePaginator;
 use App\Traits\ApiTrait;
 
 class DiuAcController extends Controller
@@ -46,8 +47,7 @@ class DiuAcController extends Controller
         return view('admission.process');
     }
     public function programFeeStructure(){
-        $programsFee =  $this->programsFeeData();
-        return view('admission.fee-structure',compact('programsFee'));
+        return view('admission.fee-structure');
     }
     public function internationalAdmission(){
         return view('admission.international-admission');
@@ -60,8 +60,8 @@ class DiuAcController extends Controller
         return view('admission.admission-help-desk');
     }
     public function faculty(){
-          $keyResourcePersons = $this->keyResourcePersons();
-        return view('academics.faculty',compact('keyResourcePersons'));
+        //   $keyResourcePersons = $this->keyResourcePersons();
+        return view('academics.faculty');
     }
     public function workshopSeminars(){
         return view('academics.workshop-seminar');
@@ -146,17 +146,19 @@ class DiuAcController extends Controller
     public function internationalConference(){
         return view('global.international-conference');
     }
-    // public function mou(){
-    //     return view('global.mou');
-    // }
-    // public function mou(){
-    //     return view('global.mou');
-    // }
-    // public function mou(){
-    //     return view('global.mou');
-    // }
-    // public function mou(){
-    //     return view('global.mou');
-    // }
+    public function contact(){
+        return view('contact');
+    }
+    public function noticeBoard(){
+    
+        return view('academics.notice-board');
+    }
+    public function noticeDetails($slug){
+        // $notice = $this->getNoticeDetails($slug);
+        return view('academics.notice-details',compact('slug'));
+    }
+    public function certificateVerification(){
+        return view('academics.certificate-verification');
+    }
    
 }

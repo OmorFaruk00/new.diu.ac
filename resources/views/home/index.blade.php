@@ -1,5 +1,5 @@
  @extends('layouts.master')
- @section('content')
+ @section('content') 
   <div class="d-none d-md-block">
     <section id="hero" class="mt-5">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">    
@@ -133,59 +133,7 @@
     </section>
   </main>
 
-  <section id="whykl" class="pt-5">
-    <div class="container">
-      <div class="row g-0 align-items-end">
-        <div class="col-md-6">
-          <img src="assets/img/why.jpg" class="img-fluid" alt="Why KL?" style="vertical-align:bottom !important;" />
-        </div>
-        <div class="col-md-6">
-          <div class="carddeck">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="mycard1 mycard1-one">
-                  <h2>Eminent Faculty</h2>
-                  <p>Our faculty members are passionate to provide you with the highest quality education and in-demand skills to lead the business world.</p>
-                </div>
-
-              </div>
-              <div class="col-md-6">
-                <div class="mycard1 mycard1-two">
-                  <h2>Modern Curriculum</h2>
-                  <p>Our cutting-edge curriculum is designed to equip you with the skills and knowledge essential to succeed in your workplace.</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="mycard1 mycard1-three">
-                  <h2>Global Exposure</h2>
-                  <p>You will gain global exposure by attending global conferences, internships abroad, and engaging with industry leaders.</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="mycard1 mycard1-four">
-                  <h2>100% Placements</h2>
-                  <p>We are proud of placing 100% of the eligible students every year since 2006 in top-notch national and international companies.</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="mycard1 mycard1-five">
-                  <h2>Paid Internships</h2>
-                  <p>We offer stipend assisted internships to gain exposure to the corporate world and the ability to apply your newly acquired skills into practice.</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="mycard1 mycard1-six">
-                  <h2>Harvard Pedagogy</h2>
-                  <p>We encourage you to think critically and analytically about business problems by collaborating with teams to solve complex business problems.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
+ <x-why />
   <!-- Start Programs -->
   @if($programs)    
   <x-programs :programs="$programs" />
@@ -210,7 +158,7 @@
         <div class="col-md-8 mt-3">
           <div class="beyond-text">
             <h2>EDUCATION BEYOND BORDERS</h2>
-            <p>KLH Global Business School encourages global education through its international partnership with <span>83 leading universities</span>
+            <p>Dhaka International University encourages global education through its international partnership with <span> leading universities</span>
               in various countries and provide you with opportunities like</p>
           </div>
           <div class="colored-text colored-text-01">
@@ -257,7 +205,7 @@
     <div class="container">
       <div class="row g-0">
         <div class="col-md-6">
-          <img src="assets/img/Spark.jpg" alt="SPARK YOUR ENTREPRENEURIAL SPIRIT" class="img-fluid" />
+          <img src="assets/img/Spark.jpeg" alt="SPARK YOUR ENTREPRENEURIAL SPIRIT" class="img-fluid" />
         </div>
         <div class="col-md-6">
           <div class="spark-gradiant">

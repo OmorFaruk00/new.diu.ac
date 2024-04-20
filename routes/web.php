@@ -35,6 +35,8 @@ Route::view('/test','test');
  Route::get('/workshop-seminars',[DiuAcController::class,'workshopSeminars'])->name('workshop-seminars');
  Route::get('/convocation',[DiuAcController::class,'convocation'])->name('convocation');
  Route::get('/publications',[DiuAcController::class,'publications'])->name('publications');
+ Route::get('/notice-board',[DiuAcController::class,'noticeBoard'])->name('notice-board');
+ Route::get('/notice-details/{slug}',[DiuAcController::class,'noticeDetails'])->name('notice-details');
 
 
  Route::get('/programs/{slug}',[DiuAcController::class,'programs'])->name('programs');
@@ -59,3 +61,5 @@ Route::view('/test','test');
 
  Route::get('/mou',[DiuAcController::class,'mou'])->name('mou');
  Route::get('/international-conference',[DiuAcController::class,'internationalConference'])->name('international-conference');
+ Route::get('/contact',[DiuAcController::class,'contact'])->name('contact');
+ Route::get('/certificate-verification',[DiuAcController::class,'certificateVerification'])->name('certificate-verification');
