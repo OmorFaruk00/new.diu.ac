@@ -1,18 +1,18 @@
 <section id="section-6">
-    <div class="section-6-back">
+    <div class="section-6-back" id="campus-life">
         <div class="container">
 
             <div class="row">
                 <div class="col-12">
-                    <h2 class="my-5">
+                    <h4 class="my-4">
                         CAMPUS LIFE
-                    </h2>
+                    </h4>
                 </div>
-                <div class="col-12">
+                {{-- <div class="col-12">
                     <h4 class="my-2">
                         LEARN WITH LOVE. PLAY WITH PASSION
                     </h4>
-                </div>
+                </div> --}}
                 <div class="col-12">
                     <p class="my-3">
                         At DIU, campus life is vibrant and active.
@@ -21,7 +21,7 @@
                     </p>
                 </div>
             </div>
-            <div class="owl-carousel owl-theme" id="campuslife">
+            <div class="owl-carousel owl-theme pb-4" id="campuslife">
                 <div class="item">
                     <div class="section-6-card">
                         <img src="{{ asset('assets/img/campuslife/1.jpg') }}" alt="campus life" class="img-fluid" />

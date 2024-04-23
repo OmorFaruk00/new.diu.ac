@@ -1,273 +1,142 @@
-@extends('front.master')
+<!DOCTYPE html>
+<html lang="en">
 
-@push('style')
-    <!-- timeline css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('/') }}front/css/timeline.css">
-    <style>
-        .page-header {
-            background-image: url({{ url('front/images/bg/page-header-bg.jpg') }});
-            background-size: cover;
-            background-position: center;
-            margin: 0px;
-            padding: 0px;
-            border: none;
-        }
-
-        .section-notch:before {
-            content: "";
-            position: absolute;
-            background-repeat: repeat-x;
-            display: block;
-            top: 0;
-            width: 100%;
-            height: 7px;
-            z-index: 2;
-        }
-
-        .page-header .overlay {
-            padding: 25px 0px;
-            background-color: rgba(146, 176, 110, .8);
-            text-align: center;
-        }
-
-        .department-head-section {
-            background-image: url({{ url('front/images/bg/dot-grid.png') }});
-            background-attachment: fixed;
-            background-position: center top;
-        }
-
-        .back-image {
-            /*background-size: 100%;*/
-            background-attachment: fixed;
-            background-position: center top;
-        }
-    </style>
-@endpush
-
-@section('body')
-    <!-- Page Header Start here -->
-    <section class="page-header section-notch">
-        <div class="overlay">
-            <div class="container">
-                <div class="col-md-12 text-center">
-                    <h1 class="page-title">Certificate Verifications</h1>
-                    <ul>
-                        <li>
-                            <a class="active" href="{{ route('homePage') }}">Home</a> / <span
-                                style="color: #FFFFFF!important;">Certificate Verification</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- container -->
-        </div>
-        <!-- overlay -->
-    </section>
-
-    <form id="certificateForm" class="py-5">
-        @csrf <!-- Add CSRF token for Laravel -->
-
-        <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4">
-            <div class="form-group">
-                <label for="roll">Roll</label>
-                <select id="roll" class="form-control" name="roll" required>
-                    <option value="" selected disabled hidden>Select roll</option>
-                    @php
-                        for ($row = 1; $row <= 600; $row++) {
-                            echo "<option value='" . str_pad($row, 2, '0', STR_PAD_LEFT) . "'>" . str_pad($row, 2, '0', STR_PAD_LEFT) . '</option>';
-                        }
-                    @endphp
-                </select>
-                <small id="rollError" class="text-danger with-errors"></small>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4">
-            <div class="form-group">
-                <label for="session">Session</label>
-                <select class="form-control" name="session" id="session" required>
-                    <option value="" selected disabled hidden>Select session</option>
-                    @php
-                        function sessionCreate($year)
-                        {
-                            return $year . '-' . ($year + 1);
-                        }
-                        $currentYear = date('Y');
-                        $startYear = 1993;
-                        for ($year = $startYear; $year <= $currentYear; $year++) {
-                            $session = sessionCreate($year);
-                            echo "<option value=\"$session\">$session</option>";
-                        }
-                    @endphp
-                </select>
-
-            </div>
-        </div>
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DIU | Dhaka International University</title>
 
 
-        <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4">
-            <div class="form-group">
-                <label for="reg_code">Reg Code</label>
-                <input id="regCode" name="reg_code" type="text" class="form-control"
-                    placeholder="Enter reg code.Ex: xx-x-xx-xx-xxxxxx" required>
-                <small id="regCodeError" class="text-danger with-errors"></small>
-            </div>
-        </div>
 
-        <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4">
-            <div class="form-group">
-                <label for="passingYear">Passing Year</label>
-                <input id="passingYear" name="passingYear" type="text" class="form-control"
-                    placeholder="Enter passing year.Ex:2021" required>
-                <small id="passingYearError" class="text-danger with-errors"></small>
-            </div>
-        </div>
+    <meta name="description"
+        content="Dhaka International University DIU is one of the leading, familiar and note-worthy private universities in Bangladesh which was established on 7th April 1995. It is a non-profitable institution having strict academic discipline">
+    <meta name="keywords"
+        content="DIU, Dhaka International University, Dhaka, Dhaka International, University, Private Universities In Bangladesh, Universities In Bangladesh">
+    <meta name="author" content="Dhaka International University">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@diubd" />
+    <meta name="google-site-verification" content="A8rwnYA9M2SLmwpyC8lbmsPvrY-QkJWoBb4-B0aitc4" />
 
-        <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4">
-            <button type="button" class="btn btn-outline-info btn-block contact-button" id="find">Search</button>
-            <span id="loadingSpinner" class="fa fa-spinner fa-pulse" style="display: none;"></span>
-            <button id="clearButton" type="button" class="btn btn-outline-danger btn-block mt-2"
-                style="display: none;">Clear</button>
-        </div>
+    <link rel="canonical" href="{{ urldecode(url()->full()) ?? env('api_url') }}" />
+    <meta property="og:title"
+        content="{{ \Request::route()->getName() ?? 'DIU | DIU | Dhaka International University' }}" />
+    <meta property="og:url" content="{{ urldecode(url()->full()) ?? env('api_url') }}" />
 
-    </form>
-    <div id="error" class="text-center" >
-       
-    </div>
-   
-    <div id="students" class="col-lg-6 col-md-6 col-sm-12 offset-lg-3 offset-md-3 py-4" style="margin-bottom: 30px" ></div>
+    <link rel="icon" href="{{ asset('/assets/img/url.png') }}" type="image/x-icon">
 
-   
-@endsection
 
-@push('script')
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Google Tag Manager -->
     <script>
-        $(document).ready(function() {
-            $("#find").click(function() {
-                let roll = document.getElementById('roll').value;
-                let session = document.getElementById('session').value;
-                let reg_code = document.getElementById('regCode').value;
-                let passing_year = document.getElementById('passingYear').value;
-                console.log(roll);
-                if(!roll || !session || !reg_code|| !passing_year){
-                    Swal.fire({
-                            title: 'All field are required.',
-                            timer: 3000,
-                            icon: 'error',
-                            position: 'top-right',
-                            showConfirmButton: false
-                        });
-                }else{
-                
-               
-
-                axios.post('https://api.diu.ac/transcript_verification', {
-                        "roll": roll,
-                        'session': session,
-                        'reg_code': reg_code,
-                        'passing_year': passing_year
-                    }, {
-                        headers: {
-                            'Content-Type': 'application/json'
-                        }
-                    })
-                    .then(response => {
-
-                        
-                        Swal.fire({
-                            title: 'Transcript Found.',
-                            timer: 2000,
-                            position: 'top-right',
-                            showConfirmButton: false
-                        });
-                        var opt = '';
-                        if (response.data) {
-                            opt += '<table class="table" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;">';
-                            opt += '<tr>';
-                            opt += '<th scope="col">Name</th>';
-                            opt += '<td scope="col">' + response.data.data.name + '</td>';
-                            opt += '</tr>';
-                            opt += '<tr>';
-                            opt += '<th scope="col">Roll</th>';
-                            opt += '<td scope="col">' + response.data.data.roll + '</td>';
-                            opt += '</tr>';
-                            opt += '<tr>';
-                            opt += '<th scope="col">Program</th>';
-                            opt += '<td scope="col">' + response.data.data.program + '</td>';
-                            opt += '</tr>';
-                            opt += '<tr>';
-                            opt += '<th scope="col">Batch</th>';
-                            opt += '<td scope="col">' + response.data.data.batch + '</td>';
-                            opt += '</tr>';
-                            opt += '<tr>';
-                            opt += '<th scope="col">Session</th>';
-                            opt += '<td scope="col">' + response.data.data.session + '</td>';
-                            opt += '</tr>';
-                            opt += '<tr>';
-                            opt += '<th scope="col">CGPA/Class</th>';
-                            opt += '<td scope="col">' + response.data.data.cgpa + '</td>';
-                            opt += '</tr>';
-                            opt += '<tr>';
-                            opt += '<th scope="col">Passing Year</th>';
-                            opt += '<td scope="col">' + response.data.data.passing_year + '</td>';
-                            opt += '</tr>';
-                            opt += '<tr>';
-                            opt += '<th scope="col">Transcript</th>';
-                            opt += '<td scope="col"><a href="' + response.data.data.transcript_link +
-                                '" target="_blank">Download</a></td>';
-                            opt += '</tr>';
-
-
-                            opt += '</table>';
-                        }else{
-                            opt += '<h4>Transcript Not Found</h4>';
-
-                        }
-
-                        $("#students").html(opt);
-
-
-
-                    })
-                    .catch(error => {
-                        console.log(error);                     
-
-                        if (error.response.status == 404) {
-
-                            $('#error').html('<h4 style="color: red">Transcript Not Found</h4>');
-
-                    Swal.fire({
-                            title: 'Transcript Not Found.',
-                            timer: 2000,
-                            position: 'top-right',
-                            showConfirmButton: false
-                        });
-
-                } else if (error.response.status == 422) {
-                    console.log(error.response);
-                    Swal.fire({
-                            title: 'Validation error.',
-                            timer: 2000,
-                            position: 'top-right',
-                            showConfirmButton: false
-                        });
-                    
-                } else {
-                    console.log('certificate verification fail')
-                }
-
-
-                    });
-
-
-                }
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
             });
-
-
-
-        });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WTZCPMB');
     </script>
-@endpush
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,,600,700,700i|Lato:300,300i,400,400i,700,700i"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Vendor CSS Files -->
+    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
+
+    <script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
+
+    <link href="{{ asset('assets/css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/owl.theme.default.min.css') }}" rel="stylesheet">
+    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+
+    <script src="{{ asset('assets/vue/vue.min.js') }}"></script>
+    {{-- <script src="{{ asset('assets/vue/axios.min.js') }}"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
+
+    {{-- <link rel="stylesheet" href="{{ asset('assets/vue/bootstrap-select/dist/css/bootstrap-select.min.css') }}"> --}}
+
+    <!-- Template Main CSS File -->
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+
+   <style>
+    
+   </style>
+   
+    @stack('style')
+    
+
+</head>
+
+<body>
+
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTZCPMB" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+
+    <!-- ======= Header ======= -->
+    <x-menu1 />
+    
+
+
+  
+    <!-- End Header -->
+    <main >
+            @yield('content')
+            {{-- <x-why /> --}}
+
+    </main>
+
+
+
+    <!-- ======= Footer ======= -->
+    {{-- <x-footer /> --}}
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><img src="{{ asset('/assets/img/up-arow.png') }}" alt=""></a> <!-- Vendor JS Files -->
+    <script src="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{ asset('assets/js/main.js') }}"></script>
+    {{-- <script type="text/javascript">
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widgets.nopaperforms.com/emwgts.js";
+        document.body.appendChild(s);
+    </script> --}}
+    
+    @stack('script')
+
+</body>
+
+</html>

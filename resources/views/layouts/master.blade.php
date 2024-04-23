@@ -76,15 +76,20 @@
     {{-- <link rel="stylesheet" href="{{ asset('assets/vue/bootstrap-select/dist/css/bootstrap-select.min.css') }}"> --}}
 
     <!-- Template Main CSS File -->
-    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
 
-   
+   <style>
+    
+   </style>
    
     @stack('style')
+    
 
 </head>
 
 <body>
+
+
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTZCPMB" height="0" width="0"
@@ -94,7 +99,10 @@
 
 
     <!-- ======= Header ======= -->
-   <x-header />
+    <x-menu />
+
+
+  
     <!-- End Header -->
     <main >
             @yield('content')

@@ -1,3 +1,7 @@
+<style>
+
+
+</style>
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
@@ -8,12 +12,14 @@
 
         <nav id="navbar" class="navbar">
             <ul>
+                
                 <li class="dropdown"><a href="{{ route('home') }}"><span>HOME</span></a>
+                    
 
                 <li class="dropdown"><a href="#"><span>ABOUT DIU</span><img
                             src="{{ asset('/assets/img/down-arow.png') }}" alt=""
                             style="margin-bottom: 2px;height:20px"></a>
-                    <ul>
+                    <ul class="">
                         <li><a href="{{ route('about-us') }}">About Us</a></li>
                         <li><a href="{{ route('why-diu') }}">Why Choose DIU</a></li>
                         <li><a href="{{ route('vision-mission') }}">Vision and Mission</a></li>
@@ -91,10 +97,10 @@
                         <li><a href="internship">Internships</a></li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="#"><span>GLOBAL CONNECTS</span> <img
-                            src="{{ asset('/assets/img/down-arow.png') }}" alt=""
-                            style="margin-bottom: 2px;height:20px"></a>
-                    <ul>
+                
+                <li class="dropdown">
+                    <a href="#" class=""><span>GLOBAL CONNECTS</span> <img src="{{ asset('/assets/img/down-arow.png') }}" alt=""></a>
+                    <ul class="mega-menu">
                         <li><a href="mou">MoU</a></li>
                         <li><a href="semester-abroad-program">Semester Abroad Program</a></li>
                         <li><a href="faculty-exchange-program">Faculty Exchange Program</a></li>

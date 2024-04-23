@@ -63,6 +63,9 @@ class DiuAcController extends Controller
         //   $keyResourcePersons = $this->keyResourcePersons();
         return view('academics.faculty');
     }
+    public function facultyDetails($slug){
+        return view('academics.faculty-details');
+    }
     public function workshopSeminars(){
         return view('academics.workshop-seminar');
     }

@@ -41,8 +41,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="mycard1 mycard1-three">
-                                <h2>Certified Teachers</h2>
-                                <p class="why-desc">We believe in quality and for this reason we have certified and high
+                                <h2>Qualified Teachers</h2>
+                                <p class="why-desc">We believe in quality and for this reason we have qualified and high
                                     quality skilled teachers.</p>
                             </div>
                         </div>

@@ -5,9 +5,13 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>CONTACT US</h4>
-                    <a href="{{route('home')}}" class="logo"><img src="{{asset('assets/images/diu_white.png')}}" class="mb-3" alt="DIU Logo"
-                        class="img-fluid"></a>
+                    
+                    <a href="{{route('home')}}" class="logo"><img src="{{asset('assets/images/diu_white.png')}}" class="mb-3" alt="DIU Logo" style="height: 100px; width:100%"
+                      ></a>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>CONTACT US</h4>                    
                     <p>Dhaka International University, rated among the top private universities of Bangladesh,<br><br>
 
                         is an institution that promotes eastern culture and values, and meaningfully blends eastern and western thoughts and innovation.
@@ -27,8 +31,7 @@
                         <li><i class="bx bx-chevron-right"></i> <a href="https://admission.diu.ac/" target="_blank">Admission Website</a></li>                     
                         <li><i class="bx bx-chevron-right"></i> <a href="https://international.diu.ac/" target="_blank">International Website</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="https://blog.diu.ac/">Blog</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="https://ibank.eximbankbd.com/eximIBank/eximIBank/login/loginForm?error=1" target="_blank">Online Payment</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="women-protection-cell">Women Protection Cell</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="https://ibank.eximbankbd.com/eximIBank/eximIBank/login/loginForm?error=1" target="_blank">Online Payment</a></li>                       
                         <li><i class="bx bx-chevron-right"></i> <a href="https://hotjobs.com.bd/" >Find Jobs</a></li>
                     </ul>
                 </div>
@@ -41,15 +44,14 @@
                         <li><i class="bx bx-chevron-right"></i> <a href="student-placements">Student Placements</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="student-facilities">Student Facilities</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="internship">Internships</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="campus-life">Campus Life</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#campus-life">Campus Life</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="scholarships">Scholarships</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="international-admission">International Admissions</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="faq">FAQ</a></li>
                     </ul>
                 </div>
 
 
-                <div class="col-lg-3 col-md-6 footer-links">
+                {{-- <div class="col-lg-3 col-md-6 footer-links">
                     <h4>FOLLOW US</h4>
                     <div class="social-links mt-3">
                         <a href="https://twitter.com/diubd" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -59,7 +61,7 @@
                         <a href="https://www.youtube.com/diudhaka" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
 
                     </div>
-                </div>
+                </div> --}}
 
             </div>
         </div>

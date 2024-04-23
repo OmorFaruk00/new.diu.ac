@@ -1,5 +1,59 @@
 @extends('layouts.master')
 @section('content')
+<style>
+    .demo{ background: #585858; }
+  
+    .list a {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 500;
+        border-radius: 5px
+    }
+    .list a:hover {
+        color:#000;
+        border: none;
+        
+    }
+    .list:nth-child(1) a {
+        background: blue; 
+    }    
+    .list:nth-child(2) a {
+        background: red; 
+    }  
+    .list:nth-child(3) a {
+        background: green; 
+    }
+    .list:nth-child(4) a {
+        background: #E95095; 
+    }
+    .list:nth-child(5) a {
+        background: #FDCC01; 
+    }
+    .list:nth-child(6) a {
+        background: #7049BA; 
+    }
+    .list:nth-child(7) a {
+        background: #5FAD56 
+    }
+    .list:nth-child(8) a {
+        background: rgb(164, 198, 51); 
+    }
+    .list:nth-child(9) a {
+        background: rgb(29, 198, 207); 
+    }
+    .list:nth-child(10) a {
+        background: rgb(127, 133, 7); 
+    }
+    .list:nth-child(11) a {
+        background: rgb(83, 24, 86); 
+    }
+    .list:nth-child(12) a {
+        background: rgb(215, 68, 203); 
+    }
+
+</style>
     <main id="main" style="margin-top: 80px">
         <!-- ======= Breadcrumbs ======= -->
         <section class="breadcrumbs">
@@ -15,28 +69,22 @@
         </section>
         <!-- End Breadcrumbs -->
 
-        <div class="container-xxl py-5" id="faculty">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h2 class="heading">Our Expert Faculty</h2>
-                </div>
-                <div v-if="faculty" class="row g-4 justify-content-center align-self-center">
-                    <div v-for="item in faculty" :key="item.id" class="col-lg-3 col-md-6 wow fadeInUp"
-                        data-wow-delay="0.1s">
-                        <div class="team-item bg-light">
-                            <div class="overflow-hidden" style="height: 280px">
-                                <img class="img-fluid" :src="item.image_url" alt="image"
-                                    style="height: 280px;width:100%" />
-                            </div>
-                            <div class="text-center p-4" style="height: 130px">
-                                <h5 class="mb-0" v-text="item.name"></h5>
-                                <small v-text="item.title"></small><br />
-                            </div>
-                        </div>
+        <div class="container" id="faculty">
+            <div class="row">
+                <div class="py-5 col-8 mx-auto">
+                    <div>
+                        <ul>
+                            <li class="list" v-for="(item,index) in programs" :key="index"><a :href="'/faculty/' + item.slug" class="btn btn-block w-100" v-text="item.title" target="_blank"></a></li>
+                         
+                            
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+        
+
+        
     </main>
 @endsection
 @push('script')
@@ -49,17 +97,18 @@
                         base_path: "{{ env('API_URL') }}",
                     },
 
-                    faculty: [],
+                    programs: [],
                 },
 
                 methods: {
                     getData() {
                         var vm = this;
 
-                        axios.get(`${vm.config.base_path}/public-diu-website/key-resource-persons`)
+                        axios.get(`${vm.config.base_path}/public-diu-website/programs`)
                             .then((
                                 response) => {
-                                this.faculty = response.data.vital_persons
+                                    console.log(response.data.data)
+                                this.programs = response.data.data
                             }).catch((error) => {
                                 console.log(error.response);
                             });

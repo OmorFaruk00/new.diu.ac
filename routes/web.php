@@ -32,6 +32,7 @@ Route::view('/test','test');
  Route::get('/admission-help-desk',[DiuAcController::class,'admissionHelpDesk'])->name('admission-help-desk');
 
  Route::get('/faculty',[DiuAcController::class,'faculty'])->name('faculty');
+ Route::get('/faculty/{slug}',[DiuAcController::class,'facultyDetails'])->name('faculty-details');
  Route::get('/workshop-seminars',[DiuAcController::class,'workshopSeminars'])->name('workshop-seminars');
  Route::get('/convocation',[DiuAcController::class,'convocation'])->name('convocation');
  Route::get('/publications',[DiuAcController::class,'publications'])->name('publications');

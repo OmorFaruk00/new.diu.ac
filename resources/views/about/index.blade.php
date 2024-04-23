@@ -20,7 +20,7 @@
 
 
         <section class="inner-page internship">
-            <img src="{{ asset('assets/images/about.png') }}" alt="about-us" class="img-fluid w-100 page-bg">
+            <img src="{{ asset('assets/images/about.jpg') }}" alt="about-us" class="img-fluid w-100 page-bg">
             <div class="bannertext">
                 <h2>About Us</h2>
             </div>
