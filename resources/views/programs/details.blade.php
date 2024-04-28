@@ -44,9 +44,9 @@
         @endif
 
         <!--  Department faculty member-->
-        @if ($facultyMember)
+        {{-- @if ($facultyMember)
             <x-department.faculty-member :members="$facultyMember" />
-        @endif
+        @endif --}}
 
 
     </main>

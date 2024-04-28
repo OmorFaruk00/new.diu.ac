@@ -1,5 +1,156 @@
 @extends('layouts.master')
 @section('content')
+<style>
+      .team-body {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    .team{
+    background: #E4E4E4;
+    font-family: 'Muli', sans-serif;
+    padding: 15px 20px 50px 220px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    
+}
+.team:hover{
+    transform:  scale(0.9);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background: #fff;
+}
+/* .team:before,
+.team:after{
+    content: "";
+    background: #1ABB9A;
+    width: 160px;
+    height: 100%;
+    border-radius: 0 30px 30px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+.team:after{
+    width: 120px;
+    height: 35px;
+    border-radius: 0 0 0 30px;
+    left: auto;
+    right: 0;
+}
+.team .signature-icon{
+    height: 160px;
+    width: 160px;
+    border: 5px solid #fff;
+    border-radius: 0 30%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+}
+.team .signature-icon img{
+    height: auto;
+    width: 100%;
+}
+.team .signature-details{
+    color: #1ABB9A;
+    padding: 0 0px 0 0;
+    margin-top: 15px;
+}
+.team .title{
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 0 3px;
+}
+.team .post{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.team .signature-content{
+    color: #111;
+    padding: 15px 0 0;
+    margin: 0;
+    list-style: none;    
+}
+.team .signature-content li{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+.team .signature-content li:last-child{ margin: 0; }
+.team .signature-content li span{
+    color: #fff;
+    background: #1ABB9A;
+    font-size: 11px;
+    text-align: center;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    border-radius: 20px;
+}
+.team .icon{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 9px;
+    right: 0px
+}
+.team .icon li{ display: inline-block; }
+.team .icon li a{
+    color: #fff;
+    background: #111;
+    font-size: 14px;
+    text-align: center;
+    line-height: 28px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+.team .icon li a:hover{
+    color: #fff;
+    background: #1ABB9A;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.profile-btn{
+    background: #1ABB9A;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 22px;
+    /* border-radius: 30px 0px 0px 0px; */
+}
+.profile-btn:hover{color: #000}
+@media screen and (max-width:576px) {
+    .team{ padding: 210px 0 40px 0; }
+    .team:before{
+        width: 100%;
+        height: 150px;
+        border-radius: 0 0 150px 0;
+    }
+    .team:after{
+        border-radius: 100px 0 0 0;
+        top: auto;
+        bottom: 0;
+    }
+    .team .signature-icon{
+        transform: translateX(-50%);
+        top: 35px;
+        left: 50%;
+    }
+    .team .signature-details,
+    .team .signature-content{
+        text-align: center;
+        padding: 0;
+        margin: 0 0 15px;
+    }
+    /* .team .icon{
+        right: auto;
+        left: 13px;
+    } */
+}
+</style>
 <main id="main" style="margin-top: 80px;">
 
     <!-- ======= Breadcrumbs ======= -->
@@ -17,180 +168,76 @@
         </div>
     </section><!-- End Breadcrumbs -->
 
-
-    <section class="inner-page internship">
-        <img src="{{asset('assets/images/helpdesk.png')}}" alt="helpdesk" class="img-fluid w-100 banner">
-        <div class="bannertext">
-        <h2>Admission <br> Help Desk</h2>
-        </div>
-        <div class="container my-4">
-
+    <div class="demo py-4" id="team">
+        <div class="container team-body p-4 ">
             <div class="row">
-                <div class="col-12">
-                    <h3 style="font-weight: bold;">Admission Help Desk</h3>
-                    
-                    <table class="table table-striped table-bordered mobtable">
-                    <thead class='bg-info text-white'>
-                        <tr>
-                            <th style="text-align: left;">S.no</th>
-                            <th style="text-align: left;">Information Centers:</th>
-                            <th style="text-align: left;">Phone</th>
-                        </tr>
-                    </thead>
-
-                        <tr>
-                            <td>1.</td>
-                            <td>Director of Admissions</td>
-                            <td>9490 361 1111, 0866-35 00122, 2577715, 799 799 5704, 7997 995 730</td>
-                        </tr>
-
-                        <tr>
-                            <td>2.</td>
-                            <td>Srikakulam / Vizianagaram</td>
-                            <td>7997995728</td>
-                        </tr>
-
-                        <tr>
-                            <td>3.</td>
-                            <td>Vizag</td>
-                            <td>7997 995 706, 9985 657 365</td>
-                        </tr>
-
-                        <tr>
-                            <td>4.</td>
-                            <td>Vijayawada</td>
-                            <td>7997 998 354, 7997 998 377, 7997 995 694, 7997 995 695, 9666 637 613</td>
-                        </tr>
-
-                        <tr>
-                            <td>5.</td>
-                            <td>Guntur</td>
-                            <td>7997 995 733, 7997 995 106, 7997 995 725, 7997 996 048</td>
-                        </tr>
-
-                        <tr>
-                            <td>6.</td>
-                            <td>Nellore</td>
-                            <td>7997 998 356, 9492 469 999, 7997 995 702</td>
-                        </tr>
-                        
-                        <tr>
-                            <td>7.</td>
-                            <td>Prakasam</td>
-                            <td>7997 998 356, 9492 469 999, 7997 995 698</td>
-                        </tr>
-
-                        <tr>
-                            <td>8.</td>
-                            <td>East Godavari</td>
-                            <td>7997 995 705, 7997 995 706</td>
-                        </tr>
-
-                        <tr>
-                            <td>9.</td>
-                            <td>West Godavari</td>
-                            <td>7997 995 740, 7997 995 693</td>
-                        </tr>
-
-                        <tr>
-                            <td>10.</td>
-                            <td>Tirupathi</td>
-                            <td>7997 995 713, 9949 366 189</td>
-                        </tr>
-
-                        <tr>
-                            <td>11.</td>
-                            <td>Cuddapah / Anantapur</td>
-                            <td>7997995711</td>
-                        </tr>
-
-                        <tr>
-                            <td>12.</td>
-                            <td>Kurnool</td>
-                            <td>7997 995 711, 7997 995 701</td>
-                        </tr>
-
-                        <tr>
-                            <td>13.</td>
-                            <td>Khammam</td>
-                            <td>9290429635</td>
-                        </tr>
-
-                        <tr>
-                            <td>14.</td>
-                            <td>Hyderabad</td>
-                            <td>9550 344 777, 9010 150 111, 7997 998 380, 9133 926 000, 9493 514 295</td>
-                        </tr>
-
-                        <tr>
-                            <td>15.</td>
-                            <td>Warangal</td>
-                            <td>9133925000</td>
-                        </tr>
-
-                        <tr>
-                            <td>16.</td>
-                            <td>Karimnagar</td>
-                            <td>9133924000</td>
-                        </tr>
-
-                        <tr>
-                            <td>17.</td>
-                            <td>Nizamabad</td>
-                            <td>9390361996</td>
-                        </tr>
-
-                        <tr>
-                            <td>18.</td>
-                            <td>Rajasthan / Delhi</td>
-                            <td>9887717753</td>
-                        </tr>
-
-                        <tr>
-                            <td>19.</td>
-                            <td>Orissa</td>
-                            <td>7997995727</td>
-                        </tr>
-                        
-                        <tr>
-                            <td>20.</td>
-                            <td>Bihar / Jharkhand / Uttar Pradesh / Uttarakhand/ Maharashtra</td>
-                            <td>7997998383</td>
-                        </tr>
-
-                        <tr>
-                            <td>21.</td>
-                            <td>North-East / Jammu and Kashmir</td>
-                            <td>9492469999</td>
-                        </tr>
-
-                        <tr>
-                            <td>22.</td>
-                            <td>Kerala</td>
-                            <td>9492469999</td>
-                        </tr>
-
-                        <tr>
-                            <td>23.</td>
-                            <td>Karnataka</td>
-                            <td>7997 998 356, 8088 053 020</td>
-                        </tr>
-
-                        <tr>
-                            <td>24.</td>
-                            <td>PG Programs</td>
-                            <td>7997 995 724, 7997 998 358, 7997 995 741</td>
-                        </tr>
-                    </table>
-                    
-
-
+                <div class=" col-lg-6  col-md-6 col-sm-12 mb-4" v-for="(item,index) in teams" :key="index">
+                    <div class="team">
+                        <div class="signature-icon">
+                            <img :src="item.photo_url" alt="profile pic">
+                        </div>
+                        <div class="signature-details">
+                            <h2 class="title" v-text="item.name"></h2>
+                            <span class="post" v-text="item.designation">/span>
+                        </div>
+                        <ul class="signature-content">
+                            <li><span class="fa fa-phone"></span> <strong v-text="item.phone_no"></strong></li>
+                            <li><span class="fa fa-envelope"></span> <strong v-text="item.office_email"></strong></li>
+                            <li><span class="fa fa-map-marker"></span> <strong v-text="item.office_address"></strong></li>
+                           
+                        </ul>
+                        <ul class="icon">
+                            <a :href="item.website" class="profile-btn" target="_blank">View Profile</a>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </section>
+    </div>
+
+
+
 
 </main>
 
 @endsection
+
+@push('script')
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var vue = new Vue({
+                el: '#team',
+                data: {
+                    config: {
+                        base_path: "{{ env('API_URL') }}",
+                    },
+                    teams: [],
+                },
+
+                methods: {
+                    getData() {
+                        var vm = this;
+                        var slug = $('#faculty-details').data('slug');              
+
+                        axios.get(`${vm.config.base_path}/public/admission_team`)
+                            .then((
+                                response) => {
+                                    console.log(response.data.data)
+                                    this.teams = response.data.data;
+                            }).catch((error) => {
+                                console.log(error.response);
+                            });
+                    }
+
+                },
+
+                created() {
+                    this.getData();
+                }
+            });
+
+
+
+        });
+    </script>
+@endpush

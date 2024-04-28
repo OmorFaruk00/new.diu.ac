@@ -5,9 +5,11 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+        color: #434343;
+        font-weight: 400;
     }
 </style>
-<section id="whykl" class="pt-5">
+<section id="whykl" class="pt-5" style="background: #fff">
     <div class="container">
         <div class="row g-0 align-items-end">
             <div class="text-center">

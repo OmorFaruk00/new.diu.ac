@@ -10,11 +10,15 @@ class DiuAcController extends Controller
 {
     use ApiTrait;
     public function index(){
-        $sliders =  $this->sliderData();
-        $programs =  $this->programsData();
-        $partners =  $this->partnersData();
-        return view('home.index', compact('sliders','programs','partners'));
+        // $sliders =  $this->sliderData();
+        // $programs =  $this->programsData();
+        // $partners =  $this->partnersData();
+        return view('home.index');
     }
+    public function about(){
+        return view('about.about');
+    }
+
     public function semesterAbroadProgram(){
         return view('home.semester-abroad-program');
     }
@@ -64,7 +68,7 @@ class DiuAcController extends Controller
         return view('academics.faculty');
     }
     public function facultyDetails($slug){
-        return view('academics.faculty-details');
+        return view('academics.faculty-details', compact('slug'));
     }
     public function workshopSeminars(){
         return view('academics.workshop-seminar');
@@ -83,7 +87,7 @@ class DiuAcController extends Controller
         $data['facility'] = $this->departmentFacility($slug);
         $data['gallery'] = $this->departmentGallery($slug);
         $data['syllabus'] = $this->departmentSyllabus($slug);
-        $data['facultyMember'] = $this->departmentFacultyMember($slug);
+        // $data['facultyMember'] = $this->departmentFacultyMember($slug);
         $data['slug'] =$slug ?? null;
         return view('programs.details',$data );
     }
@@ -94,10 +98,7 @@ class DiuAcController extends Controller
     }
     public function studentFacultyAchievements(){
         return view('life.student-faculty-achievements');
-    }
-    public function alumni(){
-        return view('life.alumni');
-    }
+    }  
     public function institute(){
         return view('life.institute');
     }
@@ -114,9 +115,7 @@ class DiuAcController extends Controller
     public function newsletter(){
         return view('life.newsletter');
     }
-    public function hobbyClub(){
-        return view('life.hobby-club');
-    }
+   
     public function entrepreneurshipCell(){
         return view('life.entrepreneurship-cell');
     }
@@ -152,16 +151,74 @@ class DiuAcController extends Controller
     public function contact(){
         return view('contact');
     }
-    public function noticeBoard(){
+    public function news(){
     
-        return view('academics.notice-board');
+        return view('newsEvent.news');
+    }
+    public function events(){
+    
+        return view('newsEvent.events');
     }
     public function noticeDetails($slug){
         // $notice = $this->getNoticeDetails($slug);
-        return view('academics.notice-details',compact('slug'));
+        return view('newsEvent.notice-details',compact('slug'));
     }
     public function certificateVerification(){
         return view('academics.certificate-verification');
     }
+    public function library(){
+        return view('campus-life.library');
+    }
+    public function club(){
+        return view('campus-life.club');
+    }
+    public function lab(){
+        return view('campus-life.lab');
+    }
+    public function alumni(){
+        return view('campus-life.alumni');
+    }
+    public function academicSession(){
+        return view('campus-life.academic-session');
+    }
+    public function healthService(){
+        return view('campus-life.health-service');
+    }
+    public function accommodation(){
+        return view('campus-life.accommodation');
+    }
+    public function studentWelfare(){
+        return view('campus-life.student-welfare');
+    }
+    public function careerCounseling(){
+        return view('campus-life.career-counseling');
+    }
+    public function courseCounseling(){
+        return view('campus-life.course-counseling');
+    }
+    public function internet(){
+        return view('campus-life.internet');
+    }
+    public function canteen(){
+        return view('campus-life.canteen');
+    }
+
+
+   
+    public function iqac(){
+        return view('cell.iqac');
+    }
+    public function tcrc(){
+        return view('cell.tcrc');
+    }
+    public function sbac(){
+        return view('cell.sbac');
+    }
+    public function cecd(){
+        return view('cell.cecd');
+    }
+
+
+    
    
 }

@@ -77,6 +77,7 @@
 
     <!-- Template Main CSS File -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/custom.css') }}" rel="stylesheet">
 
    <style>
     
@@ -99,6 +100,7 @@
 
 
     <!-- ======= Header ======= -->
+    <x-topbar />
     <x-menu />
 
 
@@ -132,6 +134,34 @@
         s.src = "https://widgets.nopaperforms.com/emwgts.js";
         document.body.appendChild(s);
     </script> --}}
+
+
+    <!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat"></div>
+
+<script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "160248167326381");
+    chatbox.setAttribute("attribution", "biz_inbox");
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v11.0'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
     
     @stack('script')
 

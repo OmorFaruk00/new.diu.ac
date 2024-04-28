@@ -99,7 +99,9 @@
 
 
     <!-- ======= Header ======= -->
-    <x-menu1 />
+    <x-topbar />
+    <x-menu/>
+    <x-counter1  />
     
 
 

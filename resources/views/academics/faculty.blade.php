@@ -2,7 +2,10 @@
 @section('content')
 <style>
     .demo{ background: #585858; }
-  
+  .faculty{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 20px;
+  }
     .list a {
         text-align: center;
         margin-bottom: 20px;
@@ -72,7 +75,7 @@
         <div class="container" id="faculty">
             <div class="row">
                 <div class="py-5 col-8 mx-auto">
-                    <div>
+                    <div class="faculty">
                         <ul>
                             <li class="list" v-for="(item,index) in programs" :key="index"><a :href="'/faculty/' + item.slug" class="btn btn-block w-100" v-text="item.title" target="_blank"></a></li>
                          

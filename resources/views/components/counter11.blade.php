@@ -8,8 +8,8 @@
     border-radius: 15px;
 } 
 .counter .counter-icon{
-    color: #fff;
-    background-color: #213D4E;
+    color: #000;
+    background-color: #E7E7E7;
     font-size: 35px;
     line-height: 70px;
     width: 70px;
@@ -25,8 +25,8 @@
     display: block;
 }
 .counter h3{
-    color: #fff;
-    background-color: #213D4E;
+    color: #000;
+    background-color: #E7E7E7;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -38,18 +38,24 @@
 }
 .counter.red .counter-icon,
 .counter.red h3{
-    background-color: #C95011;
+    background-color: #E7E7E7;
+    color: #000
 }
 .counter.purple .counter-icon,
 .counter.purple h3{
-    background-color: #6d2565;
+    background-color: #E7E7E7;
+    color: #000
 }
 .counter.orange .counter-icon,
 .counter.orange h3{
-    background-color: #2E5F26;
+    background-color: #E7E7E7;
+    color: #000
 }
 @media screen and (max-width:990px){
     .counter{ margin-bottom: 40px; }
+    .counter h3{
+        font-size: 15px;
+    }
 }   
 </style>
 

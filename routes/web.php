@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/test','test');
+ Route::get('/about',[DiuAcController::class,'about'])->name('about');
  Route::get('/',[DiuAcController::class,'index'])->name('home');
  Route::get('/semester-abroad-program',[DiuAcController::class,'semesterAbroadProgram'])->name('semester-abroad-program');
  Route::get('/internship-abroad-program',[DiuAcController::class,'internshipAbroadProgram'])->name('internship-abroad-program');
@@ -36,20 +37,20 @@ Route::view('/test','test');
  Route::get('/workshop-seminars',[DiuAcController::class,'workshopSeminars'])->name('workshop-seminars');
  Route::get('/convocation',[DiuAcController::class,'convocation'])->name('convocation');
  Route::get('/publications',[DiuAcController::class,'publications'])->name('publications');
+ Route::get('/news',[DiuAcController::class,'news'])->name('news');
+ Route::get('/events',[DiuAcController::class,'events'])->name('events');
  Route::get('/notice-board',[DiuAcController::class,'noticeBoard'])->name('notice-board');
  Route::get('/notice-details/{slug}',[DiuAcController::class,'noticeDetails'])->name('notice-details');
 
 
  Route::get('/programs/{slug}',[DiuAcController::class,'programs'])->name('programs');
  Route::get('/campus-life',[DiuAcController::class,'campusLife'])->name('campus-life');
- Route::get('/student-faculty-achievements',[DiuAcController::class,'studentFacultyAchievements'])->name('student-faculty-achievements');
- Route::get('/alumni',[DiuAcController::class,'alumni'])->name('alumni');
+ Route::get('/student-faculty-achievements',[DiuAcController::class,'studentFacultyAchievements'])->name('student-faculty-achievements'); 
  Route::get('/institute',[DiuAcController::class,'institute'])->name('institute');
  Route::get('/cell',[DiuAcController::class,'cell'])->name('cell');
  Route::get('/centre-of-excellence',[DiuAcController::class,'centreOfExcellence'])->name('centre-of-excellence');
  Route::get('/business-analytical-lab',[DiuAcController::class,'businessAnalyticalLab'])->name('business-analytical-lab');
  Route::get('/newsletter',[DiuAcController::class,'newsletter'])->name('newsletter');
- Route::get('/club',[DiuAcController::class,'hobbyClub'])->name('club');
  Route::get('/entrepreneurship-cell',[DiuAcController::class,'entrepreneurshipCell'])->name('entrepreneurship-cell');
  Route::get('/sports',[DiuAcController::class,'sports'])->name('sports');
  Route::get('/arka',[DiuAcController::class,'arka'])->name('arka');
@@ -64,3 +65,28 @@ Route::view('/test','test');
  Route::get('/international-conference',[DiuAcController::class,'internationalConference'])->name('international-conference');
  Route::get('/contact',[DiuAcController::class,'contact'])->name('contact');
  Route::get('/certificate-verification',[DiuAcController::class,'certificateVerification'])->name('certificate-verification');
+
+
+ Route::group(['prefix' => 'campus-life'], function () {
+    Route::get('/libray',[DiuAcController::class,'library'])->name('library');
+    Route::get('/club',[DiuAcController::class,'club'])->name('club');
+    Route::get('/lab',[DiuAcController::class,'lab'])->name('lab');
+    Route::get('/alumni',[DiuAcController::class,'alumni'])->name('alumni');
+    Route::get('/academic-session',[DiuAcController::class,'academicSession'])->name('academic-session');
+    Route::get('/health-service',[DiuAcController::class,'healthService'])->name('health-service');
+    Route::get('/accommodation',[DiuAcController::class,'accommodation'])->name('accommodation');
+    Route::get('/student-welfare',[DiuAcController::class,'studentWelfare'])->name('student-welfare');
+    Route::get('career-counseling',[DiuAcController::class,'careerCounseling'])->name('career-counseling');
+    Route::get('course-counseling',[DiuAcController::class,'courseCounseling'])->name('course-counseling');
+    Route::get('internet',[DiuAcController::class,'internet'])->name('internet');
+    Route::get('canteen-common-rooms',[DiuAcController::class,'canteen'])->name('canteen');
+});
+
+
+Route::group(['prefix' => 'cell'], function () {
+    Route::get('/iqac',[DiuAcController::class,'iqac'])->name('iqac');
+    Route::get('/tcrc',[DiuAcController::class,'tcrc'])->name('tcrc');
+    Route::get('/sbac',[DiuAcController::class,'sbac'])->name('sbac');
+    Route::get('/cecd',[DiuAcController::class,'cecd'])->name('cecd');
+
+});

@@ -1,4 +1,6 @@
+
 <footer id="footer">
+ 
 
     <div class="footer-top">
         <div class="container">
@@ -29,24 +31,22 @@
                         <li><i class="bx bx-chevron-right"></i> <a href="https://jobs.diu.ac/" target="_blank">Career</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="https://students.diu.ac/" target="_blank">Students Portal</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="https://admission.diu.ac/" target="_blank">Admission Website</a></li>                     
-                        <li><i class="bx bx-chevron-right"></i> <a href="https://international.diu.ac/" target="_blank">International Website</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="https://blog.diu.ac/">Blog</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="https://ibank.eximbankbd.com/eximIBank/eximIBank/login/loginForm?error=1" target="_blank">Online Payment</a></li>                       
-                        <li><i class="bx bx-chevron-right"></i> <a href="https://hotjobs.com.bd/" >Find Jobs</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="https://international.diu.ac/" target="_blank">International Admission</a></li>
+                       
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>ASPIRING STUDENTS</h4>
+                    <h4>USEFUL LINKS</h4>
                     <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="https://blog.diu.ac/" target="_blank">Blog</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="https://ibank.eximbankbd.com/eximIBank/eximIBank/login/loginForm?error=1" target="_blank">Online Payment</a></li>                       
+                        <li><i class="bx bx-chevron-right"></i> <a href="https://hotjobs.com.bd/" target="_blank" >Find Jobs</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="index#hero">Apply Now</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="student-faculty-achievements">Student & Faculty Achievements</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="student-placements">Student Placements</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="student-facilities">Student Facilities</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="internship">Internships</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#campus-life">Campus Life</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="scholarships">Scholarships</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="international-admission">International Admissions</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{route('contact')}}">Contact</a></li>
+                        
+                        
+                     
                     </ul>
                 </div>
 
