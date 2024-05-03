@@ -100,8 +100,8 @@
 
     <!-- ======= Header ======= -->
     <x-topbar />
-    <x-menu/>
-    <x-counter1  />
+    <x-menu1/>
+    {{-- <x-counter1  /> --}}
     
 
 

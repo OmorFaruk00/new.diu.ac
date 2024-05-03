@@ -1,7 +1,7 @@
 <style>
     #topbar{
         height: 30px;
-        background: #23aae8;
+        background: #01AA4D;
         color: #fff;
         font-weight: 600;
         padding-top: 5px;
@@ -10,24 +10,24 @@
     }
     .breadcrumbs {  
     margin-top: 85px !important;
+    background: #01AA4D;
     
 }
 
     .back-to-top{
-        /* background: #18AC4F !important; */
+        background: #18AC4F !important;
     }
 
     ::-webkit-scrollbar {
-    width: 10px; /* Width of the scrollbar */
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color of the track */
+    background: #f1f1f1; 
 }
 
 ::-webkit-scrollbar-thumb {
-    /* background: linear-gradient(transparent, #01AA4D); */
-    background: linear-gradient(transparent, #49B5E7);
+    background: linear-gradient(transparent, #01AA4D);
     border-radius: 5px;
 }
 

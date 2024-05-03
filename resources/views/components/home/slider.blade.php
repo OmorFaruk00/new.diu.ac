@@ -2,26 +2,19 @@
     .carousel-item img {
         height: 90vh;
         background-position: cover;
+        /* background-color: rgba(0, 0, 0, 0.9); */
+        /* background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%); */
     }
 
-    /* .carousel-caption {
-        position: absolute;
-        top: 50%;
-        left: 15%;
-        transform: translateY(-50%);
-        width: 600px;
-        text-align: left;
-        background: rgba(4, 4, 4, 0.7);
-        opacity: 0.85;
-        padding: 20px;
-        height: 25%;
-        border-radius: 5px
-    } */
+
+
+
+
 
 
     .btn-apply {
         color: #131313;
-        background-color: #49B5E7;
+        background-color: #01AA4D;
         font-family: "Tilt Neon", sans-serif;
         font-size: 18px;
         font-weight: 700;
@@ -38,7 +31,7 @@
 
     .btn-apply:hover {
         color: #fff;
-        background: #4cc9f0;
+        background: #01AA4D;
         box-shadow: 0 2px 0 2px #0d3b66;
     }
 
@@ -60,9 +53,9 @@
 
     .carousel-caption h2 {
         font-size: 30px;
-        color: #196bb8;
+        color: #01AA4D;
         line-height: 1.2;
-        font-weight: 800;
+        font-weight: 900;
     }
 
     .carousel-desc {
@@ -95,7 +88,7 @@
     }
 
     .carousel-indicators .active {
-        background-color: #126BAA !important;
+        background-color: #01AA4D !important;
         font-weight: 600;
     }
 
@@ -180,6 +173,8 @@
             /* width: 80%; */
         }
     }
+
+
 </style>
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">

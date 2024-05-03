@@ -33,7 +33,9 @@
                             country. It offers a unique combination of <b>BBA and MBA programs,</b>
                             allowing students to understand business principles more deeply. With our
                             comprehensive and advanced learning experience, we prepare students to face
-                            challenges and lead in the professional world of business.</p>
+                            challenges and lead in the professional world of business.
+                        </p>
+                        <a href="{{route('future-student')}}" target="_blank" class="btn btn-apply" style="margin-top: 20px">Future Student</a>
                     </div>
                 </div>
             </div>

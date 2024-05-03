@@ -73,7 +73,7 @@
             <div class=" col-lg-4 col-md-6 col-sm-12 mb-5">
                 <div class="counter">
                     <div class="counter-icon">
-                        <span><i class="fa fa-globe"></i></span>
+                        <span><i class="fa fa-book"></i></span>
                     </div>
                     <h3>Academic Programs</h3>
                     <span class="counter-value">12</span>
@@ -82,7 +82,7 @@
             <div class=" col-lg-4 col-md-6 col-sm-12 mb-5">
                 <div class="counter blue">
                     <div class="counter-icon">
-                        <span><i class="fa fa-globe"></i></span>
+                        <span><i class="fa fa-graduation-cap"></i></span>
                     </div>
                     <h3>Convocatons</h3>
                     <span class="counter-value">7</span>

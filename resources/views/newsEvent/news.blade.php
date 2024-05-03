@@ -10,7 +10,7 @@
         align-items: center;
     }
     .notice-date{
-        background: #49B5E7;
+        background: #01AA4D;
         color: #000;
         font-weight: 700;
         margin-right: 30px;
@@ -31,7 +31,7 @@
 
     }
     .notice-title:hover{ 
-      color:#49B5E7; 
+      color:#01AA4D; 
 
      }
 </style>

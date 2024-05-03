@@ -10,7 +10,7 @@
         align-items: center;
     }
     .notice-date{
-        background: #49B5E7;
+        background: #01AA4D;
         color: #000;
         font-weight: 700;
         padding: 8px 10px;
@@ -32,7 +32,7 @@
 
     }
     .notice-title:hover{ 
-      color:#49B5E7; 
+      color:#01AA4D; 
 
      }
 
@@ -43,7 +43,7 @@
 
      .btn-see{
     color: #131313;
-    background-color: #49B5E7;
+    background-color: #01AA4D;
     font-family: "Tilt Neon", sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -60,7 +60,7 @@
 } 
 .btn-see:hover{
     color: #fff;
-    background: #4cc9f0;
+    background: #01AA4D;
     box-shadow: 0 2px 0 2px #0d3b66;
 }
 .btn-see:before {

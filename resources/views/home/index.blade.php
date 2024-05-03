@@ -8,6 +8,7 @@
          <x-home.newsEvent />
 
          <x-home.why />
+         <x-home.founder />
 
          <x-home.partner />
 

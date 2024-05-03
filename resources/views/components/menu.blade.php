@@ -39,7 +39,7 @@
     .exo-menu>li>a.active,
     .exo-menu>li>a:hover,
     li.drop-down ul>li>a:hover {
-        color: #009FE1;
+        color: #01AA4D;
     }
 
     h4.row.mega-title {
@@ -82,7 +82,8 @@
     }
 
     .mega-menu ul li a:hover {
-        color: #009FE1
+        /* color: #01AA4D; */
+        border-color: #004d40;
     }
 
     /*common*/
@@ -93,18 +94,56 @@
     }
 
 
+    .Blog:hover,
+    .Images:hover,
     .mega-menu:hover,
     .drop-down-ul:hover,
+    li.flyout-left>ul:hover,
+    li.flyout-right>ul:hover,
+    .flyout-mega-wrap:hover,
+    li.flyout-left a:hover+ul,
+    li.flyout-right a:hover+ul,
+    .blog-drop-down>a:hover+.Blog,
+    li.drop-down>a:hover+.drop-down-ul,
+    .images-drop-down>a:hover+.Images,
     .mega-drop-down a:hover+.mega-menu,
     li.flyout-mega>a:hover+.flyout-mega-wrap {
         display: block;
+    }
 
+    .drop-down-ul {
+        display: none;
+    }
+
+    .flyout-right>ul,
+    .flyout-left>ul {
+        top: 0;
+        min-width: 230px;
+        display: none;
+        border-left: 1px solid #365670;
+    } 
+    li.drop-down>ul>li>a,
+    .flyout-right ul>li>a,
+    .flyout-left ul>li>a {
+        font-size: 17px;
+        color: #000;
+        font-weight: 400;
+        display: block;
+        padding: 15px 25px;
+        text-decoration: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        background-color: #fff;
+        /* border-bottom: 1px dotted #547787; */
+        -webkit-transition: color 0.2s linear, background 0.2s linear;
+        -moz-transition: color 0.2s linear, background 0.2s linear;
+        -o-transition: color 0.2s linear, background 0.2s linear;
+        transition: color 0.2s linear, background 0.2s linear;
     }
 
     .logo {
         float: left;
         margin-right: 20px;
-        margin-right: 25% !important;
+        margin-right: 20% !important;
     }
 
     .logo img {
@@ -120,6 +159,7 @@
             display: block;
             padding: 12px 22px;
         }
+
 
         .mega-menu,
         .flyout-mega-wrap,
@@ -141,17 +181,23 @@
 
     }
 
-    @media (max-width:767px) {
+    @media (max-width:980px) {
 
         .exo-menu {
-            min-height: 58px;
+            min-height: 50px;
             background-color: #fff;
             width: 100%;
-        }
+
+        }   
 
         .exo-menu>li>a {
             width: 100%;
             display: none;
+
+        }
+
+        .toggle-menu {
+            display: block;
 
         }
 
@@ -200,16 +246,15 @@
         height: 60px;
     }
 
-    @media (max-width: 992px) {
+    @media (max-width: 1080px) {
         .exo-menu li a {
             background-color: #fff !important;
         }
 
         .logo {
-            margin-right: 0% !important;
+            margin-right: 8% !important;
         }
     }
-
 </style>
 
 
@@ -222,10 +267,35 @@
 
     <div class="container">
         <ul class="exo-menu">
+
             <a href="{{ route('home') }}" class="logo"><img src="{{ asset('assets/images/logo.png') }}"
                     alt="DIU Logo"></a>
-            <li class="mega-drop-down"><a href="#"> DIU<img src="{{ asset('/assets/img/down-arow.png') }}"
-                        alt="" style="margin-bottom: 2px;height:20px"></a>
+
+            {{-- <li class="drop-down"><a href="#"></i> Flyout</a>
+                        <!--Drop Down-->
+                        <ul class="drop-down-ul animated fadeIn">
+                        <li class="flyout-right"><a href="#">Flyout Right</a><!--Flyout Right-->
+                            <ul class="animated fadeIn">
+                                <li><a href="#">Mobile</a></li>
+                                <li><a href="#">Computer</a></li>
+                                <li><a href="#">Watch</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="flyout-left"><a href="#">Flyout Left</a><!--Flyout Left-->
+                            <ul class="animated fadeIn">
+                                <li><a href="#">Mobile</a></li>
+                                <li><a href="#">Computer</a></li>
+                                <li><a href="#">Watch</a></li>
+                            </ul>			
+                        </li>
+                        
+                        <li><a href="#">No Flyout</a></li>
+                         
+                        </ul>
+                    
+                    </li>  --}}
+            <li class="mega-drop-down"><a href="#"> DIU</a>
                 <div class="animated fadeIn mega-menu">
                     <div class="mega-menu-wrap">
                         <div class="row">
@@ -266,25 +336,28 @@
                                     <li><a href="{{ route('publications') }}">Publications</a></li>
                                     <li><a href="{{ route('certificate-verification') }}">Certificate Verifications</a>
                                     </li>
-                                    {{-- <li><a href="https://students.diu.ac/" target="_blank">Students Portal </a></li> --}}
 
                                 </ul>
                             </div>
-
-
-
-
-
                         </div>
                     </div>
                 </div>
             </li>
-            <li class="mega-drop-down"><a href="#"> Study<img src="{{ asset('/assets/img/down-arow.png') }}"
-                        alt="" style="margin-bottom: 2px;height:20px"></a>
+            <li class="drop-down"><a href="#"></i> Authority</a>
+                <ul class="drop-down-ul animated fadeIn">
+                    <li><a href="{{ route('vc') }}">VC</a></li>
+                    <li><a href="{{ route('pro_vc') }}"> Pro Vc</a></li>
+                    <li><a href="{{ route('treasurer') }}"> Treasurer</a></li>
+                    <li><a href="{{ route('registrar') }}"> Registrar</a></li>
+                    <li><a href="{{ route('chairman') }}"> Chairman ( BOT )</a></li>
+                </ul>
+            </li>
+
+
+            <li class="mega-drop-down"><a href="#"> Study</a>
                 <div class="animated fadeIn mega-menu">
                     <div class="mega-menu-wrap">
                         <div class="row">
-
                             <div class=" col-xl-3 col-md-3 col-sm-12">
                                 <h4 class="row mega-title">ADMISSIONS</h4>
                                 <ul>
@@ -296,11 +369,9 @@
                                     <li><a href="{{ route('admission-help-desk') }}">Admission Help Desk</a></li>
                                 </ul>
                             </div>
-
                             <div class=" col-xl-3 col-md-3 col-sm-12">
                                 <h4 class="row mega-title">Programs</h4>
                                 <ul>
-
                                     <li><a href="/programs/department-of-english" target="_blank">Department of
                                             English</a></li>
                                     <li><a href="/programs/department-of-law" target="_blank">Department of Law</a></li>
@@ -308,7 +379,6 @@
                                             Sociology</a></li>
                                     <li><a href="/programs/department-of-business-administration"
                                             target="_blank">Department of Business Administration</a></li>
-
 
                                 </ul>
                             </div>
@@ -318,19 +388,15 @@
                                     <li><a href="/programs/department-of-pharmacy" target="_blank">Department of
                                             Pharmacy</a></li>
                                     <li><a href="/programs/department-of-eee" target="_blank">Department of EEE</a></li>
-
-
                                     <li><a href="/programs/department-of-cse" target="_blank">Department of CSE</a></li>
                                     <li><a href="/programs/department-of-civil-engineering" target="_blank">Department
                                             of Civil Engineering</a></li>
-
 
                                 </ul>
                             </div>
                             <div class=" col-xl-3 col-md-3 col-sm-12">
                                 <h4 class="row mega-title">Programs</h4>
                                 <ul>
-
                                     <li><a href="/programs/department-of-political-science" target="_blank">Department
                                             of Political Science</a></li>
                                     <li><a href="/programs/department-of-economics" target="_blank">Department of
@@ -346,16 +412,20 @@
                     </div>
                 </div>
             </li>
-            {{-- <li><a href="{{ route('notice-board') }}">Notice Board</a></li> --}}
-            <li class="mega-drop-down"><a href="#"> Campus Life<img
-                        src="{{ asset('/assets/img/down-arow.png') }}" alt=""
-                        style="margin-bottom: 2px;height:20px"></a>
+            <li class="drop-down"><a href="#"></i> Faculty</a>
+                <ul class="drop-down-ul animated fadeIn">
+                    <li><a href="{{route('law')}}"> Faculty of Law</a></li>
+                    <li><a href="#"> Faculty of Business Studies</a></li>
+                    <li><a href="#"> Faculty of Arts and Social Sciences</a></li>
+                    <li><a href="#"> Faculty of Science and Engineering </a></li>
+                </ul>
+            </li>
+
+
+            <li class="mega-drop-down"><a href="#"> Campus Life</a>
                 <div class="animated fadeIn mega-menu">
                     <div class="mega-menu-wrap">
                         <div class="row">
-
-
-
                             <div class=" col-xl-4 col-md-4 col-sm-12">
                                 <h4 class="row mega-title"></h4>
                                 <ul>
@@ -372,7 +442,6 @@
                                     <li><a href="{{ route('health-service') }}">Health Service</a></li>
                                     <li><a href="{{ route('accommodation') }}">Accommodation</a></li>
                                     <li><a href="{{ route('student-welfare') }}">Student’s Welfare</a></li>
-
                                 </ul>
                             </div>
                             <div class=" col-xl-4 col-md-4 col-sm-12">
@@ -382,28 +451,24 @@
                                     <li><a href="{{ route('course-counseling') }}">On-Course Counseling</a></li>
                                     <li><a href="{{ route('internet') }}">Wi-Fi and Internet</a></li>
                                     <li><a href="{{ route('canteen') }}">Canteen & Common Rooms</a></li>
-
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </li>
-            <li class="mega-drop-down"><a href="#"> Community<img
-                        src="{{ asset('/assets/img/down-arow.png') }}" alt=""
-                        style="margin-bottom: 2px;height:20px"></a>
+            <li class="mega-drop-down"><a href="#"> Community
+                    {{-- <img src="{{ asset('/assets/img/down-arow.png') }}" alt=""
+                        style="margin-bottom: 2px;height:20px"> --}}
+                </a>
                 <div class="animated fadeIn mega-menu">
                     <div class="mega-menu-wrap">
                         <div class="row">
-
-
-
                             <div class=" col-xl-4 col-md-4 col-sm-12">
                                 <h4 class="row mega-title"></h4>
                                 <ul>
                                     <li><a href="#"> Build Partnership</a></li>
                                     <li><a href="#"> Engage On Strength</a></li>
-
                                 </ul>
                             </div>
                             <div class=" col-xl-4 col-md-4 col-sm-12">
@@ -411,7 +476,6 @@
                                 <ul>
                                     <li><a href="#">Events & Opportunity</a></li>
                                     <li><a href="#">Alumni</a></li>
-
                                 </ul>
                             </div>
                             <div class=" col-xl-4 col-md-4 col-sm-12">
@@ -424,18 +488,12 @@
                                 </ul>
                             </div>
 
-
-
-
-
                         </div>
                     </div>
                 </div>
             </li>
-            {{-- <li><a href="{{ route('contact') }}"><span>CONTACT</span></a> --}}
-
         </ul>
-        <a href="#" class="toggle-menu d-block d-lg-none d-md-none"><i class="fa fa-bars"></i></a>
+        <a href="#" class="toggle-menu d-block d-lg-none"><i class="fa fa-bars"></i></a>
     </div>
     <script>
         $(function() {
@@ -446,4 +504,17 @@
 
         });
     </script>
+    <script>
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            dropdown.addEventListener('mouseenter', () => {
+                dropdown.querySelector('.dropdown-menu').classList.add('show');
+            });
+
+            dropdown.addEventListener('mouseleave', () => {
+                dropdown.querySelector('.dropdown-menu').classList.remove('show');
+            });
+        });
+    </script>
+
+
 </header>

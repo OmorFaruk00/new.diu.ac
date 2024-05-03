@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use App\Traits\ApiTrait;
 
-class DiuAcController extends Controller
+class DiuController extends Controller
 {
     use ApiTrait;
     public function index(){
@@ -67,6 +67,9 @@ class DiuAcController extends Controller
         //   $keyResourcePersons = $this->keyResourcePersons();
         return view('academics.faculty');
     }
+    public function futureStudent(){
+        return view('academics.future-student');
+    }
     public function facultyDetails($slug){
         return view('academics.faculty-details', compact('slug'));
     }
@@ -76,6 +79,17 @@ class DiuAcController extends Controller
     public function convocation(){
          $convocations = $this->convocationData();
         return view('academics.convocation',compact('convocations'));
+    }
+    public function journals(){
+        return view('journal.index');
+    }
+    public function journalsVol12(){
+        return view('journal.vol12');
+
+    }
+    public function journalDetails($id){
+        return view('journal.details',compact('id'));
+
     }
     public function publications(){
         $publications = $this->publication();
@@ -218,6 +232,30 @@ class DiuAcController extends Controller
         return view('cell.cecd');
     }
 
+    public function vc(){
+        return view('authority.vc');
+    }
+    public function proVc(){
+        return view('authority.pro-vc');
+    }
+    public function treasurer(){
+        return view('authority.treasurer');
+    }
+    public function  registrar(){
+        return view('authority. registrar');
+    }
+    public function chairman(){
+        return view('authority.chairman');
+    }
+
+
+    public function facultyLaw(){
+        return view('faculty.law');
+    }
+   
+   
+
+    
 
     
    

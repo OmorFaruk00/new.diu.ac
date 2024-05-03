@@ -1,4 +1,19 @@
 
+<style>
+    #footer {
+  background: #fff;
+  background-image: linear-gradient(#01AA4D,#30a866,#48b479, #F8880C) !important;  
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+  background: #ebf7fc;
+  height: 100%;
+}
+.bx{
+    color: #fff !important;
+}
+</style>
+
 <footer id="footer">
  
 

@@ -106,10 +106,10 @@
 
   
     <!-- End Header -->
-    <main >
+    <main1 >
             @yield('content')
 
-    </main>
+    </main1>
 
 
 
