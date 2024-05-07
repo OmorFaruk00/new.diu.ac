@@ -6,7 +6,7 @@
 </style>
 
 <div id="noticedetails" data-slug="{{ $slug }}">
-    <div class="containr notice">
+    <div class=" notice">
         <h3 v-text="notice.title"></h3>
         <p><strong>Published Date:</strong> <span v-text="notice.published_date"></span></p>
         <p v-html="notice.description"></p>
@@ -27,6 +27,7 @@
 
         </div>
     </div>
+</div>
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -58,8 +59,8 @@
 
                 created() {
                     this.slug = $('#noticedetails').data(
-                    'slug'); // Assign slug from data attribute to Vue data
-                    this.getPrograms(); // Call getPrograms to fetch notice data
+                    'slug'); 
+                    this.getPrograms(); 
                 }
             });
         });

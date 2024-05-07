@@ -16,8 +16,8 @@
     }
     </style>
 
-<section class="applynow" >
-    <div class="container py-5" >
+<section class="applynow">
+    <div class="container py-5">
         <div class="d-flex  justify-content-center">
             <div class=" ">
                 <h4 class=" pt-2" style="font-size: 20px">FOLLOW US</h4>

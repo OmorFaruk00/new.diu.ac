@@ -70,7 +70,7 @@
             <h4 class="heading">CURRENT STATISTICS: OUR STRENGTH </h4>
         </div>
         <div class="row">
-            <div class=" col-lg-4 col-md-6 col-sm-12 mb-5">
+            <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="counter">
                     <div class="counter-icon">
                         <span><i class="fa fa-book"></i></span>
@@ -79,7 +79,7 @@
                     <span class="counter-value">12</span>
                 </div>
             </div>
-            <div class=" col-lg-4 col-md-6 col-sm-12 mb-5">
+            <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="counter blue">
                     <div class="counter-icon">
                         <span><i class="fa fa-graduation-cap"></i></span>
@@ -89,7 +89,7 @@
                 </div>
             </div>
             
-            <div class=" col-lg-4 col-md-6 col-sm-12 mb-5">
+            <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="counter green">
                     <div class="counter-icon">
                         <span><i class="fa fa-globe"></i></span>

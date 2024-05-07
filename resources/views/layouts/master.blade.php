@@ -114,7 +114,7 @@
 
 
     <!-- ======= Footer ======= -->
-    <x-footer />
+    <x-new-footer />
     <!-- End Footer -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><img src="{{ asset('/assets/img/up-arow.png') }}" alt=""></a> <!-- Vendor JS Files -->

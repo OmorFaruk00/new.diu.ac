@@ -143,11 +143,11 @@
     .logo {
         float: left;
         margin-right: 20px;
-        margin-right: 20% !important;
+        margin-right: 12% !important;
     }
 
     .logo img {
-        height: 50px;
+        height: 50px !important;
         margin-top: 2px;
     }
 
@@ -252,7 +252,7 @@
         }
 
         .logo {
-            margin-right: 8% !important;
+            margin-right: 0% !important;
         }
     }
 </style>
@@ -268,7 +268,7 @@
     <div class="container">
         <ul class="exo-menu">
 
-            <a href="{{ route('home') }}" class="logo"><img src="{{ asset('assets/images/logo.png') }}"
+            <a href="{{ route('home') }}" class="logo"><img src="{{ asset('assets/images/logo1.png') }}"
                     alt="DIU Logo"></a>
 
             {{-- <li class="drop-down"><a href="#"></i> Flyout</a>
@@ -415,9 +415,9 @@
             <li class="drop-down"><a href="#"></i> Faculty</a>
                 <ul class="drop-down-ul animated fadeIn">
                     <li><a href="{{route('law')}}"> Faculty of Law</a></li>
-                    <li><a href="#"> Faculty of Business Studies</a></li>
-                    <li><a href="#"> Faculty of Arts and Social Sciences</a></li>
-                    <li><a href="#"> Faculty of Science and Engineering </a></li>
+                    <li><a href="{{route('business')}}"> Faculty of Business Studies</a></li>
+                    <li><a href="{{route('science')}}"> Faculty of Science and Engineering </a></li>
+                    <li><a href="{{route('arts')}}"> Faculty of Arts and Social Sciences</a></li>
                 </ul>
             </li>
 
@@ -467,15 +467,15 @@
                             <div class=" col-xl-4 col-md-4 col-sm-12">
                                 <h4 class="row mega-title"></h4>
                                 <ul>
-                                    <li><a href="#"> Build Partnership</a></li>
-                                    <li><a href="#"> Engage On Strength</a></li>
+                                    <li><a href="{{route('build_partnership')}}"> Build Partnership</a></li>
+                                    <li><a href="{{route('engage')}}"> Engage Our Strength</a></li>
                                 </ul>
                             </div>
                             <div class=" col-xl-4 col-md-4 col-sm-12">
                                 <h4 class="row mega-title"></h4>
                                 <ul>
-                                    <li><a href="#">Events & Opportunity</a></li>
-                                    <li><a href="#">Alumni</a></li>
+                                    <li><a href="{{route('event_and_opportunity')}}">Events & Opportunity</a></li>
+                                    <li><a href="https://alumni.diu.ac/" target="_blank">Alumni</a></li>
                                 </ul>
                             </div>
                             <div class=" col-xl-4 col-md-4 col-sm-12">

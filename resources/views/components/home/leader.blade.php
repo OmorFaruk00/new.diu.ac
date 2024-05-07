@@ -35,7 +35,7 @@
                             comprehensive and advanced learning experience, we prepare students to face
                             challenges and lead in the professional world of business.
                         </p>
-                        <a href="{{route('future-student')}}" target="_blank" class="btn btn-apply" style="margin-top: 20px">Future Student</a>
+                        <a href="{{route('future-student')}}" target="_blank" class="btn" style="margin-top: 20px">Future Student</a>
                     </div>
                 </div>
             </div>

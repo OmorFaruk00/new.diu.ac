@@ -57,9 +57,13 @@
     <div class="col-lg-9 col-md-10 col-sm-12 mx-auto">
         <div id="notice" v-if='events'>
             <div class="notice">
-                <div class="d-flex justify-content-center">
+
+                {{-- <div class="d-flex justify-content-center">
                     <img src="assets/images/events.png" class="img-fluid" style="height: 250px;"
                     alt="Section 3 Background Image" />
+                </div> --}}
+                <div class="text-center">
+                    <h4 class="heading">OUR LATEST EVENTS </h4>
                 </div>
                 <div class="row" v-for="(item,index)  in events" :key="index">
                     <div class="contant">

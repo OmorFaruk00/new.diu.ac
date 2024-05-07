@@ -197,7 +197,7 @@
                         institution that promotes eastern culture and values, and meaningfully blends eastern and
                         western thoughts and innovation.</p>
                 </div>
-                <a href="https://admission.diu.ac/register" target="_blank" class="btn btn-apply slide-in-left">Apply Now</a>
+                <a href="https://admission.diu.ac/register" target="_blank" class="btn slide-in-left">Apply Now</a>
             </div>
         </div>
         <div class="carousel-item">
@@ -209,7 +209,7 @@
                 <div class="mx-auto carousel-desc  slide-in-down ">
                     <p style="font-size: 25px">Join us for higher study.</p>
                 </div>
-                <a href="https://admission.diu.ac/register" target="_blank" class="btn btn-apply slide-in-left">Apply Now</a>
+                <a href="https://admission.diu.ac/register" target="_blank" class="btn slide-in-left">Apply Now</a>
             </div>
         </div>
         <div class="carousel-item">
@@ -220,7 +220,7 @@
                 <div class="mx-auto carousel-desc  slide-in-down ">
                     <p style="font-size: 30px">Avail Upto 50% Merit Scholarships</p>
                 </div>
-                <a href="{{route('scholarships')}}" target="_blank" class="btn btn-apply slide-in-left">Scholarship</a>
+                <a href="{{route('scholarships')}}" target="_blank" class="btn slide-in-left">Scholarship</a>
             </div>
         </div>
       

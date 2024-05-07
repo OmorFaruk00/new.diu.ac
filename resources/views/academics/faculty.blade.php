@@ -57,12 +57,12 @@
     }
 
 </style>
-    <main id="main" style="margin-top: 80px">
+    <main id="main">
         <!-- ======= Breadcrumbs ======= -->
         <section class="breadcrumbs">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h1 style="text-transform: uppercase">Faculty</h1>
+                    <h1 style="text-transform: uppercase">Faculty List</h1>
                     <ol>
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li>Faculty</li>
@@ -77,8 +77,7 @@
                 <div class="py-5 col-8 mx-auto">
                     <div class="faculty">
                         <ul>
-                            <li class="list" v-for="(item,index) in programs" :key="index"><a :href="'/faculty/' + item.slug" class="btn btn-block w-100" v-text="item.title" target="_blank"></a></li>
-                         
+                            <li class="list" v-for="(item,index) in programs" :key="index"><a :href="'/faculty/' + item.slug" class="btn btn-block w-100" v-text="item.title" target="_blank"></a></li>       
                             
                         </ul>
                     </div>

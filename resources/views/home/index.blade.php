@@ -7,10 +7,15 @@
          <x-home.leader />
          <x-home.newsEvent />
 
+         @if($event)            
+           <x-home.event :event="$event" />
+         @endif
+
          <x-home.why />
          <x-home.founder />
 
          <x-home.partner />
+         
 
          {{-- <x-campuslife /> --}}
          <x-home.counter />

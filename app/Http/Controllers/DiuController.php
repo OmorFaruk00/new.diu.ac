@@ -13,10 +13,15 @@ class DiuController extends Controller
         // $sliders =  $this->sliderData();
         // $programs =  $this->programsData();
         // $partners =  $this->partnersData();
-        return view('home.index');
+        $event = $this->getEvent();
+        return view('home.index',compact('event'));
     }
     public function about(){
         return view('about.about');
+    }
+    public function test(){
+         $event = $this->getEvent();
+        return view('test',['event'=>$event]);
     }
 
     public function semesterAbroadProgram(){
@@ -252,6 +257,28 @@ class DiuController extends Controller
     public function facultyLaw(){
         return view('faculty.law');
     }
+    public function facultyBusiness(){
+        return view('faculty.business');
+    }
+    public function facultyScience(){
+        return view('faculty.science');
+    }
+    public function facultyArts(){
+        return view('faculty.arts');
+    }
+
+    public function buildPartnership(){
+        return view('community.build-partnership');
+    }
+    public function engageOurStrength(){
+        return view('community.engage');
+    }
+    public function eventAndOpportunity(){
+        return view('community.event-and-opportunity');
+    }
+   
+   
+
    
    
 

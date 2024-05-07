@@ -36,47 +36,21 @@
 
      }
 
-     .notice img{
-        width: 100%;
-        height: 300px;
+     .notice-img{
+         height:400px;
+         width: 90%;
+         float:right
+     }
+     @media (max-width: 1490px) {
+        .notice-img{
+         height:320px;
+         width: 90%;
+         float:right
      }
 
-     .btn-see{
-    color: #131313;
-    background-color: #01AA4D;
-    font-family: "Tilt Neon", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    padding: 8px 14px;
-    border-radius: 12px 12px;
-    border: 2px solid #fff;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 2px 0 2px #000;
-    transition: all 0.3s;
-    float: right;
-} 
-.btn-see:hover{
-    color: #fff;
-    background: #01AA4D;
-    box-shadow: 0 2px 0 2px #0d3b66;
-}
-.btn-see:before {
-    content: "";
-    background-color:#030202;
-    width: 100px;
-    height: 120%;
-    transform: translate(-150%, -50%) skewX(30deg);
-    position: absolute;
-    top: 50%;
-    transition: all 0.5s;
-} 
-.btn-see:hover:before {
-    transform: translate(150%, -50%) skewX(30deg);
-    transition-delay: 0.1s;
-}
+     }
+
+
 
 </style>
 <div style="background: #E5E5E5">
@@ -162,23 +136,25 @@
                             </div>
                         </div>
                         
-                        <a href="{{route('news')}}" class="btn-see" target="_blank"> See More..</a>
+                        <div style="float:right">
+                            <a href="{{route('news')}}" class="btn" target="_blank"><i class="fa fa-archive" aria-hidden="true" style="margin-right: 10px"></i>Archive</a>
+                        </div>
                 </div>
                 {{-- <div class="w-100">
                     <img src="assets/img/sect-4-bars.jpg" alt="" class="w-100" />
                 </div> --}}
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12  order-md-2 order-1" style="">
-                <img src="assets/images/news.png" class="img-fluid" style="margin-top: 70px;"
+                <img src="assets/images/notice.png" class="notice-img" style=""
                     alt="Section 3 Background Image" />
             </div>
         </div>
-        <img src="assets/img/sect-4-bars.jpg" alt="" class="w-100" style="height: 20px;"/>
+        {{-- <img src="{{asset('/assets/img/sect-4-bars.jpg')}}" alt="" class="w-100" style="height: 20px;"/> --}}
     </div>
 </section>
 
 
-<section id="section4">
+{{-- <section id="section4">
     <div class="container">
         <div class="row g-0">
             <div class="col-lg-7 col-md-7 col-sm-12 order-md-1 order-2">
@@ -196,9 +172,7 @@
                         
                         <a href="{{route('events')}}" class="btn-see" target="_blank"> See More..</a>
                 </div>
-                {{-- <div class="w-100">
-                    <img src="assets/img/sect-4-bars.jpg" alt="" class="w-100" />
-                </div> --}}
+               
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12  order-md-2 order-1" style="">
                 <img src="assets/images/events.png" class="img-fluid" style="margin-top: 40px;float:right"
@@ -206,7 +180,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 </div>
 
 

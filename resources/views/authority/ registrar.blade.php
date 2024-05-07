@@ -215,7 +215,7 @@
     </section>
 
 
-    <section class="py-5" style="background: #f5f5f5">
+    <section class="py-5">
         <div class="demo">
             <div class="container">
                 <div class="authority">

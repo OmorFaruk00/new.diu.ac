@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/test','test');
+Route::get('/test',[DiuController::class,'test'])->name('test');
  Route::get('/about',[DiuController::class,'about'])->name('about');
  Route::get('/',[DiuController::class,'index'])->name('home');
  Route::get('/semester-abroad-program',[DiuController::class,'semesterAbroadProgram'])->name('semester-abroad-program');
@@ -103,9 +103,15 @@ Route::group(['prefix' => 'authority'], function () {
     Route::get('/chairman',[DiuController::class,'chairman'])->name('chairman');  
 
 });
-// Route::group(['prefix' => 'faculty'], function () {
     Route::get('/faculy_of_law',[DiuController::class,'facultyLaw'])->name('law');
+    Route::get('/faculy_of_business',[DiuController::class,'facultyBusiness'])->name('business');
+    Route::get('/faculy_of_arts',[DiuController::class,'facultyArts'])->name('arts');
+    Route::get('/faculy_of_science',[DiuController::class,'facultyScience'])->name('science');
+
+
+    Route::get('/build_partnership',[DiuController::class,'buildPartnership'])->name('build_partnership');
+    Route::get('/engage_our_strength',[DiuController::class,'engageOurStrength'])->name('engage');
+    Route::get('/event_and_opportunity',[DiuController::class,'eventAndOpportunity'])->name('event_and_opportunity');
   
 
-// });
 

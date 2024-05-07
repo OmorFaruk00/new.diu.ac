@@ -142,7 +142,7 @@
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-12 mx-auto mt-3">
-            <button type="button" class="search-btn" id="find">Search</button>
+            <button type="button" class="btn w-100" id="find">Search</button>
             <span id="loadingSpinner" class="fa fa-spinner fa-pulse" style="display: none;"></span>
             <button id="clearButton" type="button" class="btn btn-outline-danger btn-block mt-2"
                 style="display: none;">Clear</button>

@@ -21,13 +21,13 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-3 col-md-6 footer-links">
+                <div class="col-lg-2 col-md-6 footer-links">
                     
-                    <a href="{{route('home')}}" class="logo"><img src="{{asset('assets/images/diu_white.png')}}" class="mb-3" alt="DIU Logo" style="height: 100px; width:100%"
+                    <a href="{{route('home')}}" class="logo"><img src="{{asset('assets/images/logo2.png')}}" class="mb-3" alt="DIU Logo" style="height: 200px; width:100%"
                       ></a>
                     
                 </div>
-                <div class="col-lg-3 col-md-6 footer-links">
+                <div class="col-lg-2 col-md-6 footer-links">
                     <h4>CONTACT US</h4>                    
                     <p>Dhaka International University, rated among the top private universities of Bangladesh,<br><br>
 
@@ -39,7 +39,7 @@
                         admission@diu.net.bd<br>
                     </p>
                 </div>
-                <div class="col-lg-3 col-md-6 footer-links">
+                <div class="col-lg-2 col-md-6 footer-links">
                     <h4>USEFUL LINKS</h4>
                     <ul>
                         <li><i class="bx bx-chevron-right"></i> <a href="http://www.ugc-universities.gov.bd/university-detail/73" target="_blank">UGC Website</a></li>
@@ -51,7 +51,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-md-6 footer-links">
+                <div class="col-lg-2 col-md-6 footer-links">
                     <h4>USEFUL LINKS</h4>
                     <ul>
                         <li><i class="bx bx-chevron-right"></i> <a href="https://blog.diu.ac/" target="_blank">Blog</a></li>
@@ -63,6 +63,12 @@
                         
                      
                     </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=zpd50ugWdJd0.knmLtiVuBsXE"
+                    width="100%"
+                    height="250px"></iframe> 
                 </div>
 
 

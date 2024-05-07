@@ -57,7 +57,7 @@
         <div id="notice" v-if='notices'>
             <div class="notice">
                 <div class="d-flex justify-content-center">
-                    <img src="assets/images/news.png" class="img-fluid" style="height: 250px;"
+                    <img src="assets/images/notice.png" class="img-fluid" style="height: 250px;"
                     alt="Section 3 Background Image" />
                 </div>
                 <div class="row" v-for="notice in notices" :key="notice.id">
