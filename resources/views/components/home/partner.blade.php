@@ -18,11 +18,12 @@
         <h4 class="partner-title">
             OUR PARTNERS
         </h4>
+        <div id="partnerData">     
         <div class="owl-carousel owl-theme" id="partner">
-            <div class="item">
-                <img class="" src="{{ asset('assets/images/partners/partner1.png') }}" alt="">
-            </div>
-            <div class="item">
+            <div class="item" v-for="(item,index) in partners" :key="index" >
+                <img :src="item.image_url" alt="">
+            </div>  
+            {{-- <div class="item">
                 <img class="" src="{{ asset('assets/images/partners/partner2.png') }}" alt="">
             </div>
             <div class="item">
@@ -42,7 +43,8 @@
             </div>
             <div class="item">
                 <img class="" src="{{ asset('assets/images/partners/partner8.png') }}" alt="">
-            </div>
+            </div> --}}
+        </div>
         </div>
     </div>
 </section>
@@ -53,67 +55,65 @@
 </section>
 
 <script>
-    var owl = $('#partner');
-    owl.owlCarousel({
-        margin: 20,
-        dots: true,
-        nav: true,
-        navText: [
-            "<i class='fa fa-chevron-left'></i>",
-            "<i class='fa fa-chevron-right'></i>"
-        ],
-        autoplay: true,
-        autoplayHoverPause: true,
-        loop: true,
-        responsive: {
-            0: {
-                items: 2
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 6
-            },
-            1200: {
-                items: 6
-            }
-        }
-    });
-</script>
-{{-- <script type="text/javascript">
     $(document).ready(function() {
         var vue = new Vue({
-            el: '#partner',
+            el: '#partnerData',
             data: {
                 config: {
                     base_path: "{{ env('API_URL') }}",
                 },
-
                 partners: [],
-
-
             },
-
             methods: {
-                getPrograms() {
+                getData() {
                     var vm = this;
 
                     axios.get(`${vm.config.base_path}/public-diu-website/partners`)
-                        .then((
-                            response) => {
+                        .then((response) => {
                             vm.partners = response.data;
-
+                            setTimeout(function() {
+                            var owl = $('#partner');
+                            owl.owlCarousel({
+                                margin: 20,
+                                dots: true,
+                                nav: true,
+                                navText: [
+                                    "<i class='fa fa-chevron-left'></i>",
+                                    "<i class='fa fa-chevron-right'></i>"
+                                ],
+                                autoplay: true,
+                                autoplayHoverPause: true,
+                                loop: true,
+                                responsive: {
+                                    0: {
+                                        items: 2
+                                    },
+                                    600: {
+                                        items: 2
+                                    },
+                                    1000: {
+                                        items: 6
+                                    },
+                                    1200: {
+                                        items: 6
+                                    }
+                                }
+                            });
+                        }, 100);
+                            
+                     
                         }).catch((error) => {
                             console.log(error.response);
-
                         });
                 }
-
             },
             created() {
-                this.getPrograms();
+                this.getData();
+                
+
+      
+   
             }
         });
     });
-</script> --}}
+</script>

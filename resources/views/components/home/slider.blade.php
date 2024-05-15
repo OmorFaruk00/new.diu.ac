@@ -5,51 +5,27 @@
         /* background-color: rgba(0, 0, 0, 0.9); */
         /* background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%); */
     }
+    .caption1-bg{
+        background: rgba(4, 4, 4, 0.7);
+        opacity: 0.85;
+        border-radius: 10px;
 
-
-
-
-
-
-
-    .btn-apply {
-        color: #131313;
-        background-color: #01AA4D;
-        font-family: "Tilt Neon", sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        text-transform: capitalize;
-        letter-spacing: 1px;
-        padding: 5px 15px;
-        border-radius: 12px 12px;
-        border: 2px solid #fff;
-        overflow: hidden;
-        position: relative;
-        box-shadow: 0 2px 0 2px #000;
-        transition: all 0.3s;
     }
+    .caption-bg{
+        background: rgba(4, 4, 4, 0.7);
+        opacity: 0.85;
+        border-radius: 10px;
+        width: 50%;
+        height: 230px;
+        float: left !important;
+        padding: 20px 10px;
+        position: absolute; 
+        top: 55%; 
+        left: 10%; 
+       transform: translate(-10%, -40%);
 
-    .btn-apply:hover {
-        color: #fff;
-        background: #01AA4D;
-        box-shadow: 0 2px 0 2px #0d3b66;
     }
-
-    .btn-apply:before {
-        content: "";
-        background-color: #030202;
-        width: 100px;
-        height: 120%;
-        transform: translate(-150%, -50%) skewX(30deg);
-        position: absolute;
-        top: 50%;
-        transition: all 0.5s;
-    }
-
-    .btn-apply:hover:before {
-        transform: translate(150%, -50%) skewX(30deg);
-        transition-delay: 0.1s;
-    }
+   
 
     .carousel-caption h2 {
         font-size: 30px;
@@ -157,8 +133,15 @@
 
     @media (max-width: 992px) {
         .carousel-item img {
-            height: 50vh;
+            height: 60vh;
         }
+        .caption-bg{
+        width: 90%;
+        height:250px; 
+        margin-left: 5%;    
+      
+
+    }
 
         .carousel-desc {
             width: 100%;
@@ -169,7 +152,7 @@
         }
 
         .carousel-caption p {
-            font-size: 14px;
+            font-size: 12px;
             /* width: 80%; */
         }
     }
@@ -190,7 +173,7 @@
         <div class="carousel-item active">
             <img src="{{asset('assets/images/slider/slider1.jpeg')}}" class="d-block w-100"
                 alt="...">
-            <div class="carousel-caption">
+            <div class="carousel-caption caption1-bg">
                 <h2 class="slide-in-left">Welcome To Dhaka International University</h2>
                 <div class="mx-auto carousel-desc  slide-in-down ">
                     <p>Dhaka International University, rated among the top private universities of Bangladesh, is an
@@ -203,11 +186,11 @@
         <div class="carousel-item">
             <img src="{{asset('assets/images/slider/slider2.jpeg')}}" class="d-block w-100"
                 alt="...">
-            <div class="carousel-caption">
+            <div class="carousel-caption caption-bg">
                 <h2 class="slide-in-left">Admission Open Now</h2>
-                <h2 class="slide-in-left" style="font-size: 27px">Undergraduate / Postgraduate 2024</h2>
+                <h2 class="slide-in-left" style="font-size: 27px">Undergraduate - Postgraduate 2024</h2>
                 <div class="mx-auto carousel-desc  slide-in-down ">
-                    <p style="font-size: 25px">Join us for higher study.</p>
+                    <p style="font-size: 25px">Join us for higher study</p>
                 </div>
                 <a href="https://admission.diu.ac/register" target="_blank" class="btn slide-in-left">Apply Now</a>
             </div>
@@ -215,7 +198,7 @@
         <div class="carousel-item">
             <img src="{{asset('assets/images/slider/slider33.jpeg')}}" class="d-block w-100"
                 alt="...">
-            <div class="carousel-caption">
+            <div class="carousel-caption caption-bg">
                 <h2 class="slide-in-left">Result Based Scholarship</h2>
                 <div class="mx-auto carousel-desc  slide-in-down ">
                     <p style="font-size: 30px">Avail Upto 50% Merit Scholarships</p>

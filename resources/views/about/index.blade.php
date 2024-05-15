@@ -1,5 +1,14 @@
 @extends('layouts.master')
 @section('content')
+<style>
+    .about-desc{
+        color: #6c6a6a !important;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: justify;
+            font-weight: 500;
+    }
+</style>
     <main id="main" style="margin-top: 80px;">
 
         <!-- ======= Breadcrumbs ======= -->
@@ -34,14 +43,14 @@
                         <div class="text-center">
                             <h2 class=" my-4 heading">INTRODUCTION</h2>
                         </div>
-                        <p style="text-align: justify">
+                        <p class="about-desc">
                             Dhaka International University (DIU) is one of the leading, familiar and note-worthy private
                             universities in Bangladesh which was established on 7th April 1995. It is a non-profitable
                             institution having strict academic discipline. This university was founded by Late Alhaj
                             Professor Dr. A. B. M. Mafizul Islam Patwari, Former Chairman of the Department of Law,
                             University of Dhaka, Bangladesh.
                         </p>
-                        <p style="text-align: justify">It is recognized that Dhaka International University is such a
+                        <p class="about-desc">It is recognized that Dhaka International University is such a
                             private university, which was founded by a person who was a renowned humanist and academician.He
                             established this university with high hopes and aspirations to disseminate knowledge and thus to
                             extend the horizon of knowledge. That is why, the motto of DIU is the universal adage,
@@ -56,13 +65,13 @@
                         <div class="text-center">
                             <h2 class=" my-4 heading">DIU AND ITS FOUNDER</h2>
                         </div>
-                        <p style="text-align: justify">
+                        <p class="about-desc">
                             Dhaka International University was founded by Late Alhaj Professor Dr. A.B.M. Mafizul Islam
                             Patwari. He was a Professor of the Department of Law, University of Dhaka, Bangladesh. It may be
                             observed that Dhaka International University is perhaps the only private university which was
                             established by a person who was basically an academician.
                         </p>
-                        <p style="text-align: justify">He established this university with high hopes and aspirations to
+                        <p class="about-desc">He established this university with high hopes and aspirations to
                             disseminate knowledge and thus to extend the horizon of knowledge. That is why, the slogan of
                             DIU is the universal adage, “Knowledge is Power.” DIU wants to generate this power among
                             individuals through teaching, training and guidance by using age worthy, pragmatic and
@@ -76,6 +85,10 @@
 
 
             </div>
+        </section>
+
+        <section>
+            <x-experienceStaff />
         </section>
 
     </main>

@@ -291,28 +291,28 @@
     </section>
     <section style="background: #f5f5f5">
         <div class="container pt-5">
-            {{-- <div class="">
+            <div class="">
                 <div class="faculty">
                     <div class="faculty-icon">
-                        <img src="https://api.diu.ac/images/profile_photo_file_141.jpg" alt="" style="height: 100%">
+                        <img src="https://api.diu.ac//images/diuac/vitalPersion/1641714774_Ojmj4JG4PB.jpg" alt="" style="height: 100%">
                     </div>
                     <div class="faculty-details">
-                        <h2 class="title">Dr. A.T.M. Mahbubur Rahman Sarker</h2>
-                        <span class="post">Dean </span>
-                        <a href="https://profile.diu.ac/prof.dr.a.t.mmahbuburrahmansarker" class="profile"
+                        <h2 class="title">PROF.DR. SHAWKAT ARA HUSAIN</h2>
+                        <span class="post">Dean, Faculty of Arts & Social Sciences</span>
+                        {{-- <a href="" class="profile"
                             target="_blank">View
-                            Profile</a>
+                            Profile</a> --}}
 
                     </div>
-                    <ul class="faculty-content">
+                    {{-- <ul class="faculty-content">
                         <li><i class="fa fa-phone"></i> 8801720557279</li>
                         <li><i class="fa fa-envelope"></i> rahman.cse@diu.ac</li>
                         <li><i class="fas fa-map-marker-alt"></i> Department Of CSE, Permanent Campus: <br> <span
                                 class="px-3">Satarkul, Badda,
                                 Dhaka-1212.</span></li>
-                    </ul>
+                    </ul> --}}
                 </div>
-            </div> --}}
+            </div>
 
 
             <div class=" py-5">

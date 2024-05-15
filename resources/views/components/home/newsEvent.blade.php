@@ -53,7 +53,7 @@
 
 
 </style>
-<div style="background: #E5E5E5">
+<div style="background: ">
 <div class="container " id="noticeEvent" >
     {{-- <div class="row" style="">
      <div class="col-lg-6 col-md-6 col-sm-12">

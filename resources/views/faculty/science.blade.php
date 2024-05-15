@@ -213,10 +213,10 @@
             transition: all 0.5s ease 0s;
             box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 
-            
+
         }
 
-      
+
         .department-head .pic {
             overflow: hidden;
             position: relative;
@@ -224,15 +224,58 @@
 
         .department-head:hover .pic img {
             transform: scale(1.2, 1.2);
-          
+
         }
 
-        .department-head .pic img {
-            width: 100%;
-            height: 350px;
-            transform: scale(1, 1);
-            transition: all 0.30s ease 0s;
-            /* border: 5px solid #01AA4D    */
+        /* .department-head .pic img {
+                width: 100%;
+                height: 350px;
+                transform: scale(1, 1);
+                transition: all 0.30s ease 0s;
+            } */
+        .frame img {
+            border: solid 2px;
+            border-bottom-color: #ffe;
+            border-left-color: #eed;
+            border-right-color: #eed;
+            border-top-color: #ccb;
+            height: 300px;
+            width: 100% !important;
+        }
+
+        .frame {
+            background-color: #ddc;
+            border: solid 5vmin #eee;
+            border-bottom-color: #fff;
+            border-left-color: #eee;
+            border-radius: 2px;
+            border-right-color: #eee;
+            border-top-color: #ddd;
+            box-sizing: border-box;
+            position: relative;
+            text-align: center;
+
+            &:before {
+                border-radius: 2px;
+                bottom: -2vmin;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25) inset;
+                content: "";
+                left: -2vmin;
+                position: absolute;
+                right: -2vmin;
+                top: -2vmin;
+            }
+
+            &:after {
+                border-radius: 2px;
+                bottom: -2.5vmin;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+                content: "";
+                left: -2.5vmin;
+                position: absolute;
+                right: -2.5vmin;
+                top: -2.5vmin;
+            }
         }
 
         .department-head .department-content {
@@ -241,6 +284,7 @@
             justify-content: center;
             align-items: center;
             height: 130px;
+            /* box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; */
         }
 
         .department-head .title {
@@ -293,7 +337,7 @@
         <div class="container pt-5">
             <div class="">
                 <div class="faculty">
-                    <div class="faculty-icon">
+                    <div class="faculty-icon ">
                         <img src="https://api.diu.ac/images/profile_photo_file_141.jpg" alt="" style="height: 100%">
                     </div>
                     <div class="faculty-details">
@@ -356,9 +400,9 @@
                                             <p> Electrical and Electronic Engineering</p>
                                         </li>
                                         <li>
-                                            <p>  Computer Science & Engineering</p>
+                                            <p> Computer Science & Engineering</p>
                                         </li>
-                                        
+
                                     </ul>
                                 </div>
                             </div>
@@ -391,12 +435,12 @@
 
 
                 <div class="container">
-                    <h3 class="department-title">Department Chairman</h3>
+                    <h3 class="department-title">Department Chairmans</h3>
                     <div class="row">
                         <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                             <a href="https://profile.diu.ac/shovon" target="_blank">
                                 <div class="department-head">
-                                    <div class="pic">
+                                    <div class="frame">
                                         <img src="https://api.diu.ac/images/profile_photo_file_615.jpg">
                                     </div>
                                     <div class="department-content">
@@ -410,7 +454,7 @@
                         <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                             <a href="https://profile.diu.ac/mohammad.tareq" target="_blank">
                                 <div class="department-head">
-                                    <div class="pic">
+                                    <div class="frame">
                                         <img src="https://api.diu.ac/images/profile_photo_file_310.jpg">
                                     </div>
                                     <div class="department-content">
@@ -424,7 +468,7 @@
                         <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                             <a href="https://profile.diu.ac/prof.dr.a.t.mmahbuburrahmansarker" target="_blank">
                                 <div class="department-head">
-                                    <div class="pic">
+                                    <div class="frame">
                                         <img src="https://api.diu.ac/images/profile_photo_file_141.jpg">
                                     </div>
                                     <div class="department-content">
@@ -438,7 +482,7 @@
                         <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                             <a href="https://profile.diu.ac/dr.md.asaduzzamanshishir" target="_blank">
                                 <div class="department-head">
-                                    <div class="pic">
+                                    <div class="frame">
                                         <img src="https://api.diu.ac/images/profile_photo_file_1099.jpg">
                                     </div>
                                     <div class="department-content">
@@ -452,7 +496,7 @@
                         <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                             <a href="https://profile.diu.ac/dr.hafizurrahman" target="_blank">
                                 <div class="department-head">
-                                    <div class="pic">
+                                    <div class="frame">
                                         <img src="https://api.diu.ac/images/profile_photo_file_1058.jpg">
                                     </div>
                                     <div class="department-content">
@@ -466,7 +510,7 @@
                         <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                             <a href="https://profile.diu.ac/professor.farida.begum" target="_blank">
                                 <div class="department-head">
-                                    <div class="pic">
+                                    <div class="frame">
                                         <img src="https://api.diu.ac/images/profile_photo_file_650.jpg">
                                     </div>
                                     <div class="department-content">

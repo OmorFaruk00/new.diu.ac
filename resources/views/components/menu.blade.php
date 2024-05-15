@@ -41,7 +41,19 @@
     li.drop-down ul>li>a:hover {
         color: #01AA4D;
     }
+    .mega-menu ul li a:hover {
+        color: #01AA4D !important;
+    }
 
+    /* .exo-menu > li > a.active::after,
+.exo-menu > li > a:hover::after
+ {
+    content: ""; 
+    display: block; 
+    width: 100%; 
+    height: 3px; 
+    background-color: #01AA4D; 
+} */
     h4.row.mega-title {
         color: #000;
         margin-top: 0px;
@@ -81,13 +93,12 @@
         font-weight: 400;
     }
 
-    .mega-menu ul li a:hover {
-        /* color: #01AA4D; */
-        border-color: #004d40;
-    }
+ 
 
     /*common*/
     .mega-menu {
+        /* background: rgba(4, 4, 4, 0.7); */
+        /* opacity: 0.85; */
         background-color: #fff;
         color: #000;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;

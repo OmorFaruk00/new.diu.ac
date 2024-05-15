@@ -56,13 +56,13 @@
     margin-top: 15px;
 }
 .team .title{
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 700;
     text-transform: capitalize;
     margin: 0 0 3px;
 }
 .team .post{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: capitalize;
 }
@@ -122,7 +122,23 @@
     /* border-radius: 30px 0px 0px 0px; */
 }
 .profile-btn:hover{color: #000}
-@media screen and (max-width:576px) {
+@media screen and (min-width:976px) and (max-width:1280px){
+.team{
+    height: 270px;
+}
+.team .signature-icon {
+    height: 170px;
+    width: 170px;
+    border: 5px solid #fff;
+    border-radius: 0 30%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    position: absolute;
+    left: 30px;
+    top: 43%;
+}
+}
+@media screen and (max-width:970px){
     .team{ padding: 210px 0 40px 0; }
     .team:before{
         width: 100%;
@@ -157,7 +173,17 @@
     <section class="breadcrumbs">
         <div class="container">
 
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d.team .signature-icon {
+                height: 160px;
+                width: 160px;
+                border: 5px solid #fff;
+                border-radius: 0 30%;
+                transform: translateY(-50%);
+                overflow: hidden;
+                position: absolute;
+                left: 40px;
+                top: 43%;
+            }-flex justify-content-between align-items-center">
                 <h1 style="text-transform:uppercase;">Admission Help Desk</h1>
                 <ol>
                     <li><a href="{{route('home')}}">Home</a></li>
@@ -183,7 +209,8 @@
                         <ul class="signature-content">
                             <li><span class="fa fa-phone"></span> <strong v-text="item.phone_no"></strong></li>
                             <li><span class="fa fa-envelope"></span> <strong v-text="item.office_email"></strong></li>
-                            <li><span class="fa fa-map-marker"></span> <strong v-text="item.office_address"></strong></li>
+                            {{-- <li><span class="fa fa-map-marker"></span> <strong v-text="item.office_address"></strong></li> --}}
+                            <li><span class="fa fa-map-marker"></span> <strong> Permanent Campus: Satarkul, Badda, Dhaka-1212.</strong></li>
                            
                         </ul>
                         <ul class="icon">

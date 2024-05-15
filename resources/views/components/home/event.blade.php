@@ -51,7 +51,7 @@
         display: none !important;
     }
     .event{
-        float: right;
+        text-align: right;
     }
     
     .event a i{
@@ -64,22 +64,23 @@
     <div class="container py-5">
         <h4 class="event-title">News and Events</h4>
 
-        <div class="owl-carousel owl-theme" id="event" style="margin-bottom: 20px">
-          @foreach ($event->data as $row)
-          <a href="/notice-details/{{$row->slug}}" target="_blank">
-            <div class="item">
-                <div class="box">
-                    <img src="assets/images/event.jpg" alt="Image">
-                    <div class="box-content">
-                        <h3 class="title">{{ $row->title}}
-                        </h3>
-                        <span class="post">{{$row->published_date}}</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-            @endforeach  
-
+       
+       <div id="eventData">       
+        <div class="owl-carousel owl-theme" id="event" style="margin-bottom: 20px">          
+              <div class="item" v-for="(item,index) in events" :key="index">
+                <a :href="'/notice-details/'+ item.slug" target="_blank"> 
+                  <div class="box">
+                      <img src="assets/images/event.jpg" alt="Image">
+                      <div class="box-content">
+                          <h3 class="title" v-text="item.title">
+                          </h3>
+                          <span class="post" v-text="item.published_date"></span>
+                      </div>
+                  </div>
+                </a>
+              </div>        
+  
+          </div>
         </div>
         <div class="event">
             <a href="{{route('events')}}" target="_blank" class="btn"><i class="fa fa-archive" aria-hidden="true"></i>Archive</a>
@@ -96,34 +97,67 @@
 
 
 <script>
-    var owl = $('#event');
-    owl.owlCarousel({
-        margin: 20,
-        dots: true,
-        nav: true,
-        navText: [
-            "<i class='fa fa-chevron-left'></i>",
-            "<i class='fa fa-chevron-right'></i>"
-        ],
-        autoplay: true,
-        autoplayHoverPause: true,
-        loop: true,
-        responsive: {
-            0: {
-                items: 2
+    $(document).ready(function() {
+        var vue = new Vue({
+            el: '#eventData',
+            data: {
+                config: {
+                    base_path: "{{ env('API_URL') }}",
+                },
+                events: [],
             },
-            600: {
-                items: 2
+            methods: {
+                getData() {
+                    var vm = this;
+
+                    axios.get(`${vm.config.base_path}/public-diu-website/notice-event?type=event`)
+                        .then((response) => {
+                            vm.events = response.data.data;
+                            console.log(response.data.data);
+                            setTimeout(function() {
+                            var owl = $('#event');
+                            owl.owlCarousel({
+                                margin: 20,
+                                dots: true,
+                                nav: true,
+                                navText: [
+                                    "<i class='fa fa-chevron-left'></i>",
+                                    "<i class='fa fa-chevron-right'></i>"
+                                ],
+                                autoplay: true,
+                                autoplayHoverPause: true,
+                                loop: true,
+                                responsive: {
+                                    0: {
+                                        items: 2
+                                    },
+                                    600: {
+                                        items: 2
+                                    },
+                                    1000: {
+                                        items: 6
+                                    },
+                                    1200: {
+                                        items: 6
+                                    }
+                                }
+                            });
+                        }, 100);
+                            
+                     
+                        }).catch((error) => {
+                            console.log(error.response);
+                        });
+                }
             },
-            1000: {
-                items: 5
-            },
-            1200: {
-                items: 5
-            }
-        }
+            created() {
+                this.getData();
+                
 
       
+   
+            }
+        });
     });
 </script>
 

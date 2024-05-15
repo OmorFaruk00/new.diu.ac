@@ -13,8 +13,8 @@ class DiuController extends Controller
         // $sliders =  $this->sliderData();
         // $programs =  $this->programsData();
         // $partners =  $this->partnersData();
-        $event = $this->getEvent();
-        return view('home.index',compact('event'));
+        // $event = $this->getEvent();
+        return view('home.index');
     }
     public function about(){
         return view('about.about');
@@ -162,7 +162,8 @@ class DiuController extends Controller
     }
 
     public function mou(){
-        return view('global.mou');
+        $partners =  $this->partnersData();
+        return view('global.mou',compact('partners'));
     }
     public function internationalConference(){
         return view('global.international-conference');

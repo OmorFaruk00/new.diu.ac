@@ -119,9 +119,14 @@
     display: block;
 }
 
-
-@media screen and (max-width:576px){
+@media screen and (min-width:976px){
+.faculty{
+    height: 230px;
+}
+}
+@media screen and (max-width:970px){
     .faculty{ padding: 250px 15px 20px; }
+
     .faculty:before{
         width: 90%;
         height: 2px;
@@ -167,7 +172,7 @@
         <div class=" py-4">
             <div class="container faculty-body p-4" >
                 <div class="row" v-if="faculty_member">
-                    <div class="col-xl-6 col-md-6 col-sm-12 mb-4" v-for="(item,index) in faculty_member" :key="index">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4" v-for="(item,index) in faculty_member" :key="index">
                         <div class="faculty">                          
                             <div class="signature-img">
                                 <img :src="item.profilepic" alt="profile pic">

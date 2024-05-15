@@ -213,6 +213,7 @@
             text-align: center;
             transition: all 0.5s ease 0s;
             box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            margin: 0px 10px;
         }
 
         .department-head .pic {
@@ -224,12 +225,7 @@
             transform: scale(1.2, 1.2);
         }
 
-        .department-head .pic img {
-            width: 100%;
-            height: 350px;
-            transform: scale(1, 1);
-            transition: all 0.30s ease 0s;
-        }
+       
 
         .department-head .team-content {
             display: flex;
@@ -270,6 +266,53 @@
             }
 
         }
+
+
+
+img {
+  border:solid 2px;
+  border-bottom-color:#ffe;
+  border-left-color:#eed;
+  border-right-color:#eed;
+  border-top-color:#ccb;
+  max-height:100%;
+  max-width:100%;
+}
+
+.frame {
+  background-color:#ddc;
+  border:solid 5vmin #eee;
+  border-bottom-color:#fff;
+  border-left-color:#eee;
+  border-radius:2px;
+  border-right-color:#eee;
+  border-top-color:#ddd;
+  /* box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25); */
+  box-sizing:border-box;
+  display:inline-block;
+  position:relative;
+  text-align:center;
+  &:before {
+    border-radius:2px;
+    bottom:-2vmin;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+    content:"";
+    left:-2vmin;
+    position:absolute;
+    right:-2vmin;
+    top:-2vmin;
+  }
+  &:after {
+    border-radius:2px;
+    bottom:-2.5vmin;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+    content:"";
+    left:-2.5vmin;
+    position:absolute;
+    right:-2.5vmin;
+    top:-2.5vmin;
+  }
+}
     </style>
 
 
@@ -354,8 +397,8 @@
                             <h3 class="department-title">Department Chairman</h3>
                             <a href="https://profile.diu.ac/nasir.ahmad" target="_blank">
                                 <div class="department-head">
-                                    <div class="pic">
-                                        <img src="https://api.diu.ac/images/profile_photo_file_130.jpg">
+                                    <div class="frame">
+                                        <img class="img" src="https://api.diu.ac/images/profile_photo_file_130.jpg">
                                     </div>
                                     <div class="team-content">
                                         <h3 class="title">Nasir Ahmad</h3>
@@ -370,5 +413,7 @@
             </div>
 
         </div>
+
+       
     </section>
 @endsection

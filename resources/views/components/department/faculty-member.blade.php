@@ -107,7 +107,7 @@
     
         </div>   
     </div
-</section>
+<section >
 <script>
     var owl = $('#member');
     owl.owlCarousel({
