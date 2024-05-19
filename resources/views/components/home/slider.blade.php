@@ -1,17 +1,19 @@
 <style>
     .carousel-item img {
-        height: 90vh;
+        height: 100vh;
         background-position: cover;
         /* background-color: rgba(0, 0, 0, 0.9); */
         /* background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%); */
     }
-    .caption1-bg{
+
+    .caption1-bg {
         background: rgba(4, 4, 4, 0.7);
         opacity: 0.85;
         border-radius: 10px;
 
     }
-    .caption-bg{
+
+    .caption-bg1 {
         background: rgba(4, 4, 4, 0.7);
         opacity: 0.85;
         border-radius: 10px;
@@ -19,13 +21,28 @@
         height: 230px;
         float: left !important;
         padding: 20px 10px;
-        position: absolute; 
-        top: 55%; 
-        left: 10%; 
-       transform: translate(-10%, -40%);
+        position: absolute;
+        top: 55%;
+        left: 10%;
+        transform: translate(-10%, -40%);
 
     }
-   
+
+    .caption-bg2 {
+        background: rgba(4, 4, 4, 0.7);
+        opacity: 0.85;
+        border-radius: 10px;
+        width: 50%;
+        height: 230px;
+        float: left !important;
+        padding: 20px 10px;
+        position: absolute;
+        top: 60%;
+        right: 5% !important;
+        transform: translate(50%, -30%);
+
+    }
+
 
     .carousel-caption h2 {
         font-size: 30px;
@@ -50,7 +67,7 @@
 
 
     .carousel-indicators {
-        bottom: 10px;
+        bottom: 20px;
     }
 
     .carousel-indicators button {
@@ -135,13 +152,23 @@
         .carousel-item img {
             height: 60vh;
         }
-        .caption-bg{
-        width: 90%;
-        height:250px; 
-        margin-left: 5%;    
-      
 
-    }
+        .caption-bg1 {
+            width: 90%;
+            height: 250px;
+            margin-left: 5%;
+        }
+
+        .caption-bg2 {
+            width: 90%;
+            height: 230px;
+            padding: 20px 10px;
+            position: absolute;
+            top: 55%;
+            right: 5%;
+            transform: translate(-10%, -30%);
+
+        }
 
         .carousel-desc {
             width: 100%;
@@ -156,8 +183,6 @@
             /* width: 80%; */
         }
     }
-
-
 </style>
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -172,8 +197,8 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="{{asset('assets/images/slider/slider1.jpeg')}}" class="d-block w-100"
-                alt="...">
-            <div class="carousel-caption caption1-bg">
+                alt="slider1">
+            <div class="carousel-caption caption1-bg " style="margin-bottom:30px">
                 <h2 class="slide-in-left">Welcome To Dhaka International University</h2>
                 <div class="mx-auto carousel-desc  slide-in-down ">
                     <p>Dhaka International University, rated among the top private universities of Bangladesh, is an
@@ -185,8 +210,8 @@
         </div>
         <div class="carousel-item">
             <img src="{{asset('assets/images/slider/slider2.jpeg')}}" class="d-block w-100"
-                alt="...">
-            <div class="carousel-caption caption-bg">
+                alt="slider2">
+            <div class="carousel-caption caption-bg1">
                 <h2 class="slide-in-left">Admission Open Now</h2>
                 <h2 class="slide-in-left" style="font-size: 27px">Undergraduate - Postgraduate 2024</h2>
                 <div class="mx-auto carousel-desc  slide-in-down ">
@@ -196,27 +221,26 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{{asset('assets/images/slider/slider33.jpeg')}}" class="d-block w-100"
-                alt="...">
-            <div class="carousel-caption caption-bg">
+            <img src="{{ asset('assets/images/slider/slider33.jpeg') }}" class="d-block w-100" alt="slider3">
+            <div class="carousel-caption caption-bg2">
                 <h2 class="slide-in-left">Result Based Scholarship</h2>
                 <div class="mx-auto carousel-desc  slide-in-down ">
                     <p style="font-size: 30px">Avail Upto 50% Merit Scholarships</p>
                 </div>
-                <a href="{{route('scholarships')}}" target="_blank" class="btn slide-in-left">Scholarship</a>
+                <a href="{{ route('scholarships') }}" target="_blank" class="btn slide-in-left">Scholarship</a>
             </div>
         </div>
-      
-       
- 
-     
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-</button>
+
+
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>

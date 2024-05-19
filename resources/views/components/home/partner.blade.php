@@ -1,4 +1,11 @@
 <style>
+
+.applynow {
+    background: url("{{ asset('/assets/img/backgrounds/apply-now-back.jpg') }}") fixed center center;
+    /* background: url("{{asset('/img/backgrounds/apply-now-back.jpg')}}"); */
+    background-size: cover;
+    background-position: center;
+}
     .item img {
         background: #fff;
         border-radius: 10px
@@ -48,11 +55,11 @@
         </div>
     </div>
 </section>
-<section class="full-width-bars">
+{{-- <section class="full-width-bars">
     <div class="w-100">
         <img src="assets/img/four-bars-full.jpg" alt="" class="w-100">
     </div>
-</section>
+</section> --}}
 
 <script>
     $(document).ready(function() {

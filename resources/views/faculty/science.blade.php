@@ -222,8 +222,8 @@
             position: relative;
         }
 
-        .department-head:hover .pic img {
-            transform: scale(1.2, 1.2);
+        .department-head:hover .frame img {
+            transform: scale(1.1, 1.1);
 
         }
 
@@ -241,6 +241,8 @@
             border-top-color: #ccb;
             height: 300px;
             width: 100% !important;
+            transform: scale(1, 1);
+            transition: all 0.30s ease 0s; 
         }
 
         .frame {
@@ -333,7 +335,7 @@
             </div>
         </div>
     </section>
-    <section style="background: #f5f5f5">
+    <section>
         <div class="container pt-5">
             <div class="">
                 <div class="faculty">
@@ -359,7 +361,7 @@
             </div>
 
 
-            <div class=" py-5">
+            <div class=" pt-5">
                 <div class="message">
                     <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dicta hic porro
                         temporibus ea quae quos rem corporis saepe voluptate. Et labore aut, vitae est aliquid sed

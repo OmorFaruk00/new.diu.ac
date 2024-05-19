@@ -1,4 +1,6 @@
 @extends('layouts.master')
 @section('content')
-<x-new-footer />
+
+<x-home.why1 />
+{{-- <x-new-footer /> --}}
 @endsection

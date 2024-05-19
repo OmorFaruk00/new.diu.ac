@@ -5,21 +5,21 @@
      <main id="main">
         <x-home.slider />
          <x-home.leader />
-         <x-home.newsEvent />
+         <x-home.notice />
 
            <x-home.event />
 
-         <x-home.why />
+         <x-home.why1 />
          <x-home.founder />
 
-         <x-home.partner />
-         <x-home.chairman />
+         {{-- <x-home.chairman /> --}}
          
-
+         
          {{-- <x-campuslife /> --}}
          <x-home.counter />
+         <x-home.partner />
 
-         <x-home.follow />
+         {{-- <x-home.follow /> --}}
 
      </main>
  @endsection

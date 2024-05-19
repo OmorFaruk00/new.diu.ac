@@ -65,7 +65,7 @@
                                 <div class="card-body">
                                     <form @submit.prevent="feeCalculate()" autocomplete="off">
                                         <div class="row">                                       
-                                            <div class="col-12 mb-1">
+                                            <div class="col-12 mb-2">
                                                 <label for="program_id">Select Course</label>
                                                 <select name="program_id" v-on:change="courseChange" id="program_id"
                                                     class="form-select" v-model="program_id" required>
@@ -78,7 +78,7 @@
                                                     v-html="errors.program_id[0]"></small>
                                             </div>
 
-                                            <div class="col-12 mb-1">
+                                            <div class="col-12 mb-2">
                                                 <label for="sex">Select Sex</label>                                               
                                                 <select name="sex" id="sex" class="form-select" v-model="sex"
                                                     required>
@@ -91,7 +91,7 @@
                                                     v-html="errors.sex[0]"></small>
                                             </div>
 
-                                            <div class="col-12 mb-1">
+                                            <div class="col-12 mb-2">
                                                 <div class="form-group focused">
                                                     <label for="sex">SSC Result</label>
                                                     <input type="text" name="ssc_result" v-model="ssc_result"
@@ -102,7 +102,7 @@
                                                     v-html="errors.ssc_result[0]"></small>
                                             </div>
 
-                                            <div class="col-12 mb-1">
+                                            <div class="col-12 mb-2">
                                                 <div class="form-group focused">
                                                     <label for="sex">HSC / Diploma Result</label>
                                                     <input type="text" name="hsc_result" v-model="hsc_result"

@@ -23,10 +23,10 @@
 <section class="breadcrumbs">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-            <h1 style="text-transform: uppercase">Build Partnership </h1>
+            <h1 style="text-transform: uppercase">Engage Our strength </h1>
             <ol>
                 <li><a href="{{ route('home') }}">Home</a></li>
-                <li>Build Partnership </li>
+                <li>Engage Our strength  </li>
             </ol>
         </div>
     </div>

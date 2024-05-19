@@ -24,18 +24,7 @@ class DiuController extends Controller
         return view('test',['event'=>$event]);
     }
 
-    public function semesterAbroadProgram(){
-        return view('home.semester-abroad-program');
-    }
-    public function internshipAbroadProgram(){
-        return view('home.internship-abroad-program');
-    }
-    public function studyTour(){
-        return view('home.study-tour');
-    }
-    public function facultyExchangeProgram(){
-        return view('home.faculty-exchange-program');
-    }
+   
     public function aboutUs(){
         return view('about.index');
     }
@@ -48,10 +37,7 @@ class DiuController extends Controller
     public function boardOfManagement(){
         $boardOfManagement =  $this->boardOfManagementData();
         return view('about.board-of-management',compact('boardOfManagement'));
-    }
-    public function studentFacilities(){
-        return view('about.student-facilities');
-    }
+    } 
     public function admissionProcess(){
         return view('admission.process');
     }
@@ -69,7 +55,6 @@ class DiuController extends Controller
         return view('admission.admission-help-desk');
     }
     public function faculty(){
-        //   $keyResourcePersons = $this->keyResourcePersons();
         return view('academics.faculty');
     }
     public function futureStudent(){
@@ -77,10 +62,7 @@ class DiuController extends Controller
     }
     public function facultyDetails($slug){
         return view('academics.faculty-details', compact('slug'));
-    }
-    public function workshopSeminars(){
-        return view('academics.workshop-seminar');
-    }
+    }   
     public function convocation(){
          $convocations = $this->convocationData();
         return view('academics.convocation',compact('convocations'));
@@ -112,62 +94,15 @@ class DiuController extends Controller
     }
 
 
-    public function campusLife(){
-        return view('life.campus-life');
-    }
+  
     public function studentFacultyAchievements(){
         return view('life.student-faculty-achievements');
     }  
-    public function institute(){
-        return view('life.institute');
-    }
+   
     public function cell(){
         return view('life.cell');
-    }
-
-    public function centreOfExcellence(){
-        return view('life.centre-of-excellence');
-    }
-    public function businessAnalyticalLab(){
-        return view('life.business-analytical-lab');
-    }
-    public function newsletter(){
-        return view('life.newsletter');
-    }
-   
-    public function entrepreneurshipCell(){
-        return view('life.entrepreneurship-cell');
-    }
-    public function sports(){
-        return view('life.sports');
-    }
-    public function arka(){
-        return view('life.arka');
-    }
-
-    public function placementProcess(){
-        return view('placement.placement-process');
-    }
-    public function recruiters(){
-        return view('placement.recruiters');
-    }
-    public function prePlacementTraining(){
-        return view('placement.pre-placement-training');
-    }
-    public function studentPlacements(){
-        return view('placement.student-placements');
-    }
-    public function internship(){
-        return view('placement.internship');
-    }
-
-    public function mou(){
-        $partners =  $this->partnersData();
-        return view('global.mou',compact('partners'));
-    }
-    public function internationalConference(){
-        return view('global.international-conference');
-    }
+    }   
+ 
     public function contact(){
         return view('contact');
     }
@@ -276,6 +211,18 @@ class DiuController extends Controller
     }
     public function eventAndOpportunity(){
         return view('community.event-and-opportunity');
+    }
+    public function institute(){
+        return view('community.institute');
+    }
+    public function diu(){
+        return view('menu.diu');
+    }
+    public function campusLife(){
+        return view('menu.campus-life');
+    }
+    public function study(){
+        return view('menu.study');
     }
    
    

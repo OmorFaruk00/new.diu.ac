@@ -75,7 +75,7 @@
         }
     </style>
 
-    <main id="main" style="background-color: #f5f5f5">
+    <main id="main" style="background-color: #">
 
         <!-- ======= Breadcrumbs ======= -->
         <section id="breadcrumbs" class="breadcrumbs">

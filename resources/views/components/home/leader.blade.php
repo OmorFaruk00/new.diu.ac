@@ -1,6 +1,6 @@
 <style>
     #leader {
-        background-image: url("{{ asset('/assets/images/slider2.jpeg') }}");
+        background: url("{{ asset('/assets/images/slider2.jpeg') }}") fixed center top;
         background-color: rgba(0, 0, 0, 0.5);
         background-blend-mode: overlay;
         background-size: cover;

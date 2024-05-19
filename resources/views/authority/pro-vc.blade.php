@@ -2,7 +2,7 @@
 @section('content')
     <style>
         .authority {
-            background: #fff;
+            background: linear-gradient(80deg, #DDDDDD, #DDDDDD);
             font-family: 'Poppins', sans-serif;
             font-size: 0;
             padding: 40px 20px 60px;
@@ -127,7 +127,7 @@
         }
 
         .message {
-            background: #fff;
+            background: linear-gradient(80deg, #DDDDDD, #DDDDDD);
             font-family: 'Poppins', sans-serif;
             padding: 40px 20px 60px;
             box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.3);
@@ -240,10 +240,14 @@
                 </div>
             </div>
         </div>
+    </section>
+
+
+    <section>
 
 
 
-        <div class="container py-5">
+        <div class="container pb-5">
             <div class="message">
                 <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia alias ipsa cum
                     repudiandae dolores veniam esse! Cupiditate asperiores expedita velit et nihil error sequi recusandae

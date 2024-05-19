@@ -1,49 +1,56 @@
 <style>
-    .founder{
+    .chairman{
     border-radius: 12%;
     padding: 25px;    
     box-shadow: 0 1px 9px 1px rgba(25, 47, 89, 0.42);
     margin: 30px 0px;
 
     }
-    .founder img{
+    .chairman img{
         width: 100%;
         height: 250px;
     }
-    .founder-desc {
+    .chairman-desc {
         padding: 0px 30px;
   
     }
-    .founder-desc h4{
-    color: #333;
-    font-size: 18px;
-    font-weight: 600;
+    .chairman-desc p{
+    color:#6c6a6a;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 25px;
     text-align: justify;
-    margin-bottom: 20px;
+    margin-bottom: 0px !important;
     }
-    .founder-desc h6{
+    .chairman-desc .name{
         font-size: 18px; 
         font-weight: 800;
         color:#01AA4D;
+        margin-bottom: 15px !important;
+    }
+    .chairman-desc .des{
+        font-size: 22px; 
+        font-weight: 600;
+        color:#6c6a6a;
     }
   
 </style>
 
-<div style="background: #DDDDDD">
+<div style="background:">
     <div class="container">
         <div class="row">
           
             <div class="col-lg-9 col-md-9 col-sm-12 my-auto">
-                <div class="founder-desc">
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui et excepturi autem consequuntur, vero tempore obcaecati magni, facere doloribus atque molestias, ipsa nobis nostrum ducimus nam. Dolorum quo odit consectetur ipsa ducimus iure nemo eaque impedit omnis non eum magnam blanditiis, quas, voluptatibus a eius placeat et, sunt fuga.</h4>
-                    <h6>Shameem Haider Patwary</h6>
+                <div class="chairman-desc">
+                    <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui et excepturi autem consequuntur, vero tempore obcaecati magni, facere doloribus atque molestias, ipsa nobis nostrum ducimus nam. Dolorum quo odit consectetur ipsa ducimus iure nemo eaque impedit omnis non eum magnam blanditiis, quas, voluptatibus a eius placeat et, sunt fuga.</p>
+                    <p class="name">Shameem Haider Patwary</p>
+                    <p class="des">Chairman, BOT</p>
 
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="founder">
-                    <img src="https://api.diu.ac/images/profile_photo_file_245.jpg" alt="">
+                <div class="chairman">
+                    <img src="https://api.diu.ac/images/profile_photo_file_245.jpg" alt="chairman">
 
                 </div>
             </div>

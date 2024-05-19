@@ -2,7 +2,7 @@
 @section('content')
     <style>
         .demo {
-            background: #e7e7e7;
+            /* background: #e7e7e7; */
         }
 
         .main-institute {
@@ -17,7 +17,7 @@
             content: "";
             width: 3px;
             height: 100%;
-            background: #49B5E7;
+            background: #01AA4D;
             position: absolute;
             top: 0;
             left: 50%;
@@ -40,7 +40,8 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: #49B5E7;
+            background: #01AA4D
+;
             overflow: hidden;
             margin-left: -23px;
             position: absolute;
@@ -59,7 +60,7 @@
             width: 45%;
             padding: 20px;
             border-radius: 5px;
-            background: #fff;
+            background: #e7e7e7;
             -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
             -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
             -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
@@ -72,7 +73,8 @@
 
         .main-institute .institute-content:before {
             content: "";
-            border-left: 7px solid #49B5E7;
+            border-left: 7px solid #01AA4D
+;
             border-top: 7px solid transparent;
             border-bottom: 7px solid transparent;
             position: absolute;
@@ -85,7 +87,8 @@
             font-weight: 600;
             color: #fff;
             padding: 10px 20px;
-            background: #49B5E7;
+            background: #01AA4D
+;
             border-radius: 3px 3px 0 0;
             margin: -20px -20px 10px;
         }
@@ -93,7 +96,9 @@
         .main-institute .description {
             font-size: 16px;
             color: #726f77;
-            text-align: justify
+            text-align: justify;
+            line-height: 25px;
+            font-weight: 600px;
         }
 
         .main-institute .read-more {
@@ -126,7 +131,8 @@
             right: 45%;
             left: inherit;
             border-left: 0;
-            border-right: 7px solid #49B5E7;
+            border-right: 7px solid #01AA4D
+;
         }
 
         @media only screen and (max-width: 990px) {
@@ -159,7 +165,8 @@
                 right: inherit;
                 margin-left: -6px;
                 border-left: 0;
-                border-right: 7px solid #49B5E7;
+                border-right: 7px solid #01AA4D
+;
             }
 
             .main-institute .institute-icon {
@@ -186,7 +193,7 @@
             }
         }
     </style>
-    <main id="main" style="margin-top: 80px;">
+    <main id="main" style="">
 
         <!-- ======= Breadcrumbs ======= -->
         <section class="breadcrumbs">

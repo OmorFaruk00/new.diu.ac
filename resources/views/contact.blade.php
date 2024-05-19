@@ -262,7 +262,7 @@
                         <div class="contactBox green">
                             <div class="service-content">
                                 <div class="service-icon">
-                                    <span><i class="fa fa-map"></i></span>
+                                    <span><i class="fa fa-map-marker"></i></span>
                                 </div>
                                 <h3 class="title">Our Address</h3>
                                 <p class="description">Satarkul, Badda, Dhaka-1212, Bangladesh.</p>
@@ -295,7 +295,7 @@
                     <div class="contactBox green">
                      <div class="service-content">
                          <div class="service-icon">
-                             <span><i class="fa fa-registered"></i></span>
+                             <span><i class="fas fa-registered"></i></span>
                          </div>
                          <h3 class="title">Register Here</h3>
                          <div class="description"><a href="https://admission.diu.ac/register" target="_blank">Register Now</a></div>

@@ -4,7 +4,7 @@
 
 <style>
      
-    .demo{ background: #e7e7e7; }
+   
 .main-institute{
     position: relative;
     -webkit-transition: all 0.4s ease 0s;
@@ -16,7 +16,7 @@
     content: "";
     width: 3px;
     height: 100%;
-    background: #49B5E7;
+    background: #01AA4D;
     position: absolute;
     top: 0;
     left: 50%;
@@ -36,7 +36,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #49B5E7;
+    background: #01AA4D;
     overflow: hidden;
     margin-left: -23px;
     position: absolute;
@@ -54,7 +54,7 @@
     width: 45%;
     padding: 20px;
     border-radius: 5px;
-    background: #fff;
+    background: linear-gradient(80deg, #DDDDDD, #DDDDDD);
     -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
     -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
@@ -66,7 +66,7 @@
 }
 .main-institute .institute-content:before{
     content: "";
-    border-left: 7px solid #49B5E7;
+    border-left: 7px solid #01AA4D;
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
     position: absolute;
@@ -78,14 +78,16 @@
     font-weight: 600;
     color: #fff;
     padding: 10px 20px;
-    background: #49B5E7;
+    background: #01AA4D;
     border-radius: 3px 3px 0 0;
     margin: -20px -20px 10px;
 }
 .main-institute .description{
-    font-size: 16px;
-    color: #726f77;
-    text-align: justify
+    color: #6c6a6a !important;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: justify;
+            font-weight: 500;
 }
 .main-institute .read-more{
     display: inline-block;
@@ -114,7 +116,7 @@
     right: 45%;
     left: inherit;
     border-left: 0;
-    border-right: 7px solid #49B5E7;
+    border-right: 7px solid #01AA4D;
 }
 @media only screen and (max-width: 990px){
     .main-institute .title{
@@ -137,7 +139,7 @@
         right: inherit;
         margin-left: -6px;
         border-left: 0;
-        border-right: 7px solid #49B5E7;
+        border-right: 7px solid #01AA4D;
     }
     .main-institute .institute-icon{
         left: 0;
@@ -185,7 +187,7 @@
             <div class="container">
                 <div class=" text-center py-4">
                     <h3 class="heading ">WELCOME TO OUR INSTITUTE</h3>
-                    <p>Beside Dhaka International University (DIU), the management authority of DIU runs several Institutes for students to get a degree in the professional life.</p>
+                    <h6>Beside Dhaka International University (DIU), the management authority of DIU runs several Institutes for students to get a degree in the professional life.</h6>
                    
                 </div>
                 <div class="row">
@@ -218,7 +220,7 @@
 
                             <div class="institute">
                                 <div class="institute-icon">
-                                    <i class="fa fa-snowflake"></i>
+                                    <i class="fa fa-home"></i>
                                 </div>
                                 <div class="institute-content left">
                                     <h2 class="title">Dr.Z.I. Chowdhury Agricultural Research & Training Institute

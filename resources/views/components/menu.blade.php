@@ -41,6 +41,7 @@
     li.drop-down ul>li>a:hover {
         color: #01AA4D;
     }
+
     .mega-menu ul li a:hover {
         color: #01AA4D !important;
     }
@@ -48,20 +49,20 @@
     /* .exo-menu > li > a.active::after,
 .exo-menu > li > a:hover::after
  {
-    content: ""; 
-    display: block; 
-    width: 100%; 
-    height: 3px; 
-    background-color: #01AA4D; 
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #01AA4D;
 } */
-    h4.row.mega-title {
+    /* h4.row.mega-title {
         color: #000;
         margin-top: 0px;
         font-size: 14px;
         padding-left: 15px;
-        padding-bottom: 13px;
+        padding-bottom: 5px;
         text-transform: uppercase;
-    }
+    } */
 
     /*mega menu*/
     .mega-menu {
@@ -69,8 +70,9 @@
         right: 0;
         padding: 15px;
         display: none;
-        padding-top: 0;
+        padding-top: 0px;
         min-height: 100%;
+        /* margin-top: 5px; */
 
     }
 
@@ -80,7 +82,7 @@
         font-size: 18px;
         font-weight: 600;
         padding-left: 15px;
-        padding-bottom: 13px;
+        padding-bottom: 5px;
         text-transform: uppercase;
         padding-top: 15px;
     }
@@ -90,33 +92,32 @@
         font-size: 17px;
         display: block;
         color: #000;
+        /* color: #fff; */
         font-weight: 400;
     }
 
- 
+
 
     /*common*/
     .mega-menu {
         /* background: rgba(4, 4, 4, 0.7); */
-        /* opacity: 0.85; */
+        /* opacity: 0.8; */
         background-color: #fff;
-        color: #000;
+        color: #000;    
+        /* color: #fff !important; */
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     }
 
 
-    .Blog:hover,
-    .Images:hover,
+    
     .mega-menu:hover,
     .drop-down-ul:hover,
     li.flyout-left>ul:hover,
     li.flyout-right>ul:hover,
     .flyout-mega-wrap:hover,
     li.flyout-left a:hover+ul,
-    li.flyout-right a:hover+ul,
-    .blog-drop-down>a:hover+.Blog,
-    li.drop-down>a:hover+.drop-down-ul,
-    .images-drop-down>a:hover+.Images,
+    li.flyout-right a:hover+ul,   
+    li.drop-down>a:hover+.drop-down-ul,   
     .mega-drop-down a:hover+.mega-menu,
     li.flyout-mega>a:hover+.flyout-mega-wrap {
         display: block;
@@ -125,6 +126,9 @@
     .drop-down-ul {
         display: none;
     }
+    .drop-down-ul.show {
+    display: block; 
+}
 
     .flyout-right>ul,
     .flyout-left>ul {
@@ -132,7 +136,8 @@
         min-width: 230px;
         display: none;
         border-left: 1px solid #365670;
-    } 
+    }
+
     li.drop-down>ul>li>a,
     .flyout-right ul>li>a,
     .flyout-left ul>li>a {
@@ -144,6 +149,8 @@
         text-decoration: none;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
         background-color: #fff;
+        /* background-color: rgba(255, 255, 255, 0.7); */
+        /* opacity: 0.8; */
         /* border-bottom: 1px dotted #547787; */
         -webkit-transition: color 0.2s linear, background 0.2s linear;
         -moz-transition: color 0.2s linear, background 0.2s linear;
@@ -160,6 +167,7 @@
     .logo img {
         height: 50px !important;
         margin-top: 2px;
+        margin-left: -15px;
     }
 
 
@@ -191,6 +199,17 @@
         }
 
     }
+    @media (max-width:580px) {
+        .mega-menu{
+            max-height: 400px;
+            overflow: auto;
+        }
+        /* .exo-menu {
+            max-height: 500px;
+            overflow: auto;
+
+        } */
+    }
 
     @media (max-width:980px) {
 
@@ -199,7 +218,7 @@
             background-color: #fff;
             width: 100%;
 
-        }   
+        }
 
         .exo-menu>li>a {
             width: 100%;
@@ -315,36 +334,28 @@
                                 <h4 class="row mega-title">ABOUT US</h4>
                                 <ul>
                                     <li><a href="{{ route('about-us') }}">About Us</a></li>
-                                    {{-- <li><a href="{{ route('why-diu') }}">Why Choose DIU</a></li> --}}
                                     <li><a href="{{ route('vision-mission') }}">Vision and Mission</a></li>
                                     <li><a href="{{ route('board-of-management') }}">Board of Management</a></li>
                                     <li><a href="https://blog.diu.ac" target="_blank">Blog</a></li>
-                                    {{-- <li><a href="{{ route('student-facilities') }}">Student Facilities</a></li> --}}
-
-
                                 </ul>
                             </div>
 
                             <div class=" col-xl-4 col-md-4 col-sm-12">
                                 <h4 class="row mega-title">Research Cell</h4>
                                 <ul>
-                                    {{-- <li><a href="http://koha.diu.ac.bd" target="_blank">Library</a></li> --}}
                                     <li><a href="{{ route('iqac') }}"> IQAC</a></li>
                                     <li><a href="{{ route('tcrc') }}"> TCRC</a></li>
                                     <li><a href="{{ route('sbac') }}"> SBAC</a></li>
                                     <li><a href="{{ route('cecd') }}"> CECD</a></li>
-
-                                    {{-- <li><a href="https://iqac.diu.ac" target="_blank">IQAC</a></li> --}}
-
                                 </ul>
                             </div>
                             <div class=" col-xl-4 col-md-4 col-sm-12">
                                 <h4 class="row mega-title">ACADEMICS</h4>
                                 <ul>
                                     <li><a href="{{ route('faculty') }}">Faculty List</a></li>
-                                    {{-- <li><a href="{{ route('workshop-seminars') }}">Workshop & Seminars</a></li> --}}
                                     <li><a href="{{ route('convocation') }}">Convocation</a></li>
                                     <li><a href="{{ route('publications') }}">Publications</a></li>
+                                    <li><a href="{{ route('journals') }}">Journals</a></li>
                                     <li><a href="{{ route('certificate-verification') }}">Certificate Verifications</a>
                                     </li>
 
@@ -354,12 +365,12 @@
                     </div>
                 </div>
             </li>
-            <li class="drop-down"><a href="#"></i> Authority</a>
+            <li class="drop-down"><a href="#" ></i> Authority</a>
                 <ul class="drop-down-ul animated fadeIn">
-                    <li><a href="{{ route('vc') }}">VC</a></li>
-                    <li><a href="{{ route('pro_vc') }}"> Pro Vc</a></li>
-                    <li><a href="{{ route('treasurer') }}"> Treasurer</a></li>
+                    <li><a href="{{ route('vc') }}">Vice-Chancellor</a></li>
+                    <li><a href="{{ route('pro_vc') }}"> Pro Vice-Chancellor</a></li>
                     <li><a href="{{ route('registrar') }}"> Registrar</a></li>
+                    <li><a href="{{ route('treasurer') }}"> Treasurer</a></li>
                     <li><a href="{{ route('chairman') }}"> Chairman ( BOT )</a></li>
                 </ul>
             </li>
@@ -381,42 +392,45 @@
                                 </ul>
                             </div>
                             <div class=" col-xl-3 col-md-3 col-sm-12">
-                                <h4 class="row mega-title">Programs</h4>
+                                <h4 class="row mega-title">Faculty of Science and Engineering </h4>
                                 <ul>
-                                    <li><a href="/programs/department-of-english" target="_blank">Department of
-                                            English</a></li>
-                                    <li><a href="/programs/department-of-law" target="_blank">Department of Law</a></li>
-                                    <li><a href="/programs/department-of-sociology" target="_blank">Department of
-                                            Sociology</a></li>
-                                    <li><a href="/programs/department-of-business-administration"
-                                            target="_blank">Department of Business Administration</a></li>
-
-                                </ul>
-                            </div>
-                            <div class=" col-xl-3 col-md-3 col-sm-12">
-                                <h4 class="row mega-title">Programs</h4>
-                                <ul>
-                                    <li><a href="/programs/department-of-pharmacy" target="_blank">Department of
-                                            Pharmacy</a></li>
-                                    <li><a href="/programs/department-of-eee" target="_blank">Department of EEE</a></li>
-                                    <li><a href="/programs/department-of-cse" target="_blank">Department of CSE</a></li>
                                     <li><a href="/programs/department-of-civil-engineering" target="_blank">Department
                                             of Civil Engineering</a></li>
 
-                                </ul>
-                            </div>
-                            <div class=" col-xl-3 col-md-3 col-sm-12">
-                                <h4 class="row mega-title">Programs</h4>
-                                <ul>
-                                    <li><a href="/programs/department-of-political-science" target="_blank">Department
-                                            of Political Science</a></li>
-                                    <li><a href="/programs/department-of-economics" target="_blank">Department of
-                                            Economics</a></li>
+                                    <li><a href="/programs/department-of-eee" target="_blank">Department of EEE</a></li>
+                                    <li><a href="/programs/department-of-cse" target="_blank">Department of CSE</a></li>
+                                    <li><a href="/programs/department-of-pharmacy" target="_blank">Department of
+                                            Pharmacy</a></li>
                                     <li><a href="/programs/department-of-microbiology" target="_blank">Department of
                                             Microbiology</a></li>
                                     <li><a href="/programs/department-of-biochemistry-and-molecular-biology"
                                             target="_blank">Department of Biochemistry and Molecular Biology</a></li>
+                                </ul>
+                            </div>
+                            <div class=" col-xl-3 col-md-3 col-sm-12">
+                                <h4 class="row mega-title">Faculty of Arts and Social Sciences</h4>
+                                <ul>
+                                    <li><a href="/programs/department-of-english" target="_blank">Department of
+                                            English</a></li>
+                                    <li><a href="/programs/department-of-political-science" target="_blank">Department
+                                            of Political Science</a></li>
+                                    <li><a href="/programs/department-of-sociology" target="_blank">Department of
+                                            Sociology</a></li>
+                                    <li><a href="/programs/department-of-economics" target="_blank">Department of
+                                            Economics</a></li>
 
+
+                                </ul>
+                            </div>
+                            <div class=" col-xl-3 col-md-3 col-sm-12">
+                                <h4 class="row mega-title">Faculty of Business Studies</h4>
+                                <ul>
+                                    <li><a href="/programs/department-of-business-administration"
+                                            target="_blank">Department of Business Administration</a></li>
+                                </ul>
+                                <h4 class="row mega-title">Faculty of Law</h4>
+                                <ul>
+                                    <li><a href="/programs/department-of-law" target="_blank">Department of Law</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -425,10 +439,10 @@
             </li>
             <li class="drop-down"><a href="#"></i> Faculty</a>
                 <ul class="drop-down-ul animated fadeIn">
-                    <li><a href="{{route('law')}}"> Faculty of Law</a></li>
-                    <li><a href="{{route('business')}}"> Faculty of Business Studies</a></li>
-                    <li><a href="{{route('science')}}"> Faculty of Science and Engineering </a></li>
-                    <li><a href="{{route('arts')}}"> Faculty of Arts and Social Sciences</a></li>
+                    <li><a href="{{ route('law') }}"> Faculty of Law</a></li>
+                    <li><a href="{{ route('business') }}"> Faculty of Business Studies</a></li>
+                    <li><a href="{{ route('science') }}"> Faculty of Science and Engineering </a></li>
+                    <li><a href="{{ route('arts') }}"> Faculty of Arts and Social Sciences</a></li>
                 </ul>
             </li>
 
@@ -468,41 +482,18 @@
                     </div>
                 </div>
             </li>
-            <li class="mega-drop-down"><a href="#"> Community
-                    {{-- <img src="{{ asset('/assets/img/down-arow.png') }}" alt=""
-                        style="margin-bottom: 2px;height:20px"> --}}
-                </a>
-                <div class="animated fadeIn mega-menu">
-                    <div class="mega-menu-wrap">
-                        <div class="row">
-                            <div class=" col-xl-4 col-md-4 col-sm-12">
-                                <h4 class="row mega-title"></h4>
-                                <ul>
-                                    <li><a href="{{route('build_partnership')}}"> Build Partnership</a></li>
-                                    <li><a href="{{route('engage')}}"> Engage Our Strength</a></li>
-                                </ul>
-                            </div>
-                            <div class=" col-xl-4 col-md-4 col-sm-12">
-                                <h4 class="row mega-title"></h4>
-                                <ul>
-                                    <li><a href="{{route('event_and_opportunity')}}">Events & Opportunity</a></li>
-                                    <li><a href="https://alumni.diu.ac/" target="_blank">Alumni</a></li>
-                                </ul>
-                            </div>
-                            <div class=" col-xl-4 col-md-4 col-sm-12">
-                                <h4 class="row mega-title"></h4>
-                                <ul>
-                                    <li><a href="{{ route('institute') }}"> Institute</a></li>
-                                    <li><a href="https://jobs.diu.ac/" target="_blank">Career</a></li>
 
-
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+            <li class="drop-down"><a href="#"></i> Community</a>
+                <ul class="drop-down-ul animated fadeIn">
+                    <li><a href="{{ route('build_partnership') }}"> Build Partnership</a></li>
+                    <li><a href="{{ route('engage') }}"> Engage Our Strength</a></li>
+                    <li><a href="{{ route('event_and_opportunity') }}">Events & Opportunity</a></li>
+                    <li><a href="https://alumni.diu.ac/" target="_blank">Alumni</a></li>
+                    <li><a href="{{ route('institute') }}"> Institute</a></li>
+                    <li><a href="https://jobs.diu.ac/" target="_blank">Career</a></li>
+                </ul>
             </li>
+           
         </ul>
         <a href="#" class="toggle-menu d-block d-lg-none"><i class="fa fa-bars"></i></a>
     </div>
@@ -514,8 +505,11 @@
             });
 
         });
+
+
+        
     </script>
-    <script>
+    {{-- <script>
         document.querySelectorAll('.dropdown').forEach(dropdown => {
             dropdown.addEventListener('mouseenter', () => {
                 dropdown.querySelector('.dropdown-menu').classList.add('show');
@@ -525,7 +519,9 @@
                 dropdown.querySelector('.dropdown-menu').classList.remove('show');
             });
         });
-    </script>
+    </script> --}}
+
+    
 
 
 </header>

@@ -19,42 +19,30 @@
         border: none;
         
     }
-    .list:nth-child(1) a {
-        background: blue; 
-    }    
-    .list:nth-child(2) a {
-        background: red; 
-    }  
-    .list:nth-child(3) a {
-        background: green; 
+
+
+
+  
+
+    .btn:before,
+    .btn:after {
+        content: "";
+        background-image: linear-gradient(to right,#24B3C3,#1375B7,#0F619D, #F8880C) !important;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.3s ease-out;
     }
-    .list:nth-child(4) a {
-        background: #E95095; 
-    }
-    .list:nth-child(5) a {
-        background: #FDCC01; 
-    }
-    .list:nth-child(6) a {
-        background: #7049BA; 
-    }
-    .list:nth-child(7) a {
-        background: #5FAD56 
-    }
-    .list:nth-child(8) a {
-        background: rgb(164, 198, 51); 
-    }
-    .list:nth-child(9) a {
-        background: rgb(29, 198, 207); 
-    }
-    .list:nth-child(10) a {
-        background: rgb(127, 133, 7); 
-    }
-    .list:nth-child(11) a {
-        background: rgb(83, 24, 86); 
-    }
-    .list:nth-child(12) a {
-        background: rgb(215, 68, 203); 
-    }
+
+
+
+  
+    
+  
 
 </style>
     <main id="main">
@@ -74,7 +62,7 @@
 
         <div class="container" id="faculty">
             <div class="row">
-                <div class="py-5 col-8 mx-auto">
+                <div class="py-5 col-lg-8 mx-auto">
                     <div class="faculty">
                         <ul>
                             <li class="list" v-for="(item,index) in programs" :key="index"><a :href="'/faculty/' + item.slug" class="btn btn-block w-100" v-text="item.title" target="_blank"></a></li>       

@@ -76,6 +76,12 @@
     .btn:hover:after {
         width: 0;
     }
+
+    @media (max-width: 380px) {       
+        .top-menu{
+            font-size: 12px
+        }
+    }
 </style>
 
 <section id="topbar" class="fixed-top">
@@ -85,15 +91,15 @@
                 <i class="fa fa-home text-white"></i> <span>Welcome to Dhaka International University</span>
             </div>
             <div class="d-block d-lg-none">
-                <i class="fa fa-home text-white"></i> <span>Welcome to DIU</span>
+                <i class="fa fa-home text-white"></i> <span class="top-menu">Welcome to DIU</span>
             </div>
             <div>
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item"><a href="https://students.diu.ac/" class="text-white" target="_blank"><i
-                                class="fa fa-user" style="margin-right: 5px" aria-hidden="true"></i>Students Portal</a>
+                                class="fa fa-user top-menu" style="margin-right: 5px" aria-hidden="true"></i> <span class="top-menu">Students Portal</span></a>
                     </li>
                     <li class="list-inline-item"><i class="fa fa-phone" style="margin-right: 5px"
-                            aria-hidden="true"></i><a href="{{ route('contact') }}" class="text-white ml-3"
+                            aria-hidden="true"></i><a href="{{ route('contact') }}" class="text-white top-menu ml-3"
                             target="_blank">Contact us</a></li>
                 </ul>
             </div>

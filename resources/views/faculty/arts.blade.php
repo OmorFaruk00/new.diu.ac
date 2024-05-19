@@ -188,7 +188,52 @@
                 display: block;
             }
         }
+        .frame img {
+            border: solid 2px;
+            border-bottom-color: #ffe;
+            border-left-color: #eed;
+            border-right-color: #eed;
+            border-top-color: #ccb;
+            height: 300px;
+            width: 100% !important;
+            transform: scale(1, 1);
+            transition: all 0.30s ease 0s; 
+        }
 
+        .frame {
+            background-color: #ddc;
+            border: solid 5vmin #eee;
+            border-bottom-color: #fff;
+            border-left-color: #eee;
+            border-radius: 2px;
+            border-right-color: #eee;
+            border-top-color: #ddd;
+            box-sizing: border-box;
+            position: relative;
+            text-align: center;
+
+            &:before {
+                border-radius: 2px;
+                bottom: -2vmin;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25) inset;
+                content: "";
+                left: -2vmin;
+                position: absolute;
+                right: -2vmin;
+                top: -2vmin;
+            }
+
+            &:after {
+                border-radius: 2px;
+                bottom: -2.5vmin;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+                content: "";
+                left: -2.5vmin;
+                position: absolute;
+                right: -2.5vmin;
+                top: -2.5vmin;
+            }
+        }
 
         .department-title {
             color: #333;
@@ -222,8 +267,8 @@
             position: relative;
         }
 
-        .department-head:hover .pic img {
-            transform: scale(1.2, 1.2);
+        .department-head:hover .frame img {
+            transform: scale(1.1, 1.1);
           
         }
 
@@ -289,7 +334,7 @@
             </div>
         </div>
     </section>
-    <section style="background: #f5f5f5">
+    <section>
         <div class="container pt-5">
             <div class="">
                 <div class="faculty">
@@ -387,12 +432,12 @@
 
 
                 <div class="container">
-                    <h3 class="department-title">Department Chairman</h3>
+                    <h3 class="department-title">Department Chairmans</h3>
                     <div class="row">
                         <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                             <a href="https://profile.diu.ac/arif.ahmad" target="_blank">
                                 <div class="department-head">
-                                    <div class="pic">
+                                    <div class="frame">
                                         <img src="https://api.diu.ac/images/profile_photo_file_855.jpg">
                                     </div>
                                     <div class="department-content">
@@ -406,7 +451,7 @@
                         <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                             <a href="https://profile.diu.ac/jamsedur.rahman" target="_blank">
                                 <div class="department-head">
-                                    <div class="pic">
+                                    <div class="frame">
                                         <img src="https://api.diu.ac/images/profile_image_upload_423.jpg">
                                     </div>
                                     <div class="department-content">
@@ -420,7 +465,7 @@
                         <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                             <a href="https://profile.diu.ac/md.fazlul.haque" target="_blank">
                                 <div class="department-head">
-                                    <div class="pic">
+                                    <div class="frame">
                                         <img src="https://api.diu.ac/images/profile_photo_file_138.jpg">
                                     </div>
                                     <div class="department-content">

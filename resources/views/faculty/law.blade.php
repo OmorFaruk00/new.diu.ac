@@ -221,11 +221,11 @@
             position: relative;
         }
 
-        .department-head:hover .pic img {
-            transform: scale(1.2, 1.2);
+        .department-head:hover .frame img {
+            transform: scale(1.1, 1.1);
         }
 
-       
+
 
         .department-head .team-content {
             display: flex;
@@ -269,50 +269,54 @@
 
 
 
-img {
-  border:solid 2px;
-  border-bottom-color:#ffe;
-  border-left-color:#eed;
-  border-right-color:#eed;
-  border-top-color:#ccb;
-  max-height:100%;
-  max-width:100%;
-}
+        .frame img {
+            border: solid 2px;
+            border-bottom-color: #ffe;
+            border-left-color: #eed;
+            border-right-color: #eed;
+            border-top-color: #ccb;
+            max-height: 100%;
+            max-width: 100%;
+            transform: scale(1, 1);
+            transition: all 0.30s ease 0s;
+        }
 
-.frame {
-  background-color:#ddc;
-  border:solid 5vmin #eee;
-  border-bottom-color:#fff;
-  border-left-color:#eee;
-  border-radius:2px;
-  border-right-color:#eee;
-  border-top-color:#ddd;
-  /* box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25); */
-  box-sizing:border-box;
-  display:inline-block;
-  position:relative;
-  text-align:center;
-  &:before {
-    border-radius:2px;
-    bottom:-2vmin;
-    box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
-    content:"";
-    left:-2vmin;
-    position:absolute;
-    right:-2vmin;
-    top:-2vmin;
-  }
-  &:after {
-    border-radius:2px;
-    bottom:-2.5vmin;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
-    content:"";
-    left:-2.5vmin;
-    position:absolute;
-    right:-2.5vmin;
-    top:-2.5vmin;
-  }
-}
+        .frame {
+            background-color: #ddc;
+            border: solid 5vmin #eee;
+            border-bottom-color: #fff;
+            border-left-color: #eee;
+            border-radius: 2px;
+            border-right-color: #eee;
+            border-top-color: #ddd;
+            /* box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25); */
+            box-sizing: border-box;
+            display: inline-block;
+            position: relative;
+            text-align: center;
+
+            &:before {
+                border-radius: 2px;
+                bottom: -2vmin;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25) inset;
+                content: "";
+                left: -2vmin;
+                position: absolute;
+                right: -2vmin;
+                top: -2vmin;
+            }
+
+            &:after {
+                border-radius: 2px;
+                bottom: -2.5vmin;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+                content: "";
+                left: -2.5vmin;
+                position: absolute;
+                right: -2.5vmin;
+                top: -2.5vmin;
+            }
+        }
     </style>
 
 
@@ -327,7 +331,7 @@ img {
             </div>
         </div>
     </section>
-    <section  style="background: #f5f5f5">
+    <section>
         <div class="container py-5">
             <div class="">
                 <div class="faculty">
@@ -344,76 +348,86 @@ img {
                     <ul class="faculty-content">
                         <li><i class="fa fa-phone"></i> 8801819559286</li>
                         <li><i class="fa fa-envelope"></i> dean.law@diu.ac</li>
-                        <li><i class="fas fa-map-marker-alt px-1"></i>Department of Law, <br>  <span class="px-3">Satarkul, Badda,
-                            Dhaka-1212.</span></li>
+                        <li><i class="fas fa-map-marker-alt px-1"></i>Department of Law, <br> <span class="px-3">Satarkul,
+                                Badda,
+                                Dhaka-1212.</span></li>
                     </ul>
                 </div>
             </div>
-        
-
-        <div class=" py-5">
-            <div class="message">
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dicta hic porro
-                    temporibus ea quae quos rem corporis saepe voluptate. Et labore aut, vitae est aliquid sed doloremque
-                    velit obcaecati consectetur! Perferendis enim animi cumque aliquid, excepturi similique dolorem
-                    voluptatibus vel eveniet assumenda officiis? Totam nesciunt doloribus maiores nihil ullam assumenda
-                    neque a nobis eos porro at facere, quibusdam quam culpa eum facilis. Quidem cupiditate nisi magnam esse
-                    iusto dolor saepe commodi perspiciatis soluta consectetur ab recusandae, debitis quia! Soluta sed eaque
-                    doloribus nulla omnis ex repellendus? Ullam vel iste alias repellat. Cumque quia, ipsam commodi nihil
-                    repudiandae officiis ab, quos incidunt minima minus, distinctio quas? Sed saepe consectetur maiores
-                    incidunt! Cumque aspernatur deleniti numquam, quidem hic impedit reiciendis, ex quisquam suscipit amet
-                    tenetur nam? Incidunt magni error odit mollitia eveniet consequuntur quod dignissimos fuga amet qui
-                    quisquam voluptate voluptates a, ducimus tempore non architecto provident repellendus ab tenetur,
-                    expedita quam nulla. Dolores ullam, labore ut officia corporis explicabo vel non sequi architecto
-                    praesentium cupiditate vero cumque sit doloribus beatae? Ea quis architecto veritatis commodi velit
-                    voluptate dolorum maiores dignissimos pariatur quaerat, odio ullam corporis harum cupiditate voluptatum
-                    nulla assumenda voluptas.</p>
-                <h3>Dean</h3>
-
-            </div>
-        
 
 
+            <div class="pt-5">
+                <div class="message">
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dicta hic porro
+                        temporibus ea quae quos rem corporis saepe voluptate. Et labore aut, vitae est aliquid sed
+                        doloremque
+                        velit obcaecati consectetur! Perferendis enim animi cumque aliquid, excepturi similique dolorem
+                        voluptatibus vel eveniet assumenda officiis? Totam nesciunt doloribus maiores nihil ullam assumenda
+                        neque a nobis eos porro at facere, quibusdam quam culpa eum facilis. Quidem cupiditate nisi magnam
+                        esse
+                        iusto dolor saepe commodi perspiciatis soluta consectetur ab recusandae, debitis quia! Soluta sed
+                        eaque
+                        doloribus nulla omnis ex repellendus? Ullam vel iste alias repellat. Cumque quia, ipsam commodi
+                        nihil
+                        repudiandae officiis ab, quos incidunt minima minus, distinctio quas? Sed saepe consectetur maiores
+                        incidunt! Cumque aspernatur deleniti numquam, quidem hic impedit reiciendis, ex quisquam suscipit
+                        amet
+                        tenetur nam? Incidunt magni error odit mollitia eveniet consequuntur quod dignissimos fuga amet qui
+                        quisquam voluptate voluptates a, ducimus tempore non architecto provident repellendus ab tenetur,
+                        expedita quam nulla. Dolores ullam, labore ut officia corporis explicabo vel non sequi architecto
+                        praesentium cupiditate vero cumque sit doloribus beatae? Ea quis architecto veritatis commodi velit
+                        voluptate dolorum maiores dignissimos pariatur quaerat, odio ullam corporis harum cupiditate
+                        voluptatum
+                        nulla assumenda voluptas.</p>
+                    <h3>Dean</h3>
 
-        <div class="row  pt-5">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="row">
-                    <div class="col-lg-10 col-md-10 mx-auto">
-                     <div class="department">
-                        <h3 class="department-title">Department List </h3>
-                        <ul>
-                            <li><p>LL.B. (Hons.)</p></li>
-                            <li><p>	LL.M.</p></li>
-                            <li><p>Master of Human Rights Law</p></li>
-                        </ul> 
-                        </div>                       
-                    </div>                    
-                </div> 
+                </div>
 
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">                                  
-                    <div class="row">
-                        <div class="col-md-6 col-md-8 mx-auto">
-                            <h3 class="department-title">Department Chairman</h3>
-                            <a href="https://profile.diu.ac/nasir.ahmad" target="_blank">
-                                <div class="department-head">
-                                    <div class="frame">
-                                        <img class="img" src="https://api.diu.ac/images/profile_photo_file_130.jpg">
-                                    </div>
-                                    <div class="team-content">
-                                        <h3 class="title">Nasir Ahmad</h3>
-                                        <span class="post">Assistant Professor & Chairman</span>
-                                        <h3 class="dept">Department of  Department of Law</h3>
-                                    </div>
+                <div class="row  pt-5">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 mx-auto">
+                                <div class="department">
+                                    <h3 class="department-title">Department List </h3>
+                                    <ul>
+                                        <li>
+                                            <p>LL.B. (Hons.)</p>
+                                        </li>
+                                        <li>
+                                            <p> LL.M.</p>
+                                        </li>
+                                        <li>
+                                            <p>Master of Human Rights Law</p>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </a>
-                        </div>                    
-                    </div>                
+                            </div>
+                        </div>
 
-            </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="row">
+                            <div class="col-md-6 col-md-8 mx-auto">
+                                <h3 class="department-title">Department Chairman</h3>
+                                <a href="https://profile.diu.ac/nasir.ahmad" target="_blank">
+                                    <div class="department-head">
+                                        <div class="frame">
+                                            <img class="img" src="https://api.diu.ac/images/profile_photo_file_130.jpg">
+                                        </div>
+                                        <div class="team-content">
+                                            <h3 class="title">Nasir Ahmad</h3>
+                                            <span class="post">Assistant Professor & Chairman</span>
+                                            <h3 class="dept">Department of Department of Law</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
 
-        </div>
+                    </div>
 
-       
+                </div>
+
+
     </section>
 @endsection

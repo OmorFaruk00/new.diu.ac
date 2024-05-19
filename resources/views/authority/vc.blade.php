@@ -2,7 +2,7 @@
 @section('content')
     <style>
         .authority {
-            background: #fff;
+            background: linear-gradient(80deg, #DDDDDD, #DDDDDD);
             font-family: 'Poppins', sans-serif;
             font-size: 0;
             padding: 40px 20px 60px;
@@ -127,7 +127,7 @@
         }
 
         .message {
-            background: #fff;
+            background: linear-gradient(80deg, #DDDDDD, #DDDDDD);
             font-family: 'Poppins', sans-serif;
             padding: 40px 20px 60px;
             box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.3);
@@ -145,8 +145,10 @@
             bottom: 0;
         }
 
-        .message .desc {
+        .message p {
             color: #838383 !important;
+            font-weight: 500;
+            /* color: #333 !important; */
             font-size: 16px;
             line-height: 25px;
             text-align: justify
@@ -164,6 +166,7 @@
                 padding: 20px 20px 45px;
                 margin: 0 auto;
             }
+
             .message {
                 width: 95%;
                 padding: 20px 20px 45px;
@@ -214,7 +217,7 @@
     </section>
 
 
-    <section class="py-5">
+    <section class="py-4">
         <div class="demo">
             <div class="container">
                 <div class="authority">
@@ -236,34 +239,29 @@
                 </div>
             </div>
         </div>
+    </section>
 
 
-
-        <div class="container py-5">
+    <section>
+        <div class="container py-4">
             <div class="message">
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia alias ipsa cum
-                    repudiandae dolores veniam esse! Cupiditate asperiores expedita velit et nihil error sequi recusandae
-                    vel quibusdam ex reprehenderit debitis voluptates repellendus consequatur dolorem possimus doloremque
-                    amet enim laudantium, corporis neque accusamus tenetur, sint dolorum! Iure, dolorum et. Nostrum, sunt
-                    minima! Quisquam perferendis aliquid obcaecati nemo facilis ipsam maiores mollitia veritatis delectus
-                    dicta distinctio voluptatem corporis repudiandae optio, debitis eligendi voluptates velit quos, nostrum
-                    dolor quaerat incidunt similique accusamus. Amet, recusandae corporis. Magni, rerum fugiat eaque unde
-                    nostrum vitae neque iure voluptates animi odit voluptatum? Iusto sint fugiat dignissimos ex quos ipsa
-                    iure, eaque, debitis impedit, ea culpa molestias sunt ducimus laboriosam! Delectus soluta dolorum
-                    aliquid saepe, quam architecto ea id repellat numquam sapiente deleniti cum fuga eaque reprehenderit
-                    tempore error! Atque voluptatem, soluta repellat ratione blanditiis minima, iusto ipsam enim a hic,
-                    consectetur quisquam fugiat quod. Doloremque, sapiente earum. Sint impedit nostrum aut necessitatibus
-                    modi explicabo facilis eius et iure dicta illum labore pariatur, atque vitae, optio eos nihil vero
-                    voluptates? Natus ipsam exercitationem, quisquam, veniam quos cum esse quam magni dolorem vel nemo
-                    dolore veritatis sequi, culpa aspernatur error deleniti dolorum adipisci. Corporis saepe libero quaerat
-                    in. Dolorem dicta impedit quam, vero expedita adipisci atque sunt repellat quasi. Atque nam ipsam
-                    repellendus mollitia facere, facilis esse aspernatur eaque deserunt quidem commodi velit, totam animi
-                    officia, tempore dolore quod sed omnis dignissimos voluptatem reprehenderit exercitationem laudantium
-                    eligendi. Pariatur, quam ipsa dolorem, natus magni facilis commodi perferendis in iusto quod doloremque
-                    laboriosam accusamus sequi. Suscipit minima similique, corrupti labore nemo sunt consectetur ut. Sequi,
-                    vero nostrum! Perferendis officia consequuntur fuga hic, excepturi labore voluptatibus obcaecati
-                    voluptate quae dolor, ipsam quidem modi assumenda accusamus, autem totam maxime ratione eaque sint
-                    deserunt. !</p>
+                <h3 class="text-center">BScEngg Electrical (BUET), MScEnggElectrical (BUET), PhD (Cambridge) CEng(UK), FIET(UK), FIEB FBCS SrMIEEE(USA)</h3>
+                {{-- <h3 class="text-center">Vice-Chancellor</h3> --}}
+                <p>Prof. Dr. Saiful Islam is currently the Vice-Chancellor of Dhaka International University (DIU) since 7 February 2022. During 22 June 2016 to 25 June 2020, Prof. Dr. Saiful Islam worked as the Vice-Chancellor of Bangladesh University of Engineering and Technology (BUET) for the full term of 4 years. During 26 August 2013 - 22 June 2016, he worked as the Pro-Vice Chancellor of Primeasia University, Banani, Dhaka, Bangladesh for a period of 2 years 9 months after being appointed by the Honorable President of Bangladesh and on leave from BUET.</p>
+
+                <p>Prof. Islam obtained his BScEng in Electrical Engineering degree from BUET in 1975, obtained First Class with Honours marks and stood First in order of merit. He obtained MScEng in EE in 1977 from BUET and PhD in EE from Cambridge University, UK in 1986. With a strong academic background, Prof. Islam started his career as a Lecturer of Electrical Engineering in BUET in 1975 and became Professor of Electrical & Electronic Engineering department in 1988.</p>
+
+                <p>Professor Saiful Islam is a Life Fellow of the Institution of Engineers Bangladesh (IEB), a Life Fellow of Bangladesh Computer Society, a Fellow of the Institution of Engineering & Technology (IET) UK, a Chartered Engineer (CEng) of the Engineering Council, UK.</p>
+
+                <p>He is a Fellow of Cambridge Commonwealth Society, Cambridge, UK, a Senior Member of IEEE SrMIEEE (USA) . He is a former Vice President of Bangladesh Electronics Society. Professor Islam is a Life member of Caius Club of Gonville & Caius College, Cambridge University, Cambridge, UK.</p>
+
+                <p>During 1991-93, Professor Saiful Islam was the Head of the Electrical and Electronic Engineering Department of BUET and during 1995-97 he was the Dean of the Electrical and Electronic Engineering Faculty. During this period he also worked twice as the Chairman of the Admission Committee for two consecutive years. He was also the Head of the Computer Science and Engineering Department of BUET during 1996.</p>
+                <p>During 1991, Professor Islam was with the Electrical and Computer Engineering Department of Kanazawa University, Kanazawa, Japan with the status of a Visiting Professor and as a Matsumae International Foundation Fellow for a period of 3 months. During 1999-2000, he was a Visiting Professor of Islamic Institute of Technology (now IUT), Gazipur for one year (on sabbatical leave from BUET). During 2002-2006 he was the first Dean of Engineering Faculty of American International University- Bangladesh (AIUB), Banani, Dhaka and put significant contribution in building the Engineering Faculty. He has shown significant success in building and help growing private Universities. Thus, he has developed significant skill in academic administration and management in both public and private Universities.</p>
+                <p>During his illustrious service career he has earned significant reputation and professional excellence in his tenure of service spanning over 46 years in teaching, research and academic administration.</p>
+
+                <p>An eminent educationist, Prof. Islam has been involved in a large number of National Engineering Projects and has left significant contribution in National level Engineering and Educational fields. He is well known for his innovative nature, unsurpassable quality in dynamic leadership and exceptional managerial capability.</p>
+
+                <p>He has been involved in research in Microwave coupled line devices, Semiconductor MQW Lasers, DFB Lasers, VCSELs, OPVCSELs. He has a large number of research papers in these areas in reputed journals. His professional experience covered a broad spectrum of areas like Microwave & RF Engineering, Satellite Communications, designing distribution systems for buildings and cities, special lighting for stadiums, exterior lighting of buildings, computer controlled exterior lighting. In recent years, he got involved in research on electrical energy, electrical power generation and planning. His expertise in the fields of Microwave & RF Engineering, RADAR, Satellite Communications, Lasers, designing electrical distribution systems for buildings and cities, special lighting is well known. Further information: <a href="https://sislamk.tripod.com" style="color:#f05d23">https://sislamk.tripod.com</a>  <a href="https://sislamk0.wixsite.com/saifulislameee" style="color:#f05d23">https://sislamk0.wixsite.com/saifulislameee</a></p>
 
                 <h3>Vice-Chancellor</h3>
             </div>

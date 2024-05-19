@@ -103,7 +103,7 @@
             
                 <div class="post-slide">
                     <div class="post-img">
-                        <a href="#"><img src="https://media.istockphoto.com/id/499517325/photo/a-man-speaking-at-a-business-conference.jpg?s=612x612&w=0&k=20&c=gWTTDs_Hl6AEGOunoQ2LsjrcTJkknf9G8BGqsywyEtE=" alt=""></a>
+                        <a href="#"><img src="{{asset('assets/images/seminar.jpg')}}" alt=""></a>
                     </div>
                     <div class="post-content">
                         <div class="post-date">
@@ -126,7 +126,7 @@
  
                 <div class="post-slide">
                     <div class="post-img">
-                        <a href="#"><img src="https://media.istockphoto.com/id/499517325/photo/a-man-speaking-at-a-business-conference.jpg?s=612x612&w=0&k=20&c=gWTTDs_Hl6AEGOunoQ2LsjrcTJkknf9G8BGqsywyEtE=" alt=""></a>
+                        <a href="#"><img src="{{asset('assets/images/seminar.jpg')}}" alt=""></a>
                     </div>
                     <div class="post-content">
                         <div class="post-date">

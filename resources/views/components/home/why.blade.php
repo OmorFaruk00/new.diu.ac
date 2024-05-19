@@ -8,6 +8,10 @@
         color: #434343;
         font-weight: 400;
     }
+    .mycard1 h2 {
+       font-size: 17px;  
+    }
+ 
 </style>
 <section id="whykl" class="pt-5" style="background: #fff">
     <div class="container">
