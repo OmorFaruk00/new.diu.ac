@@ -76,7 +76,7 @@
             display: block;
         }
 
-        .authority .profile {
+        .profile {
             color: #5bc908;
             font-weight: 600;
             font-size: 16px;
@@ -85,7 +85,7 @@
             display: block;
         }
 
-        .authority .profile:hover {
+      .profile:hover {
             color: #2EAA4D;
 
         }
@@ -263,7 +263,7 @@
                     voluptate quae dolor, ipsam quidem modi assumenda accusamus, autem totam maxime ratione eaque sint
                     deserunt. !</p>
 
-                <h3>Treasurer</h3>
+                    <a class="profile" href="{{route('treasurerOffice')}}">Browse Office Personnel</a>
             </div>
         </div>
     </section>

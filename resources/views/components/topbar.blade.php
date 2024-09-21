@@ -17,6 +17,7 @@
 
     .back-to-top {
         background: #18AC4F !important;
+        bottom: 60px;
     }
 
     ::-webkit-scrollbar {

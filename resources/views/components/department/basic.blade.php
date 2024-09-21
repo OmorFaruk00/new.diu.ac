@@ -69,9 +69,10 @@
     margin: 0 0 7px 0;
 }
 .basic-intro .description{
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: 16px;
     text-align: justify;
+    line-height: 25px;
+    color: #333;
     margin: 0;
 }
 .basic-intro .timeline:nth-child(even){

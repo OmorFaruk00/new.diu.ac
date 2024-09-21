@@ -1,148 +1,208 @@
-
 <style>
-    /*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 15px auto;
-  list-style: none;
-  text-align: center;
-  border-radius: 50px;
-  padding: 2px 15px;
-}
+    .header {
+        position: relative;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 40px;
+        font-weight: 800;
+    }
 
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 15px 8px 15px;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #444444;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-}
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  color: #135C51;
-}
+    .header:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        height: 3px;
+        width: 70px;
+        background: #1474B5;
+        transform: translateX(-50%);
+    }
 
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
+    .pagination .page-link {
+        color: #007bff;
+        /* border-radius: 50%; */
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
+    .pagination .page-item.active .page-link {
+        background-color: #2EAA4D;
+        border-color: #2EAA4D;
+        color: white;
+    }
 
-.portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  bottom: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 15px;
-}
+    .pagination .page-link:hover {
+        background-color: #2EAA4D;
+        color: white;
+    }
 
-.portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
-  color: #fff;
-  font-weight: 600;
-  color: #222222;
-}
 
-.portfolio .portfolio-item .portfolio-info p {
-  color: #555555;
-  font-size: 14px;
-  margin-bottom: 0;
-}
 
-.portfolio .portfolio-item .portfolio-info .preview-link,
-.portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute;
-  right: 40px;
-  font-size: 24px;
-  top: calc(50% - 18px);
-  color: #3c3c3c;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #135C51;
-}
-
-.portfolio .portfolio-item .portfolio-info .details-link {
-  right: 10px;
-}
-
-.portfolio .portfolio-item .portfolio-links {
-  opacity: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 3;
-  position: absolute;
-  transition: all ease-in-out 0.3s;
-}
-
-.portfolio .portfolio-item .portfolio-links a {
-  color: #fff;
-  margin: 0 2px;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-item .portfolio-links a:hover {
-  color: #6ba7f5;
-}
-
-.portfolio .portfolio-item:hover .portfolio-info {
-  opacity: 1;
-  bottom: 20px;
-}
-
+    .card-img-top {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 0.25rem;
+    }
 </style>
-<div class="container-xxl py-5">
-    <div class="container">
-        @if(!empty($gallery->data))
-            
-       
-      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-        <h3 class="header">GALLERY</h3>
-        <p></p>
-      </div>
-      <div class="row g-4 justify-content-center align-self-center">
-          @foreach ($gallery->data as $rows)             
-          
-        <div class="col-lg-3 col-md-6 wow fadeInUp portfolio-item" data-wow-delay="0.1s">
-            <a href="{{$rows->image_url}}" target="_blank">
-          <div class="team-item bg-light">
-            <div class="overflow-hidden" style="height: 280px">
-              <img
-                class="img-fluid"
-                src="{{$rows->image_url}}" 
-                alt="image" style="height: 280px;width:100%"
-              />
-            </div>
-            <div class="text-center p-4" style="height: 90px">
-              <h6 class="mb-0" style="color: gray" >{{$rows->title}}</h6>
-              
-            </div>
-          </div>
-        </a>
+
+
+<div class="container py-5" id='Gallary'>
+    <div class="container" v-if="galleries.length>0">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h3 class="header">GALLERY</h3>
+
+            <p class="text-center mb-4"><b>Our students engage themselves in various interesting extra curricular
+                    activities all through the year.</b> </p>
         </div>
-          @endforeach       
-        
-        
-      </div>
+
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 mb-2" v-for="(src, index) in galleries" :key="index">
+                <div class="card">
+                    <img class="card-img-top" :src="src.image_url" :alt="src.title" @click="openModal(src)"
+                        style="cursor: pointer;">
+                    <div class="card-body">
+                        <p class="card-text" v-text="src.title"></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="imageModalLabel" v-text="selectedImage.title"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img :src="selectedImage.image_url" class="img-fluid" :alt="selectedImage.title">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination pagination-sm justify-content-center">
+
+                    <li class="page-item">
+                        <a class="page-link fa fa-angle-left" href="javaScript:void(0)" @click="paginatePreview"></a>
+                    </li>
+
+                    <li class="page-item" v-for="(row,index) in meta?.last_page" :key="index">
+                        <a class="page-link" @click="paginatePageWise(row)" href="javaScript:void(0)"
+                            v-html="row"></a>
+                    </li>
+
+
+                    <li class="page-item">
+                        <a class="page-link fa fa-angle-right" href="javaScript:void(0)" @click="paginateNext"></a>
+                    </li>
+
+
+                </ul>
+            </nav>
+
+
+
+
+
+        </div>
     </div>
-    @endif
-  </div>
- 
+</div>
+
+
+<script>
+    $(document).ready(function() {
+
+
+        var vue = new Vue({
+            el: '#Gallary',
+            data: {
+                config: {
+                    base_path: "{{ env('API_URL') }}",
+                },
+                galleries: '',
+
+                slug: '{{ $slug }}',
+                links: [],
+                meta: [],
+                selectedImage: {},
+
+            },
+            methods: {
+
+
+                getGalleryInfo() {
+                    axios.get(
+                            `${this.config.base_path}/public-diu-website/department-gallery/${this.slug}`
+                            )
+                        .then(res => {
+                            this.galleries = res.data.data;
+                            this.links = res.data.links;
+                            this.meta = res.data.meta;
+                            console.log(this.meta);
+                        })
+                        .catch(error => {
+                            console.log(error);
+                        });
+                },
+                paginatePreview() {
+                    let page_number = parseInt(this.meta.current_page - 1);
+                    this.fetchGalleryPaginateInfo(page_number);
+                },
+
+                paginateNext() {
+
+                    let page_number = parseInt(this.meta.current_page + 1);
+                    this.fetchGalleryPaginateInfo(page_number);
+
+                },
+
+                paginatePageWise(row) {
+                    this.fetchGalleryPaginateInfo(row);
+                },
+
+                fetchGalleryPaginateInfo(page) {
+
+                    axios.get(
+                        `${this.config.base_path}/public-diu-website/department-gallery/${this.slug}?page=${page}`
+                        ).then((res) => {
+
+                        this.galleries = res.data.data;
+                        this.links = res.data.links;
+                        this.meta = res.data.meta;
+                        console.log(res);
+
+                    }).catch((error) => {
+                        console.log('galleries Info')
+                    });
+                },
+                openModal(image) {
+                    this.selectedImage = image;
+                    const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+                    modal.show();
+                },
+
+            },
+            computed: {
+                totalPages() {
+                    return this.meta.last_page;
+                }
+            },
+            created() {
+                this.getGalleryInfo();
+
+
+            }
+        });
+    });
+</script>

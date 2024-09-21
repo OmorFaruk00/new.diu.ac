@@ -50,6 +50,13 @@
         line-height: 1.2;
         font-weight: 900;
     }
+    .carousel-caption h6 {
+        font-size: 30px;
+        /* color: #01AA4D; */
+        color: #F6880C;
+        line-height: 1.2;
+        font-weight: 900;
+    }
 
     .carousel-desc {
         width: 80%;
@@ -213,7 +220,7 @@
                 alt="slider2">
             <div class="carousel-caption caption-bg1">
                 <h2 class="slide-in-left">Admission Open Now</h2>
-                <h2 class="slide-in-left" style="font-size: 27px">Undergraduate - Postgraduate 2024</h2>
+                <h6 class="slide-in-left" style="font-size: 27px">Undergraduate - Postgraduate 2024</h6>
                 <div class="mx-auto carousel-desc  slide-in-down ">
                     <p style="font-size: 25px">Join us for higher study</p>
                 </div>

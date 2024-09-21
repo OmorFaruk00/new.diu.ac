@@ -58,7 +58,7 @@
      
             @if($publications)
             @foreach ( $publications as $rows )           
-                <p><img src="{{ asset('assets/images/right-arow.png') }}" alt=""
+                <p><img src="{{ asset('assets/images/right-arow.png') }}" alt="right arow"
                     style="height: 18px"><a href="{{$rows->image_url}}" class="publication" target="_blank">{{$rows->title}}</a></p>          
                 
             @endforeach                

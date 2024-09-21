@@ -92,9 +92,23 @@ Route::group(['prefix' => 'authority'], function () {
     Route::get('/engage_our_strength',[DiuController::class,'engageOurStrength'])->name('engage');
     Route::get('/event_and_opportunity',[DiuController::class,'eventAndOpportunity'])->name('event_and_opportunity');
 
+    Route::get('/trending-courses',[DiuController::class,'trendingCourses'])->name('trending-courses');
+    Route::get('/books-and-library',[DiuController::class,'booksAndLibrary'])->name('books-and-library');
+    Route::get('/certified-teachers',[DiuController::class,'certifiedTeachers'])->name('certified-teachers');
+    Route::get('/certification',[DiuController::class,'certification'])->name('certification');
+
+
     Route::get('/diu',[DiuController::class,'diu'])->name('diu');
     Route::get('/campus-life',[DiuController::class,'campusLife'])->name('campus-life');
     Route::get('/study',[DiuController::class,'study'])->name('study');
+
+    Route::get('/existing-student-help-registrar-office',[DiuController::class,'registerOffice'])->name('registerOffice');
+
+    Route::get('/existing-student-help-treasurer-office',[DiuController::class,'treasurerOffice'])->name('treasurerOffice');
+
+    Route::get('/existing-student-help-chairman-office',[DiuController::class,'chairmanOffice'])->name('chairmanOffice');
+    
+    Route::get('/existing-student-help-vice-chancellor-office',[DiuController::class,'viceChancellorOffice'])->name('viceChancellorOffice');
   
 
 

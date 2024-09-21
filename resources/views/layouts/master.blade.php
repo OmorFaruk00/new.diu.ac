@@ -55,9 +55,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         {{-- <link href="{{ asset('assets/css/font-awesome.css') }}" rel="stylesheet"> --}}
 
-    <!-- Vendor CSS Files -->
-    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
+    <!-- Bootstrap Files -->
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+  
 
     <script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
     <link href="{{ asset('assets/css/owl.carousel.min.css') }}" rel="stylesheet">
@@ -65,11 +66,8 @@
     <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 
     <script src="{{ asset('assets/vue/vue.min.js') }}"></script>
-    {{-- <script src="{{ asset('assets/vue/axios.min.js') }}"></script> --}}
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
+    <script src="{{ asset('assets/vue/axios.min.js') }}"></script>    
 
-    {{-- <link rel="stylesheet" href="{{ asset('assets/vue/bootstrap-select/dist/css/bootstrap-select.min.css') }}"> --}}
 
     <!-- Template Main CSS File -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
@@ -101,24 +99,28 @@
 
   
     <!-- End Header -->
-    <main1 >
+    <main>
             @yield('content')
 
-    </main1>
+    </main>
 
 
+
+    <x-home.help-desk />
 
     <!-- ======= Footer ======= -->
-    <x-new-footer />
+    <x-footer />
     <!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><img src="{{ asset('/assets/img/up-arow.png') }}" alt=""></a> <!-- Vendor JS Files -->
-    <script src="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
-    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><img src="{{ asset('/assets/img/up-arow.png') }}" alt="down arow"></a>
+    
+    <!-- Vendor JS Files -->
+    {{-- <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script> --}}
+    {{-- <script src="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script> --}}
+    {{-- <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script> --}}
+    {{-- <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script> --}}
+    {{-- <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script> --}}
+    {{-- <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script> --}}
 
     <!-- Template Main JS File -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
@@ -137,7 +139,7 @@
 <!-- Your Chat Plugin code -->
 <div id="fb-customer-chat" class="fb-customerchat"></div>
 
-<script>
+{{-- <script>
     var chatbox = document.getElementById('fb-customer-chat');
     chatbox.setAttribute("page_id", "160248167326381");
     chatbox.setAttribute("attribution", "biz_inbox");
@@ -156,7 +158,7 @@
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-</script>
+</script> --}}
     
     @stack('script')
 

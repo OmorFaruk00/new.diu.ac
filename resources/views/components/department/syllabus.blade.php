@@ -15,7 +15,7 @@
     bottom: -10px;
     height: 3px;
     width: 70px;
-    background: #1474B5;
+    background: #2EAA4D;
     transform: translateX(-50%); 
 }
     .accordion-body {
@@ -33,7 +33,7 @@
     }
 
     .accordion-syllabus-heading .accordion-button:not(.collapsed) {
-        background-color: #49B5E7;
+        background-color: #2EAA4D;
         color: #fff;
     }
     table {

@@ -1,6 +1,6 @@
 <style>
 
-.applynow {
+.partner {
     background: url("{{ asset('/assets/img/backgrounds/apply-now-back.jpg') }}") fixed center center;
     /* background: url("{{asset('/img/backgrounds/apply-now-back.jpg')}}"); */
     background-size: cover;
@@ -17,40 +17,22 @@
         text-align: center;
         color: #F6880C;
         font-weight: 700;
+        font-size: 1.8rem;
         margin-bottom: 20px;
+
     }
 </style>
-<section class="applynow">
+<section class="partner">
     <div class="container py-5">
-        <h4 class="partner-title">
+        <h5 class="partner-title">
             OUR PARTNERS
-        </h4>
+        </h5>
         <div id="partnerData">     
         <div class="owl-carousel owl-theme" id="partner">
             <div class="item" v-for="(item,index) in partners" :key="index" >
                 <img :src="item.image_url" alt="">
             </div>  
-            {{-- <div class="item">
-                <img class="" src="{{ asset('assets/images/partners/partner2.png') }}" alt="">
-            </div>
-            <div class="item">
-                <img class="" src="{{ asset('assets/images/partners/partner3.png') }}" alt="">
-            </div>
-            <div class="item">
-                <img class="" src="{{ asset('assets/images/partners/partner4.png') }}" alt="">
-            </div>
-            <div class="item">
-                <img class="" src="{{ asset('assets/images/partners/partner5.png') }}" alt="">
-            </div>
-            <div class="item">
-                <img class="" src="{{ asset('assets/images/partners/partner6.png') }}" alt="">
-            </div>
-            <div class="item">
-                <img class="" src="{{ asset('assets/images/partners/partner7.png') }}" alt="">
-            </div>
-            <div class="item">
-                <img class="" src="{{ asset('assets/images/partners/partner8.png') }}" alt="">
-            </div> --}}
+        
         </div>
         </div>
     </div>

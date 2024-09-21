@@ -88,9 +88,9 @@
     padding-left: 5px;
 }
 .head .description{
-    font-size: 15px;
+    font-size: 16px;
     color: #585f62;
-    line-height: 22px;
+    line-height: 25px;
     margin-top: 12px;
     font-style: italic;
     text-align: justify

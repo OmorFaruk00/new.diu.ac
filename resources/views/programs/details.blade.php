@@ -27,16 +27,19 @@
         @if ($objective)
             <x-department.objective :objective="$objective" />
         @endif
+       
 
         <!--  Department Facility-->
-        @if ($facility)
-            <x-department.facility :facility="$facility" />
-        @endif
+            <x-department.facility :slug="$slug" />
 
         <!--  Department gallery-->
-        @if ($gallery)
+        {{-- @if ($gallery)
             <x-department.gallery :gallery="$gallery" />
-        @endif
+        @endif --}}
+
+  
+        <x-department.gallery :slug="$slug" />
+        
 
         <!--  Department syllabus-->
         @if ($syllabus)

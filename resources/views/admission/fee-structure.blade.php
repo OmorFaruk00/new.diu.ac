@@ -24,7 +24,7 @@
         <div class="container my-4" id="fee">           
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-center font-bold">COURSE FEE STRUCTURE</h2>
+                    <h2 class="text-center font-bold">Program FEE STRUCTURE</h2>
                     <h6 class="text-center">
                         Here you can review some statistics about our Education Center</h6>
                     <div class="table-responsive">

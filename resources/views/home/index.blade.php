@@ -9,7 +9,7 @@
 
            <x-home.event />
 
-         <x-home.why1 />
+         <x-home.why />
          <x-home.founder />
 
          {{-- <x-home.chairman /> --}}

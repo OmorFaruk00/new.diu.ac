@@ -44,6 +44,21 @@
             background: #2EAA4D;
 
         }
+
+        .btn-pdf {
+            color: red !important;
+            border: 1px solid red;
+            padding: 5px 10px;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 0px;
+            margin-left: 10px;
+        }
+        .btn-pdf:hover {
+            color: #fff !important;
+            background: red;
+
+        }
 </style>
 <section class="breadcrumbs">
     <div class="container">
@@ -74,6 +89,8 @@
           <p><a :href="'/journal_details/'+item.id" class="" target="_blank">DOI Link</a></p> <br>
                               
             <a :href="'/journal_details/'+item.id" class="btn-abs" target="_blank">Abstract</a>
+
+            <a :href="'/journalPdf/'+item.pdf_link" class="btn-pdf" download target="_blank">Pdf</a>
         </div>
 
 

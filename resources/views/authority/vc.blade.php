@@ -76,7 +76,7 @@
             display: block;
         }
 
-        .authority .profile {
+         .profile {
             color: #5bc908;
             font-weight: 600;
             font-size: 16px;
@@ -85,7 +85,7 @@
             display: block;
         }
 
-        .authority .profile:hover {
+        .profile:hover {
             color: #2EAA4D;
 
         }
@@ -263,7 +263,7 @@
 
                 <p>He has been involved in research in Microwave coupled line devices, Semiconductor MQW Lasers, DFB Lasers, VCSELs, OPVCSELs. He has a large number of research papers in these areas in reputed journals. His professional experience covered a broad spectrum of areas like Microwave & RF Engineering, Satellite Communications, designing distribution systems for buildings and cities, special lighting for stadiums, exterior lighting of buildings, computer controlled exterior lighting. In recent years, he got involved in research on electrical energy, electrical power generation and planning. His expertise in the fields of Microwave & RF Engineering, RADAR, Satellite Communications, Lasers, designing electrical distribution systems for buildings and cities, special lighting is well known. Further information: <a href="https://sislamk.tripod.com" style="color:#f05d23">https://sislamk.tripod.com</a>  <a href="https://sislamk0.wixsite.com/saifulislameee" style="color:#f05d23">https://sislamk0.wixsite.com/saifulislameee</a></p>
 
-                <h3>Vice-Chancellor</h3>
+                <a class="profile" href="{{route('viceChancellorOffice')}}">Browse Office Personnel</a>
             </div>
         </div>
     </section>

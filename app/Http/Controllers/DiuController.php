@@ -85,8 +85,8 @@ class DiuController extends Controller
     public function programs($slug){
         $data['basic'] = $this->departmentBasicInfo($slug);
         $data['objective'] = $this->departmentObjective($slug);
-        $data['facility'] = $this->departmentFacility($slug);
-        $data['gallery'] = $this->departmentGallery($slug);
+        // $data['facility'] = $this->departmentFacility($slug);
+        // $data['gallery'] = $this->departmentGallery($slug);
         $data['syllabus'] = $this->departmentSyllabus($slug);
         // $data['facultyMember'] = $this->departmentFacultyMember($slug);
         $data['slug'] =$slug ?? null;
@@ -215,6 +215,26 @@ class DiuController extends Controller
     public function institute(){
         return view('community.institute');
     }
+
+
+    public function trendingCourses(){
+        return view('why.trending-courses');
+    }
+    public function booksAndLibrary(){
+        return view('why.books-and-library');
+    }
+    public function certifiedTeachers(){
+        return view('why.certified-teacher');
+    }
+    public function certification(){
+        return view('why.certification');
+    }
+
+
+
+
+
+
     public function diu(){
         return view('menu.diu');
     }
@@ -223,6 +243,21 @@ class DiuController extends Controller
     }
     public function study(){
         return view('menu.study');
+    }
+
+   
+    public function registerOffice(){
+        return view('about.office-of-register');
+
+    }
+    public function treasurerOffice(){
+        return view('about.office-of-treasurer');
+    }
+    public function chairmanOffice(){
+        return view('about.office-of-chairman');
+    }
+    public function viceChancellorOffice(){
+        return view('about.office-of-vice-chancellor');
     }
    
    

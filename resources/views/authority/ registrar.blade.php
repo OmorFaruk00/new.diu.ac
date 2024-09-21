@@ -76,7 +76,7 @@
             display: block;
         }
 
-        .authority .profile {
+       .profile {
             color: #5bc908;
             font-weight: 600;
             font-size: 16px;
@@ -85,7 +85,7 @@
             display: block;
         }
 
-        .authority .profile:hover {
+       .profile:hover {
             color: #2EAA4D;
 
         }
@@ -241,31 +241,12 @@
 
         <div class="container pt-5">
             <div class="message">
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia alias ipsa cum
-                    repudiandae dolores veniam esse! Cupiditate asperiores expedita velit et nihil error sequi recusandae
-                    vel quibusdam ex reprehenderit debitis voluptates repellendus consequatur dolorem possimus doloremque
-                    amet enim laudantium, corporis neque accusamus tenetur, sint dolorum! Iure, dolorum et. Nostrum, sunt
-                    minima! Quisquam perferendis aliquid obcaecati nemo facilis ipsam maiores mollitia veritatis delectus
-                    dicta distinctio voluptatem corporis repudiandae optio, debitis eligendi voluptates velit quos, nostrum
-                    dolor quaerat incidunt similique accusamus. Amet, recusandae corporis. Magni, rerum fugiat eaque unde
-                    nostrum vitae neque iure voluptates animi odit voluptatum? Iusto sint fugiat dignissimos ex quos ipsa
-                    iure, eaque, debitis impedit, ea culpa molestias sunt ducimus laboriosam! Delectus soluta dolorum
-                    aliquid saepe, quam architecto ea id repellat numquam sapiente deleniti cum fuga eaque reprehenderit
-                    tempore error! Atque voluptatem, soluta repellat ratione blanditiis minima, iusto ipsam enim a hic,
-                    consectetur quisquam fugiat quod. Doloremque, sapiente earum. Sint impedit nostrum aut necessitatibus
-                    modi explicabo facilis eius et iure dicta illum labore pariatur, atque vitae, optio eos nihil vero
-                    voluptates? Natus ipsam exercitationem, quisquam, veniam quos cum esse quam magni dolorem vel nemo
-                    dolore veritatis sequi, culpa aspernatur error deleniti dolorum adipisci. Corporis saepe libero quaerat
-                    in. Dolorem dicta impedit quam, vero expedita adipisci atque sunt repellat quasi. Atque nam ipsam
-                    repellendus mollitia facere, facilis esse aspernatur eaque deserunt quidem commodi velit, totam animi
-                    officia, tempore dolore quod sed omnis dignissimos voluptatem reprehenderit exercitationem laudantium
-                    eligendi. Pariatur, quam ipsa dolorem, natus magni facilis commodi perferendis in iusto quod doloremque
-                    laboriosam accusamus sequi. Suscipit minima similique, corrupti labore nemo sunt consectetur ut. Sequi,
-                    vero nostrum! Perferendis officia consequuntur fuga hic, excepturi labore voluptatibus obcaecati
-                    voluptate quae dolor, ipsam quidem modi assumenda accusamus, autem totam maxime ratione eaque sint
-                    deserunt. !</p>
+                <p class="desc">The Registrar’s Office serves as the hub of all academic activities of Dhaka International University and promotes integrity through service. It is the first contact point for the enrolled students with all their queries and issues. Their problems are resolved either directly by this office or by forwarding them to the concerned offices after consultation with the students. All student records are regularly maintained, updated, and verified by this office. Scheduling classes and updating the academic calendar fall under the purview of this office. The Registrar’s Office is actively involved in organizing orientation and convocation programs of the university. It provides support in organizing other programs of interest as required. It arranges various important meetings of the university such as syndicate meetings and academic council meetings, and keeps records of those meetings. The office is responsible for channeling major university notifications to the students and faculty members. It works as the first contact point for the external stakeholders and does everything necessary to fulfill their requirements. The office is run by a team headed by the Registrar and Additional Registrar. 
 
-                <h3>Registrar</h3>
+                </p>
+                <a class="profile" href="{{route('registerOffice')}}">Browse Office Personnel</a>
+
+                {{-- <h3>Registrar</h3> --}}
             </div>
         </div>
     </section>

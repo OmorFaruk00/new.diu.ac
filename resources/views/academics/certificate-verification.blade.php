@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @push('style')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
     <style>  
         .form-control {
         background: rgba(255, 255, 255, 0.2);
@@ -76,10 +77,10 @@
     <form id="certificateForm" class="py-5">
         @csrf <!-- Add CSRF token for Laravel -->
 
-      <div class="px-3">
-        <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+     
+        <div class="col-lg-4 col-md-6 col-sm-12 mx-auto main p-3">
            
-            <div class="form-group mb-2 field-select">
+            <div class="form-group mb-3 field-select">
                 <div class="select-wrapper">
                 <label for="roll"><strong>Roll</strong></label>
 
@@ -95,10 +96,8 @@
                 </div>
                 <small id="rollError" class="text-danger with-errors"></small>
             </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
-            <div class="form-group mb-2 field-select">
+      
+            <div class="form-group mb-3 field-select">
                 <div class="select-wrapper">
                 <label for="session"><strong>Session</strong></label>
                 <select class="form-control" name="session" id="session" required>
@@ -120,47 +119,39 @@
 
             </div>
             </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
-            <div class="form-group mb-2">
+        
+            <div class="form-group mb-3">
                 <label for="reg_code"><strong>Reg Code</strong></label>
                 <input id="regCode" name="reg_code" type="text" class="form-control"
                     placeholder="Enter reg code.Ex: xx-x-xx-xx-xxxxxx" required>
                 <small id="regCodeError" class="text-danger with-errors"></small>
             </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
-            <div class="form-group">
+      
+            <div class="form-group mb-3">
                 <label for="passingYear"><strong>Passing Year</strong></label>
                 <input id="passingYear" name="passingYear" type="text" class="form-control"
                     placeholder="Enter passing year.Ex:2021" required>
                 <small id="passingYearError" class="text-danger with-errors"></small>
             </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-12 mx-auto mt-3">
+       
             <button type="button" class="btn w-100" id="find">Search</button>
             <span id="loadingSpinner" class="fa fa-spinner fa-pulse" style="display: none;"></span>
             <button id="clearButton" type="button" class="btn btn-outline-danger btn-block mt-2"
                 style="display: none;">Clear</button>
-        </div>
-      </div>
+        </div>    
 
     </form>
     <div id="error" class="text-center" >
        
     </div>
    
-    <div id="students" class="col-lg-4 col-md-4 col-sm-12 mx-auto py-4 px-3" style="margin-bottom: 30px" ></div>
+    <div id="students" class="col-lg-4 col-md-6 col-sm-12 mx-auto py-2" style="margin-bottom: 30px" ></div>
 
    
 @endsection
 
 @push('script')
-    
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.js"></script>
     <script>
         $(document).ready(function() {
             $("#find").click(function() {

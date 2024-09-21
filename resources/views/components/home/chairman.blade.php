@@ -23,13 +23,13 @@
     margin-bottom: 0px !important;
     }
     .chairman-desc .name{
-        font-size: 18px; 
+        font-size: 22px; 
         font-weight: 800;
         color:#01AA4D;
         margin-bottom: 15px !important;
     }
     .chairman-desc .des{
-        font-size: 22px; 
+        font-size: 18px; 
         font-weight: 600;
         color:#6c6a6a;
     }
@@ -42,9 +42,9 @@
           
             <div class="col-lg-9 col-md-9 col-sm-12 my-auto">
                 <div class="chairman-desc">
-                    <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui et excepturi autem consequuntur, vero tempore obcaecati magni, facere doloribus atque molestias, ipsa nobis nostrum ducimus nam. Dolorum quo odit consectetur ipsa ducimus iure nemo eaque impedit omnis non eum magnam blanditiis, quas, voluptatibus a eius placeat et, sunt fuga.</p>
+                    <p class="py-4">DIU is a fertile ground for your growth and discovery. Embrace every opportunity to learn, to challenge yourself, and to explore the vast expanse of knowledge that lies ahead.</p>
                     <p class="name">Shameem Haider Patwary</p>
-                    <p class="des">Chairman, BOT</p>
+                    <p class="des">Chairman, BOT, Dhaka International University</p>
 
                 </div>
             </div>

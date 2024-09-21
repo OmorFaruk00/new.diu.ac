@@ -45,6 +45,7 @@
     position: absolute;
     left: 40px;
     top: 50%;
+    bottom: 40px;
 }
 .team .signature-icon img{
     height: auto;
@@ -69,7 +70,7 @@
 .team .signature-content{
     color: #111;
     padding: 15px 0 0;
-    margin: 0;
+    margin-bottom: 10px;
     list-style: none;    
 }
 .team .signature-content li{
@@ -90,12 +91,11 @@
     border-radius: 20px;
 }
 .team .icon{
-    padding: 0;
-    margin: 0;
     list-style: none;
     position: absolute;
-    bottom: 9px;
-    right: 0px
+    bottom: 15px;
+    right: 5px;
+    
 }
 .team .icon li{ display: inline-block; }
 .team .icon li a{
@@ -114,12 +114,26 @@
     background: #1ABB9A;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
+.whats-btn{
+    background: #39CD5D;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 22px;
+    margin-right: 5px;
+    
+}
+.whats-btn:hover{color: #000}
 .profile-btn{
     background: #1ABB9A;
     color: #fff;
     font-weight: 600;
     padding: 10px 22px;
     /* border-radius: 30px 0px 0px 0px; */
+}
+.fa-whatsapp{
+    font-size: 20px;
+    margin-right: 5px;
+   margin-top: -20px;
 }
 .profile-btn:hover{color: #000}
 @media screen and (min-width:976px) and (max-width:1280px){
@@ -173,26 +187,17 @@
     <section class="breadcrumbs">
         <div class="container">
 
-            <div class="d.team .signature-icon {
-                height: 160px;
-                width: 160px;
-                border: 5px solid #fff;
-                border-radius: 0 30%;
-                transform: translateY(-50%);
-                overflow: hidden;
-                position: absolute;
-                left: 40px;
-                top: 43%;
-            }-flex justify-content-between align-items-center">
-                <h1 style="text-transform:uppercase;">Admission Help Desk</h1>
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 style="text-transform:uppercase;"> Admission Help Desk</h1>
                 <ol>
-                    <li><a href="{{route('home')}}">Home</a></li>
-                    <li>Admission Help Desk</li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li> Admission Help Desk</li>
                 </ol>
             </div>
 
         </div>
-    </section><!-- End Breadcrumbs -->
+    </section>
+    <!-- End Breadcrumbs -->
 
     <div class="demo py-4" id="team">
         <div class="container team-body p-4 ">
@@ -210,10 +215,14 @@
                             <li><span class="fa fa-phone"></span> <strong v-text="item.phone_no"></strong></li>
                             <li><span class="fa fa-envelope"></span> <strong v-text="item.office_email"></strong></li>
                             {{-- <li><span class="fa fa-map-marker"></span> <strong v-text="item.office_address"></strong></li> --}}
-                            <li><span class="fa fa-map-marker"></span> <strong> Permanent Campus: Satarkul, Badda, Dhaka-1212.</strong></li>
+                            <li><span class="fa fa-map-marker"></span> <strong> Satarkul, Badda, Dhaka-1212.</strong></li>
                            
                         </ul>
                         <ul class="icon">
+                            <a :href="`https://api.whatsapp.com/send?phone=88${item.phone_no.slice(-11)}`"  class="whats-btn" target="_blank">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                            </a>
+                      
                             <a :href="item.website" class="profile-btn" target="_blank">View Profile</a>
                         </ul>
                     </div>

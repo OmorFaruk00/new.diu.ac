@@ -6,15 +6,22 @@
         background-size: cover;
         background-position: center;
     }
-    #leader h2 {
-        color: rgb(248, 136, 12);
-        font-size: 24px;
+
+    #leader h1 {
+        color: #F6880C;
+        font-weight: 700;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+
     }
+
     #leader p {
         color: #fff;
         font-size: 18px;
         line-height: 1.4em;
+        text-align: justify;
     }
+
     #leader .choice {
         margin-top: 160px;
         margin-bottom: 160px;
@@ -26,7 +33,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="choice">
-                        <h2 class="">Building Leaders of Tomorrow</h2>
+                        <h1 class="">Building Leaders of Tomorrow</h1>
                         <br>
                         <p>KL Hyderabad Global Business School is one of the most prestigious business schools in
                             the
@@ -35,7 +42,8 @@
                             comprehensive and advanced learning experience, we prepare students to face
                             challenges and lead in the professional world of business.
                         </p>
-                        <a href="{{route('future-student')}}" target="_blank" class="btn" style="margin-top: 20px">Future Student</a>
+                        <a href="{{ route('future-student') }}" target="_blank" class="btn"
+                            style="margin-top: 20px">Future Student</a>
                     </div>
                 </div>
             </div>

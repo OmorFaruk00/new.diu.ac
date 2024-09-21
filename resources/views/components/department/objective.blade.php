@@ -1,3 +1,9 @@
+<style>
+    .objective-desc{
+        font-size: 16px;
+    }
+</style>
+
 <section class="programmebba">
           
     <div class="container">
@@ -9,7 +15,7 @@
         @if($objective)     
         
         @foreach ($objective as $rows )           
-          <li class="my-3">{{$rows->description ?? null}}</li>
+          <li class="my-3 objective-desc">{{$rows->description ?? null}}</li>
           @endforeach
           @endif
          

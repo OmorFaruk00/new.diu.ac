@@ -394,29 +394,29 @@
                             <div class=" col-xl-3 col-md-3 col-sm-12">
                                 <h4 class="row mega-title">Faculty of Science and Engineering </h4>
                                 <ul>
-                                    <li><a href="/programs/department-of-civil-engineering" target="_blank">Department
+                                    <li><a href="/programs/department-of-civil-engineering" >Department
                                             of Civil Engineering</a></li>
 
-                                    <li><a href="/programs/department-of-eee" target="_blank">Department of EEE</a></li>
-                                    <li><a href="/programs/department-of-cse" target="_blank">Department of CSE</a></li>
-                                    <li><a href="/programs/department-of-pharmacy" target="_blank">Department of
+                                    <li><a href="/programs/department-of-eee" >Department of EEE</a></li>
+                                    <li><a href="/programs/department-of-cse" >Department of CSE</a></li>
+                                    <li><a href="/programs/department-of-pharmacy" >Department of
                                             Pharmacy</a></li>
-                                    <li><a href="/programs/department-of-microbiology" target="_blank">Department of
+                                    <li><a href="/programs/department-of-microbiology" >Department of
                                             Microbiology</a></li>
                                     <li><a href="/programs/department-of-biochemistry-and-molecular-biology"
-                                            target="_blank">Department of Biochemistry and Molecular Biology</a></li>
+                                           >Department of Biochemistry and Molecular Biology</a></li>
                                 </ul>
                             </div>
                             <div class=" col-xl-3 col-md-3 col-sm-12">
                                 <h4 class="row mega-title">Faculty of Arts and Social Sciences</h4>
                                 <ul>
-                                    <li><a href="/programs/department-of-english" target="_blank">Department of
+                                    <li><a href="/programs/department-of-english" >Department of
                                             English</a></li>
-                                    <li><a href="/programs/department-of-political-science" target="_blank">Department
+                                    <li><a href="/programs/department-of-political-science" >Department
                                             of Political Science</a></li>
-                                    <li><a href="/programs/department-of-sociology" target="_blank">Department of
+                                    <li><a href="/programs/department-of-sociology" >Department of
                                             Sociology</a></li>
-                                    <li><a href="/programs/department-of-economics" target="_blank">Department of
+                                    <li><a href="/programs/department-of-economics" >Department of
                                             Economics</a></li>
 
 
@@ -426,11 +426,11 @@
                                 <h4 class="row mega-title">Faculty of Business Studies</h4>
                                 <ul>
                                     <li><a href="/programs/department-of-business-administration"
-                                            target="_blank">Department of Business Administration</a></li>
+                                            >Department of Business Administration</a></li>
                                 </ul>
                                 <h4 class="row mega-title">Faculty of Law</h4>
                                 <ul>
-                                    <li><a href="/programs/department-of-law" target="_blank">Department of Law</a></li>
+                                    <li><a href="/programs/department-of-law" >Department of Law</a></li>
                                 </ul>
                             </div>
                         </div>

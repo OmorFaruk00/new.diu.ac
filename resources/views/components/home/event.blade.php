@@ -79,10 +79,15 @@
     }
 
     .event-title {
-        color: #fff;
+        /* color: #fff;
         font-size: 32px;
+        font-weight: 700; */
+
+        color: #F6880C;
         font-weight: 700;
+        font-size: 1.8rem;
         margin-bottom: 20px;
+
     }
 
     .owl-nav button {
@@ -101,7 +106,7 @@
 
 <section style="background: #;margin-bottom:50px" class="event-bg">
     <div class="container py-5">
-        <h4 class="event-title">News and Events</h4>
+        <h3 class="event-title">News and Events</h3>
 
 
         <div id="eventData">
