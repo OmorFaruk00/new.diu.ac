@@ -84,11 +84,11 @@
             display: inline-block;
         }
 
-        .faculty-details .title {
+        .faculty .title {
             color: #333;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 600;
-            text-transform:capitalize;
+            text-transform: uppercase;
             margin: 0 0 3px;
         }
 
@@ -190,7 +190,6 @@
         }
 
 
-
         .department-title {
             color: #333;
             font-size: 32px;
@@ -213,8 +212,10 @@
             text-align: center;
             transition: all 0.5s ease 0s;
             box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            margin: 0px 10px;
+
+
         }
+
 
         .department-head .pic {
             overflow: hidden;
@@ -223,62 +224,25 @@
 
         .department-head:hover .frame img {
             transform: scale(1.1, 1.1);
-        }
-
-
-
-        .department-head .team-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 130px;
-        }
-
-        .department-head .title {
-            font-size: 18px;
-            font-weight: 700;
-            color: #047168;
-            text-transform: capitalize;
-            margin-bottom: 7px;
-        }
-
-        .dept {
-            font-size: 14px;
-            font-weight: 700;
-            color: #047168;
-            text-transform: capitalize;
 
         }
 
-        .department-head .post {
-            display: block;
-            font-size: 17px;
-            font-weight: 600;
-            color: #707070;
-            text-transform: capitalize;
-            margin-bottom: 10px;
-        }
-
-        @media only screen and (min-width: 1090px) {
-            .department-head {
-                margin-bottom: 30px;
-            }
-
-        }
-
-
-
+        /* .department-head .pic img {
+                width: 100%;
+                height: 350px;
+                transform: scale(1, 1);
+                transition: all 0.30s ease 0s;
+            } */
         .frame img {
             border: solid 2px;
             border-bottom-color: #ffe;
             border-left-color: #eed;
             border-right-color: #eed;
             border-top-color: #ccb;
-            max-height: 100%;
-            max-width: 100%;
+            height: 300px;
+            width: 100% !important;
             transform: scale(1, 1);
-            transition: all 0.30s ease 0s;
+            transition: all 0.30s ease 0s; 
         }
 
         .frame {
@@ -289,9 +253,7 @@
             border-radius: 2px;
             border-right-color: #eee;
             border-top-color: #ddd;
-            /* box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25); */
             box-sizing: border-box;
-            display: inline-block;
             position: relative;
             text-align: center;
 
@@ -317,46 +279,89 @@
                 top: -2.5vmin;
             }
         }
+
+        .department-head .department-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 130px;
+            /* box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; */
+        }
+
+        .department-head .title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #047168;
+            text-transform: uppercase;
+            margin-bottom: 7px;
+        }
+
+        .dept {
+            font-size: 14px;
+            font-weight: 700;
+            color: #047168;
+            text-transform: capitalize;
+
+        }
+
+        .department-head .post {
+            display: block;
+            font-size: 17px;
+            font-weight: 600;
+            color: #707070;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+
+        @media only screen and (min-width: 1090px) {
+            .department-head {
+                margin-bottom: 30px;
+            }
+
+            /* .department-head .department-content{ padding: 30px  10px !important;} */
+        }
     </style>
 
 
     <section class="breadcrumbs">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <h1 style="text-transform: uppercase">Faculty of Law</h1>
+                <h1 style="text-transform: uppercase">Faculty of Science </h1>
                 <ol>
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li>Faculty of Law</li>
+                    <li>Faculty of Science </li>
                 </ol>
             </div>
         </div>
     </section>
     <section>
-        <div class="container py-5">
+        <div class="container pt-5">
             <div class="">
                 <div class="faculty">
-                    <div class="faculty-icon">
-                        <img src="https://api.diu.ac/images/profile_photo_file_611.jpg" alt="">
+                    <div class="faculty-icon ">
+                        <img src="https://api.diu.ac/images/profile_photo_file_141.jpg" alt="" style="height: 100%">
                     </div>
                     <div class="faculty-details">
-                        <h2 class="title">DR A. W. M ABDUL HUQ</h2>
-                        <span class="post">Dean</span>
-                        <a href="https://profile.diu.ac/abdulhuq#PersonalInformation" class="profile" target="_blank">View
+                        <h2 class="title">Dr. A.T.M. Mahbubur Rahman Sarker</h2>
+                        <span class="post">Dean </span>
+                        <a href="https://profile.diu.ac/prof.dr.a.t.mmahbuburrahmansarker" class="profile"
+                            target="_blank">View
                             Profile</a>
 
                     </div>
                     <ul class="faculty-content">
-                        <li><i class="fa fa-phone"></i> 8801819559286</li>
-                        <li><i class="fa fa-envelope"></i> dean.law@diu.ac</li>
-                        <li><i class="fas fa-map-marker-alt px-1"></i>Department of Law, <br> <span class="px-3">Satarkul,
-                                Badda,
+                        <li><i class="fa fa-phone"></i> 8801720557279</li>
+                        <li><i class="fa fa-envelope"></i> rahman.cse@diu.ac</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Department Of CSE, Permanent Campus: <br> <span
+                                class="px-3">Satarkul, Badda,
                                 Dhaka-1212.</span></li>
                     </ul>
                 </div>
             </div>
 
 
-            <div class="pt-5">
+            <div class=" pt-5">
                 <div class="message">
                     <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dicta hic porro
                         temporibus ea quae quos rem corporis saepe voluptate. Et labore aut, vitae est aliquid sed
@@ -383,22 +388,23 @@
 
                 </div>
 
-                <div class="row  pt-5">
+                <div class="row  py-5">
+                    <h3 class="department-title">Department List </h3>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="row">
-                            <div class="col-lg-10 col-md-10 mx-auto">
+                            <div class="col-lg-10 col-md-12 mx-auto">
                                 <div class="department">
-                                    <h3 class="department-title">Department List </h3>
                                     <ul>
                                         <li>
-                                            <p>LL.B. (Hons.)</p>
+                                            <p>Civil Engineering</p>
                                         </li>
                                         <li>
-                                            <p> LL.M.</p>
+                                            <p> Electrical and Electronic Engineering</p>
                                         </li>
                                         <li>
-                                            <p>Master of Human Rights Law</p>
+                                            <p> Computer Science & Engineering</p>
                                         </li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -407,19 +413,20 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="row">
-                            <div class="col-md-6 col-md-8 mx-auto">
-                                <h3 class="department-title">Department Chairman</h3>
-                                <a href="https://profile.diu.ac/nasir.ahmad" target="_blank">
-                                    <div class="department-head">
-                                        <div class="frame">
-                                            <img class="img" src="https://api.diu.ac/images/profile_photo_file_130.jpg">
-                                        </div>
-                                        <div class="team-content">
-                                            <h3 class="title">Nasir Ahmad</h3>
-                                            <span class="post">Assistant Professor & Chairman</span>
-                                            <h3 class="dept">Department of Department of Law</h3>
-                                        </div>
-                                    </div>
+                            <div class="col-lg-10 col-md-12 mx-auto">
+                                <div class="department">
+                                    <ul>
+                                        <li>
+                                            <p>Microbiology</p>
+                                        </li>
+                                        <li>
+                                            <p>Biochemistry and Molecular Biology</p>
+                                        </li>
+                                        <li>
+                                            <p> Bachelor of Pharmacy (Hons.)</p>
+                                        </li>
+                                    </ul>
+                                </div>
                                 </a>
                             </div>
                         </div>
@@ -428,6 +435,97 @@
 
                 </div>
 
+
+                <div class="container">
+                    <h3 class="department-title">Department Chairmans</h3>
+                    <div class="row">
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <a href="https://profile.diu.ac/shovon" target="_blank">
+                                <div class="department-head">
+                                    <div class="frame">
+                                        <img src="https://api.diu.ac/images/profile_photo_file_615.jpg">
+                                    </div>
+                                    <div class="department-content">
+                                        <h3 class="title">S M SAZZAD AHMED SHOVON</h3>
+                                        <span class="post">Assistant Professor & Chairman</span>
+                                        <h3 class="dept">Department of Civil Engineering</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <a href="https://profile.diu.ac/md.abdul.based#PersonalInformation" target="_blank">
+                                <div class="department-head">
+                                    <div class="frame">
+                                        <img src="https://api.diu.ac/images/profile_photo_file_362.jpg">
+                                    </div>
+                                    <div class="department-content">
+                                        <h3 class="title">Md. Abdul Based</h3>
+                                        <span class="post"> Professor & Chairman</span>
+                                        <h3 class="dept"> Department of EEE</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <a href="https://profile.diu.ac/tahzib#PersonalInformation" target="_blank">
+                                <div class="department-head">
+                                    <div class="frame">
+                                        <img src="https://api.diu.ac/images/profile_photo_file_158.jpeg">
+                                    </div>
+                                    <div class="department-content">
+                                        <h3 class="title">Md. Tahzib Ul Islam</h3>
+                                        <span class="post">Associate Professor & Chairman (Acting)</span>
+                                        <h3 class="dept"> Department Of CSE</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <a href="https://profile.diu.ac/dr.md.asaduzzamanshishir" target="_blank">
+                                <div class="department-head">
+                                    <div class="frame">
+                                        <img src="https://api.diu.ac/images/profile_photo_file_1099.jpg">
+                                    </div>
+                                    <div class="department-content">
+                                        <h3 class="title">Dr. Md. Asaduzzaman Shishir</h3>
+                                        <span class="post">Assistant Professor & Chairman</span>
+                                        <h3 class="dept"> Department of Microbiology</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <a href="https://profile.diu.ac/dr.hafizurrahman" target="_blank">
+                                <div class="department-head">
+                                    <div class="frame">
+                                        <img src="https://api.diu.ac/images/profile_photo_file_1058.jpg">
+                                    </div>
+                                    <div class="department-content">
+                                        <h3 class="title">Dr. Hafizur Rahman</h3>
+                                        <span class="post"> Professor & Chairman</span>
+                                        <h3 class="dept"> Department of Biochemistry and Molecular Biology</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <a href="https://profile.diu.ac/professor.farida.begum" target="_blank">
+                                <div class="department-head">
+                                    <div class="frame">
+                                        <img src="https://api.diu.ac/images/profile_photo_file_650.jpg">
+                                    </div>
+                                    <div class="department-content">
+                                        <h3 class="title">Professor Farida Begum</h3>
+                                        <span class="post">Chairman</span>
+                                        <h3 class="dept"> Department of Pharmacy</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
 
     </section>
 @endsection

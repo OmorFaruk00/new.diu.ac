@@ -88,7 +88,7 @@
             color: #333;
             font-size: 20px;
             font-weight: 600;
-            text-transform: uppercase;
+            text-transform: capitalize;
             margin: 0 0 3px;
         }
 
@@ -293,7 +293,7 @@
             font-size: 18px;
             font-weight: 700;
             color: #047168;
-            text-transform: uppercase;
+            text-transform: capitalize;
             margin-bottom: 7px;
         }
 
@@ -454,28 +454,28 @@
                             </a>
                         </div>
                         <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <a href="https://profile.diu.ac/mohammad.tareq" target="_blank">
+                            <a href="https://profile.diu.ac/md.abdul.based#PersonalInformation" target="_blank">
                                 <div class="department-head">
                                     <div class="frame">
-                                        <img src="https://api.diu.ac/images/profile_photo_file_310.jpg">
+                                        <img src="https://api.diu.ac/images/profile_photo_file_362.jpg">
                                     </div>
                                     <div class="department-content">
-                                        <h3 class="title">Mohammad Tareq</h3>
-                                        <span class="post">Assistant Professor & Chairman</span>
+                                        <h3 class="title">Md. Abdul Based</h3>
+                                        <span class="post"> Professor & Chairman</span>
                                         <h3 class="dept"> Department of EEE</h3>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <a href="https://profile.diu.ac/prof.dr.a.t.mmahbuburrahmansarker" target="_blank">
+                            <a href="https://profile.diu.ac/tahzib#PersonalInformation" target="_blank">
                                 <div class="department-head">
                                     <div class="frame">
-                                        <img src="https://api.diu.ac/images/profile_photo_file_141.jpg">
+                                        <img src="https://api.diu.ac/images/profile_photo_file_158.jpeg">
                                     </div>
                                     <div class="department-content">
-                                        <h3 class="title">Dr. A.T.M. Mahbubur Rahman Sarker</h3>
-                                        <span class="post">Dean (Faculty of Science & Eng.) & Chairman</span>
+                                        <h3 class="title">Md. Tahzib Ul Islam</h3>
+                                        <span class="post">Associate Professor & Chairman (Acting)</span>
                                         <h3 class="dept"> Department Of CSE</h3>
                                     </div>
                                 </div>

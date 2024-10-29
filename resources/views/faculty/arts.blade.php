@@ -88,7 +88,7 @@
             color: #333;
             font-size: 20px;
             font-weight: 600;
-            text-transform: uppercase;
+            text-transform: capitalize;
             margin: 0 0 3px;
         }
 
@@ -292,7 +292,7 @@
             font-size: 18px;
             font-weight: 700;
             color: #047168;
-            text-transform: uppercase;
+            text-transform: capitalize;
             margin-bottom: 7px;
         }
 
@@ -475,7 +475,22 @@
                                     </div>
                                 </div>
                             </a>
-                        </div>               
+                        </div> 
+                        
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <a href="https://profile.diu.ac/baborahmad#PersonalInformation" target="_blank">
+                                <div class="department-head">
+                                    <div class="frame">
+                                        <img src="https://api.diu.ac/images/profile_photo_file_967.jpg">
+                                    </div>
+                                    <div class="department-content">
+                                        <h3 class="title">Babor Ahmad</h3>
+                                        <span class="post">Assistant Professor & Chairman (Acting)</span>
+                                        <h3 class="dept"> Department Of Economics</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div> 
                     
                     
 

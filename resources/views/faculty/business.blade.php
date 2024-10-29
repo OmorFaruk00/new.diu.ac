@@ -88,7 +88,7 @@
             color: #333;
             font-size: 24px;
             font-weight: 600;
-            text-transform: uppercase;
+            text-transform:capitalize;
             margin: 0 0 3px;
         }
 
@@ -292,7 +292,7 @@
             font-size: 18px;
             font-weight: 700;
             color: #047168;
-            text-transform: uppercase;
+            text-transform: capitalize;
             margin-bottom: 7px;
         }
 

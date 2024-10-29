@@ -20,8 +20,36 @@ class DiuController extends Controller
         return view('about.about');
     }
     public function test(){
-         $event = $this->getEvent();
-        return view('test',['event'=>$event]);
+        // // The API URL
+        //  $api_url = 'https://api.diu.ac/api_test';
+
+        // // Initialize cURL session
+        // $ch = curl_init();
+
+        // // Set the options for cURL
+        // curl_setopt($ch, CURLOPT_URL, $api_url);
+        // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // Return the response as a string
+
+        // // Execute the cURL request
+        // $response = curl_exec($ch);
+        // dd($response);
+
+        // // Check if any error occurred
+        // if (curl_errno($ch)) {
+        //     echo 'cURL error: ' . curl_error($ch);
+        // } else {
+        //     // Decode the JSON response into an associative array
+        //     $data = json_decode($response, true);
+
+        //     // Display the data (you can also process it as needed)
+        //     echo '<pre>';
+        //     print_r($data);
+        //     echo '</pre>';
+        // }
+
+        // // Close the cURL session
+        // curl_close($ch);
+
     }
 
    
@@ -88,7 +116,7 @@ class DiuController extends Controller
         // $data['facility'] = $this->departmentFacility($slug);
         // $data['gallery'] = $this->departmentGallery($slug);
         $data['syllabus'] = $this->departmentSyllabus($slug);
-        // $data['facultyMember'] = $this->departmentFacultyMember($slug);
+        $data['facultyMember'] = $this->departmentFacultyMember($slug);
         $data['slug'] =$slug ?? null;
         return view('programs.details',$data );
     }
