@@ -7,11 +7,13 @@
             <div class="container">
 
                 <div class="text-center">
-                    <h4 style="text-transform:uppercase;font-weight:700">{{ $slug ?? null }}</h4>
+                    <h4 style="text-transform:uppercase;font-weight:700">{{ $slug ? str_replace('-', ' ', $slug) : 'N/A' }}
+                    </h4>
                     <ol class="d-flax justify-content-center">
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li><a href="../program">Programs</a></li>
-                        <li style="text-transform:capitalize">{{ $slug ?? null }}</li>
+                        <li style="text-transform:capitalize">{{ $slug ? str_replace('-', ' ', $slug) : 'N/A' }}
+                        </li>
                     </ol>
                 </div>
 
@@ -42,14 +44,25 @@
         
 
         <!--  Department syllabus-->
-        @if ($syllabus)
+        @if($syllabus)
             <x-department.syllabus :syllabus="$syllabus" />
         @endif
 
+
+        @if($slug == 'department-of-civil-engineering')
+
+            <div id="rs-learning-objectives" class="rs-learning-objectives">
+                <x-lab-facilities  />
+            </div>
+
+         @endif
+
+
+
         <!--  Department faculty member-->
-        {{-- @if ($facultyMember)
+        @if ($facultyMember)
             <x-department.faculty-member :members="$facultyMember" />
-        @endif --}}
+        @endif
 
 
     </main>

@@ -117,7 +117,7 @@ class DiuController extends Controller
         // $data['gallery'] = $this->departmentGallery($slug);
         $data['syllabus'] = $this->departmentSyllabus($slug);
         $data['facultyMember'] = $this->departmentFacultyMember($slug);
-        $data['slug'] =$slug ?? null;
+        $data['slug'] = $slug ?? null;
         return view('programs.details',$data );
     }
 

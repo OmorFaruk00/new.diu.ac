@@ -32,7 +32,7 @@
 
     .card-text {
         text-align: justify;
-        color: #474444;
+        color: #000;
         font-size: 14px;
         line-height: 22px;
     }

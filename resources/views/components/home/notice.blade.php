@@ -13,7 +13,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("{{ asset('/assets/images/notice-bg.jpeg') }}") center/cover no-repeat;
+    background: url("{{ asset('/assets/images/noticebg.jpeg') }}") center/cover no-repeat;
     opacity: 0.5; 
     z-index: -1; 
 }
@@ -102,7 +102,7 @@
               
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12  order-md-2 order-1" style="">
-                <img src="assets/images/notice.png" class="notice-img" style=""
+                <img src="{{asset('assets/images/notice1.png')}}" class="notice-img" style=""
                     alt="Section 3 Background Image" />
             </div>
         </div>

@@ -1,6 +1,6 @@
 <style>
        .founder-bg {
-        background: url("{{ asset('/assets/images/founder-bg.jpeg') }}") ;
+        background: url("{{ asset('/assets/images/founderbg.jpeg') }}") ;
         /* background-color: rgba(0, 0, 0, 0.5); */
         opacity: 0.8;
         background-blend-mode: overlay;
@@ -16,14 +16,16 @@
     }
     .founder img{
         width: 100%;
-        height: 250px;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
     }
     .founder-desc {
         padding: 0px 30px;
   
     }
     .founder-desc p{
-    color:#6c6a6a;
+    color:#000;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
@@ -48,7 +50,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="founder">
-                    <img src="https://new.diu.ac.bd/assets/images/founder.jpg" alt="founder">
+                    <img src="{{asset('/assets/images/foun.jpg')}}" alt="founder">
 
                 </div>
             </div>

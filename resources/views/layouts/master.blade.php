@@ -53,24 +53,37 @@
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Dosis:300,400,500,,600,700,700i|Lato:300,300i,400,400i,700,700i"
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        {{-- <link href="{{ asset('assets/css/font-awesome.css') }}" rel="stylesheet"> --}}
+        <link href="{{ asset('assets/css/font-awesome.css') }}" rel="stylesheet">
 
     <!-- Bootstrap Files -->
-    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+    <link href="{{ asset('/assets/css/bootstrap.min.css') }}" rel="stylesheet">    
+    <script src="{{ asset('/assets/js/bootstrap.bundle.min.js') }}"></script>
+    
+    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" /> --}}
   
 
-    <script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
-    <link href="{{ asset('assets/css/owl.carousel.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/owl.theme.default.min.css') }}" rel="stylesheet">
-    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
-
-    <script src="{{ asset('assets/vue/vue.min.js') }}"></script>
-    <script src="{{ asset('assets/vue/axios.min.js') }}"></script>    
+   
+    <link href="{{ asset('/assets/css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/assets/css/owl.theme.default.min.css') }}" rel="stylesheet">  
+   
 
 
     <!-- Template Main CSS File -->
-    <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('/assets/css/custom.css') }}" rel="stylesheet">
+
+
+    {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script> --}}
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> --}}
+
+     {{-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> --}}
+
+
+    <script src="{{ asset('/assets/js/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('/assets/vue/vue.min.js') }}"></script>
+    <script src="{{ asset('/assets/vue/axios.min.js') }}"></script>  
+    
 
    <style>
     
@@ -113,6 +126,8 @@
     <!-- End Footer -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><img src="{{ asset('/assets/img/up-arow.png') }}" alt="down arow"></a>
+
+     
     
     <!-- Vendor JS Files -->
     {{-- <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script> --}}
@@ -123,7 +138,9 @@
     {{-- <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script> --}}
 
     <!-- Template Main JS File -->
-    <script src="{{ asset('assets/js/main.js') }}"></script>
+
+    <script src="{{ asset('assets/js/custom.js') }}"></script>
+ 
     {{-- <script type="text/javascript">
         var s = document.createElement("script");
         s.type = "text/javascript";

@@ -7,7 +7,7 @@
         z-index: 1;
         /* background-image: url('{{asset('/assets/images/footer.jpg')}}'); */
         opacity: 0.9;
-        background:  url('{{asset('/assets/images/footer.jpg')}}') fixed center center;
+        background:  url("{{asset('/assets/images/footer.jpg')}}") fixed center center;
         background-size: cover;
         margin-top:120px;
 
@@ -257,7 +257,7 @@
 
             <div class=" text-center">
                 <div class="copyright">
-                    &copy; 2024 <strong class="copy">DIU</strong>. All rights Reserved. | Developed & Powered by:
+                    &copy; {{ now()->year }} <strong class="copy">DIU</strong>. All rights Reserved. | Developed & Powered by:
                     <strong class="copy">IT-Team,
                         DIU</strong>
                 </div>

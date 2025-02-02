@@ -153,13 +153,13 @@ trait ApiTrait
     }
     public function departmentBasicInfo($slug)
     {
-        if (Cache::has('basic_'.$slug)) {
-            return Cache::get('basic_'.$slug);
+        if (Cache::has('basics_'.$slug)) {
+            return Cache::get('basics_'.$slug);
         }
 
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/department-basic-info/'.$slug, false, self::ssl()));
         if (!empty($result)) {
-            Cache::put('basic_'.$slug, $result); 
+            Cache::put('basics_'.$slug, $result); 
             return $result;
         }
         return response()->json(NULL, 404);

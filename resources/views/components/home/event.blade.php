@@ -114,7 +114,7 @@
                 <div class="item" v-for="(item,index) in events" :key="index">
                     <a :href="'/notice-details/' + item.slug" target="_blank">
                         <div class="event">
-                            <img src="assets/images/event.jpeg" alt="Image">
+                            <img src="{{asset('assets/images/event.jpg')}}" alt="Image">
                             <div class="event-content">
                                 <h3 class="title" v-text="item.title">
                                 </h3>
@@ -151,7 +151,6 @@
                     axios.get(`${vm.config.base_path}/public-diu-website/notice-event?type=event`)
                         .then((response) => {
                             vm.events = response.data.data;
-                            console.log(response.data.data);
                             setTimeout(function() {
                                 var owl = $('#event');
                                 owl.owlCarousel({

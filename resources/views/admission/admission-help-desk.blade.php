@@ -253,13 +253,11 @@
                 methods: {
                     getData() {
                         var vm = this;
-                        var slug = $('#faculty-details').data('slug');              
-
                         axios.get(`${vm.config.base_path}/public/admission_team`)
                             .then((
                                 response) => {
-                                    console.log(response.data.data)
                                     this.teams = response.data.data;
+                                    console.log(this.teams)
                             }).catch((error) => {
                                 console.log(error.response);
                             });

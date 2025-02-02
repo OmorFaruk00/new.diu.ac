@@ -132,7 +132,7 @@
         </section><!-- End Breadcrumbs -->
 
         <section class="inner-page">
-            <img src="assets/images/scholarship.png" alt="scholarship" class="img-fluid w-100 page-bg">
+            <img src="/assets/images/scholar.png" alt="scholarship" class="img-fluid w-100 page-bg">
             <div class="bannertext">
                 <h2>Scholarships</h2>
                 <p>Avail Upto 50% Merit Scholarships</p>

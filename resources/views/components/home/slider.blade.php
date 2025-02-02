@@ -203,7 +203,7 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="{{asset('assets/images/slider/slider1.jpeg')}}" class="d-block w-100"
+            <img src="{{asset('assets/images/slider/s11.jpeg')}}" class="d-block w-100"
                 alt="slider1">
             <div class="carousel-caption caption1-bg " style="margin-bottom:30px">
                 <h2 class="slide-in-left">Welcome To Dhaka International University</h2>
@@ -216,11 +216,11 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{{asset('assets/images/slider/slider2.jpeg')}}" class="d-block w-100"
+            <img src="{{asset('assets/images/slider/s22.jpeg')}}" class="d-block w-100"
                 alt="slider2">
             <div class="carousel-caption caption-bg1">
                 <h2 class="slide-in-left">Admission Open Now</h2>
-                <h6 class="slide-in-left" style="font-size: 27px">Undergraduate - Postgraduate 2024</h6>
+                <h6 class="slide-in-left" style="font-size: 27px">Undergraduate - Postgraduate {{ now()->year }}</h6>
                 <div class="mx-auto carousel-desc  slide-in-down ">
                     <p style="font-size: 25px">Join us for higher study</p>
                 </div>
@@ -228,7 +228,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('assets/images/slider/slider33.jpeg') }}" class="d-block w-100" alt="slider3">
+            <img src="{{ asset('assets/images/slider/s33.jpeg') }}" class="d-block w-100" alt="slider3">
             <div class="carousel-caption caption-bg2">
                 <h2 class="slide-in-left">Result Based Scholarship</h2>
                 <div class="mx-auto carousel-desc  slide-in-down ">

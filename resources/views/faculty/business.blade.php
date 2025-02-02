@@ -44,7 +44,7 @@
         }
 
         .message .desc {
-            color: #6c6a6a !important;
+            color: #000 !important;
             font-size: 16px;
             line-height: 25px;
             text-align: justify;
@@ -338,7 +338,7 @@
     </section>
     <section>
         <div class="container py-5">
-            <div class="">
+            <div class=" mb-5">
                 <div class="faculty">
                     <div class="faculty-icon">
                         <img src="https://api.diu.ac/images/profile_photo_file_286.jpg" alt="" style="height: 100%">
@@ -358,26 +358,43 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="">
+                <div class="faculty">
+                    <div class="faculty-icon">
+                        <img src="https://api.diu.ac/images/profile_photo_file_106.jpg" alt="" style="height: 100%">
+                    </div>
+                    <div class="faculty-details">
+                        <h2 class="title">Md. Azmir Hossain</h2>
+                        <span class="post">Dean (Acting) & Chairman</span>
+                        <a href="https://profile.diu.ac/md.azmir.hossain#PersonalInformation" class="profile" target="_blank">View
+                            Profile</a>
+
+                    </div>
+                    <ul class="faculty-content">
+                        <li><i class="fa fa-phone"></i> 8801915352491</li>
+                        <li><i class="fa fa-envelope"></i> azmir.bba@diu.ac</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Department of Business Administration,<br> <span class="px-3"> Satarkul, Badda,
+                            Dhaka-1212.</span></li>
+                    </ul>
+                </div>
+            </div>
         
 
         <div class=" pt-5">
+            
             <div class="message">
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dicta hic porro
-                    temporibus ea quae quos rem corporis saepe voluptate. Et labore aut, vitae est aliquid sed doloremque
-                    velit obcaecati consectetur! Perferendis enim animi cumque aliquid, excepturi similique dolorem
-                    voluptatibus vel eveniet assumenda officiis? Totam nesciunt doloribus maiores nihil ullam assumenda
-                    neque a nobis eos porro at facere, quibusdam quam culpa eum facilis. Quidem cupiditate nisi magnam esse
-                    iusto dolor saepe commodi perspiciatis soluta consectetur ab recusandae, debitis quia! Soluta sed eaque
-                    doloribus nulla omnis ex repellendus? Ullam vel iste alias repellat. Cumque quia, ipsam commodi nihil
-                    repudiandae officiis ab, quos incidunt minima minus, distinctio quas? Sed saepe consectetur maiores
-                    incidunt! Cumque aspernatur deleniti numquam, quidem hic impedit reiciendis, ex quisquam suscipit amet
-                    tenetur nam? Incidunt magni error odit mollitia eveniet consequuntur quod dignissimos fuga amet qui
-                    quisquam voluptate voluptates a, ducimus tempore non architecto provident repellendus ab tenetur,
-                    expedita quam nulla. Dolores ullam, labore ut officia corporis explicabo vel non sequi architecto
-                    praesentium cupiditate vero cumque sit doloribus beatae? Ea quis architecto veritatis commodi velit
-                    voluptate dolorum maiores dignissimos pariatur quaerat, odio ullam corporis harum cupiditate voluptatum
-                    nulla assumenda voluptas.</p>
-                <h3>Adviser</h3>
+                <h2 class="pb-3">Dear Students, Faculties, Alumni and Visitors,</h2>
+                <p class="desc">We invite everyone to read the contents of the website of the  Department of Business Administration  Students in the department receive both practical and standardized academic business education   in a blended learning setting. Our focus is on creating capable, skilled, and globally minded leaders who can flourish in the changing corporate environment</p>
+                <p class="desc">Successful business requires technical skills, critical thinking skills, outstanding communication skills and ethics in 21st century. The department offers BBA and MBA programs for the students who require expertise in HRM, Finance, Marketing, AIS, or Management. Our faculties are well qualified and experienced in research and our OBE curriculums are updated frequently to reflect global business advancements. </p>
+                <p class="desc">Considering future-focused prospects, the department creates training, workshop, seminar, symposium and international conference etc. facilities for team-based learning and development. In addition, to develop effective collaborations with industry, our organizational objective is to strengthen and expand our global network of connections. </p>
+                <p class="desc">Visiting our website, you can look at all the necessary information about all the activities of our department as well as our mission, vision and objectives. If you are interested in studying in our department or would like to work as an industry professional, please do not hesitate to get in touch with our department and admission office.</p>
+                <p class="desc">The department extends an invitation to participate in this our excited learning environment, which will help you become a successful entrepreneur and have a prosperous career.</p>
+                <p class="desc">Thank you.</p>
+             
+                <h3>Md. Azmir Hossain</h3>
+                <p class="desc">Dean (Acting) &
+                    Chairman</p>
 
             </div>
         
@@ -411,7 +428,7 @@
                                     </div>
                                     <div class="team-content">
                                         <h3 class="title">Md. Azmir Hossain</h3>
-                                        <span class="post">Assistant Professor & Chairman</span>
+                                        <span class="post">Dean (Acting) & Chairman</span>
                                         <h3 class="dept">Department of Business Administration</h3>
                                     </div>
                                 </div>

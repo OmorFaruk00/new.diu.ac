@@ -368,7 +368,7 @@
             <li class="drop-down"><a href="#" ></i> Authority</a>
                 <ul class="drop-down-ul animated fadeIn">
                     <li><a href="{{ route('vc') }}">Vice-Chancellor</a></li>
-                    <li><a href="{{ route('pro_vc') }}"> Pro Vice-Chancellor</a></li>
+                    {{-- <li><a href="{{ route('pro_vc') }}"> Pro Vice-Chancellor</a></li> --}}
                     <li><a href="{{ route('registrar') }}"> Registrar</a></li>
                     <li><a href="{{ route('treasurer') }}"> Treasurer</a></li>
                     <li><a href="{{ route('chairman') }}"> Chairman ( BOT )</a></li>
@@ -418,6 +418,8 @@
                                             Sociology</a></li>
                                     <li><a href="/programs/department-of-economics" >Department of
                                             Economics</a></li>
+                                    <li><a href="/programs/department-of-development-studies" >Department of
+                                        Development Studies</a></li>
 
 
                                 </ul>

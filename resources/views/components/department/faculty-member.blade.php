@@ -1,5 +1,5 @@
 <style>
-        .member-header{
+    .member-header{
     position: relative;
     text-transform: uppercase;
     display: inline-block; 
@@ -75,6 +75,12 @@
     font-weight: 600;
     color: #707070;
     text-transform: capitalize;
+}
+.owl-theme .owl-nav {
+    display: none;
+}
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+   padding-top: 20px;
 }
 @media only screen and (max-width: 990px){
     .our-member{ margin-bottom: 30px; }

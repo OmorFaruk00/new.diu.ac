@@ -89,10 +89,9 @@
 }
 .head .description{
     font-size: 16px;
-    color: #585f62;
+    color: #000;
     line-height: 25px;
     margin-top: 12px;
-    font-style: italic;
     text-align: justify
 }
 
@@ -127,7 +126,7 @@
                         <div class="head-content">
                             <h3 class="head-title">{!! json_decode(json_encode($basic->data->chairman_name)) !!}
                                 <small class="post">{!! json_decode(json_encode($basic->data->chairman_designation)) !!}</small>
-                                <small class="post">{!! json_decode(json_encode($basic->data->chairman_office_email)) !!}</small>
+                                <small class="post" style="text-transform: lowercase">{!! json_decode(json_encode($basic->data->chairman_office_email)) !!}</small>
                             </h3>
                             <div class="description">
                                 {!! json_decode(json_encode($basic->data->department_head_speach)) !!}

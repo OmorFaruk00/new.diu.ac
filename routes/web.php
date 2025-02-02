@@ -111,4 +111,14 @@ Route::group(['prefix' => 'authority'], function () {
     Route::get('/existing-student-help-vice-chancellor-office',[DiuController::class,'viceChancellorOffice'])->name('viceChancellorOffice');
   
 
-
+    Route::group(['prefix' => 'programs'], function () {
+        Route::view('/department-of-civil-engineering/environmental-engineering-lab','/lab/environmental-engineering-lab')->name('environmental-engineering-lab');
+        Route::view('/department-of-civil-engineering/surveying-lab','/lab/surveying-lab')->name('surveying-lab');
+        Route::view('/department-of-civil-engineering/geotechnical-engineering-lab','/lab/geotechnical-engineering-lab')->name('geotechnical-engineering-lab');
+        Route::view('/department/department-of-civil-engineering/transportation-engineering-lab','/lab/transportation-engineering-lab')->name('transportation-engineering-lab');
+        Route::view('/department-of-civil-engineering/hydraulics-lab','/lab/hydraulics-lab')->name('hydraulics-lab');
+        Route::view('/department-of-civil-engineering/concrete-lab','/lab/concrete-lab')->name('concrete-lab');
+        Route::view('/department-of-civil-engineering/mechanics-lab','/lab/mechanics-lab')->name('mechanics-lab');
+        Route::view('/department-of-civil-engineering/computer-lab','/lab/computer-lab')->name('computer-lab'); 
+    
+    });

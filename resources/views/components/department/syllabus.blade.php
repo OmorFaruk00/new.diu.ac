@@ -68,7 +68,7 @@
             <h3 class="syllabus-heading">SYLLABUS</h3>
         </div>
         <div class="accordion accordion-flush" id="accordionFlushExample">
-            @if($syllabus)               
+            @if(!empty($syllabus))               
             @foreach ($syllabus as $index => $rows)
                 <div class="accordion-item">
                     <div class="accordion-syllabus-heading" id="syllabus-heading{{ $index }}">

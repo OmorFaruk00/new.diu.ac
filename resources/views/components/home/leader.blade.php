@@ -35,12 +35,8 @@
                     <div class="choice">
                         <h1 class="">Building Leaders of Tomorrow</h1>
                         <br>
-                        <p>KL Hyderabad Global Business School is one of the most prestigious business schools in
-                            the
-                            country. It offers a unique combination of <b>BBA and MBA programs,</b>
-                            allowing students to understand business principles more deeply. With our
-                            comprehensive and advanced learning experience, we prepare students to face
-                            challenges and lead in the professional world of business.
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
                         <a href="{{ route('future-student') }}" target="_blank" class="btn"
                             style="margin-top: 20px">Future Student</a>
