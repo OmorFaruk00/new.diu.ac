@@ -300,6 +300,10 @@ class DiuController extends Controller
     public function tramsCondition(){
         return view('privacyPolicy.trams_and_condition');
     }
+
+    public function researchAndPublicationCell(){
+        return view('researchPublication.index');
+    }
    
    
 

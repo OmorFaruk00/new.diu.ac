@@ -114,6 +114,7 @@ Route::group(['prefix' => 'authority'], function () {
     Route::get('/privacy-policy', [DiuController::class, 'privacyPolicy'])->name('privacy-policy');
     Route::get('/code-of-conduct', [DiuController::class, 'codeOfConduct'])->name('code-of-conduct');
     Route::get('/terms_and_conditions', [DiuController::class, 'tramsCondition'])->name('trams_and_condition');
+    Route::get('/research-and-publication-cell', [DiuController::class, 'researchAndPublicationCell'])->name('research-and-publication-cell');
   
 
     Route::group(['prefix' => 'programs'], function () {

@@ -347,6 +347,7 @@
                                     <li><a href="{{ route('tcrc') }}"> TCRC</a></li>
                                     <li><a href="{{ route('sbac') }}"> SBAC</a></li>
                                     <li><a href="{{ route('cecd') }}"> CECD</a></li>
+                                    <li><a href="{{ route('research-and-publication-cell') }}"> Research and Publication Cell</a></li>
                                 </ul>
                             </div>
                             <div class=" col-xl-4 col-md-4 col-sm-12">
