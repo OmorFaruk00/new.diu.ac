@@ -268,4 +268,6 @@ trait ApiTrait
         return $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/notice/'.$slug, false, self::ssl()));
        
     }
+
+ 
 }

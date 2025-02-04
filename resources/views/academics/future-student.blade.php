@@ -104,51 +104,30 @@
                 </div>
                 
             </div>
-        </section>
+        </section>  
+        
+        
 
         <section class="py-4">
             <div class="container">
                 <h2 class="future-title">Programs</h2>
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 program">
-                        <ul>
-                            <li><a href="/programs/department-of-english" target="_blank">Department of
-                                    English</a></li>
-                            <li><a href="/programs/department-of-law" target="_blank">Department of Law</a></li>
-                            <li><a href="/programs/department-of-sociology" target="_blank">Department of
-                                    Sociology</a></li>
-                            <li><a href="/programs/department-of-business-administration" target="_blank">Department of
-                                    Business Administration</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 program">
-                        <ul>
-                            <li><a href="/programs/department-of-pharmacy" target="_blank">Department of
-                                    Pharmacy</a></li>
-                            <li><a href="/programs/department-of-eee" target="_blank">Department of EEE</a></li>
-
-
-                            <li><a href="/programs/department-of-cse" target="_blank">Department of CSE</a></li>
-                            <li><a href="/programs/department-of-civil-engineering" target="_blank">Department
-                                    of Civil Engineering</a></li>
-
-
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 program">
-                        <ul>
-
-                            <li><a href="/programs/department-of-political-science" target="_blank">Department
-                                    of Political Science</a></li>
-                            <li><a href="/programs/department-of-economics" target="_blank">Department of
-                                    Economics</a></li>
-                            <li><a href="/programs/department-of-microbiology" target="_blank">Department of
-                                    Microbiology</a></li>
-                            <li><a href="/programs/department-of-biochemistry-and-molecular-biology"
-                                    target="_blank">Department of Biochemistry and Molecular Biology</a></li>
-
-                        </ul>
-                    </div>
+                    @foreach ($programs->data as $index => $program)
+                        <div class="col-lg-4 col-md-6 col-sm-12 program">
+                            <ul>
+                                <li>
+                                    <a href="{{ url('/programs/' . $program->slug) }}" target="_blank">
+                                        {{ $program->title }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        {{-- Start a new row after every 4 items --}}
+                        @if (($index + 1) % 5 == 0)
+                            </div><div class="row">
+                        @endif
+                    @endforeach
                 </div>
             </div>
         </section>

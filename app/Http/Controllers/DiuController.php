@@ -86,7 +86,9 @@ class DiuController extends Controller
         return view('academics.faculty');
     }
     public function futureStudent(){
-        return view('academics.future-student');
+         $programs =  $this->programsData();
+        //  return $programs->data;
+        return view('academics.future-student',compact('programs'));
     }
     public function facultyDetails($slug){
         return view('academics.faculty-details', compact('slug'));
@@ -216,6 +218,15 @@ class DiuController extends Controller
     public function chairman(){
         return view('authority.chairman');
     }
+    public function viceChairman(){
+        return view('authority.vice-chairman');
+    }
+    public function proctor(){
+        return view('authority.proctor');
+    }
+    public function controller(){
+        return view('authority.controller');
+    }
 
 
     public function facultyLaw(){
@@ -294,15 +305,25 @@ class DiuController extends Controller
         return view('privacyPolicy.index');
     }
 
-    public function codeOfConduct(){
+    public function codeOfConduct()
+    {
         return view('codeOfConduct.index');
     }
-    public function tramsCondition(){
+    public function tramsCondition()
+    {
         return view('privacyPolicy.trams_and_condition');
     }
 
-    public function researchAndPublicationCell(){
+    public function researchAndPublicationCell()
+    {
         return view('researchPublication.index');
+    }
+
+    public function authHelpStudent($type)
+    {
+        // $teams =  $this->getAuthorityTeam($type);
+        return view('authority.team',compact('type'));
+
     }
    
    

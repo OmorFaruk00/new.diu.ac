@@ -339,6 +339,19 @@
                                     <li><a href="https://blog.diu.ac" target="_blank">Blog</a></li>
                                 </ul>
                             </div>
+                            <div class=" col-xl-4 col-md-4 col-sm-12">
+                                <h4 class="row mega-title">ACADEMICS</h4>
+                                <ul>
+                                    <li><a href="{{ route('certificate-verification') }}">Certificate Verifications</a>
+                                    </li>
+                                    <li><a href="{{ route('faculty') }}">Faculty List</a></li>
+                                    <li><a href="{{ route('convocation') }}">Convocation</a></li>
+                                    <li><a href="{{ route('publications') }}">Publications</a></li>
+                                    <li><a href="{{ route('journals') }}">Journals</a></li>
+                                  
+
+                                </ul>
+                            </div>
 
                             <div class=" col-xl-4 col-md-4 col-sm-12">
                                 <h4 class="row mega-title">Research Cell</h4>
@@ -350,29 +363,22 @@
                                     <li><a href="{{ route('research-and-publication-cell') }}"> Research and Publication Cell</a></li>
                                 </ul>
                             </div>
-                            <div class=" col-xl-4 col-md-4 col-sm-12">
-                                <h4 class="row mega-title">ACADEMICS</h4>
-                                <ul>
-                                    <li><a href="{{ route('faculty') }}">Faculty List</a></li>
-                                    <li><a href="{{ route('convocation') }}">Convocation</a></li>
-                                    <li><a href="{{ route('publications') }}">Publications</a></li>
-                                    <li><a href="{{ route('journals') }}">Journals</a></li>
-                                    <li><a href="{{ route('certificate-verification') }}">Certificate Verifications</a>
-                                    </li>
-
-                                </ul>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
             </li>
             <li class="drop-down"><a href="#" ></i> Authority</a>
                 <ul class="drop-down-ul animated fadeIn">
-                    <li><a href="{{ route('vc') }}">Vice-Chancellor</a></li>
-                    {{-- <li><a href="{{ route('pro_vc') }}"> Pro Vice-Chancellor</a></li> --}}
+                    
+                    <li><a href="{{ route('controller') }}"> Controller of Exam</a></li>
+                    <li><a href="{{ route('proctor') }}"> Proctor</a></li>
                     <li><a href="{{ route('registrar') }}"> Registrar</a></li>
                     <li><a href="{{ route('treasurer') }}"> Treasurer</a></li>
-                    <li><a href="{{ route('chairman') }}"> Chairman ( BOT )</a></li>
+                    <li><a href="{{ route('pro_vc') }}">Pro-Vice-Chancellor </a></li>
+                    <li><a href="{{ route('vc') }}">Vice-Chancellor</a></li>
+                    <li><a href="{{ route('viceChairman') }}">Vice-Chairman </a></li>
+                    <li><a href="{{ route('chairman') }}"> Chairman </a></li>
                 </ul>
             </li>
 

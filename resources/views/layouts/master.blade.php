@@ -70,6 +70,7 @@
 
     <!-- Template Main CSS File -->
     <link href="{{ asset('/assets/css/custom.css') }}" rel="stylesheet">
+    <link href="{{ asset('/assets/css/style.css') }}" rel="stylesheet">
 
 
     {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script> --}}

@@ -96,7 +96,7 @@ a:hover{ text-decoration:none; }
             </h4>
             <ol class="d-flax justify-content-center">
                 <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="#">DIU</a></li>
+                <li><a href="#">Cell</a></li>
                 <li><a href="#">Research and Publication Cell</a></li>
                 </li>
             </ol>

@@ -1,13 +1,13 @@
 @extends('layouts.master')
-@section('content') 
+@section('content')
     <section class="breadcrumbs">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <h1 style="text-transform: uppercase">Pro-Vice-Chancellor</h1>
+                <h1 style="text-transform: uppercase">Vice-Chairman</h1>
                 <ol>
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Authority</li>
-                    <li>Pro-Vc</li>
+                    <li>Vice-Chairman</li>
                 </ol>
             </div>
         </div>
@@ -19,31 +19,26 @@
             <div class="container">
                 <div class="authority">
                     <div class="signature-icon">
-                        <img src="https://api.diu.ac/images/profile_photo_file_813.jpg" alt="" style="height: 125px">
+                        <img src="https://api.diu.ac/images/profile_photo_file_46.jpg" alt="" style="height: 125px">
                     </div>
                     <div class="signature-details">
-                        <h2 class="title">Prof. Dr. Ganesh Chandra Saha </h2>
-                        <span class="post">Pro-Vice-Chancellor</span>
-                        <a class="profile" href="https://profile.diu.ac/prof.dr.ganeshchandrasaha#PersonalInformation" target="_blank"> View
+                        <h2 class="title">Dr. S. Quadir Patwari</h2>
+                        <span class="post">Vice-Chairman, BOT</span>
+                        <a class="profile" href="https://profile.diu.ac/patwari#PersonalInformation" target="_blank"> View
                             Profile</a>
                     </div>
                     <ul class="signature-content">
-                        <li><i class="fa fa-phone"></i> 01971538024</li>
-                        <li><i class="fa fa-envelope"></i> ganesh@diu.ac</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Office of the Vice-Chancellor, Satarkul, Badda,
-                            Dhaka-1212.</li>
+                        <li><i class="fa fa-phone"></i>8801713107494</li>
+                        <li><i class="fa fa-envelope"></i> vice-chair@diu.ac</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Office of the Chairman (BOT), Permanent Campus:Satarkul, Badda, Dhaka-1212.</li>
                     </ul>
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <section>
 
 
 
-        <div class="container pb-5">
+        <div class="container pt-5">
             <div class="message">
                 <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia alias ipsa cum
                     repudiandae dolores veniam esse! Cupiditate asperiores expedita velit et nihil error sequi recusandae
@@ -69,7 +64,7 @@
                     voluptate quae dolor, ipsam quidem modi assumenda accusamus, autem totam maxime ratione eaque sint
                     deserunt. !</p>
 
-                    <a class="profile" href="/existing-student-help/pro-vice-chancellor-office">Browse Office Personnel</a>
+                    <a class="profile" href="/existing-student-help/vice-chairman-office">Browse Office Personnel</a>
             </div>
         </div>
     </section>

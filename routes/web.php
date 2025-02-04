@@ -79,7 +79,10 @@ Route::group(['prefix' => 'authority'], function () {
     Route::get('/pro-vc',[DiuController::class,'proVc'])->name('pro_vc');
     Route::get('/treasurer',[DiuController::class,'treasurer'])->name('treasurer');
     Route::get('/registrar',[DiuController::class,'registrar'])->name('registrar');
+    Route::get('/vice-chairman',[DiuController::class,'viceChairman'])->name('viceChairman');  
     Route::get('/chairman',[DiuController::class,'chairman'])->name('chairman');  
+    Route::get('/controller',[DiuController::class,'controller'])->name('controller');  
+    Route::get('/proctor',[DiuController::class,'proctor'])->name('proctor');  
 
 });
     Route::get('/faculy_of_law',[DiuController::class,'facultyLaw'])->name('law');
@@ -109,6 +112,9 @@ Route::group(['prefix' => 'authority'], function () {
     Route::get('/existing-student-help-chairman-office',[DiuController::class,'chairmanOffice'])->name('chairmanOffice');
     
     Route::get('/existing-student-help-vice-chancellor-office',[DiuController::class,'viceChancellorOffice'])->name('viceChancellorOffice');
+
+
+    Route::get('/existing-student-help/{type}',[DiuController::class,'authHelpStudent'])->name('authHelpStudent');
 
 
     Route::get('/privacy-policy', [DiuController::class, 'privacyPolicy'])->name('privacy-policy');
