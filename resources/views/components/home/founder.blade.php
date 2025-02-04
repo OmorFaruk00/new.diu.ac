@@ -16,8 +16,8 @@
     }
     .founder img{
         width: 100%;
-        height: 300px;
-        object-fit: cover;
+        height: 250px;
+        /* object-fit: cover; */
         object-position: top;
     }
     .founder-desc {

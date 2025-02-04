@@ -287,6 +287,19 @@ class DiuController extends Controller
     public function viceChancellorOffice(){
         return view('about.office-of-vice-chancellor');
     }
+
+
+    public function privacyPolicy()
+    {
+        return view('privacyPolicy.index');
+    }
+
+    public function codeOfConduct(){
+        return view('codeOfConduct.index');
+    }
+    public function tramsCondition(){
+        return view('privacyPolicy.trams_and_condition');
+    }
    
    
 

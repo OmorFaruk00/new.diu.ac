@@ -109,6 +109,11 @@ Route::group(['prefix' => 'authority'], function () {
     Route::get('/existing-student-help-chairman-office',[DiuController::class,'chairmanOffice'])->name('chairmanOffice');
     
     Route::get('/existing-student-help-vice-chancellor-office',[DiuController::class,'viceChancellorOffice'])->name('viceChancellorOffice');
+
+
+    Route::get('/privacy-policy', [DiuController::class, 'privacyPolicy'])->name('privacy-policy');
+    Route::get('/code-of-conduct', [DiuController::class, 'codeOfConduct'])->name('code-of-conduct');
+    Route::get('/terms_and_conditions', [DiuController::class, 'tramsCondition'])->name('trams_and_condition');
   
 
     Route::group(['prefix' => 'programs'], function () {
