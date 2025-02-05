@@ -111,6 +111,12 @@
                                     <div class="accordion-body">
                                         <h5 style="font-weight: 600"> {{ $rows->short_description }} </h5>
                                         <div style="text-align: justify" class="convocation-desc">{!! $rows->description !!}</div>
+
+                                        @if($rows->title == '8th Convocation')
+                                        <a href="{{ asset('/convocations/Souvenir book of the 8th Convocation.pdf') }}" download class="btn btn-info my-3">
+                                            Souvenir Book of the 8th Convocation
+                                        </a>
+                                        @endif
                                         <div class="row">
                                             @foreach ($rows->convoction_images as $image)
                                                 <div class="col-md-3 col-sm-6">

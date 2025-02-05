@@ -19,7 +19,7 @@
             <div class="container">
                 <div class="authority">
                     <div class="signature-icon">
-                        <img src="https://api.diu.ac/images/profile_photo_file_46.jpg" alt="" style="height: 125px">
+                        <img src="https://api.diu.ac/images/profile_photo_file_46.jpeg" alt="" style="height: 125px">
                     </div>
                     <div class="signature-details">
                         <h2 class="title">Dr. S. Quadir Patwari</h2>
@@ -30,7 +30,7 @@
                     <ul class="signature-content">
                         <li><i class="fa fa-phone"></i>8801713107494</li>
                         <li><i class="fa fa-envelope"></i> vice-chair@diu.ac</li>
-                        <li><i class="fas fa-map-marker-alt"></i>Office of the Chairman (BOT), Permanent Campus:Satarkul, Badda, Dhaka-1212.</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Office of the Board of Trustees, Permanent Campus:Satarkul, Badda, Dhaka-1212.</li>
                     </ul>
                 </div>
             </div>
@@ -40,29 +40,10 @@
 
         <div class="container pt-5">
             <div class="message">
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia alias ipsa cum
-                    repudiandae dolores veniam esse! Cupiditate asperiores expedita velit et nihil error sequi recusandae
-                    vel quibusdam ex reprehenderit debitis voluptates repellendus consequatur dolorem possimus doloremque
-                    amet enim laudantium, corporis neque accusamus tenetur, sint dolorum! Iure, dolorum et. Nostrum, sunt
-                    minima! Quisquam perferendis aliquid obcaecati nemo facilis ipsam maiores mollitia veritatis delectus
-                    dicta distinctio voluptatem corporis repudiandae optio, debitis eligendi voluptates velit quos, nostrum
-                    dolor quaerat incidunt similique accusamus. Amet, recusandae corporis. Magni, rerum fugiat eaque unde
-                    nostrum vitae neque iure voluptates animi odit voluptatum? Iusto sint fugiat dignissimos ex quos ipsa
-                    iure, eaque, debitis impedit, ea culpa molestias sunt ducimus laboriosam! Delectus soluta dolorum
-                    aliquid saepe, quam architecto ea id repellat numquam sapiente deleniti cum fuga eaque reprehenderit
-                    tempore error! Atque voluptatem, soluta repellat ratione blanditiis minima, iusto ipsam enim a hic,
-                    consectetur quisquam fugiat quod. Doloremque, sapiente earum. Sint impedit nostrum aut necessitatibus
-                    modi explicabo facilis eius et iure dicta illum labore pariatur, atque vitae, optio eos nihil vero
-                    voluptates? Natus ipsam exercitationem, quisquam, veniam quos cum esse quam magni dolorem vel nemo
-                    dolore veritatis sequi, culpa aspernatur error deleniti dolorum adipisci. Corporis saepe libero quaerat
-                    in. Dolorem dicta impedit quam, vero expedita adipisci atque sunt repellat quasi. Atque nam ipsam
-                    repellendus mollitia facere, facilis esse aspernatur eaque deserunt quidem commodi velit, totam animi
-                    officia, tempore dolore quod sed omnis dignissimos voluptatem reprehenderit exercitationem laudantium
-                    eligendi. Pariatur, quam ipsa dolorem, natus magni facilis commodi perferendis in iusto quod doloremque
-                    laboriosam accusamus sequi. Suscipit minima similique, corrupti labore nemo sunt consectetur ut. Sequi,
-                    vero nostrum! Perferendis officia consequuntur fuga hic, excepturi labore voluptatibus obcaecati
-                    voluptate quae dolor, ipsam quidem modi assumenda accusamus, autem totam maxime ratione eaque sint
-                    deserunt. !</p>
+                <p class="desc">Dr. S. Quadir Patwari has obtained his M.B.B.S Degree from Sir Salimullah Medical College (SSMC), Dhaka and completed his MPH in RCH (Reproductive and Child Health) from NIPSOM, Dhaka. Being an edupreneur, he is in-charge of more than twelve (12) educational institutions including schools, colleges, technical institutes and madrasas. At present, he is the Vice-Chairman of Board of Trustees, Dhaka International University.</p>
+                <p class="desc">Besides, Dr. Quadir is a true entrepreneur. He is the Chairman of Patwary Construction Limited and New Peacy Lab Limited. He is also the Managing Partner of Dream Homes & Properties as well as Managing Director of Fairdeal Properties Limited.</p>
+                <p class="desc">Dr. Quadir has been acting as the Chairman and CEO of S. Quadir Group (SQG) for last one decade. SQG is a noted group of companies including M/S. S. Quadir Enterprise, Shahjalal Agro Farm, Dream Dhaka Property limited, Al-Thaseen Garments Industries Limited and Dream Door Realty Services.</p>
+                <p class="desc">Dr. Quadir was born in December, 1980 in a reputed family of Rangpur. His father Late Prof. Dr. A.B.M. Mafizul Islam Patwari was a renowned professor of Law, University of Dhaka and his mother Late Rokaya Islam was a Lawyer. Dr. Quadir is very sincere, honest, hardworking and always grateful to Allah (SWT) in his personal life. He is living happily with his lovely wife Dewan Sadeka and two sons Muhammad Shahjalal Islam Patwari and Muhammad Suhayel Quadir Patwari.</p>
 
                     <a class="profile" href="/existing-student-help/vice-chairman-office">Browse Office Personnel</a>
             </div>

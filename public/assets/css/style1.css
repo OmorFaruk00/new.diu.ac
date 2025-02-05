@@ -1,0 +1,204 @@
+.authority {
+    background: linear-gradient(80deg, #DDDDDD, #DDDDDD);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0;
+    padding: 40px 20px 60px;
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.authority:after {
+    content: '';
+    background-color: #2C3137;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.authority .signature-icon {
+    color: #fff;
+    background: #01AA4D
+;
+    font-size: 55px;
+    text-align: center;
+    line-height: 105px;
+    width: 160px;
+    height: 160px;
+    padding: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 25px #e7e7e7;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+.authority .signature-icon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.authority .signature-details {
+    text-align: center;
+    width: 50%;
+    padding-right: 120px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.authority .title {
+    color: #111;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.authority .title span {
+    color: #01AA4D
+;
+}
+
+.authority .post {
+    color: #838383 !important;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 10px 0 7px;
+    display: block;
+}
+
+.profile {
+    /* color: #5bc908; */
+    color: #01AA4D;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 10px 0 7px;
+    display: block;
+}
+
+.profile:hover {
+    color: #000;
+
+}
+
+.authority .signature-content {
+    width: 50%;
+    padding: 0 0 0 140px;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.authority .signature-content li {
+    color: #333;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 2px 0 2px 25px;
+    margin: 0 0 12px;
+    position: relative;
+}
+
+.authority .signature-content li:last-child {
+    margin-bottom: 0;
+}
+
+.authority .signature-content li i {
+    color: #111;
+    background-color: #01AA4D
+;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.message {
+    background: linear-gradient(80deg, #DDDDDD, #DDDDDD);
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 20px 60px;
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.3);
+    position: relative;
+
+}
+
+.message:after {
+    content: '';
+    background-color: #2C3137;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.message .desc {
+    color: #000 !important;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify
+}
+
+.message h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #313131;
+}
+
+@media screen and (max-width:767px) {
+    .authority .title {
+        font-size: 18px;       
+        
+    }
+    .authority {
+        width: 95%;
+        padding: 20px 20px 45px;
+        margin: 0 auto;
+    }
+    .message {
+        width: 95%;
+        padding: 20px 20px 45px;
+        margin: 0 auto;
+    }
+    .authority .signature-icon {
+        box-shadow: 0 0 0 10px #e7e7e7;
+        transform: translateX(-50%) translateY(0);
+        top: 125px;
+        left: 50%;
+    }
+
+    .authority .signature-details,
+    .authority .signature-content {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .authority .signature-details {
+        margin: 0 0 200px;
+    }
+
+    .authority .signature-content li {
+        padding: 0;
+        margin: 0 0 10px;
+    }
+
+    .authority .signature-content li i {
+        position: relative;
+        transform: translateY(0);
+    }
+}

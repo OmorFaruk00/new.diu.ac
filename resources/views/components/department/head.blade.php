@@ -62,7 +62,7 @@
     display: table;
     position: relative;
 }
-.head .head-content:before{
+/* .head .head-content:before{
     content: "\f10d";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -72,7 +72,7 @@
     font-size: 60px;
     color: #d8dad6;
     z-index: -1;
-}
+} */
 .head .head-title{
     font-size: 24px;
     color: #136EAD;
@@ -99,6 +99,9 @@
     .head{
         padding: 20px 0;
         margin: 20px 15px;
+    }
+    .head .head-title{
+        margin-top: 40px !important;
     }
     .head .pic{
         float: none;

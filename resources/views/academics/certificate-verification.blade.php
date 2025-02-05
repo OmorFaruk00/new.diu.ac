@@ -12,6 +12,10 @@
         color: #000 !important;
         padding-left: 10px;
     }
+    .table td{
+        color: #000;
+        font-weight: 500;
+    }
 
 
 

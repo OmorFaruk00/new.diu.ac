@@ -1,5 +1,14 @@
 @extends('layouts.master')
 @section('content')
+<style>
+    .vision-desc{
+        color: #000;
+        font-weight: 300;
+        font-size: 18px;
+        text-align: justify;
+        line-height: 25px;
+    }
+</style>
 <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
@@ -25,14 +34,14 @@
         </div>
         <div class="container my-4">
             <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 ">
                     <h2><b>Vision:</b></h2>
-                    <p>The vision of DIU is to contribute to the nation by producing age-worthy, pragmatic and eligible graduates through continual innovation in education and research.</p>
+                    <p class="vision-desc">The vision of DIU is to contribute to the nation by producing age-worthy, pragmatic and eligible graduates through continual innovation in education and research.</p>
                     <hr>
 
             
                     <h2><b>Mission:</b></h2>
-                    <p style="text-align: justify">The mission of DIU is to produce capable leaders in the respective field of study who can meet the challenges of present dynamic world. It wants to create multidisciplinary knowledge, communication and interpersonal skills at the highest level of excellence among the students which will make them honest, sincere and dedicated in their thoughts and deeds.</p>
+                    <p class="vision-desc">The mission of DIU is to produce capable leaders in the respective field of study who can meet the challenges of present dynamic world. It wants to create multidisciplinary knowledge, communication and interpersonal skills at the highest level of excellence among the students which will make them honest, sincere and dedicated in their thoughts and deeds.</p>
                     
 
                   

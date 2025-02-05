@@ -8,7 +8,7 @@
                 <ol>
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Authority</li>
-                    <li>Vc</li>
+                    <li>Vice-Chancellor</li>
                 </ol>
             </div>
         </div>

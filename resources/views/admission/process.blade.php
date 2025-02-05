@@ -114,7 +114,7 @@
 
     .main-timeline .description {
         font-size: 16px;
-        color: #7a7e82;
+        color: #000;
         line-height: 25px;
         text-align: justify
     }

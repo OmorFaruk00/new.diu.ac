@@ -113,7 +113,7 @@
     }
     .basic-intro .timeline-content{ padding: 60px 20px 15px 20px; }
     .basic-intro .timeline-content:before{
-        height: 80px;
+        height: 100px;
         width: 100px;
         left: -20px;
         top: -20px;
@@ -125,14 +125,16 @@
     .basic-intro .timeline-count{
         font-size: 40px;
         line-height: 50px;
-        height: 60px;
-        width: 60px;
+        height: 95px;
+        width: 95px;
         border-width: 5px;
         left: 0;
     }
 }
 @media screen and (max-width:567px){
-    .basic-intro .title{ font-size: 18px; }
+    .basic-intro .title{
+         font-size: 18px; 
+        }
 }
 
 
@@ -147,7 +149,7 @@
                     <div class="timeline">
                         <a href="#" class="timeline-content">
                             <span class="timeline-count"><img src="{{asset('assets/images/intro.png')}}" alt="" style="height: 70px"></span>
-                            <h3 class="title mb-3">INTRODUCTION</h3>
+                            <h3 class="title pt-5 mb-3">INTRODUCTION</h3>
                             <div class="description">
                                 {!! json_decode(json_encode($basic->data->introduction)) !!}
                             </div>
@@ -158,7 +160,7 @@
                     <div class="timeline my-4">
                         <a href="#" class="timeline-content">
                             <span class="timeline-count"><img src="{{asset('assets/images/mission.png')}}" alt="" style="height:90px;padding-bottom:10px"></span>
-                            <h3 class="title mb-3">MISSION</h3>
+                            <h3 class="title pt-5 mb-3">MISSION</h3>
                             <div class="description">
                                 {!! json_decode(json_encode($basic->data->mission)) !!}
                             </div>
@@ -167,8 +169,8 @@
                     </div>
                     <div class="timeline">
                         <a href="#" class="timeline-content">
-                            <span class="timeline-count"><img src="{{asset('assets/images/vision.png')}}" alt="" style="height:100px;padding-bottom:10px"></span>
-                            <h3 class="title mb-3">VISION
+                            <span class="timeline-count"><img src="{{asset('assets/images/vision.png')}}" alt="" style="height:95px;padding-bottom:10px"></span>
+                            <h3 class="title pt-5 mb-3">VISION
                             </h3>
                             <div class="description">                                  
                                 {!! json_decode(json_encode($basic->data->vission)) !!}

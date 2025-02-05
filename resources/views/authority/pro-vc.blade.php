@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('content') 
+@section('content')
     <section class="breadcrumbs">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
@@ -7,7 +7,7 @@
                 <ol>
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Authority</li>
-                    <li>Pro-Vc</li>
+                    <li>Pro-Vice-Chancellor</li>
                 </ol>
             </div>
         </div>

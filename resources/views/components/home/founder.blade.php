@@ -42,6 +42,11 @@
         font-weight: 600;
         color:#6c6a6a;
     }
+    @media (max-width: 768px) {  
+    .founder img {
+        height: 350px;
+    }
+}
   
 </style>
 
@@ -66,4 +71,5 @@
         </div>
     </div>
     <x-home.chairman />
+    <x-home.vice-chairman />
 </div>
