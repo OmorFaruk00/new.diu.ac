@@ -327,10 +327,10 @@
     <section class="breadcrumbs">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <h1 style="text-transform: uppercase">Faculty of Science </h1>
+                <h1 style="text-transform: uppercase">Faculty of Science & Engineering </h1>
                 <ol>
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li>Faculty of Science </li>
+                    <li>Faculty of Science & Engineering </li>
                 </ol>
             </div>
         </div>
@@ -343,7 +343,7 @@
                         <img src="https://api.diu.ac/images/profile_photo_file_141.jpg" alt="" style="height: 100%">
                     </div>
                     <div class="faculty-details">
-                        <h2 class="title">Dr. A.T.M. Mahbubur Rahman Sarker</h2>
+                        <h2 class="title">Prof. Dr. A.T.M. Mahbubur Rahaman Sarker</h2>
                         <span class="post">Dean </span>
                         <a href="https://profile.diu.ac/prof.dr.a.t.mmahbuburrahmansarker" class="profile"
                             target="_blank">View
@@ -489,7 +489,7 @@
                                     </div>
                                     <div class="department-content">
                                         <h3 class="title">Dr. Md. Asaduzzaman Shishir</h3>
-                                        <span class="post">Assistant Professor & Chairman</span>
+                                        <span class="post">Associate Professor & Chairman</span>
                                         <h3 class="dept"> Department of Microbiology</h3>
                                     </div>
                                 </div>

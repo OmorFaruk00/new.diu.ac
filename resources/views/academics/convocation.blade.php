@@ -72,10 +72,10 @@
             <div class="container">
 
                 <div class="d-flex justify-content-between align-items-center">
-                    <h1 style="text-transform:uppercase;">Convocation</h1>
+                    <h1 style="text-transform:uppercase;">Convocations</h1>
                     <ol>
                         <li><a href="{{ route('home') }}">Home</a></li>
-                        <li>Convocation</li>
+                        <li>Convocations</li>
                     </ol>
                 </div>
 
@@ -86,7 +86,7 @@
         <div class="container-xxl pb-5">
             <div class="container">
                 <div class=" text-center py-4">
-                    <h3 class="heading">WELCOME TO OUR CONVOCATION</h3>
+                    <h3 class="heading">CONVOCATIONS Of Dhaka International University</h3>
                     <p class="convocation-desc">Convocation is a formal gathering of people who have been asked to come together, or a formal
                         ceremony at a college or university where awards are given. Dhaka International University is
                         organized the convocation ceremony to confer the degree to the graduate students almost every year.

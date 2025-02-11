@@ -64,9 +64,9 @@
     margin-top: 5px;
     font-size: 16px;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #047168;
-    text-transform: uppercase;
+    text-transform:capitalize !important;
     margin-bottom: 7px;
 }
 .our-member .desc{

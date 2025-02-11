@@ -35,6 +35,7 @@ Route::get('/test',[DiuController::class,'test'])->name('test');
  Route::get('/news',[DiuController::class,'news'])->name('news');
  Route::get('/events',[DiuController::class,'events'])->name('events');
  Route::get('/notice-details/{slug}',[DiuController::class,'noticeDetails'])->name('notice-details');
+ Route::get('/program-details/{slug}',[DiuController::class,'programDetails'])->name('program-details');
 
  Route::get('/journals', [DiuController::class, 'journals'])->name('journals');
  Route::get('/journals/volume/{id}', [DiuController::class, 'journalsVol12'])->name('vol12');
@@ -83,6 +84,7 @@ Route::group(['prefix' => 'authority'], function () {
     Route::get('/chairman',[DiuController::class,'chairman'])->name('chairman');  
     Route::get('/controller',[DiuController::class,'controller'])->name('controller');  
     Route::get('/proctor',[DiuController::class,'proctor'])->name('proctor');  
+    Route::get('/students-welfare-advisor',[DiuController::class,'studentsWelfareAdvisor'])->name('students-welfare');  
 
 });
     Route::get('/faculy_of_law',[DiuController::class,'facultyLaw'])->name('law');

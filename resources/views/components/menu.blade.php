@@ -373,6 +373,7 @@
                     
                     <li><a href="{{ route('controller') }}"> Controller of Exam.</a></li>
                     <li><a href="{{ route('proctor') }}"> Proctor</a></li>
+                    <li><a href="{{ route('students-welfare') }}"> Student Welfare Adviser</a></li>
                     <li><a href="{{ route('registrar') }}"> Registrar</a></li>
                     <li><a href="{{ route('treasurer') }}"> Treasurer</a></li>
                     <li><a href="{{ route('pro_vc') }}">Pro-Vice-Chancellor </a></li>

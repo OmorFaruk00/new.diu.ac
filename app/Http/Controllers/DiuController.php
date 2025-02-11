@@ -148,6 +148,10 @@ class DiuController extends Controller
         // $notice = $this->getNoticeDetails($slug);
         return view('newsEvent.notice-details',compact('slug'));
     }
+    public function programDetails($slug){
+      
+        return view('community.program-details',compact('slug'));
+    }
     public function certificateVerification(){
         return view('academics.certificate-verification');
     }
@@ -227,6 +231,9 @@ class DiuController extends Controller
     public function controller(){
         return view('authority.controller');
     }
+    public function  studentsWelfareAdvisor(){
+        return view('authority.students-welfare-advisor');
+    }
 
 
     public function facultyLaw(){
@@ -298,6 +305,11 @@ class DiuController extends Controller
     public function viceChancellorOffice(){
         return view('about.office-of-vice-chancellor');
     }
+
+   
+
+
+  
 
 
     public function privacyPolicy()

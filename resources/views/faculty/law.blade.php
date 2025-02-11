@@ -336,18 +336,18 @@
             <div class="">
                 <div class="faculty">
                     <div class="faculty-icon">
-                        <img src="https://api.diu.ac/images/profile_photo_file_611.jpg" alt="">
+                        <img src="https://api.diu.ac/images/profile_photo_file_1223.jpg" alt="">
                     </div>
                     <div class="faculty-details">
-                        <h2 class="title">DR A. W. M ABDUL HUQ</h2>
-                        <span class="post">Dean</span>
-                        <a href="https://profile.diu.ac/abdulhuq#PersonalInformation" class="profile" target="_blank">View
+                        <h2 class="title">Dr. Abdullah-Al Monzur Hussain</h2>
+                        <span class="post">Dean (Acting)</span>
+                        <a href="https://profile.diu.ac/dr.abdullah-almonzurhussain#PersonalInformation" class="profile" target="_blank">View
                             Profile</a>
 
                     </div>
                     <ul class="faculty-content">
-                        <li><i class="fa fa-phone"></i> 8801819559286</li>
-                        <li><i class="fa fa-envelope"></i> dean.law@diu.ac</li>
+                        <li><i class="fa fa-phone"></i> 01622869405</li>
+                        <li><i class="fa fa-envelope"></i> monzurhussain.law@diu.ac</li>
                         <li><i class="fas fa-map-marker-alt px-1"></i>Department of Law, <br> <span class="px-3">Satarkul,
                                 Badda,
                                 Dhaka-1212.</span></li>

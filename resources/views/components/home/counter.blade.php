@@ -85,7 +85,7 @@
                         <span><i class="fa fa-graduation-cap"></i></span>
                     </div>
                     <h3>Convocatons</h3>
-                    <span class="counter-value">7</span>
+                    <span class="counter-value">8</span>
                 </div>
             </div>
             

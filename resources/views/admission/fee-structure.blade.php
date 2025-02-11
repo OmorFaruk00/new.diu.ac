@@ -18,20 +18,20 @@
     <section class="inner-page">
         <img src="assets/images/program-fee-structure.png" alt="Program Fee Structure" class="img-fluid w-100">
         <div class="bannertext">
-        <h2>Program <br>Fee Structure</h2>
+        <h2>Programs <br>Fee Structure</h2>
       
         </div>
         <div class="container my-4" id="fee">           
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-center font-bold">Program FEE STRUCTURE</h2>
+                    <h2 class="text-center font-bold">PROGRAMS FEE STRUCTURE</h2>
                     <h6 class="text-center">
                         Here you can review some statistics about our Education Center</h6>
                     <div class="table-responsive">
                     <table v-if="fees" class="table table-bordered table-striped ">
                     <thead class="bg-info text-white">
                         <tr>
-                            <th>Program Name</th>
+                            <th>Programs Name</th>
                             <th>Duration</th>
                             <th>Credit </th>                           
                             <th>Admission Fee</th>

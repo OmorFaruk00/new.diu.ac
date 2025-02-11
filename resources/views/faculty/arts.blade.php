@@ -400,6 +400,9 @@
                                         <li>
                                             <p> BSS in Political Science</p>
                                         </li>
+                                        <li>
+                                            <p> Development Studies</p>
+                                        </li>
                                        
                                         
                                     </ul>
@@ -456,7 +459,7 @@
                                     </div>
                                     <div class="department-content">
                                         <h3 class="title">Jamsedur Rahman</h3>
-                                        <span class="post">Assistant Professor & Chairman</span>
+                                        <span class="post">Associate Professor & Chairman</span>
                                         <h3 class="dept"> Department of Sociology</h3>
                                     </div>
                                 </div>
@@ -487,6 +490,20 @@
                                         <h3 class="title">Babor Ahmad</h3>
                                         <span class="post">Assistant Professor & Chairman (Acting)</span>
                                         <h3 class="dept"> Department Of Economics</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div> 
+                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <a href="https://profile.diu.ac/dr.shamimhamide#PersonalInformation" target="_blank">
+                                <div class="department-head">
+                                    <div class="frame">
+                                        <img src="https://api.diu.ac/images/profile_photo_file_877.jpg">
+                                    </div>
+                                    <div class="department-content">
+                                        <h3 class="title">Dr. Shamim Hamide</h3>
+                                        <span class="post">Assistant Professor & Chairman</span>
+                                        <h3 class="dept"> Department of Development Studies</h3>
                                     </div>
                                 </div>
                             </a>

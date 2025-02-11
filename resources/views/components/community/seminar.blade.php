@@ -40,7 +40,7 @@
     font-weight: bold;
     color: #fff;
     padding: 0 10px;
-    background: #91b33c;;
+    background: #01AA4D;;
     text-transform: uppercase;
 }
 .post-slide .date{
@@ -51,7 +51,7 @@
     margin: 20px 0;
 }
 .post-slide .post-title a{
-    color:#91b33c;
+    color:#01AA4D;
     font-size:22px;
     text-transform:capitalize;
     transition: all 0.50s ease 0s;
@@ -97,7 +97,7 @@
 
 
 <div class="container">
-    <h3 class="build-title px-3">Seminars</h3>
+    {{-- <h3 class="build-title px-3">Seminars</h3> --}}
     <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12">
             
@@ -149,3 +149,49 @@
     </div>
 </div>
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var vue = new Vue({
+            el: '#program',
+            data: {
+                config: {
+                    base_path: "{{ env('API_URL') }}",
+                },
+                loading: false,
+
+                notices: [],
+                noticeLinks: [],
+                noticeMeta: [],
+
+            },
+
+            methods: {
+                getPrograms() {
+                    var vm = this;
+
+                    axios.get(`${vm.config.base_path}/public-diu-website/notice-event?type=program`)
+                        .then((
+                            response) => {
+                                console.log('response.data');
+                            // this.notices = response.data.data;
+                            // this.noticeLinks = response.data.links;
+                            // this.noticeMeta = response.data.meta;
+
+                        }).catch((error) => {
+                            console.log(error.response);
+
+                        });
+                }
+
+            },
+
+            created() {
+                this.getPrograms();
+            }
+        });
+
+
+
+    });
+</script>
