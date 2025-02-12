@@ -26,6 +26,15 @@
         margin-top: 160px;
         margin-bottom: 160px;
     }
+    .leader-ul {
+        list-style-type: disc;
+        padding-left: 30px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #fff;        
+        margin-bottom: 20px;
+        text-align: justify;
+    }
 </style>
 <section id="leader">
     <div class="container">
@@ -36,9 +45,18 @@
                         <h1 class="">Building Leaders of Tomorrow</h1>
                         <br>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            To achieve this, DIU is taking various proactive steps by engaging with professionals and industry leaders graduated from different universities of the country to gain valuable insights that will:
                         </p>
-                        <a href="{{ route('future-student') }}" target="_blank" class="btn"
+
+                        <ul class="leader-ul">
+                            <li> Design a State-of-the-Art Career Placement Centre: Tailored to address the dynamic demands of the job market, ensuring our students are equipped for success.</li>
+                            <li> Enhance Student Skills Development: Identifying core competencies and providing targeted training to make our graduates industry-ready.</li>
+                            <li>Boost Placement Opportunities: Building stronger industry connections to open doors for internships, job placements, and long-term careers.</li>
+                            <li>Foster Joint Collaborations: Creating impactful partnerships with organizations for mutual growth and innovative initiatives.</li>
+                            <li>This initiative is more than a strategy—it’s DIU's promise to bridge the gap between academia and industry, empowering students to become the leaders of tomorrow.</li>
+                          
+                        </ul>
+                        <a href="{{ route('future-student') }}" class="btn"
                             style="margin-top: 20px">Future Student</a>
                     </div>
                 </div>

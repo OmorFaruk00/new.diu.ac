@@ -112,7 +112,7 @@
         <div id="eventData">
             <div class="owl-carousel owl-theme" id="event" style="margin-bottom: 20px">
                 <div class="item" v-for="(item,index) in events" :key="index">
-                    <a :href="'/notice-details/' + item.slug" target="_blank">
+                    <a :href="'/notice-details/' + item.slug">
                         <div class="event">
                             <img src="{{asset('assets/images/event.jpg')}}" alt="Image">
                             <div class="event-content">
@@ -127,7 +127,7 @@
             </div>
         </div>
         <div class="event-btn">
-            <a href="{{ route('events') }}" target="_blank" class="btn"><i class="fa fa-archive"
+            <a href="{{ route('events') }}"  class="btn"><i class="fa fa-archive"
                     aria-hidden="true"></i>Archive</a>
         </div>
 

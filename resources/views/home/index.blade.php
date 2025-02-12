@@ -16,7 +16,9 @@
          
          
          {{-- <x-campuslife /> --}}
-         <x-home.counter />
+         @if($counter)
+         <x-home.counter :counter="$counter"/>
+         @endif
          <x-home.partner />
 
          {{-- <x-home.follow /> --}}

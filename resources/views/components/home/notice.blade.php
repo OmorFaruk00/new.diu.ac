@@ -89,14 +89,14 @@
                                 <p class="notice-date" v-text="notice.published_date"></p>
                             </div>
                             <div class=" col-lg-9 col-md-6 col-sm-12">
-                                <a :href="'/notice-details/' + notice.slug" target="_blank">
+                                <a :href="'/notice-details/' + notice.slug">
                                     <p class="notice-title" v-text="notice.title"></p>
                                 </a>    
                             </div>
                         </div>
                         
                         <div style="float:right">
-                            <a href="{{route('news')}}" class="btn" target="_blank"><i class="fa fa-archive" aria-hidden="true" style="margin-right: 10px"></i>Archive</a>
+                            <a href="{{route('notice')}}" class="btn"><i class="fa fa-archive" aria-hidden="true" style="margin-right: 10px"></i>Archive</a>
                         </div>
                 </div>
               

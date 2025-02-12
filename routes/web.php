@@ -32,7 +32,7 @@ Route::get('/test',[DiuController::class,'test'])->name('test');
  Route::get('/faculty/{slug}',[DiuController::class,'facultyDetails'])->name('faculty-details');
  Route::get('/convocation',[DiuController::class,'convocation'])->name('convocation');
  Route::get('/publications',[DiuController::class,'publications'])->name('publications');
- Route::get('/news',[DiuController::class,'news'])->name('news');
+ Route::get('/notice',[DiuController::class,'notice'])->name('notice');
  Route::get('/events',[DiuController::class,'events'])->name('events');
  Route::get('/notice-details/{slug}',[DiuController::class,'noticeDetails'])->name('notice-details');
  Route::get('/program-details/{slug}',[DiuController::class,'programDetails'])->name('program-details');

@@ -46,22 +46,12 @@
         </ol>
       </div>
     </div>
-  </section>
-  <!-- End Breadcrumbs -->
-  @php
-    // dd($notice->items())
-  @endphp
- 
+  </section> 
 <div class="container">
   <div class="row py-5">
     <div class="col-lg-9 col-md-10 col-sm-12 mx-auto">
         <div id="notice" v-if='events'>
-            <div class="notice">
-
-                {{-- <div class="d-flex justify-content-center">
-                    <img src="assets/images/events.png" class="img-fluid" style="height: 250px;"
-                    alt="Section 3 Background Image" />
-                </div> --}}
+            <div class="notice">               
                 <div class="text-center">
                     <h4 class="heading">OUR LATEST EVENTS </h4>
                 </div>
@@ -71,7 +61,7 @@
                             <p class="notice-date" v-text="item.published_date"></p>
                         </div>
                         <div class=" col-9">
-                            <a :href="'/notice-details/' + item.slug" target="_blank">
+                            <a :href="'/notice-details/' + item.slug">
                                 <p class="notice-title" v-text="item.title"></p>
                             </a>
         

@@ -256,13 +256,27 @@ trait ApiTrait
         }
         return response()->json(NULL, 404);
     }
-    public function testApi()
+
+
+    public function getCounterData()
     {
-      
+        if (Cache::has('counter')) {
+            return Cache::get('counter');
+        }
 
-
-      
+        $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/counter-statistics', false, self::ssl()));
+        if (!empty($result)) {
+            Cache::put('counter', $result, 1440); 
+            return $result;
+        }
+        return response()->json(NULL, 404);
     }
+    
+      
+
+
+      
+
     public function getNoticeDetails($slug)    {     
 
         return $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/notice/'.$slug, false, self::ssl()));

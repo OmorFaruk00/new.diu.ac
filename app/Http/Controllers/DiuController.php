@@ -9,12 +9,9 @@ use App\Traits\ApiTrait;
 class DiuController extends Controller
 {
     use ApiTrait;
-    public function index(){
-        // $sliders =  $this->sliderData();
-        // $programs =  $this->programsData();
-        // $partners =  $this->partnersData();
-        // $event = $this->getEvent();
-        return view('home.index');
+    public function index(){        
+        $counter = $this->getCounterData();
+        return view('home.index',compact('counter'));
     }
     public function about(){
         return view('about.about');
@@ -136,9 +133,9 @@ class DiuController extends Controller
     public function contact(){
         return view('contact');
     }
-    public function news(){
+    public function notice(){
     
-        return view('newsEvent.news');
+        return view('newsEvent.notice');
     }
     public function events(){
     

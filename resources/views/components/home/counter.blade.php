@@ -65,7 +65,7 @@
 </style>
 
 <div style="background: #fff">
-    <div class="container py-5">
+    <div class="container py-5" id="counterData">
         <div class="text-center">
             <h4 class="heading">CURRENT STATISTICS: OUR STRENGTH </h4>
         </div>
@@ -76,7 +76,7 @@
                         <span><i class="fa fa-book"></i></span>
                     </div>
                     <h3>Academic Programs</h3>
-                    <span class="counter-value">12</span>
+                    <span class="counter-value">{{$counter->student->program ?? 0}}</span>
                 </div>
             </div>
             <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
@@ -85,7 +85,7 @@
                         <span><i class="fa fa-graduation-cap"></i></span>
                     </div>
                     <h3>Convocatons</h3>
-                    <span class="counter-value">8</span>
+                    <span class="counter-value">{{$counter->convocation ?? 0}}</span>
                 </div>
             </div>
             
@@ -95,7 +95,7 @@
                         <span><i class="fa fa-globe"></i></span>
                     </div>
                     <h3>CURRENT FOREIGN STUDENTS</h3>
-                    <span class="counter-value">423</span>
+                    <span class="counter-value">{{$counter->student->current_foreign_student ?? 0}}</span>
                 </div>
             </div>
             <div class=" col-lg-4 col-md-6 col-sm-12">
@@ -104,7 +104,7 @@
                         <span><i class="fa fa-user"></i></span>
                     </div>
                     <h3>CURRENT STUDENTS</h3>
-                    <span class="counter-value">6973</span> 
+                    <span class="counter-value">{{$counter->student->current_total_student ?? 0}}</span> 
                 </div>
             </div>
             <div class=" col-lg-4 col-md-6 col-sm-12">
@@ -113,22 +113,63 @@
                         <span><i class="fa fa-users"></i></span>
                     </div>
                     <h3>FULL TIME TEACHERS AND EMPLOYEES</h3>
-                    <span class="counter-value">397</span> 
+                    <span class="counter-value">{{$counter->employee ?? 0}}</span> 
                 </div>
-            </div>
+            </div>         
             <div class=" col-lg-4 col-md-6 col-sm-12">
                 <div class="counter purple">
                     <div class="counter-icon">
                         <span><i class="fa fa-graduation-cap"></i></span>
                     </div>
                     <h3>NUMBER OF ALUMNI</h3>
-                    <span class="counter-value">19364</span> 
+                    <span class="counter-value" >{{$counter->alumni ?? 0}}</span> 
                 </div>
             </div>
             
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var vue = new Vue({
+            el: '#counterData',
+            data: {
+                config: {
+                    base_path: "{{ env('API_URL') }}",
+                },
+                items: [],
+                
+
+            },
+
+            methods: {
+                getData() {
+                    var vm = this;
+
+                    axios.get(`${vm.config.base_path}/public-diu-website/counter-statistics`)
+                        .then((
+                            response) => {
+                            this.items = response.data;
+                            console.log(response.data);
+                           
+
+                        }).catch((error) => {
+                            console.log(error.response);
+
+                        });
+                }
+
+            },
+
+            created() {
+                this.getData();
+            }
+        });
+
+
+
+    });
+</script>
 <script>
     $(document).ready(function(){
     $('.counter-value').each(function(){

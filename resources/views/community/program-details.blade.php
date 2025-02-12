@@ -28,9 +28,7 @@
     }
     .program-img img{
         width: 100%;
-        object-fit: cover;
-
-        
+        object-fit: cover;     
 
 
     }
