@@ -101,7 +101,7 @@
                     </li>
                     <li class="list-inline-item"><i class="fa fa-phone" style="margin-right: 5px"
                             aria-hidden="true"></i><a href="{{ route('contact') }}" class="text-white top-menu ml-3"
-                            target="_blank">Contact us</a></li>
+                           >Contact us</a></li>
                 </ul>
             </div>
 

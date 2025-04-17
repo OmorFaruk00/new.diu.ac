@@ -339,8 +339,8 @@
                         <img src="https://api.diu.ac/images/profile_photo_file_1223.jpg" alt="">
                     </div>
                     <div class="faculty-details">
-                        <h2 class="title">Dr. Abdullah-Al Monzur Hussain</h2>
-                        <span class="post">Dean (Acting)</span>
+                        <h2 class="title">Prof. Dr. Abdullah-Al Monzur Hussain</h2>
+                        <span class="post">Dean</span>
                         <a href="https://profile.diu.ac/dr.abdullah-almonzurhussain#PersonalInformation" class="profile" target="_blank">View
                             Profile</a>
 

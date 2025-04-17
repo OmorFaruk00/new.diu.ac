@@ -44,7 +44,7 @@
         }
 
         .message .desc {
-            color: #6c6a6a !important;
+            color: #000 !important;
             font-size: 16px;
             line-height: 25px;
             text-align: justify;
@@ -363,28 +363,16 @@
 
             <div class=" pt-5">
                 <div class="message">
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dicta hic porro
-                        temporibus ea quae quos rem corporis saepe voluptate. Et labore aut, vitae est aliquid sed
-                        doloremque
-                        velit obcaecati consectetur! Perferendis enim animi cumque aliquid, excepturi similique dolorem
-                        voluptatibus vel eveniet assumenda officiis? Totam nesciunt doloribus maiores nihil ullam assumenda
-                        neque a nobis eos porro at facere, quibusdam quam culpa eum facilis. Quidem cupiditate nisi magnam
-                        esse
-                        iusto dolor saepe commodi perspiciatis soluta consectetur ab recusandae, debitis quia! Soluta sed
-                        eaque
-                        doloribus nulla omnis ex repellendus? Ullam vel iste alias repellat. Cumque quia, ipsam commodi
-                        nihil
-                        repudiandae officiis ab, quos incidunt minima minus, distinctio quas? Sed saepe consectetur maiores
-                        incidunt! Cumque aspernatur deleniti numquam, quidem hic impedit reiciendis, ex quisquam suscipit
-                        amet
-                        tenetur nam? Incidunt magni error odit mollitia eveniet consequuntur quod dignissimos fuga amet qui
-                        quisquam voluptate voluptates a, ducimus tempore non architecto provident repellendus ab tenetur,
-                        expedita quam nulla. Dolores ullam, labore ut officia corporis explicabo vel non sequi architecto
-                        praesentium cupiditate vero cumque sit doloribus beatae? Ea quis architecto veritatis commodi velit
-                        voluptate dolorum maiores dignissimos pariatur quaerat, odio ullam corporis harum cupiditate
-                        voluptatum
-                        nulla assumenda voluptas.</p>
-                    <h3>Dean</h3>
+                    <p class="desc">The Faculty of Science and Engineering is the largest Faculty of Dhaka International University. This Faculty consists of the following six dynamic Departments: Department of Computer Science and Engineering (CSE), Department of Electrical and Electronic Engineering (EEE), Department of Pharmacy, Department of Civil Engineering, Department of Microbiology, and Department of Biochemistry and molecular Biology. The Faculty is committed to delivering innovative, inspirational and effective teaching and also engaging in research that addresses real-world problems. The graduates and members of the Faculty play a vital role in the development and implementation of various infrastructures projects of national significance and challenges. </p>
+                    <p class="desc">Each of the six departments under the Faculty has well-equipped labs, network system and on-line internet connection in the computer labs, fully air-conditioned classrooms and multimedia projectors for visual presentation using computers.  Besides campuses are fully covered under Wi-Fi system which is open for all.</p>
+                    <p class="desc">The Faculty is actively involved in organizing special programs like conferences, seminars, workshops, job fairs, indoor and outdoor games etc. on a regular basis. Different departments maintain a strong linkage with their respective community. They regularly provide counseling services to the students on academic and related issues.</p>
+                    <p class="desc">I wish all success for the faculty</p>
+                    <h3>Prof. Dr. A.T.M Mahbubur Rahman</h3>
+                    <p class="desc">Dean</p>
+                    <p class="desc">Faculty of Science and Engineering</p>
+                    <p class="desc">Dhaka International University</p>
+                    <p class="desc">Email: rahman.cse@diu.ac, atmmrahman2005@gmail.com</p>
+                    <p class="desc">Mobile:  01720557279</p>
 
                 </div>
 
@@ -475,7 +463,7 @@
                                     </div>
                                     <div class="department-content">
                                         <h3 class="title">Md. Tahzib Ul Islam</h3>
-                                        <span class="post">Associate Professor & Chairman (Acting)</span>
+                                        <span class="post">Associate Professor & Chairman </span>
                                         <h3 class="dept"> Department Of CSE</h3>
                                     </div>
                                 </div>

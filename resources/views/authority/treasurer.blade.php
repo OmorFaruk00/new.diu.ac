@@ -16,7 +16,7 @@
 
 
     <section class="py-5">
-        <div class="demo">
+        {{-- <div class="demo">
             <div class="container">
                 <div class="authority">
                     <div class="signature-icon">
@@ -35,7 +35,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
 
 

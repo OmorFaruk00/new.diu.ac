@@ -287,7 +287,7 @@
                                  <span><i class="fa fa-phone"></i></span>
                              </div>
                              <h3 class="title">Contact Us</h3>
-                             <p class="description">+8809612111348</p>
+                             <p class="description">+8809677777348</p>
                          </div>
                      </div>
                  </div>

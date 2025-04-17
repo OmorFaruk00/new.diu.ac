@@ -4,7 +4,7 @@
     <section class="breadcrumbs">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <h1 style="text-transform: uppercase">Vice-Chancellor (Acting)</h1>
+                <h1 style="text-transform: uppercase">Vice-Chancellor</h1>
                 <ol>
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Authority</li>
@@ -20,19 +20,19 @@
             <div class="container">
                 <div class="authority">
                     <div class="signature-icon">
-                        <img src="https://api.diu.ac/images/profile_photo_file_813.jpg" alt="" style="height: 125px">
+                        <img src="https://api.diu.ac/images/profile_photo_file_1049.jpg" alt="" style="height: 125px">
                     </div>
                     <div class="signature-details">
-                        <h2 class="title">Prof. Dr. Ganesh Chandra Saha </h2>
-                        <span class="post">Vice-Chancellor (Acting)</span>
-                        <a class="profile" href="https://profile.diu.ac/prof.dr.ganeshchandrasaha#PersonalInformation" target="_blank"> View
+                        <h2 class="title">Dr. Zahidul Islam</h2>
+                        <span class="post">Vice-Chancellor</span>
+                        <a class="profile" href="https://profile.diu.ac/dr.zahidulislam#PersonalInformation" target="_blank"> View
                             Profile</a>
                     </div>
                     <ul class="signature-content">
-                        <li><i class="fa fa-phone"></i> 01971538024</li>
-                        <li><i class="fa fa-envelope"></i> ganesh@diu.ac</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Office of the Vice-Chancellor, Satarkul, Badda,
-                            Dhaka-1212.</li>
+                        <li><i class="fa fa-phone"></i>  01819295152</li>
+                        <li><i class="fa fa-envelope"></i> zahidulislam@diu.ac
+                        </li>
+                        <li><i class="fas fa-map-marker-alt"></i>Office of the Vice-Chancellor, Permanent Campus: Satarkul, Badda, Dhaka-1212.</li>
                     </ul>
                 </div>
             </div>

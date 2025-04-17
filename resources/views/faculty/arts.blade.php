@@ -445,7 +445,7 @@
                                     </div>
                                     <div class="department-content">
                                         <h3 class="title">Arif Ahmad</h3>
-                                        <span class="post">Lecturer & Coordinator</span>
+                                        <span class="post">Assistant Professor & Chairman</span>
                                         <h3 class="dept">Department of English</h3>
                                     </div>
                                 </div>
@@ -488,7 +488,7 @@
                                     </div>
                                     <div class="department-content">
                                         <h3 class="title">Babor Ahmad</h3>
-                                        <span class="post">Assistant Professor & Chairman (Acting)</span>
+                                        <span class="post">Assistant Professor & Chairman</span>
                                         <h3 class="dept"> Department Of Economics</h3>
                                     </div>
                                 </div>

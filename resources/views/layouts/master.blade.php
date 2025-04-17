@@ -30,7 +30,7 @@
     <link rel="icon" href="{{ asset('/assets/img/url.png') }}" type="image/x-icon">
 
      <!-- Meta Pixel Code -->
-     <script>
+        <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -46,6 +46,12 @@
         src="https://www.facebook.com/tr?id=333868642744773&ev=PageView&noscript=1"
         /></noscript>
         <!-- End Meta Pixel Code -->
+
+        <script type="text/javascript">//<![CDATA[
+            var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
+            document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+            //]]>
+        </script>
  
 
     <!-- Google Fonts -->
@@ -103,6 +109,9 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTZCPMB" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+
+    
 
 
 
@@ -179,6 +188,11 @@
 </script> --}}
     
     @stack('script')
+
+    <script language="JavaScript" type="text/javascript">
+        TrustLogo("https://api.diu.ac//images/diuac/editorImage/1744097816_RXLqeLNdDw.png", "SC5", "none");
+        </script>
+        <a href="https://ssl.comodo.com/wildcard-ssl-certificates.php" id="comodoTL">Platinum Wildcard SSL</a>
 
 </body>
 
