@@ -226,11 +226,13 @@
                             opt += '<th scope="col">Passing Year</th>';
                             opt += '<td scope="col">' + response.data.data.passing_year + '</td>';
                             opt += '</tr>';
+                            if (response.data.data.transcript_link) {
                             opt += '<tr>';
                             opt += '<th scope="col">Transcript</th>';
                             opt += '<td scope="col"><a href="' + response.data.data.transcript_link +
                                 '" target="_blank"><i class="fa fa-download" aria-hidden="true"></i>Download</a></td>';
                             opt += '</tr>';
+                            }
 
 
                             opt += '</table>';

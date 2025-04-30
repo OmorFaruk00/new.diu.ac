@@ -101,6 +101,10 @@ class DiuController extends Controller
         return view('journal.vol12');
 
     }
+    public function journalsVol13(){
+        return view('journal.vol13');
+
+    }
     public function journalDetails($id){
         return view('journal.details',compact('id'));
 

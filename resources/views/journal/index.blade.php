@@ -46,9 +46,13 @@
     </div>
     <h2 style="font-weight: bold;margin:40px 0px">Our Journals</h2>
     <ul>
+    <li class="mb-3">
+        <i class="fa fa-arrow-circle-right mr-2"></i>
+        <a href="{{url('/journals/volume/12')}}"  class="volume"> Volume 12 No 2 2022</a>
+    </li>
     <li>
         <i class="fa fa-arrow-circle-right mr-2"></i>
-        <a href="{{url('/journals/volume/12')}}" target="_blank" class="volume"> Volume 12 No 2 2022</a>
+        <a href="{{url('/journals/volume-13')}}"  class="volume"> Volume 13 No 1 2023</a>
     </li>
     </ul>
 </div>

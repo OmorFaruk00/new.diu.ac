@@ -74,23 +74,23 @@
 </section>
 <div class="container">
     <div class="journal p-4" id="journal">
-        <h2 style="margin-bottom: 20px">Vol. 12 (2022)</h2>
+        <h2 style="margin-bottom: 20px">Vol. 13 (2023)</h2>
      
         <div style="line-height: 10px">
-            <p> <strong>ISSN:</strong> 2077/0111</p>
-        <p> <strong>DOI:</strong> 10.62673/DIUJLHR</p>
-        <p> <strong>Published:</strong> No-2, 2022</p>
+        {{-- <p> <strong>ISSN:</strong> 2077/0111</p>
+        <p> <strong>DOI:</strong> 10.62673/DIUJLHR</p> --}}
+        <p> <strong>Published:</strong> No-1, 2023</p>
         </div>
         <h3>Articles</h3>
      
         <div class="article" v-for="(item,index) in journals" :key="index">
             <h4 v-text="item.title"></h4>                    
             <p v-text="item.author"></p> 
-          <p><a :href="'/journal_details/'+item.id" >DOI Link</a></p> <br>
+          {{-- <p><a :href="'/journal_details/'+item.id" class="" target="_blank">DOI Link</a></p> <br> --}}
                               
-            <a :href="'/journal_details/'+item.id" class="btn-abs" >Abstract</a>
+            <a :href="'/journal_details/'+item.id" class="btn-abs">Abstract</a>
 
-            <a :href="'/journalPdf/'+item.pdf_link" class="btn-pdf" download target="_blank">Pdf</a>
+            {{-- <a :href="'/journalPdf/'+item.pdf_link" class="btn-pdf" download target="_blank">Pdf</a> --}}
         </div>
 
 
@@ -120,11 +120,11 @@
                 getData() {
                     var vm = this;
 
-                    axios.get(`${vm.config.base_path}/public-diu-website/get-journal/vol12`)
+                    axios.get(`${vm.config.base_path}/public-diu-website/get-journal/vol13`)
                         .then((
                             response) => {
                                 this.journals =response.data
-                           console.log(response.data);
+                        //    console.log(response.data);
 
                         }).catch((error) => {
                             console.log(error.response);
