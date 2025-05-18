@@ -19,6 +19,8 @@
 
             </div>
         </section>
+
+          <x-department.notice :slug="$slug" />
         <!-- End Breadcrumbs -->
         <!--  Department Basic Info -->
         @if ($basic)

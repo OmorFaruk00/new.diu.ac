@@ -36,6 +36,7 @@ Route::get('/test',[DiuController::class,'test'])->name('test');
  Route::get('/events',[DiuController::class,'events'])->name('events');
  Route::get('/notice-details/{slug}',[DiuController::class,'noticeDetails'])->name('notice-details');
  Route::get('/program-details/{slug}',[DiuController::class,'programDetails'])->name('program-details');
+ Route::get('/program-notice-details/{slug}',[DiuController::class,'programNoticeDetails'])->name('program-notice-details');
 
  Route::get('/journals', [DiuController::class, 'journals'])->name('journals');
  Route::get('/journals/volume/{id}', [DiuController::class, 'journalsVol12'])->name('vol12');

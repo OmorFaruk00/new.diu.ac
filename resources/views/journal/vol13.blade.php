@@ -86,6 +86,7 @@
         <div class="article" v-for="(item,index) in journals" :key="index">
             <h4 v-text="item.title"></h4>                    
             <p v-text="item.author"></p> 
+            <p > Received Original: <span v-text="item.redeived_original"></span> &nbsp; &nbsp; Received Revised: <span v-html="item.redeived_revised"></span>&nbsp; &nbsp;  Accepted: <span v-html="item.acceptable"></span></p>
           {{-- <p><a :href="'/journal_details/'+item.id" class="" target="_blank">DOI Link</a></p> <br> --}}
                               
             <a :href="'/journal_details/'+item.id" class="btn-abs">Abstract</a>

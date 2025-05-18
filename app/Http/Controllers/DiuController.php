@@ -17,6 +17,7 @@ class DiuController extends Controller
         return view('about.about');
     }
     public function test(){
+        return view('test');
         // // The API URL
         //  $api_url = 'https://api.diu.ac/api_test';
 
@@ -152,6 +153,10 @@ class DiuController extends Controller
     public function programDetails($slug){
       
         return view('community.program-details',compact('slug'));
+    }
+    public function programNoticeDetails($slug)
+    {
+      return view('programs.notice-details',compact('slug'));
     }
     public function certificateVerification(){
         return view('academics.certificate-verification');
