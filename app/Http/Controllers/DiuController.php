@@ -125,6 +125,11 @@ class DiuController extends Controller
         return view('programs.details',$data );
     }
 
+    public function programsFaciliry($slug,$id){
+       return view('programs.facility-details',compact('slug','id') );
+
+    }
+
 
   
     public function studentFacultyAchievements(){

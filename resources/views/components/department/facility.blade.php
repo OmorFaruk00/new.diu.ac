@@ -24,10 +24,33 @@
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     }
 
+    .card:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        transform: translateY(-4px);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+    }
+
+    .card:hover .card-title {
+
+        color: #01AA4D
+    }
+
     .card-title {
         color: #212121;
         font-weight: 700;
         font-size: 16px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.4em;
+        max-height: 2.8em;
+        /* 2 lines × line height */
+        word-break: break-word;
+
     }
 
     .card-text {
@@ -35,6 +58,15 @@
         color: #000;
         font-size: 14px;
         line-height: 22px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.4em;
+        max-height: 2.8em;
+        /* 2 lines × line height */
+        word-break: break-word;
     }
 </style>
 
@@ -46,18 +78,19 @@
             <h3 class="header">FACILITIES</h3>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="card-columns">
-                    <div class="card text-center" v-for="(rows, index) in facilities" :key="index">
-                        <div class="card-body">
-                            <h5 class="card-title" v-text="rows.title"></h5>
-                            <p class="card-text" v-text="rows.description"></p>
-                        </div>
-                    </div>
+
+        <div class="card-columns">
+            <a v-for="(rows, index) in facilities" :key="index"
+                :href="`/programs/facilities/${slug}/${rows.id}`" class="card text-center text-decoration-none text-dark"
+                style="display: block; cursor: pointer;">
+                <div class="card-body">
+                    <h5 class="card-title" v-text="rows.title"></h5>
+                    <p class="card-text" v-html="rows.description"></p>
                 </div>
-            </div>
+            </a>
         </div>
+
+
     </div>
 </section>
 

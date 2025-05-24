@@ -45,6 +45,7 @@ Route::get('/test',[DiuController::class,'test'])->name('test');
 
 
  Route::get('/programs/{slug}',[DiuController::class,'programs'])->name('programs'); 
+ Route::get('/programs/facilities/{slug}/{id}',[DiuController::class,'programsFaciliry'])->name('programs-facility'); 
  Route::get('/institute',[DiuController::class,'institute'])->name('institute');
  Route::get('/cell',[DiuController::class,'cell'])->name('cell');
  
