@@ -79,6 +79,12 @@
             cursor: pointer;
             z-index: 10000;
         }
+
+        .image-title {
+            font-size: 16px !important;
+            font-weight: 900 !important;
+
+        }
     </style>
 
     <!-- ======= Breadcrumbs ======= -->
@@ -103,12 +109,17 @@
             <!-- Image Gallery -->
             <div class="row">
                 <div class="col-md-6 col-sm-6 mb-4" v-for="(rows, index) in facility.images" :key="index">
-                    <div class="gallery-img-wrapper" @click="viewImage(rows.file_url)">
-                        <img :src="rows.file_url" :alt="'Facility Image ' + (index + 1)"
-                            class="img-fluid rounded shadow-sm gallery-img" />
+                    <div class="card h-100 shadow-sm gallery-img-wrapper" @click="viewImage(rows.file_url)"
+                        style="cursor: pointer;">
+                        <img :src="rows.file_url" :alt="'Facility Image ' + (index + 1)" class="card-img-top" />
+
+                        <div class="card-footer text-center bg-white">
+                            <strong class="image-title" v-text="rows.file_name"></strong>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <div v-if="fullscreenImage" class="fullscreen-viewer">
             <button class="close-button" @click="closeFullscreen">×</button>

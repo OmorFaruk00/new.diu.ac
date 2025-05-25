@@ -384,7 +384,7 @@
             </li>
 
 
-            <li class="mega-drop-down"><a href="#"> Study</a>
+            <li class="mega-drop-down"><a href="#"> Programs</a>
                 <div class="animated fadeIn mega-menu">
                     <div class="mega-menu-wrap">
                         <div class="row">
