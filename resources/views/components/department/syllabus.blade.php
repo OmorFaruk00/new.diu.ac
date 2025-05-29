@@ -1,4 +1,4 @@
-<style>
+<style scoped>
         .syllabus-heading{
     position: relative;
     text-transform: uppercase;
@@ -15,7 +15,7 @@
     bottom: -10px;
     height: 3px;
     width: 70px;
-    background: #2EAA4D;
+    background: #0d6efd;
     transform: translateX(-50%); 
 }
     .accordion-body {
@@ -23,7 +23,7 @@
     }
 
     .accordion-button {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 600
     }
 

@@ -115,14 +115,11 @@ class DiuController extends Controller
         return view('academics.publications',compact('publications'));
     }
     public function programs($slug){
-        $data['basic'] = $this->departmentBasicInfo($slug);
-        $data['objective'] = $this->departmentObjective($slug);
-        // $data['facility'] = $this->departmentFacility($slug);
-        // $data['gallery'] = $this->departmentGallery($slug);
-        $data['syllabus'] = $this->departmentSyllabus($slug);
-        $data['facultyMember'] = $this->departmentFacultyMember($slug);
-        $data['slug'] = $slug ?? null;
-        return view('programs.details',$data );
+        $basic = $this->departmentBasicInfo($slug);
+        $objective= $this->departmentObjective($slug);        
+        $syllabus = $this->departmentSyllabus($slug);
+        $facultyMember = $this->departmentFacultyMember($slug);
+        return view('programs.details',compact('basic','slug','syllabus','facultyMember','objective'));
     }
 
     public function programsFaciliry($slug,$id){

@@ -1,4 +1,4 @@
-<style scoped>
+<style>
     .notice-bg {
         position: relative;
         background-color: rgba(255, 255, 255, 0.5);

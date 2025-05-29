@@ -3,22 +3,32 @@
     <main id="main">
 
         <!-- ======= Breadcrumbs ======= -->
-        <section class="breadcrumbs">
-            <div class="container">
 
-                <div class="text-center">
-                    <h4 style="text-transform:uppercase;font-weight:700">{{ $slug ? str_replace('-', ' ', $slug) : 'N/A' }}
-                    </h4>
-                    <ol class="d-flax justify-content-center">
-                        <li><a href="{{ route('home') }}">Home</a></li>
-                        <li><a href="../program">Programs</a></li>
-                        <li style="text-transform:capitalize">{{ $slug ? str_replace('-', ' ', $slug) : 'N/A' }}
-                        </li>
-                    </ol>
-                </div>
+ <section class="breadcrumbs">
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center">
+            <ol class="d-flex" style="
+                justify-content: center;
+                gap: 15px;
+                list-style: none;
+                text-transform: capitalize;
+                font-size: 16px;
+                font-weight: 600;
+                color: #fff;
+                margin: 0;
+                padding: 10px 0;
+            ">
+                <li><a href="{{ route('home') }}" style="color: #fff;">Home</a></li>
+                <li><a href="#" style="color: #fff;">Programs</a></li>
+                <li style="text-transform: capitalize;">
+                    {{ $slug ? str_replace('-', ' ', $slug) : 'N/A' }}
+                </li>
+            </ol>
+        </div>
+    </div>
+</section>
 
-            </div>
-        </section>
+    
 
           <x-department.notice :slug="$slug" />
         <!-- End Breadcrumbs -->
@@ -27,6 +37,8 @@
             <x-department.basic :basic="$basic" />
             <x-department.head :basic="$basic" />
         @endif
+
+
         <!--  Department Objective Info -->
         @if ($objective)
             <x-department.objective :objective="$objective" />

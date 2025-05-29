@@ -7,10 +7,10 @@
         }
 
 
-        .facility-title {
+        .facility-title h1,h2,h3,h4,h5,h6 {
 
             color: #000;
-            font-size: 28px;
+            font-size: 22px;
             font-weight: 500;
             text-align: justify;
             padding: 20px 0px;
@@ -33,7 +33,7 @@
         .gallery-img {
             object-fit: cover;
             width: 100%;
-            height: 100%;
+            height: 400px;
             transition: transform 0.3s ease;
         }
 
@@ -93,8 +93,11 @@
             <div class="d-flex justify-content-between align-items-center">
                 <h1 style="text-transform: uppercase">Facilities Details</h1>
                 <ol>
-                    <li><a href="{{ route('home') }}">Home</a></li>
-                    <li> Facilities Details</li>
+                <li><a href="{{ route('home') }}" style="color: #fff;">Home</a></li>
+                <li><a href="#" style="color: #fff;">Programs</a></li>
+                <li style="text-transform: capitalize;">
+                    {{ $slug ? str_replace('-', ' ', $slug) : 'N/A' }}
+                </li>
                 </ol>
             </div>
         </div>
@@ -111,7 +114,7 @@
                 <div class="col-md-6 col-sm-6 mb-4" v-for="(rows, index) in facility.images" :key="index">
                     <div class="card h-100 shadow-sm gallery-img-wrapper" @click="viewImage(rows.file_url)"
                         style="cursor: pointer;">
-                        <img :src="rows.file_url" :alt="'Facility Image ' + (index + 1)" class="card-img-top" />
+                        <img :src="rows.file_url" :alt="'Facility Image ' + (index + 1)" class="gallery-img" />
 
                         <div class="card-footer text-center bg-white">
                             <strong class="image-title" v-text="rows.file_name"></strong>

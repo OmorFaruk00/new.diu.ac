@@ -68,6 +68,7 @@
     color: #047168;
     text-transform:capitalize !important;
     margin-bottom: 7px;
+    text-align: center
 }
 .our-member .desc{
     display: block;

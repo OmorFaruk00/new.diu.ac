@@ -1,4 +1,4 @@
-<style>
+<style scoped>
     .basic-intro{
     font-family: 'Poppins', sans-serif;
     padding: 25px 0 0;

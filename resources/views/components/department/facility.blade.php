@@ -1,4 +1,4 @@
-<style>
+<style >
     .card-columns {
         column-count: 3;
         column-gap: 1rem;
@@ -53,21 +53,27 @@
 
     }
 
-    .card-text {
+    .card-text  {
         text-align: justify;
         color: #000;
         font-size: 14px;
-        line-height: 22px;
         display: -webkit-box;
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        line-height: 1.4em;
+        /* line-height: 1.4em; */
         max-height: 2.8em;
-        /* 2 lines × line height */
         word-break: break-word;
     }
+       .card-text p,h1,h2,h3,h4,h5,h6 {
+        text-align: justify;
+        color: #000;
+        font-size: 14px;
+        font-weight: 300
+   
+    }
+
 </style>
 
 
@@ -85,7 +91,7 @@
                 style="display: block; cursor: pointer;">
                 <div class="card-body">
                     <h5 class="card-title" v-text="rows.title"></h5>
-                    <p class="card-text" v-html="rows.description"></p>
+                    <div class="card-text" v-html="rows.description"></div>
                 </div>
             </a>
         </div>

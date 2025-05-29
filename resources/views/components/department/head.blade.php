@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-9e1ZvQdB5ZVzNsQPHOKcRmHbdz5c1gL7aCnMNHnfTwNN0DE8ZwgnXymfpwE1emItn9eJ+tWW8xYPpd2BjZJ3NA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<style>
+<style scoped>
 
  .title {
         display: block;

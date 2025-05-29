@@ -1,4 +1,4 @@
-<style>
+<style scoped>
     .header {
         position: relative;
         text-transform: uppercase;

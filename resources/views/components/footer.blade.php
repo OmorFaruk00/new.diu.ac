@@ -28,10 +28,11 @@
         box-shadow: 0 3px 0 5px rgba(0, 0, 0, 0.2);
     }
 
-    .contact-title {
-        margin-bottom: 10px;
+    .footer-contact-title {
+        /* margin-bottom: 10px; */
         color: #ffffff;
         font-size: 20px;
+        text-align: center;
     }
 
     @media only screen and (max-width: 690px) {
@@ -174,18 +175,18 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12 contact">
                         <i class="fa  fa-map-marker"></i>
-                        <h3 class="contact-title">Address</h3>
+                        <h3 class="footer-contact-title">Address</h3>
                         <p>Satarkul, Badda, Dhaka-1212, Bangladesh.</p>
 
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 contact contact-border">
                         <i class="fa fa-phone"></i>
-                        <h3>Phone Number</h3>
+                        <h3 class="footer-contact-title">Phone Number</h3>
                         <p>+8809677777348</p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 contact">
                         <i class="fa fa-envelope"></i>
-                        <h3>Email Address</h3>
+                        <h3 class="footer-contact-title">Email Address</h3>
                         <p>admission@diu.net.bd</p>
 
                     </div>

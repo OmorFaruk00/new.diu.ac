@@ -219,13 +219,13 @@ trait ApiTrait
     }
     public function departmentFacultyMember($slug)
     {
-        if (Cache::has('facultyMembers_'.$slug)) {
-            return Cache::get('facultyMembers_'.$slug);
+        if (Cache::has('facultyMember_'.$slug)) {
+            return Cache::get('facultyMember_'.$slug);
         }
 
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/department-faculty-member/'.$slug, false, self::ssl()));
         if (!empty($result)) {
-            Cache::put('facultyMembers_'.$slug, $result); 
+            Cache::put('facultyMember_'.$slug, $result); 
             return $result;
         }
         return response()->json(NULL, 404);
