@@ -48,6 +48,15 @@
         object-fit: cover;
         border-radius: 0.25rem;
     }
+    .gallery-title{
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #000;
+
+    }
 </style>
 
 
@@ -56,7 +65,7 @@
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h3 class="header">GALLERY</h3>
 
-            <p class="text-center mb-4"><b>Our students engage themselves in various interesting extra curricular
+            <p class="text-center mb-4 h6"><b>Our students engage themselves in various interesting extra curricular
                     activities all through the year.</b> </p>
         </div>
 
@@ -67,7 +76,7 @@
                     <img class="card-img-top" :src="src.image_url" :alt="src.title" @click="openModal(src)"
                         style="cursor: pointer;">
                     <div class="card-body">
-                        <p class="card-text" v-text="src.title"></p>
+                        <p class="gallery-title" v-text="src.title"></p>
                     </div>
                 </div>
             </div>

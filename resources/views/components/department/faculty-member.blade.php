@@ -5,6 +5,7 @@
     display: inline-block; 
     margin-bottom: 40px;
     font-weight: 800;
+    font-size: 24px;
 }
 
 

@@ -77,8 +77,8 @@
         <h2 style="margin-bottom: 20px">Vol. 13 (2023)</h2>
      
         <div style="line-height: 10px">
-        {{-- <p> <strong>ISSN:</strong> 2077/0111</p>
-        <p> <strong>DOI:</strong> 10.62673/DIUJLHR</p> --}}
+        <p> <strong>ISSN:</strong> 2077/0111</p>
+        <p> <strong>DOI:</strong> 10.62673/JDIU.V13N1</p>
         <p> <strong>Published:</strong> No-1, 2023</p>
         </div>
         <h3>Articles</h3>
@@ -87,7 +87,7 @@
             <h4 v-text="item.title"></h4>                    
             <p v-text="item.author"></p> 
             <p > Received Original: <span v-text="item.redeived_original"></span> &nbsp; &nbsp; Received Revised: <span v-html="item.redeived_revised"></span>&nbsp; &nbsp;  Accepted: <span v-html="item.acceptable"></span></p>
-          {{-- <p><a :href="'/journal_details/'+item.id" class="" target="_blank">DOI Link</a></p> <br> --}}
+          <p><a :href="item.doi_link" class="" target="_blank">DOI Link</a></p> <br>
                               
             <a :href="'/journal_details/'+item.id" class="btn-abs">Abstract</a>
 

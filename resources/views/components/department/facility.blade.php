@@ -22,6 +22,7 @@
         break-inside: avoid;
         margin-bottom: 1rem;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        /* height:80px; */
     }
 
     .card:hover {
@@ -31,8 +32,12 @@
         cursor: pointer;
 
     }
-
+/* 
     .card:hover .card-title {
+
+        color: #01AA4D
+    } */
+      .card:hover .read-more {
 
         color: #01AA4D
     }
@@ -53,7 +58,7 @@
 
     }
 
-    .card-text  {
+    /* .card-text  {
         text-align: justify;
         color: #000;
         font-size: 14px;
@@ -62,16 +67,23 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        /* line-height: 1.4em; */
-        max-height: 2.8em;
+        word-spacing: 1px !important;
         word-break: break-word;
     }
        .card-text p,h1,h2,h3,h4,h5,h6 {
         text-align: justify;
         color: #000;
         font-size: 14px;
-        font-weight: 300
+        font-weight: 300;
    
+    } */
+    .read-more{
+        color: #000;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: right
+        /* text-decoration: underline; */
+
     }
 
 </style>
@@ -88,10 +100,11 @@
         <div class="card-columns">
             <a v-for="(rows, index) in facilities" :key="index"
                 :href="`/programs/facilities/${slug}/${rows.id}`" class="card text-center text-decoration-none text-dark"
-                style="display: block; cursor: pointer;">
+                style="display: block; cursor: pointer;height:80px;">
                 <div class="card-body">
                     <h5 class="card-title" v-text="rows.title"></h5>
-                    <div class="card-text" v-html="rows.description"></div>
+                    <div><p class="read-more">Read More</p></div>
+                    {{-- <div class="card-text" v-html="rows.description"></div> --}}
                 </div>
             </a>
         </div>

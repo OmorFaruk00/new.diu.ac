@@ -7,21 +7,26 @@
         }
 
 
-        .facility-title h1,h2,h3,h4,h5,h6 {
+        .facility-title h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
 
             color: #000;
-            font-size: 22px;
-            font-weight: 500;
+            font-size: 24px;
+            font-weight: 600;
             text-align: justify;
-            padding: 20px 0px;
         }
 
         .facility-desc p {
-            font-size: 18px;
-            line-height: 30px;
+            font-size: 16px;
+            line-height: 25px;
             text-align: justify;
             color: #000;
-            font-weight: 300;
+            font-weight: 400 !important;
+
         }
 
         .gallery-img-wrapper {
@@ -85,6 +90,26 @@
             font-weight: 900 !important;
 
         }
+
+        .facility-desc table {
+            border-collapse: collapse;
+            width: 100% !important;
+        }
+
+        /* .facility-desc th, */
+        .facility-desc td {
+            border: 1px solid #000;
+            padding: 8px;
+            color: #000 !important;
+            font-weight: 300 !important;
+
+
+        }
+
+        .facility-desc td p {
+            line-height: 10px !important;
+
+        }
     </style>
 
     <!-- ======= Breadcrumbs ======= -->
@@ -93,11 +118,17 @@
             <div class="d-flex justify-content-between align-items-center">
                 <h1 style="text-transform: uppercase">Facilities Details</h1>
                 <ol>
-                <li><a href="{{ route('home') }}" style="color: #fff;">Home</a></li>
-                <li><a href="#" style="color: #fff;">Programs</a></li>
-                <li style="text-transform: capitalize;">
-                    {{ $slug ? str_replace('-', ' ', $slug) : 'N/A' }}
-                </li>
+                    <li><a href="{{ route('home') }}" style="color: #fff;">Home</a></li>
+                    <li><a href="#" style="color: #fff;">Programs</a></li>
+                    <li style="text-transform: capitalize;">
+                        @if ($slug)
+                            <a href="{{ '/programs/' . $slug }}">
+                                {{ str_replace('-', ' ', $slug) }}
+                            </a>
+                        @else
+                            <span>N/A</span>
+                        @endif
+                    </li>
                 </ol>
             </div>
         </div>

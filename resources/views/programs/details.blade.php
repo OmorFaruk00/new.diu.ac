@@ -1,5 +1,14 @@
 @extends('layouts.master')
 @section('content')
+<style>
+    .header {
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+</style>
     <main id="main">
 
         <!-- ======= Breadcrumbs ======= -->

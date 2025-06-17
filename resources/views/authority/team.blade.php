@@ -210,7 +210,9 @@
                         </div>
                         <div class="signature-details">
                             <h2 class="title" v-text="item.name"></h2>
-                            <span class="post" v-text="item.designation">/span>
+                        <span v-if="item.type === 'proctor-office'" class="post" v-text="item.other_designation"></span>
+
+                            <span v-else class="post" v-text="item.designation">/span>
                         </div>
                         <ul class="signature-content">
                             <li><span class="fa fa-phone"></span> <strong v-text="item.phone"></strong></li>
