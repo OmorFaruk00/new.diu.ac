@@ -134,7 +134,7 @@
             </div>
 
 
-            <div class="col-lg-6 col-md-12 col-sm-12">
+            {{-- <div class="col-lg-6 col-md-12 col-sm-12">
                 <a href="https://profile.diu.ac/mohammadthaminahsan#PersonalInformation" target="_blank">
                 <div class="email-signature">
                     <div class="signature-icon">
@@ -152,7 +152,7 @@
                 </div>
                 </a>
 
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>

@@ -218,7 +218,7 @@
             height: 300px;
             width: 100% !important;
             transform: scale(1, 1);
-            transition: all 0.30s ease 0s; 
+            transition: all 0.30s ease 0s;
         }
 
         .frame {
@@ -264,7 +264,7 @@
 
         .department-head .pic {
             overflow: hidden;
-            position: relative;  
+            position: relative;
         }
 
         .department-head:hover .frame img {
@@ -275,9 +275,9 @@
             width: 100%;
             height: 350px;
             transform: scale(1, 1);
-            transition: all 0.30s ease 0s; 
+            transition: all 0.30s ease 0s;
             /* border: 5px solid #01AA4D          */
-            
+
         }
 
         .department-head .team-content {
@@ -285,7 +285,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 130px;            
+            height: 130px;
         }
 
         .department-head .title {
@@ -321,7 +321,7 @@
         }
 
 
-        
+
     </style>
 
 
@@ -379,10 +379,10 @@
                     </ul>
                 </div>
             </div>
-        
+
 
         <div class=" pt-5">
-            
+
             <div class="message">
                 <h2 class="pb-3">Dear Students, Faculties, Alumni and Visitors,</h2>
                 <p class="desc">We invite everyone to read the contents of the website of the  Department of Business Administration  Students in the department receive both practical and standardized academic business education   in a blended learning setting. Our focus is on creating capable, skilled, and globally minded leaders who can flourish in the changing corporate environment</p>
@@ -391,13 +391,13 @@
                 <p class="desc">Visiting our website, you can look at all the necessary information about all the activities of our department as well as our mission, vision and objectives. If you are interested in studying in our department or would like to work as an industry professional, please do not hesitate to get in touch with our department and admission office.</p>
                 <p class="desc">The department extends an invitation to participate in this our excited learning environment, which will help you become a successful entrepreneur and have a prosperous career.</p>
                 <p class="desc">Thank you.</p>
-             
+
                 <h3>Md. Azmir Hossain</h3>
                 <p class="desc">Dean (Acting) &
                     Chairman</p>
 
             </div>
-        
+
 
 
 
@@ -410,31 +410,34 @@
                         <ul>
                             <li><p>Bachelor of Business Administration</p></li>
                             <li><p>Master of Business Administration</p></li>
-                         
-                        </ul> 
-                        </div>                       
-                    </div>                    
-                </div> 
+
+                        </ul>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">                                  
+            <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="row">
-                        <div class="col-md-6 col-md-8 mx-auto">
-                            <h3 class="department-title">Department Chairman</h3>
-                            <a href="https://profile.diu.ac/md.azmir.hossain#PersonalInformation" target="_blank">
-                                <div class="department-head">
-                                    <div class="frame">
-                                        <img src="https://api.diu.ac/images/profile_photo_file_106.jpg">
+                           @foreach ($facultyMember->data as $rows )
+                            <div class="col-md-6 col-md-8 mx-auto">
+                                <h3 class="department-title">Department Chairman</h3>
+                                <a href="{{ $rows->profile_link }}" target="_blank">
+                                    <div class="department-head">
+                                        <div class="frame">
+                                            <img class="img" src="{{ $rows->profile_image }}">
+                                        </div>
+                                        <div class="team-content">
+                                            <h3 class="title">{{ $rows->name }}</h3>
+                                            <span class="post">{{ $rows->designation}}</span>
+                                            <h3 class="dept">Department of Business Administration</h3>
+                                        </div>
                                     </div>
-                                    <div class="team-content">
-                                        <h3 class="title">Md. Azmir Hossain</h3>
-                                        <span class="post">Dean (Acting) & Chairman</span>
-                                        <h3 class="dept">Department of Business Administration</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>                    
-                    </div>                
+                                </a>
+                            </div>
+                             @endforeach
+
+                    </div>
 
             </div>
 

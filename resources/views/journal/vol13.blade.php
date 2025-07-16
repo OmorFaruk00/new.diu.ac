@@ -5,7 +5,7 @@
             margin-top: 40px;
             margin-bottom: 50px;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-            
+
 
         }
         .journal p{
@@ -75,27 +75,27 @@
 <div class="container">
     <div class="journal p-4" id="journal">
         <h2 style="margin-bottom: 20px">Vol. 13 (2023)</h2>
-     
+
         <div style="line-height: 10px">
         <p> <strong>ISSN:</strong> 2077/0111</p>
         <p> <strong>DOI:</strong> 10.62673/JDIU.V13N1</p>
         <p> <strong>Published:</strong> No-1, 2023</p>
         </div>
         <h3>Articles</h3>
-     
+
         <div class="article" v-for="(item,index) in journals" :key="index">
-            <h4 v-text="item.title"></h4>                    
-            <p v-text="item.author"></p> 
+            <h4 v-text="item.title"></h4>
+            <p v-text="item.author"></p>
             <p > Received Original: <span v-text="item.redeived_original"></span> &nbsp; &nbsp; Received Revised: <span v-html="item.redeived_revised"></span>&nbsp; &nbsp;  Accepted: <span v-html="item.acceptable"></span></p>
           <p><a :href="item.doi_link" class="" target="_blank">DOI Link</a></p> <br>
-                              
+
             <a :href="'/journal_details/'+item.id" class="btn-abs">Abstract</a>
 
-            {{-- <a :href="'/journalPdf/'+item.pdf_link" class="btn-pdf" download target="_blank">Pdf</a> --}}
+            <a :href="'/journalPdf/vol13/'+item.pdf_link" class="btn-pdf" download target="_blank">Pdf</a>
         </div>
 
 
-        
+
      </div>
 </div>
 
@@ -114,7 +114,7 @@
                 loading: false,
 
                 journals: [],
-               
+
             },
 
             methods: {

@@ -37,9 +37,9 @@
     </div>
 </section>
 
-    
 
-          <x-department.notice :slug="$slug" />
+
+
         <!-- End Breadcrumbs -->
         <!--  Department Basic Info -->
         @if ($basic)
@@ -47,12 +47,14 @@
             <x-department.head :basic="$basic" />
         @endif
 
+        <x-department.notice :slug="$slug" />
+
 
         <!--  Department Objective Info -->
         @if ($objective)
             <x-department.objective :objective="$objective" />
         @endif
-       
+
 
         <!--  Department Facility-->
             <x-department.facility :slug="$slug" />
@@ -62,9 +64,9 @@
             <x-department.gallery :gallery="$gallery" />
         @endif --}}
 
-  
+
         <x-department.gallery :slug="$slug" />
-        
+
 
         <!--  Department syllabus-->
         @if($syllabus)

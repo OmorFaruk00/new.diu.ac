@@ -437,7 +437,23 @@
                 <div class="container">
                     <h3 class="department-title">Department Chairmans</h3>
                     <div class="row">
-                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                              @foreach ($facultyMember->data as $rows )
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <a href="{{ $rows->profile_link }}" target="_blank">
+                                    <div class="department-head">
+                                        <div class="frame">
+                                            <img class="img" src="{{ $rows->profile_image }}">
+                                        </div>
+                                        <div class="department-content">
+                                            <h3 class="title">{{ $rows->name }}</h3>
+                                            <span class="post">{{ $rows->designation}}</span>
+                                            <h3 class="dept">{{ $rows->department }}</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                             @endforeach
+                        {{-- <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                             <a href="https://profile.diu.ac/arif.ahmad" target="_blank">
                                 <div class="department-head">
                                     <div class="frame">
@@ -508,7 +524,7 @@
                                 </div>
                             </a>
                         </div> 
-                    
+                     --}}
                     
 
                     </div>

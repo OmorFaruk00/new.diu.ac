@@ -9,7 +9,7 @@ use App\Traits\ApiTrait;
 class DiuController extends Controller
 {
     use ApiTrait;
-    public function index(){        
+    public function index(){
         $counter = $this->getCounterData();
         return view('home.index',compact('counter'));
     }
@@ -50,7 +50,7 @@ class DiuController extends Controller
 
     }
 
-   
+
     public function aboutUs(){
         return view('about.index');
     }
@@ -63,7 +63,7 @@ class DiuController extends Controller
     public function boardOfManagement(){
         $boardOfManagement =  $this->boardOfManagementData();
         return view('about.board-of-management',compact('boardOfManagement'));
-    } 
+    }
     public function admissionProcess(){
         return view('admission.process');
     }
@@ -73,7 +73,7 @@ class DiuController extends Controller
     public function internationalAdmission(){
         return view('admission.international-admission');
     }
-    
+
     public function scholarships(){
         return view('admission.scholarship');
     }
@@ -90,7 +90,7 @@ class DiuController extends Controller
     }
     public function facultyDetails($slug){
         return view('academics.faculty-details', compact('slug'));
-    }   
+    }
     public function convocation(){
          $convocations = $this->convocationData();
         return view('academics.convocation',compact('convocations'));
@@ -116,7 +116,7 @@ class DiuController extends Controller
     }
     public function programs($slug){
         $basic = $this->departmentBasicInfo($slug);
-        $objective= $this->departmentObjective($slug);        
+        $objective= $this->departmentObjective($slug);
         $syllabus = $this->departmentSyllabus($slug);
         $facultyMember = $this->departmentFacultyMember($slug);
         return view('programs.details',compact('basic','slug','syllabus','facultyMember','objective'));
@@ -128,24 +128,24 @@ class DiuController extends Controller
     }
 
 
-  
+
     public function studentFacultyAchievements(){
         return view('life.student-faculty-achievements');
-    }  
-   
+    }
+
     public function cell(){
         return view('life.cell');
-    }   
- 
+    }
+
     public function contact(){
         return view('contact');
     }
     public function notice(){
-    
+
         return view('newsEvent.notice');
     }
     public function events(){
-    
+
         return view('newsEvent.events');
     }
     public function noticeDetails($slug){
@@ -153,7 +153,7 @@ class DiuController extends Controller
         return view('newsEvent.notice-details',compact('slug'));
     }
     public function programDetails($slug){
-      
+
         return view('community.program-details',compact('slug'));
     }
     public function programNoticeDetails($slug)
@@ -201,7 +201,7 @@ class DiuController extends Controller
     }
 
 
-   
+
     public function iqac(){
         return view('cell.iqac');
     }
@@ -245,16 +245,21 @@ class DiuController extends Controller
 
 
     public function facultyLaw(){
-        return view('faculty.law');
+
+       $facultyMember =  $this->getFacultyMember('faculy-of-law');
+        return view('faculty.law',compact('facultyMember'));
     }
     public function facultyBusiness(){
-        return view('faculty.business');
+        $facultyMember =  $this->getFacultyMember('faculy-of-business');
+        return view('faculty.business',compact('facultyMember'));
     }
     public function facultyScience(){
-        return view('faculty.science');
+         $facultyMember =  $this->getFacultyMember('faculy-of-science');
+        return view('faculty.science',compact('facultyMember'));
     }
     public function facultyArts(){
-        return view('faculty.arts');
+         $facultyMember =  $this->getFacultyMember('faculy-of-arts');
+        return view('faculty.arts',compact('facultyMember'));
     }
 
     public function buildPartnership(){
@@ -299,7 +304,7 @@ class DiuController extends Controller
         return view('menu.study');
     }
 
-   
+
     public function registerOffice(){
         return view('about.office-of-register');
 
@@ -314,10 +319,10 @@ class DiuController extends Controller
         return view('about.office-of-vice-chancellor');
     }
 
-   
 
 
-  
+
+
 
 
     public function privacyPolicy()
@@ -345,14 +350,14 @@ class DiuController extends Controller
         return view('authority.team',compact('type'));
 
     }
-   
-   
 
-   
-   
 
-    
 
-    
-   
+
+
+
+
+
+
+
 }

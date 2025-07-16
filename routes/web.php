@@ -44,11 +44,11 @@ Route::get('/test',[DiuController::class,'test'])->name('test');
     Route::get('/journal_details/{id}', [DiuController::class, 'journalDetails'])->name('journal_details');
 
 
- Route::get('/programs/{slug}',[DiuController::class,'programs'])->name('programs'); 
- Route::get('/programs/facilities/{slug}/{id}',[DiuController::class,'programsFaciliry'])->name('programs-facility'); 
+ Route::get('/programs/{slug}',[DiuController::class,'programs'])->name('programs');
+ Route::get('/programs/facilities/{slug}/{id}',[DiuController::class,'programsFaciliry'])->name('programs-facility');
  Route::get('/institute',[DiuController::class,'institute'])->name('institute');
  Route::get('/cell',[DiuController::class,'cell'])->name('cell');
- 
+
 
 
  Route::get('/contact',[DiuController::class,'contact'])->name('contact');
@@ -80,14 +80,14 @@ Route::group(['prefix' => 'cell'], function () {
 
 Route::group(['prefix' => 'authority'], function () {
     Route::get('/vc',[DiuController::class,'vc'])->name('vc');
-    Route::get('/pro-vc',[DiuController::class,'proVc'])->name('pro_vc');
+    // Route::get('/pro-vc',[DiuController::class,'proVc'])->name('pro_vc');
     Route::get('/treasurer',[DiuController::class,'treasurer'])->name('treasurer');
     Route::get('/registrar',[DiuController::class,'registrar'])->name('registrar');
-    Route::get('/vice-chairman',[DiuController::class,'viceChairman'])->name('viceChairman');  
-    Route::get('/chairman',[DiuController::class,'chairman'])->name('chairman');  
-    Route::get('/controller',[DiuController::class,'controller'])->name('controller');  
-    Route::get('/proctor',[DiuController::class,'proctor'])->name('proctor');  
-    Route::get('/students-welfare-advisor',[DiuController::class,'studentsWelfareAdvisor'])->name('students-welfare');  
+    Route::get('/vice-chairman',[DiuController::class,'viceChairman'])->name('viceChairman');
+    Route::get('/chairman',[DiuController::class,'chairman'])->name('chairman');
+    Route::get('/controller',[DiuController::class,'controller'])->name('controller');
+    Route::get('/proctor',[DiuController::class,'proctor'])->name('proctor');
+    Route::get('/students-welfare-advisor',[DiuController::class,'studentsWelfareAdvisor'])->name('students-welfare');
 
 });
     Route::get('/faculy_of_law',[DiuController::class,'facultyLaw'])->name('law');
@@ -115,7 +115,7 @@ Route::group(['prefix' => 'authority'], function () {
     Route::get('/existing-student-help-treasurer-office',[DiuController::class,'treasurerOffice'])->name('treasurerOffice');
 
     Route::get('/existing-student-help-chairman-office',[DiuController::class,'chairmanOffice'])->name('chairmanOffice');
-    
+
     Route::get('/existing-student-help-vice-chancellor-office',[DiuController::class,'viceChancellorOffice'])->name('viceChancellorOffice');
 
 
@@ -126,7 +126,7 @@ Route::group(['prefix' => 'authority'], function () {
     Route::get('/code-of-conduct', [DiuController::class, 'codeOfConduct'])->name('code-of-conduct');
     Route::get('/terms_and_conditions', [DiuController::class, 'tramsCondition'])->name('trams_and_condition');
     Route::get('/research-and-publication-cell', [DiuController::class, 'researchAndPublicationCell'])->name('research-and-publication-cell');
-  
+
 
     Route::group(['prefix' => 'programs'], function () {
         Route::view('/department-of-civil-engineering/environmental-engineering-lab','/lab/environmental-engineering-lab')->name('environmental-engineering-lab');
@@ -136,6 +136,6 @@ Route::group(['prefix' => 'authority'], function () {
         Route::view('/department-of-civil-engineering/hydraulics-lab','/lab/hydraulics-lab')->name('hydraulics-lab');
         Route::view('/department-of-civil-engineering/concrete-lab','/lab/concrete-lab')->name('concrete-lab');
         Route::view('/department-of-civil-engineering/mechanics-lab','/lab/mechanics-lab')->name('mechanics-lab');
-        Route::view('/department-of-civil-engineering/computer-lab','/lab/computer-lab')->name('computer-lab'); 
-    
+        Route::view('/department-of-civil-engineering/computer-lab','/lab/computer-lab')->name('computer-lab');
+
     });

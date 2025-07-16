@@ -407,21 +407,23 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="row">
+                            @foreach ($facultyMember->data as $rows )
                             <div class="col-md-6 col-md-8 mx-auto">
                                 <h3 class="department-title">Department Chairman</h3>
-                                <a href="https://profile.diu.ac/nasir.ahmad" target="_blank">
+                                <a href="{{ $rows->profile_link }}" target="_blank">
                                     <div class="department-head">
                                         <div class="frame">
-                                            <img class="img" src="https://api.diu.ac/images/profile_photo_file_130.jpg">
+                                            <img class="img" src="{{ $rows->profile_image }}">
                                         </div>
                                         <div class="team-content">
-                                            <h3 class="title">Nasir Ahmad</h3>
-                                            <span class="post">Assistant Professor & Chairman</span>
+                                            <h3 class="title">{{ $rows->name }}</h3>
+                                            <span class="post">{{ $rows->designation}}</span>
                                             <h3 class="dept">Department of Department of Law</h3>
                                         </div>
                                     </div>
                                 </a>
                             </div>
+                             @endforeach
                         </div>
 
                     </div>

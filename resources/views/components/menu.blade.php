@@ -103,21 +103,21 @@
         /* background: rgba(4, 4, 4, 0.7); */
         /* opacity: 0.8; */
         background-color: #fff;
-        color: #000;    
+        color: #000;
         /* color: #fff !important; */
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     }
 
 
-    
+
     .mega-menu:hover,
     .drop-down-ul:hover,
     li.flyout-left>ul:hover,
     li.flyout-right>ul:hover,
     .flyout-mega-wrap:hover,
     li.flyout-left a:hover+ul,
-    li.flyout-right a:hover+ul,   
-    li.drop-down>a:hover+.drop-down-ul,   
+    li.flyout-right a:hover+ul,
+    li.drop-down>a:hover+.drop-down-ul,
     .mega-drop-down a:hover+.mega-menu,
     li.flyout-mega>a:hover+.flyout-mega-wrap {
         display: block;
@@ -127,7 +127,7 @@
         display: none;
     }
     .drop-down-ul.show {
-    display: block; 
+    display: block;
 }
 
     .flyout-right>ul,
@@ -311,19 +311,19 @@
                                 <li><a href="#">Watch</a></li>
                             </ul>
                         </li>
-                        
+
                         <li class="flyout-left"><a href="#">Flyout Left</a><!--Flyout Left-->
                             <ul class="animated fadeIn">
                                 <li><a href="#">Mobile</a></li>
                                 <li><a href="#">Computer</a></li>
                                 <li><a href="#">Watch</a></li>
-                            </ul>			
+                            </ul>
                         </li>
-                        
+
                         <li><a href="#">No Flyout</a></li>
-                         
+
                         </ul>
-                    
+
                     </li>  --}}
             <li class="mega-drop-down"><a href="#"> DIU</a>
                 <div class="animated fadeIn mega-menu">
@@ -348,7 +348,7 @@
                                     <li><a href="{{ route('convocation') }}">Convocation</a></li>
                                     <li><a href="{{ route('publications') }}">Publications</a></li>
                                     <li><a href="{{ route('journals') }}">Journals</a></li>
-                                  
+
 
                                 </ul>
                             </div>
@@ -363,20 +363,20 @@
                                     <li><a href="{{ route('research-and-publication-cell') }}"> Research and Publication Cell</a></li>
                                 </ul>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
             </li>
             <li class="drop-down"><a href="#" ></i> Authority</a>
                 <ul class="drop-down-ul animated fadeIn">
-                    
+
                     <li><a href="{{ route('controller') }}"> Controller of Exam.</a></li>
                     <li><a href="{{ route('proctor') }}"> Proctor</a></li>
                     <li><a href="{{ route('students-welfare') }}"> Student Welfare Adviser</a></li>
                     <li><a href="{{ route('registrar') }}"> Registrar</a></li>
                     <li><a href="{{ route('treasurer') }}"> Treasurer</a></li>
-                    <li><a href="{{ route('pro_vc') }}">Pro-Vice-Chancellor </a></li>
+                    {{-- <li><a href="{{ route('pro_vc') }}">Pro-Vice-Chancellor </a></li> --}}
                     <li><a href="{{ route('vc') }}">Vice-Chancellor</a></li>
                     <li><a href="{{ route('viceChairman') }}">Vice-Chairman </a></li>
                     <li><a href="{{ route('chairman') }}"> Chairman </a></li>
@@ -503,7 +503,7 @@
                     <li><a href="https://jobs.diu.ac/" target="_blank">Career</a></li>
                 </ul>
             </li>
-           
+
         </ul>
         <a href="#" class="toggle-menu d-block d-lg-none"><i class="fa fa-bars"></i></a>
     </div>
@@ -517,7 +517,7 @@
         });
 
 
-        
+
     </script>
     {{-- <script>
         document.querySelectorAll('.dropdown').forEach(dropdown => {
@@ -531,7 +531,7 @@
         });
     </script> --}}
 
-    
+
 
 
 </header>

@@ -104,7 +104,7 @@ trait ApiTrait
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/get_all_course_fee', false, self::ssl()));
 
         if (!empty($result)) {
-            Cache::put('courseFee', $result); 
+            Cache::put('courseFee', $result);
             return $result;
         }
         return response()->json(NULL, 404);
@@ -118,7 +118,7 @@ trait ApiTrait
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/key-resource-persons', false, self::ssl()));
 
         if (!empty($result)) {
-            Cache::put('keyResourcePersons', $result); 
+            Cache::put('keyResourcePersons', $result);
             return $result;
         }
         return response()->json(NULL, 404);
@@ -132,7 +132,7 @@ trait ApiTrait
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/publication', false, self::ssl()));
 
         if (!empty($result)) {
-            Cache::put('publication', $result); 
+            Cache::put('publication', $result);
             return $result;
         }
         return response()->json(NULL, 404);
@@ -146,7 +146,7 @@ trait ApiTrait
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/convocations', false, self::ssl()));
 
         if (!empty($result)) {
-            Cache::put('convocation', $result); 
+            Cache::put('convocation', $result);
             return $result;
         }
         return response()->json(NULL, 404);
@@ -159,7 +159,7 @@ trait ApiTrait
 
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/department-basic-info/'.$slug, false, self::ssl()));
         if (!empty($result)) {
-            Cache::put('basics_'.$slug, $result); 
+            Cache::put('basics_'.$slug, $result);
             return $result;
         }
         return response()->json(NULL, 404);
@@ -173,7 +173,7 @@ trait ApiTrait
 
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/department-objectives/'.$slug, false, self::ssl()));
         if (!empty($result)) {
-            Cache::put('objective_'.$slug, $result); 
+            Cache::put('objective_'.$slug, $result);
             return $result;
         }
         return response()->json(NULL, 404);
@@ -186,7 +186,7 @@ trait ApiTrait
 
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/department-facilities/'.$slug, false, self::ssl()));
         if (!empty($result)) {
-            Cache::put('facility_'.$slug, $result); 
+            Cache::put('facility_'.$slug, $result);
             return $result;
         }
         return response()->json(NULL, 404);
@@ -199,7 +199,7 @@ trait ApiTrait
 
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/department-gallery/'.$slug, false, self::ssl()));
         if (!empty($result)) {
-            Cache::put('gallery_'.$slug, $result); 
+            Cache::put('gallery_'.$slug, $result);
             return $result;
         }
         return response()->json(NULL, 404);
@@ -212,7 +212,7 @@ trait ApiTrait
 
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/department-syllabus/'.$slug, false, self::ssl()));
         if (!empty($result)) {
-            Cache::put('syllabus_'.$slug, $result); 
+            Cache::put('syllabus_'.$slug, $result);
             return $result;
         }
         return response()->json(NULL, 404);
@@ -225,7 +225,7 @@ trait ApiTrait
 
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/department-faculty-member/'.$slug, false, self::ssl()));
         if (!empty($result)) {
-            Cache::put('facultyMember_'.$slug, $result); 
+            Cache::put('facultyMember_'.$slug, $result);
             return $result;
         }
         return response()->json(NULL, 404);
@@ -238,7 +238,7 @@ trait ApiTrait
 
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/notice-event?type=notice', false, self::ssl()));
         if (!empty($result)) {
-            Cache::put('notice', $result, 1440); 
+            Cache::put('notice', $result, 1440);
             return $result;
         }
         return response()->json(NULL, 404);
@@ -251,7 +251,7 @@ trait ApiTrait
 
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/notice-event?type=event', false, self::ssl()));
         if (!empty($result)) {
-            Cache::put('event', $result, 1440); 
+            Cache::put('event', $result, 1440);
             return $result;
         }
         return response()->json(NULL, 404);
@@ -266,22 +266,32 @@ trait ApiTrait
 
         $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/counter-statistics', false, self::ssl()));
         if (!empty($result)) {
-            Cache::put('counter', $result, 1440); 
+            Cache::put('counter', $result, 1440);
             return $result;
         }
         return response()->json(NULL, 404);
     }
-    
-      
-
-
-      
-
-    public function getNoticeDetails($slug)    {     
+    public function getNoticeDetails($slug)    {
 
         return $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/notice/'.$slug, false, self::ssl()));
-       
+
     }
 
- 
+
+       public function getFacultyMember($slug)
+    {
+
+        if (Cache::has($slug)) {
+            return Cache::get($slug);
+        }
+
+       $result = json_decode(@file_get_contents('' . env('API_URL') . '/public-diu-website/authority-team/'.$slug, false, self::ssl()));
+        if (!empty($result)) {
+            Cache::put($slug, $result);
+            return $result;
+        }
+        return response()->json(NULL, 404);
+    }
+
+
 }

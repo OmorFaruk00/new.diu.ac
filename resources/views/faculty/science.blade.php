@@ -242,7 +242,7 @@
             height: 300px;
             width: 100% !important;
             transform: scale(1, 1);
-            transition: all 0.30s ease 0s; 
+            transition: all 0.30s ease 0s;
         }
 
         .frame {
@@ -427,21 +427,24 @@
                 <div class="container">
                     <h3 class="department-title">Department Chairmans</h3>
                     <div class="row">
-                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <a href="https://profile.diu.ac/shovon" target="_blank">
-                                <div class="department-head">
-                                    <div class="frame">
-                                        <img src="https://api.diu.ac/images/profile_photo_file_615.jpg">
+
+                        @foreach ($facultyMember->data as $rows )
+                            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                <a href="{{ $rows->profile_link }}" target="_blank">
+                                    <div class="department-head">
+                                        <div class="frame">
+                                            <img class="img" src="{{ $rows->profile_image }}">
+                                        </div>
+                                        <div class="department-content">
+                                            <h3 class="title">{{ $rows->name }}</h3>
+                                            <span class="post">{{ $rows->designation}}</span>
+                                            <h3 class="dept">{{ $rows->department }}</h3>
+                                        </div>
                                     </div>
-                                    <div class="department-content">
-                                        <h3 class="title">S M SAZZAD AHMED SHOVON</h3>
-                                        <span class="post">Assistant Professor & Chairman</span>
-                                        <h3 class="dept">Department of Civil Engineering</h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
+                                </a>
+                            </div>
+                             @endforeach
+                        {{-- <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                             <a href="https://profile.diu.ac/md.abdul.based#PersonalInformation" target="_blank">
                                 <div class="department-head">
                                     <div class="frame">
@@ -484,33 +487,33 @@
                             </a>
                         </div>
                         <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <a href="https://profile.diu.ac/dr.hafizurrahman" target="_blank">
+                            <a href="https://profile.diu.ac/dr.taniamannan#PersonalInformation" target="_blank">
                                 <div class="department-head">
                                     <div class="frame">
-                                        <img src="https://api.diu.ac/images/profile_photo_file_1058.jpg">
+                                        <img src="https://api.diu.ac/images/profile_photo_file_1146.jpg">
                                     </div>
                                     <div class="department-content">
-                                        <h3 class="title">Dr. Hafizur Rahman</h3>
-                                        <span class="post"> Professor & Chairman</span>
+                                        <h3 class="title">Dr. Tania Mannan</h3>
+                                        <span class="post"> Associate Professor & Chairman</span>
                                         <h3 class="dept"> Department of Biochemistry and Molecular Biology</h3>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
-                            <a href="https://profile.diu.ac/professor.farida.begum" target="_blank">
+                            <a href="https://profile.diu.ac/md.akbarhossain#PersonalInformation" target="_blank">
                                 <div class="department-head">
                                     <div class="frame">
-                                        <img src="https://api.diu.ac/images/profile_photo_file_650.jpg">
+                                        <img src="https://api.diu.ac/images/profile_photo_file_1066.jpg">
                                     </div>
                                     <div class="department-content">
-                                        <h3 class="title">Professor Farida Begum</h3>
-                                        <span class="post">Chairman</span>
+                                        <h3 class="title">Md. Akbar Hossain</h3>
+                                        <span class="post">Associate Professor & Chairman (In-Charge)</span>
                                         <h3 class="dept"> Department of Pharmacy</h3>
                                     </div>
                                 </div>
                             </a>
-                        </div>
+                        </div> --}}
 
                     </div>
                 </div>
